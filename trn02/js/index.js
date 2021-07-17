@@ -1,46 +1,38 @@
 $(function(){
-    var $this=$(".section");
-    $("#sgnc").fullpage({           
-        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',  
-        anchors:['intro', 'sns2', 'sns3', 'sns4', 'sns5'],//hash 직접만들어줘야함
-        //css3:false,//이 것 만으로 패럴렉스
+    $('#full-wrap').fullpage({
+		//options here
+        anchors:['s01', 's02', 's03', 's04', 's05'],
+		autoScrolling:true,
+		scrollHorizontally: true,
         afterLoad: function(origin,destination){
-            $this.eq(destination.index).addClass("on").siblings().removeClass("on");
-            $(".gnb-right li").eq(destination.index).addClass("on").siblings().removeClass("on");
+            
+            $('.section').eq(destination.index).addClass("on").siblings().removeClass("on");
+            $('.menu-right li').eq(destination.index).addClass("on").siblings().removeClass("on");
         }
     });
+	
+    $('.xi-bars').click(function(){
+        $('.popup').addClass('on')
+    });
+    $('.xi-close').click(function(){
+        $('.popup').removeClass('on')
+    });
 
-    var brandSlide=$(".brend-slider>div").slick({
+
+    //slick
+    $('.slider-wrap>div').slick({
         arrows:false,
         autoplay:true,
-        autoplaySpeed:4000,
-        pauseOnHover:false,
-        pauseOnFocus:false,
         swipe:false,
+        asNavFor: '.slider-wrap>div'
     });
-
-    brandSlide.on("afterChange", function(e,s,c){
-        //console.log(c);
-        $(".brend-tab li").eq(c).addClass("on").siblings().removeClass("on");
+    $('.slider-num li').eq(0).addClass('on');
+    $('.slider-wrap>div').on('afterChange',function(event,silck,currentSlide){
+        $('.slider-num li').eq(currentSlide).addClass('on').siblings().removeClass('on');
     });
-
-
-    $(".brend-tab li").on("click", function(){
+    $('.slider-num li').click(function(){
         var idx=$(this).index();
-        $(".brend-slider>div").slick("slickGoTo", idx);
-        $(this).addClass("on").siblings().removeClass("on");
-    });
-
-    $(".mopen").on("click", function(){
-        $("#cover").slideDown();
-    });
-
-    $("#cover i").on("click", function(){
-        $("#cover").slideUp();
-    });
-
-    $("#cover ul>li>a").on("click", function(){
-        $("#cover").slideUp();
-    });
-
-});
+        $('.slider-wrap>div').slick('slickGoTo',idx);
+        $(this).addClass('on').siblings().removeClass('on')
+    })
+})
