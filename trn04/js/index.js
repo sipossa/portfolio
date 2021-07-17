@@ -1,7 +1,7 @@
 $(function(){
 //jquery start
 	
-var bbq=$(".main-slider").slick({
+var msd=$(".main-slider").slick({
     arrows:false,
     autoplay:true,
     autoplaySpeed:4000,
@@ -10,25 +10,26 @@ var bbq=$(".main-slider").slick({
     speed:1000,
     dots:true,
 });
-var bbq_dari=$(".main-slider figure");
-bbq_dari.eq(1).addClass("on");
+var msd_i=$(".main-slider figure");
+msd_i.eq(1).addClass("on");
 
 $("#main-visual .bar").addClass("on");
-bbq.on("afterChange", function(e,s,c){
-    bbq_dari.eq(c+1).addClass("on").siblings().removeClass("on");
+msd.on("afterChange", function(e,s,c){
+    msd_i.eq(c+1).addClass("on").siblings().removeClass("on");
     $("#main-visual .bar").addClass("on");
 });
 
-bbq.on("beforeChange", function(e,s,c,n){
+msd.on("beforeChange", function(e,s,c,n){
     $("#main-visual .bar").removeClass("on");
 });
 
 $("#main-visual .ms-prev").on("click", function(){
-    bbq.slick("slickPrev");
+    msd.slick("slickPrev");
 });
 $("#main-visual .ms-next").on("click", function(){
-    bbq.slick("slickNext");
+    msd.slick("slickNext");
 });
+
 
 
 $(".groble-link li").on("click", mapTab);
