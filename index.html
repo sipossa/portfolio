@@ -1,0 +1,195 @@
+﻿<!doctype html>
+<html>
+<head>
+<script src="js/jquery-1.12.4.min.js"></script>
+<link href="css/xeicon.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+<style>
+* {margin:0;padding:0;box-sizing:border-box;}
+body {font-family: 'Noto Sans KR', sans-serif;color:#444;}
+
+#wrap {width:100%;position:relative;margin:0 auto;}
+#gnb {position:fixed;top:50px;left:50px;width:30px;height:30px;z-index:2;}
+#gnb>span {display:block;width:100%;height:1px;background:#333;position:absolute;top:0;left:0;transition:.3s;}
+#gnb>span:nth-child(2), #gnb>span:nth-child(3) {top:10px;}
+#gnb.on>span:nth-child(1){opacity:0;}
+#gnb.on>span:nth-child(4){opacity:0;}
+#gnb.on>span:nth-child(2){transform:rotate(45deg);}
+#gnb.on>span:nth-child(3){transform:rotate(-45deg);}
+#gnb>span:nth-child(4) {top:20px;}
+
+#sound {position:fixed;top:50px;right:50px;width:100px;height:30px;font-size:30px;z-index:2;color:#666;text-align:right;font-size:20px;}
+#sound>i {display:inline-block;}
+#cover {position:fixed;top:-500px;width:100%;height:0;font-size:30px;z-index:1;color:#666;background:rgba(255,255,255,.8);transition:.5s;}
+#cover.on {top:0;height:100vh;}
+
+#section-head .content-head {width:1000px;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);}
+#section-head .content-head:after {content:"";display:table;clear:both;}
+#section-head {height:800px;position:absolute;top:0;width:1800px;}
+#section-head .content-left {float:left;width:50%;padding-top:120px;}
+#section-head .content-right {float:left;width:50%;}
+#section-head .content-left>div>span {font-weight:500;}
+#section-head .content-left>div:nth-child(1) {font-size:30px;letter-spacing:-0.05em;font-weight:100;}
+#section-head .content-left>div:nth-child(2) {font-size:20px;letter-spacing:-0.05em;font-weight:100;}
+#section-head .content-left>div:nth-child(3) {font-size:35px;letter-spacing:0.05em;font-weight:200;margin-top:30px;}
+#section-head .content-left>div:nth-child(4) {font-size:16px;font-weight:300;color:#000;}
+
+#lscroll {width:1400px;height:500px;overflow:hidden;position:absolute;top:1000px;left:50%;transform:translateX(-50%);}
+#lscroll>div {position:absolute;left:0;top:0;width:5600px;height:500px;}
+#lscroll>div>div {width:1400px;float:left;}
+
+#lscroll .lscroll-cotent {width:1400px;float:left;}
+#lscroll .lscroll-cotent:after {content:"";display:table;clear:both;}
+#lscroll .lscroll-left {float:left;width:35%; border-right:1px solid #ddd;}
+#lscroll .lscroll-right {float:left;width:65%;padding: 80px 0 0 150px;position:relative;}
+#lscroll .lscroll-right:after {content:"\e9c5";display:block;width:100px;height:100px;position:absolute;top:0;right:80px;font-size:55px;color:#ddd;font-family: xeicon;}
+#lscroll .lscroll-right>div:nth-child(1) {font-size:30px;letter-spacing:-0.05em;font-weight:100;line-height:80px;}
+#lscroll .lscroll-right>div:nth-child(1) span {font-weight:500;}
+#lscroll .lscroll-left>div>span {font-weight:500;}
+
+#section-foot {background:#fff url(img/yuwoo.jpg) no-repeat center bottom/contain;height:2800px;position:absolute;top:6200px;width:100%;}
+#section-foot>.moon {position:relative;top:150px;width:130px;height:130px;background:url(img/moon.png);margin:0 auto;z-index:999;}
+#section-foot>.beam {position:relative;top:1200px;text-align:center;}
+#section-foot>.beam img {display:block;padding-top:100px;margin:0 auto;}
+#section-foot>.beam>div:nth-child(1) {font-size:30px;letter-spacing:-0.05em;font-weight:100;}
+#section-foot>.beam>div:nth-child(2) {font-size:20px;letter-spacing:-0.05em;font-weight:100;}
+#section-foot>.beam>div>span {font-weight:500;}
+#section-foot>div:nth-child(2) {position:relative;top:200px;text-align:center;font-family: 'Noto Serif KR', serif;font-size:18px;}
+#section-foot .endding {position:relative;top:300px;text-align:center;font-family: 'Noto Serif KR', serif;font-size:18px;color:#fff;}
+</style>
+</head>
+<body>
+<div id="wrap">
+<div id="cover">
+
+</div>
+<div id="gnb">
+	<span></span>
+	<span></span>
+	<span></span>
+	<span></span>
+</div>
+<div id="sound">
+<i class="xi-play"></i> <i class="xi-pause"></i>
+</div>
+<section id="section-head">
+	<div class="content-head">
+		<div class="content-left">
+			<div>어느 날 <span>여우</span>에게 내가 물었다.</div>
+			<div>너에게 길들여지면 편안해질 수 있을까?></div>
+			<div>lee’s portfolio</div>
+			<div>늙은 여우와 동행하기, 혹은 여우에게 속지 않기, 앓지 않기 ...</div>
+		</div>
+		<div class="content-right">
+			<img src="img/lee.jpg" alt="love poem">
+		</div>
+	</div>
+</section>
+<section id="lscroll">
+<div>
+	<div class="lscroll-cotent">
+		<div class="lscroll-left">
+			<img src="img/ggo.jpg" alt="love poem">
+		</div>
+		<div class="lscroll-right">
+			<div>문제는 말이야 <span>장미</span>가 너무 커져버린거야</div>
+			<div>바오밥나무들을 내안의 바람과 흔들리게 해버린 거야<br>
+			알겠지만 장미는 뽑아버리면 그만이거든
+			</div>
+		</div>
+	</div>
+	<div class="lscroll-cotent">
+		<div class="lscroll-left">
+			<img src="img/bihang.jpg" alt="love poem">
+		</div>
+		<div class="lscroll-right">
+			<div>어느 날 마흔세 번이나 <span>해</span> 지는 것을 보았어</div>
+			<div>누구나 슬픔에 잠기면 석양을 좋아하게 된다는 걸<br>
+			장미와 나는 알고 있었어...
+			</div>
+		</div>
+	</div>
+	<div class="lscroll-cotent">
+		<div class="lscroll-left">
+			<img src="img/na.jpg" alt="love poem">
+		</div>
+		<div class="lscroll-right">
+			<div>나는 얼굴이 <span>빨간 신사</span>가 살고 있는 별을 알아</div>
+			<div>어느 누구 하나 와도 이별의 말을 해 본적이 없으면서<br>
+			'너는 벙어리 여우야!' 라고만 네게 소리쳤겠지...
+			</div>
+		</div>
+	</div>
+	<div class="lscroll-cotent">
+		<div class="lscroll-left">
+			<img src="img/boa.jpg" alt="love poem">
+		</div>
+		<div class="lscroll-right">
+			<div><span>길들인다는 건</span> 너무나 쉽게 잊혀져 가는 거지.</div>
+			<div>난 네가 필요하지 않고. 장미 역시 내가 필요하지 않아.<br>
+			너는 수십만의 여우들과 같은 여우에 불과하니까.
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<section id="section-foot">
+	<div class="moon"></div>
+	<div>하<br>지<br>만<br><br>너<br>에<br>게<br><br>길<br>들<br>여<br>지<br>면<br><br>편<br>안<br>해<br>질<br><br> 수<br><br> 있<br>을<br>까<br>?</div>
+	<div class="beam">
+		<div>그 날 <span>뱀</span>에게 여우가 물었다.</div>
+		<div>네 독이면 마침내 편안해질 수 있을까?</div>
+		<img src="img/beam.jpg" alt="love poem">
+		<div class="endding">늙은 여우에게 속지 않기, 앓지 않기 ...</div>
+	</div>
+</section>
+
+</div>
+<script>
+var x=$("#lscroll").offset().top;
+var z=$("#lscroll");
+
+$(window).scroll(function(){
+//consol.log($(window).scrollTop());
+	if($(window).scrollTop() > x-300){
+		z.css({"position":"fixed","top":"300px"});
+		z.scrollLeft($(window).scrollTop()-1000);	
+	}
+	else {
+		z.css({"position":"relative","top":"1000px"});
+		//z.scrollLeft($(window).scrollTop());
+	}
+
+});
+var y = $("#section-foot>.moon");
+var a = y.offset().top;
+
+$(window).scroll(function(){
+	if($(window).scrollTop() > a -300 && $(window).scrollTop() < a + 1400){
+		y.css({"transform":"translateY("+ ($(window).scrollTop()-a+300) +"px)"+"translateX("+ ($(window).scrollTop()-a+300)*0.25 +"px)"+ "rotate("+ ($(window).scrollTop()-a+300)*(-0.465) +"deg)"});
+	}        
+
+});
+
+
+$(document).ready(function(){
+var audioFile = new Audio("bgm.mp3");
+audioFile.loop = true;
+$("#sound>i").eq(0).click(function(){
+	audioFile.play();
+	//$(this).css("on");
+});
+$("#sound>i").eq(1).click(function(){
+	audioFile.pause();
+});
+
+$("#gnb").click(function(){
+	$(this).toggleClass("on");
+	$("#cover").toggleClass("on");
+});
+
+});
+</script>
+</body>
+</html>
