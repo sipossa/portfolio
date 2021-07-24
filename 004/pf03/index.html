@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국외국어대학교</title>
+    
+    <meta name="robots" content="index,follow">
+    <meta name="title" content="한국외국어대학교 포트폴리오">
+    <meta name="description" content="한국외국어대학교 포트폴리오">
+
+    <meta property="og:type" content="website"> 
+    <meta property="og:title" content="한국외국어대학교 포트폴리오5">
+    <meta property="og:description" content="한국외국어대학교 포트폴리오">
+    <meta property="og:url" content="http://bleunuit.dothome.co.kr/">
+
+    <link rel="canonical" href="./img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="favicon" href="./img/favicon.ico">
+
+    <link href="../assets/css/common.css" rel="stylesheet">
+    <link href="../assets/css/slick.css" rel="stylesheet">
+    <link href="./css/index-backup.css?ver1.0" rel="stylesheet">
+   
+    <script src="../assets/js/jquery-1.12.4.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+    <script src="../assets/js/jquery.cookie.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+</head>
+<body>
+<div id="wrap">
+<header id="header">
+    <div class="container">
+        <h1>
+            <a href="index.html"><img src="./img/logo.png" alt=""></a>
+        </h1>
+        <div class="sub-menu">
+               
+            <form name="search_top" id="search_top" method="get" action="">
+                <input type="search" name="searchInput" id="searchInput" placeholder="검색어를 입력하세요.">
+                <button type="submit"><i class="xi-search"></i></button>
+            </form> 
+            <script>
+             $("#search_top").on("submit", function(){
+                 let seachVal=$("#searchInput").val();                
+                 if(!seachVal) alert("검색어를 입력하세요.");
+             })
+             </script>   
+         </div>
+    </div>
+    <nav>
+        <ul class="top-menu row">
+            <li><a href="#!">외대정보</a>
+                <div class="menu-wrap row">
+                <div class="menu-bot menu-width2">
+                    <ul>
+                        <li class="sub-t"><a href="#!">학교소개</a></li>
+                        <li><a href="#!">총장실</a></li>
+                        <li><a href="#!">기구표</a></li>
+                        <li><a href="#!">학교상징</a></li>
+                        <li><a href="#!">외대역사</a></li>
+                        <li><a href="#!">교내색인</a></li>
+                        <li><a href="#!">외대역사</a></li>
+                        <li><a href="#!">전화안내</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bot menu-width">
+                    <ul>
+                        <li class="sub-t"><a href="#!">행정기관</a></li>
+                        <li><a href="#!">서울캠퍼스</a></li>
+                        <li><a href="#!">글로벌캠퍼스</a></li>
+                        <li><a href="#!">연구산학협력단</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bot">
+                    <ul>
+                        <li class="sub-t"><a href="#!">부속/부설기관</a></li>
+                        <li><a href="#!">부속기관:서울캠퍼스</a></li>
+                        <li><a href="#!">부속기관:글로벌캠퍼스</a></li>
+                        <li><a href="#!">부속교육기관</a></li>
+                        <li><a href="#!">부설기관</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bot menu-width3">
+                    <ul>
+                        <li class="sub-t"><a href="#!">부속연구기관</a></li>
+                        <li><a href="#!">외국어문 연구센터</a></li>
+                        <li><a href="#!">국제지역 연구센터</a></li>
+                        <li><a href="#!">전문분야 연구센터</a></li>
+                        <li><a href="#!">융합 연구센터</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bot menu-width">
+                    <ul>
+                        <li class="sub-t"><a href="#!">자치기구·단체</a></li>
+                        <li><a href="#!">서울캠퍼스</a></li>
+                        <li><a href="#!">글로벌캠퍼스</a></li>
+                        <li><a href="#!">대학원</a></li>
+                        <li><a href="#!">노동조합</a></li>
+                        <li><a href="#!">대학평의원회</a></li>
+                        <li><a href="#!">총동문회</a></li>
+                    </ul>
+                </div>
+            </div>
+            </li>
+            <li><a href="#!">입학안내</a>
+                <div class="menu-wrap row">
+                <div class="menu-bot first-menu">
+                    <ul>
+                        <li class="sub-t sub-icon"><a href="#!">대학입학<i class="xi-external-link"></i></a></li>
+                        <li class="sub-t sub-icon"><a href="#!">대학원입학<i class="xi-external-link"></i></a></li>
+                        <li class="sub-t sub-icon"><a href="#!">외국인입학<i class="xi-external-link"></i></a></li>
+                    </ul>
+                </div>
+                <div class="menu-bot first-menu">
+                    <ul>
+                        <li class="sub-t sub-icon"><a href="#!">외국어연수평가원</a></li>
+                        <li class="sub-t sub-icon"><a href="#!">FLEX센터</a></li>
+                        <li class="sub-t sub-icon"><a href="#!">TESOL전문교육원</a></li>
+                        <li class="sub-t sub-icon"><a href="#!">한국어문화교육원</a></li>
+                        <li class="sub-t sub-icon"><a href="#!">국제사회교육원</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bot first-menu">
+                    <ul>
+                        <li class="sub-t sub-icon"><a href="#!">외국어교육센터(서울)</a></li>
+                        <li class="sub-t sub-icon"><a href="#!">외국어교육센터(글로벌)</a></li>
+                    </ul>
+                </div>
+                </div>
+            </li>
+            <li><a href="#!">대학·대학원</a>
+                <div class="menu-wrap row">
+                <div class="menu-bot">
+                    <ul>
+                        <li class="sub-t"><a href="#!">서울캠퍼스</a></li>
+                        <li><a href="#!">미네르바교양대학</a></li>
+                        <li><a href="#!">영어대학</a></li>
+                        <li><a href="#!">서양어대학</a></li>
+                        <li><a href="#!">아시아언어</a></li>
+                        <li><a href="#!">문화대학</a></li>
+                        <li><a href="#!">중국학대학</a></li>
+                        <li><a href="#!">일본학대학</a></li>
+                        <li><a href="#!">사회과학대학</a></li>
+                        <li><a href="#!">법과대학</a></li>
+                        <li><a href="#!">상경대학</a></li>
+                        <li><a href="#!">경영대학</a></li>
+                        <li><a href="#!">국제학부</a></li>
+                        <li><a href="#!">LD학부</a></li>
+                        <li><a href="#!">LT학부</a></li>
+                        <li><a href="#!">KFL학부</a></li>
+                        <li><a href="#!">융합전공</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bot">
+                    <ul>
+                        <li class="sub-t"><a href="#!">외국어연수평가원</a></li>
+                        <li><a href="#!">FLEX센터</a></li>
+                        <li><a href="#!">TESOL전문교육원</a></li>
+                        <li><a href="#!">한국어문화교육원</a></li>
+                        <li><a href="#!">국제사회교육원</a></li>
+                        <li><a href="#!">외국어교육센터(서울)</a></li>
+                        <li><a href="#!">외국어교육센터(글로벌)</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bot">
+                    <ul>
+                        <li class="sub-t"><a href="#!">글로벌캠퍼스</a></li>
+                        <li><a href="#!">미네르바교양대학</a></li>
+                        <li><a href="#!">인문대학</a></li>
+                        <li><a href="#!">통번역대학</a></li>
+                        <li><a href="#!">동유럽학대학</a></li>
+                        <li><a href="#!">국제지역대학</a></li>
+                        <li><a href="#!">경상대학</a></li>
+                        <li><a href="#!">자연과학대학</a></li>
+                        <li><a href="#!">공과대학</a></li>
+                        <li><a href="#!">융합인재대학</a></li>
+                        <li><a href="#!">바이오메디컬공학부</a></li>
+                        <li><a href="#!">글로벌스포츠산업학부</a></li>
+                        <li><a href="#!">융합전공</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bot">
+                    <ul>
+                        <li class="sub-t"><a href="#!">대학원</a></li>
+                        <li><a href="#!">일반대학원</a></li>
+                        <li><a href="#!">통번역대학원</a></li>
+                        <li><a href="#!">국제지역대학원</a></li>
+                        <li><a href="#!">법학전문대학원</a></li>
+                        <li><a href="#!">교육대학원</a></li>
+                        <li><a href="#!">정치행정언론대학원</a></li>
+                        <li><a href="#!">경영대학원</a></li>
+                        <li><a href="#!">TESOL 대학원</a></li>
+                        <li><a href="#!">KFL대학원</a></li>
+                    </ul>
+                </div>
+                </div>
+            </li>
+            <li><a href="#!">대학생활</a>
+                <div class="menu-wrap">
+                <div class="menu-bot">
+                    <ul>
+                        <li class="sub-t"><a href="#!">학사일정</a></li>
+                        <li><a href="#!">대학</a></li>
+                        <li><a href="#!">대학원</a></li>
+                        <li><a href="#!">통번역대학원</a></li>
+                        <li><a href="#!">국제지역대학원</a></li>
+                        <li><a href="#!">법학전문대학원</a></li>
+                        <li><a href="#!">교육대학원</a></li>
+                        <li><a href="#!">정치행정언론대학원</a></li>
+                        <li><a href="#!">경영대학원</a></li>
+                        <li><a href="#!">TESOL 대학원</a></li>
+                        <li><a href="#!">KFL대학원</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bot">
+                    <ul>
+                        <li class="sub-t"><a href="#!">공지안내</a></li>
+                        <li><a href="#!">일반공지</a></li>
+                        <li><a href="#!">학사공지</a></li>
+                        <li><a href="#!">장학공지</a></li>
+                        <li><a href="#!">채용공지</a></li>
+                        <li><a href="#!">구매/공사실적</a></li>
+                        <li><a href="#!">HUFS Today</a></li>
+                        <li><a href="#!">학술·세미나 소식</a></li>
+                        <li><a href="#!">언론속의 외대</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bot">
+                    <ul>
+                        <li class="sub-t"><a href="#!">대학생활안내</a></li>
+                        <li><a href="#!">통합민원센터</a></li>
+                        <li><a href="#!">멀티미디어자료 대여</a></li>
+                        <li><a href="#!">시설/차량운행</a></li>
+                        <li><a href="#!">장애학생 생활안내</a></li>
+                        <li><a href="#!">생활협동조합</a></li>
+                        <li><a href="#!">주차시설</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bot">
+                    <ul>
+                        <li class="sub-t"><a href="#!">정보서비스</a></li>
+                        <li><a href="#!">종합정보시스템</a></li>
+                        <li><a href="#!">e-Class(LMS/TNS)</a></li>
+                        <li><a href="#!">모바일서비스</a></li>
+                        <li><a href="#!">국제학생증</a></li>
+                        <li><a href="#!">원격지원서비스</a></li>
+                    </ul>
+                </div>
+                </div>
+            </li>
+            <li><a href="#!">학사정보</a>
+                <div class="menu-wrap">
+                <div class="menu-bot">
+                    <ul>
+                        <li class="sub-t"><a href="#!">학사일정</a></li>
+                        <li><a href="#!">대학</a></li>
+                        <li><a href="#!">대학원</a></li>
+                        <li><a href="#!">모바일서비스</a></li>
+                        <li><a href="#!">국제학생증</a></li>
+                        <li><a href="#!">원격지원서비스</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bot">
+                    <ul>
+                        <li class="sub-t"><a href="#!">교육과정</a></li>
+                        <li><a href="#!">전공과정</a></li>
+                        <li><a href="#!">교양과정</a></li>
+                        <li><a href="#!">교과과정일람</a></li>
+                        <li><a href="#!">원격지원서비스</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bot">
+                    <ul>
+                        <li class="sub-t"><a href="#!">교직과정</a></li>
+                        <li><a href="#!">이수예정자 선발</a></li>
+                        <li><a href="#!">과목 현황</a></li>
+                        <li><a href="#!">교과과정일람</a></li>
+                        <li><a href="#!">원격지원서비스</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bot">
+                    <ul>
+                        <li class="sub-t sub-icon"><a href="#!">일반융합전공<i class="xi-external-link"></i></a></li>
+                        <li class="sub-t sub-icon"><a href="#!">혁신융합전공<i class="xi-external-link"></i></a></li>
+                    </ul>
+                </div>
+                </div>
+            </li>
+            <li><a href="#!">HUFS소식</a>
+                <div class="menu-wrap">
+                <div class="menu-bot">
+                    <ul>
+                        <li class="sub-t"><a href="#!">Global HUFS</a></li>
+                        <li><a href="#!">국제교류 프로그램</a></li>
+                        <li><a href="#!">교류협정현황</a></li>
+                        <li><a href="#!">지표·현황</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bot">
+                    <ul>
+                        <li class="sub-t"><a href="#!">HUFS 홍보</a></li>
+                        <li><a href="#!">언론속의 외대</a></li>
+                        <li><a href="#!">언론속의 동영상</a></li>
+                        <li><a href="#!">교수동정</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bot">
+                    <ul>
+                        <li class="sub-t"><a href="#!">발전기금</a></li>
+                        <li><a href="#!">주요소식</a></li>
+                        <li><a href="#!">기금소식</a></li>
+                        <li><a href="#!">모금캠페인</a></li>
+                        <li><a href="#!">기부스토리</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bot">
+                    <ul>
+                        <li class="sub-t"><a href="#!">HUFSNEWS</a></li>
+                        <li><a href="#!">HUFS 소식</a></li>
+                        <li><a href="#!">NewsLetter(Korean)</a></li>
+                        <li><a href="#!">NewsLetter(English)</a></li>
+                    </ul>
+                </div>
+                </div>
+            </li>
+        </ul>
+        <div class="login_2">
+            <a href="#!"></i>JOIN</a>
+            <a href="#!"></i>LOGIN</a>
+        </div>
+    </nav>        
+</header>
+<main id="main">
+    <section id="main_visual">
+        <div class="wrap">
+            <div class="main-slider">
+                <figure class="visual01">
+                    <div class="container">
+                        <div class="slide-txt txt2">
+                            <h2>스마트 도서관</h2>
+                            <a href="#!" class="txt">자세히 보기</a>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="visual02">
+                    <div class="container">
+                        <div class="slide-txt">
+                            <h2>송도 데이터 사이언스
+                                <span>혁신 캠퍼스 조성</span></h2>
+                            <a href="#!">자세히 보기</a>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="visual03">
+        
+                </figure>
+                <figure class="visual04">
+                    <div class="container">
+                        <div class="slide-txt">
+                            <h2>Residential College</h2>
+                            <p>외대로 떠나는 해외 유학!</p>
+                            <a href="#!">자세히 보기</a>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="visual05">
+                    <div class="container">
+                        <div class="slide-txt">
+                            <h2>제 1회
+                                <span>CFL Ambassador Forum</span></h2>
+                            <a href="#!">자세히 보기</a>
+                        </div>
+                    </div>
+                </figure>
+            </div> 
+            <i class="xi-long-arrow-left"></i> 
+            <i class="xi-long-arrow-right"></i> 
+        </div>
+    </section>
+    <section id="schedule">
+        <div class="container">
+            <div class="wrap">
+                <div class="schedule01">
+                    <ul>
+                        <li class="notice01">
+                            <a href="#!">
+                            <span>성평등센터</span>
+                            학내 성희롱 등 피해상담 및 신고 안내
+                            </a>
+                        </li>
+                        <li class="notice02">
+                            <a href="#!">
+                                폭력예방교육 의무화 및 교육미이수 시<br> 불이익 부여 안내
+                            </a>
+                        </li>
+                        <li class="notice03">
+                            <a href="#!">
+                            <span>서울_장학팀</span>
+                            학자금 중복지원방지 안내
+                            </a>
+                        </li>
+                        <li class="notice04">
+                            <a href="#!">
+                            <span>한국외국어대학교</span>
+                            [학생 단체활동 및 행사 안전예방교육]
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="schedule03">
+                    <strong>6월 학사일정<a href="#!"><i class="xi-plus-min"></i></a></strong>
+                    <table>
+                        <tr class="sc01">
+                            <td><span>06.04</span></td>
+                            <td>졸업시험 성적보고서 및<br>졸업논문
+                            심사보고서 제출 마감</td>
+                        </tr>
+                        <tr class="sc02">
+                            <td><span>06.06</span></td>
+                            <td>현충일</td>
+                        </tr>
+                        <tr class="sc03">
+                            <td><span>06.08~06.14</span></td>
+                            <td>제 1학기 보강주간</td>
+                        </tr>
+                        <tr class="sc04">
+                            <td><span>06.15~06.21</span></td>
+                            <td>제 1학기 기말시험</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="schedule02">
+                    <strong>
+                        <a href="#!">
+                            <em>2020 QS 세계대학평가</em><br>
+                            국내 종합대학 4년 연속 8위
+                        </a>
+                    </strong>
+                    <figure>
+                        <img src="./img/but_back4.png" alt="">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="quick-menu">
+        <div class="container row">
+            <div>
+                <strong><span>2021</span>수강편람</strong>
+                <a href="#!">서울</a>
+                <a href="#!">글로벌</a>
+            </div>
+            <div>
+                <strong><span>2021</span>강의시간표</strong>
+                <a href="#!">학부</a>
+                <a href="#!">대학원</a>
+            </div>
+            <div>
+                <strong>등록금 고지서</strong>
+                <a href="#!">학부</a>
+                <a href="#!">대학원</a>
+            </div>
+        </div>
+    </section>
+    <section id="news-area">
+        <div class="container">
+            <div class="wrap">
+            <h2>HUFS <span>NEWS</span></h2>
+            <div class="news-slider">
+               <a href="#!"> 
+                   <figure>
+                    <div>
+                        <img src="./img/news01.jpg" alt="">
+                        <div class="news-txt">
+                            <strong>외교관 후보자 선발시험 최종 합격자 8명 배출</strong>
+                        </div>
+                    </div>
+                </figure>
+                </a>
+                <a href="#!">
+                    <figure>
+                    <div>
+                        <img src="./img/news02.jpg" alt="">
+                        <div class="news-txt">
+                            <strong>소프트웨어중심대학 사업단, 현판식 개최</strong>
+                        </div>
+                    </div>
+                </figure>
+                </a>
+               <a href="#!"> 
+                   <figure>
+                    <div>
+                        <img src="./img/news03.jpg" alt="">
+                        <div class="news-txt">
+                            <strong>서울 동부권 5개 대학과 손잡고 혁신공유교류 협정 체결</strong>
+                        </div>
+                    </div>
+                </figure>
+                </a>
+                <a href="#!">
+                    <figure>
+                    <div>
+                        <img src="./img/news04.jpg" alt="">
+                        <div class="news-txt">
+                            <strong>학생 대표단 '라운드테이블' 참가</strong>
+                        </div>
+                    </div>
+                </figure>
+                </a>
+                <a href="#!">
+                    <figure>
+                    <div>
+                        <img src="./img/news05.jpg" alt="">
+                        <div class="news-txt">
+                            <strong>지식출판콘텐츠원, 산업자원통상부 지식서비스산업핵심기술개발 2단계 연구과제 최종 선정</strong>
+                        </div>
+                    </div>
+                </figure>
+                </a>
+               <a href="#!"> 
+                   <figure>
+                    <div>
+                        <img src="./img/news06.jpg" alt="">
+                        <div class="news-txt">
+                            <strong>교육부 대학 진로탐색학점제 지원사업 선정</strong>
+                        </div>
+                    </div>
+                </figure>
+                </a>
+                <a href="#!">
+                    <figure>
+                    <div>
+                        <img src="./img/news07.jpg" alt="">
+                        <div class="news-txt">
+                            <strong> 중소벤처기업부-중소벤처기업진흥공단과 2021년 이커머스특성화대학 협약 체결</strong>
+                        </div>
+                    </div>
+                </figure>
+                </a>
+                <a href="#!">
+                    <figure>
+                    <div>
+                        <img src="./img/news08.jpg" alt="">
+                        <div class="news-txt">
+                            <strong>주한 아제르바이잔 램지 테미로프 대사 정치학 박사학위 수여</strong>
+                        </div>
+                    </div>
+                </figure>
+                </a>
+                <a href="#!">
+                    <figure>
+                    <div>
+                        <img src="./img/news09.jpg" alt="">
+                        <div class="news-txt">
+                            <strong>직원 직무수행 관련 부총리 겸 교육부장관 표창장 수여식 개최</strong>
+                        </div>
+                    </div>
+                </figure>
+                </a>
+
+            </div>
+            <i class="xi-angle-left-thin"></i> 
+            <i class="xi-angle-right-thin"></i> 
+            </div>
+        </div>
+    </section>
+    
+    <section id="notice-area">
+        <div class="container">
+            <h2>HUFS <span>Notice</span></h2>
+            <div class="tab-wrap">
+                <div class="tab-m01">
+                    <ul class="tab-m01-menu row">
+                        <li class="on">공지</li>
+                        <li>학사</li>
+                        <li>장학</li>
+                        <li>모집/채용</li>
+                        <a href="#!"><i class="xi-plus"></i></a>
+                    </ul>
+                    <div class="tab-m01-contents row">
+                        <div>
+                            <ul>
+                                <li><a href="#!">코로나19 발병현황 및 행동지침(2021.05.24)</a><span>2021-05-24</span></li>
+                                <li><a href="#!">코로나19 관련 현황 및 조치사항(2021.05.24)</a><span>2021-05-24</span></li>
+                                <li><a href="#!">2021학년도 하계방학기간 한국외국어대학교 글로벌홀 기숙사생 모집 공고</a><span>2021-05-24</span></li>
+                                <li><a href="#!">제 23기 새로미 1차 합격자 공고</a><span>2021-05-21</span></li>
+                                <li><a href="#!">2021학년도 하계방학 서울캠퍼스 기숙사(국제학사) 입사생 모집</a><span>2021-05-21</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="#!">[공통] 2021-1학기 기말시험 공고</a><span>2021-05-24</span></li>
+                                <li><a href="#!">[공통] 2021-여름계절학기 수강신청 및 일정 공고</a><span>2021-05-21</span></li>
+                                <li><a href="#!">[글로벌] 2021-1학기 이중전공 신청 공고</a><span>2021-05-21</span></li>
+                                <li><a href="#!">[서울] 2021-1학기 이중전공 신청 공고</a><span>2021-05-21</span></li>
+                                <li><a href="#!">[서울] 2021-1학기 이중전공 신청 공고</a><span>2021-05-21</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="#!">[서울][교내]  2021학년도 1학기 면학장학금 지급 안내</a><span>2021-05-24</span></li>
+                                <li><a href="#!">[공통][대출] 2021학년도 2학기 한국장학재단 학자금대출 사전신청 일정 및 방법안내</a><span>2021-05-21</span></li>
+                                <li><a href="#!">(서울) [교외] 2021년(하) 롯데38기 희망멘토링 장학생 선발모집 공고(~6/10(목)15시까지</a><span>2021-05-21</span></li>
+                                <li><a href="#!">[공통][교외] 푸른등대 삼성기부장학금 장학생 선발(~5/28까지)</a><span>2021-05-20</span></li>
+                                <li><a href="#!"> [서울][국가] 2021-1 국가장학금II유형 지급안내</a><span>2021-05-18</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="#!">한국외국어대학교 지식출판콘텐츠원 계약직(무기계약직 전환 가능) 채용공고_국고사업/기획</a><span>2021-05-25</span></li>
+                                <li><a href="#!">한국외국어대학교 계약직 채용공고_교육성과관리팀</a><span>2021-05-25</span></li>
+                                <li><a href="#!">데이터센터 대학원생 행정조교 채용</a><span>2021-05-24</span></li>
+                                <li><a href="#!">2021학년도 2학기 HUFS International House 사감 조교 모집 공고</a><span>2021-05-24</span></li>
+                                <li><a href="#!">한국외국어대학교 계약직 채용공고_부서 행정업무(글로벌캠퍼스 시설관리팀)</a><span>2021-05-21</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-slide">
+                    <div class="wrap">
+                    <div class="tab-m02-contents">
+                        <div>
+                            <strong>HUFS Today <a href="#!"><i class="xi-plus-min"></i></a></strong>
+                                <a href="#!">
+                                    <figure>
+                                        <img src="./img/tab-news01.jpg" alt="">
+                                    </figure>
+                                    <p>한국외대, 한국-포르투갈 수교 60주년 문화주간 개최</p>
+                                </a>
+                        </div>
+                        <div>
+                            <strong>학술·세미나 소식<a href="#!"><i class="xi-plus-min"></i></a></strong>
+                                <a href="#!">
+                                    <figure>
+                                        <img src="./img/tab-news02.jpg" alt="">
+                                    </figure>
+                                    <p>융합인재대학, 한국무역협회 주최 '제1기 대학생 해외마케팅 콘텐츠 크루' 최우수상 수상</p>
+                                </a>
+                        </div>
+                        <div>
+                            <strong>언론속의 외대<a href="#!"><i class="xi-plus-min"></i></a></strong>
+                                <a href="#!">
+                                    <figure>
+                                        <img src="./img/tab-news03.jpg" alt="">
+                                    </figure>
+                                    <p>한국외대, 특수외국어 사용 국가 대사 초청 포럼 개최</p>
+                                </a>
+                        </div>
+                    
+                    </div>
+                    <i class="xi-angle-left"></i>
+                    <i class="xi-angle-right"></i>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="service">
+        <div class="container">
+            <h2>HUFS <span>Link</span></h2>
+            <div class="service-tb row">
+                <div class="table-ce"><a href="#!"><i class="xi-school"></i>증명서발급</a></div>
+                <div class="table-ce"><a href="#!"><i class="xi-calendar-list"></i>학사일정</a></div>
+                <div class="table-ce"><a href="#!"><i class="xi-calendar-check"></i>강의시간표</a></div>
+                <div class="table-ce"><a href="#!"><i class="xi-mail"></i>등록금고지서</a></div>
+                <div class="table-ce"><a href="#!"><i class="xi-library"></i>도서관</a></div>
+                <div class="table-ce"><a href="#!"><i class="xi-browser"></i>e-Class(LMS/TMS)</a></div>
+                <div class="table-row"><a href="#!"><i class="xi-users"></i>학생상담센터</a></div>
+                <div class="table-ce"><a href="#!"><i class="xi-mail-read"></i>교육비납입증명서</a></div>
+                <div class="table-ce"><a href="#!"><i class="xi-business"></i>진로취업/상담</a></div>
+                <div class="table-ce"><a href="#!"><i class="xi-border-color"></i>원스톱서비스</a></div>
+                <div class="table-ce"><a href="#!"><i class="xi-city"></i>발전협력팀</a></div>
+                <div class="table-ce"><a href="#!"><i class="xi-bank"></i>연구산학협력단</a></div>
+            </div>
+        </div>
+
+    </section>
+    <section id="sns-area">
+        <div class="container">
+            <h2>HUFS <span>SNS</span></h2>
+            <div class="sns-link">
+                <a href="#!"><i class="xi-facebook"></i></a>
+                <a href="#!"><i class="xi-instagram"></i></a>
+                <a href="#!"><i class="xi-youtube-play"></i></a>
+                <a href="#!"><i class="xi-naver-square"></i></a>
+            </div>
+            <div class="wrap row">
+                <div class="video-wrap">
+                    <iframe width="475" height="315" src="https://www.youtube.com/embed/vqhIubJf7LY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="sns-img">
+                        <figure>
+                            <div class="img-wrap">
+                                <a href="#!"><img src="./img/sns-img01.jpg" alt=""></a>
+                            </div>    
+                            
+                        </figure>
+                        <figure>
+                            <div class="img-wrap">
+                            <a href="#!" class=" wrap2"><img src="./img/sns-img03.jpg" alt=""></a>
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+        
+        
+    </section>
+</main>
+<footer id="footer">
+    <div class="ft_top">
+        <div class="container">
+            <ul>
+                <li class="privacy"><a href="#!">개인정보 처리방침</a></li>
+                <li><a href="#!">게시판 운영세칙</a></li>
+                <li><a href="#!">대학정보공시</a></li>
+                <li><a href="#!">찾아오시는 길</a></li>
+                <li><a href="#!">클린캠퍼스 신청(메일)</a></li>
+                <li><a href="#!">원격지원서비스</a></li>
+                <li><a href="#!">홈페이지 유지보수 신청</a></li>
+
+                <li class="link_btn"><a href="#">관련링크바로가기<i class="xi-angle-up-min"></i></a>
+                    <ul class="link">
+                        <li><a href="http://minerva-college.hufs.ac.kr/" target="_blank">미네르바 교양대학 </a></li>
+				        <li><a href="http://minerva-college.hufs.ac.kr/" target="_blank">영어대학</a></li>
+				        <li><a href="#!" target="_blank">서양어대학</a></li> 
+                        <li><a href="#!" target="_blank">아시아언어문화대학</a></li>
+                        <li><a href="#!" target="_blank">중국학대학</a></li>
+                        <li><a href="#!" target="_blank">일본학대학</a></li>
+                        <li><a href="#!" target="_blank">사회과학대학</a></li>
+                        <li><a href="#!" target="_blank">상경대학</a></li>
+                        <li><a href="#!" target="_blank">경영대학</a></li>
+                        <li><a href="#!" target="_blank">사범대학</a></li>
+                        <li><a href="#!" target="_blank">국제학부</a></li>
+                        <li><a href="#!" target="_blank">LD학부</a></li>
+                        <li><a href="#!" target="_blank">LT학부 </a></li>
+                    </ul>
+                </li>   
+            </ul>
+        </div>
+    </div>
+    <div class="ft_bottom">
+        <div class="container">
+            <div class="ft-left row">
+                <div class="ft-logo">
+                    <a href="#!"><img src="./img/logo2.png" alt=""></a>
+                </div>
+                <div class="add">
+                    <ul>
+                        <li><span>서울캠퍼스</span> &nbsp;&nbsp; 02450 서울특별시 동대문구 이문로 107  &nbsp;&nbsp; Tel. 82-2-2173-2114</li>
+                        <li><span>글로벌캠퍼스</span> &nbsp;&nbsp; 17035 경기도 용인시 처인구 모현읍 외대로 81  &nbsp;&nbsp; Tel. 031-330-4114</li>
+                        <li>Copyright ⓒ Hankuk University of Foreign Studies. All Rights Reserved.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ft-right">
+               
+            </div>
+        </div>
+        
+    </div>
+
+</footer>
+</div>
+<div class="mopen">
+    <i class="xi-bars"></i>
+</div>
+<script src="./js/index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
