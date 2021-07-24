@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>아주대학교</title>
+
+    <meta name="robots" content="index,follow">
+    <meta name="title" content="페이지 제목">
+    <meta name="description" content="페이지 설명">
+
+    <meta property="og:type" content="website"> 
+    <meta property="og:title" content="페이지 제목">
+    <meta property="og:description" content="페이지 설명">
+    <meta property="og:url" content="http://www.mysite.com">
+
+    <link rel="shortcut icon" href="./img/ico-ajou.png">
+    <link rel="canonical" href="http://www.mysite.com/article/article1.html">
+
+    <link href="../assets/css/common.css" rel="stylesheet">
+    <link href="../assets/css/fullpage.css" rel="stylesheet">
+    <link href="../assets/css/slick.css" rel="stylesheet">
+    <link href="../assets/css/swiper-bundle.css" rel="stylesheet">
+    <link href="../assets/css/animate.min.css" rel="stylesheet">
+    <link href="./css/main.css?ver=3.0" rel="stylesheet">
+
+    <script src="../assets/js/jquery-1.12.4.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+    <script src="../assets/js/jquery.cookie.js"></script>
+    <script src="../assets/js/fullpage.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/swiper-bundle.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="top row">
+                <div class="top-wrap row">
+                    <ul>
+                        <li><a href="#!">코로나19</a></li>
+                        <li><a href="#!">HOME</a></li>
+                        <li><a href="#!">LOGIN</a></li>
+                        <li><a href="#!">PORTAL</a></li>
+                        <li><a href="#!">발전기금</a></li>
+                        <li class="language">
+                            <a href="#!">LANGUAGE<i class="xi-angle-down-min"></i></a>
+                            <ul>
+                                <li><a href="#!">ENGLISH</a></li>
+                                <li><a href="#!">CHINESE</a></li>
+                            </ul>
+                        </li>
+                        <li class="search-form">
+                            <a href="#!">검색 <i class="xi-search"></i></a>
+                        </li>
+                    </ul>
+                    <div class="top-serch">
+                        <form name="top-serch" id="top-serch" action="">
+                            <input type="search"  placeholder="검색어를 입력하세요.">
+                            <button><i class="xi-search"></i></button>
+                        </form>
+                    </div> 
+                </div>
+            </div>
+            <nav class="row">
+                <div class="container">
+                    <h1>
+                        <a href="index.html">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+                    </h1>
+                    <ul class="gnb-menu">
+                        <li><a href="#!">대학정보</a>
+                            <div class="gnb-submenu">
+                                <dl>
+                                    <dt>대학정보</dt>
+                                    <dd><a href="#!">대학소개</a>
+                                        <ul>
+                                            <li><a href="#!">이념</a></li>
+                                            <li><a href="#!">역사</a></li>
+                                            <li><a href="#!">연혁</a></li>
+                                            <li><a href="#!">교육목표/인재상</a></li>
+                                            <li><a href="#!">아주비전4.0</a></li>
+                                            <li><a href="#!">홍보영상</a></li>
+                                        </ul>
+                                    </dd>
+                                    <dd><a href="#!">대학상징</a>
+                                        <ul>
+                                            <li><a href="#!">상징</a></li>
+                                            <li><a href="#!">UI</a></li>
+                                            <li><a href="#!">슬로건</a></li>
+                                            <li><a href="#!">UI/슬로건 다운로드</a></li>
+                                        </ul>
+                                    </dd>
+                                    <dd><a href="#!">대학현황</a>
+                                        <ul>
+                                            <li><a href="#!">대학기구</a></li>
+                                            <li><a href="#!">규정</a></li>
+                                            <li><a href="#!">통계</a></li>
+                                            <li><a href="#!">정보공개</a></li>
+                                        </ul>
+                                    </dd>
+                                    <dd><a href="#!">총장실</a>
+                                        <ul>
+                                            <li><a href="#!">인사말</a></li>
+                                            <li><a href="#!">약력</a></li>
+                                            <li><a href="#!">동정</a></li>
+                                            <li><a href="#!">언론이 본 총장</a></li>
+                                            <li><a href="#!">Book Club</a></li>
+                                            <li><a href="#!">역대총장</a></li>
+                                        </ul>
+                                    </dd>
+                                    <dd><a href="#!">캠퍼스 안내</a>
+                                        <ul>
+                                            <li><a href="#!">캠퍼스맵</a></li>
+                                            <li><a href="#!">오시는길</a></li>
+                                            <li><a href="#!">교내전화번호</a></li>
+                                        </ul>
+                                    </dd>
+                                    <dd><a href="#!">학교법인</a>
+                                        <ul>
+                                            <li><a href="#!">이사장</a></li>
+                                            <li><a href="#!">연혁/조직</a></li>
+                                            <li><a href="#!">이사회</a></li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li><a href="#!">입학</a>
+                            <div class="gnb-submenu">
+                                <dl>
+                                    <dt>입학</dt>
+                                    <dd class="on"><a href="#!">대학</a>
+                                        <ul>
+                                            <li><a href="#!">대학</a></li>
+                                            <li><a href="#!">외국인 입학</a></li>
+                                        </ul>
+                                    </dd>
+                                    <dd><a href="#!">대학원</a>
+                                        <ul>
+                                            <li><a href="#!">대학원</a></li>
+                                            <li><a href="#!">진행중인 모집요강</a></li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>                   
+                        <li><a href="#!">교육</a>
+                            <div class="gnb-submenu">
+                                <dl>
+                                    <dt>교육</dt>
+                                    <dd class="on"><a href="#!">대학</a>
+                                        <ul>
+                                            <li><a href="#!">대학</a></li>
+                                        </ul>
+                                    </dd>
+                                    <dd><a href="#!">대학원</a>
+                                        <ul>
+                                            <li><a href="#!">대학원</a></li>
+                                        </ul>
+                                    </dd>
+                                    <dd><a href="#!">부설교육</a>
+                                        <ul>
+                                            <li><a href="#!">부설교육</a></li>
+                                        </ul>
+                                    </dd>
+                                    <dd><a href="#!">열린교육</a>
+                                        <ul>
+                                            <li><a href="#!">열린교육</a></li>
+                                            <li><a href="#!">Open Source Education</a></li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>                   
+                        <li><a href="#!">연구/산학</a>
+                            <div class="gnb-submenu">
+                                <dl>
+                                    <dt>연구<br>/산학</dt>
+                                    <dd class="on"><a href="#!">연구현황</a>
+                                        <ul>
+                                            <li><a href="#!">주요 연구성과</a></li>
+                                            <li><a href="#!">연구자검색</a></li>
+                                            <li><a href="#!">연구뉴스레터</a></li>
+                                        </ul>
+                                    </dd>
+                                    <dd><a href="#!">관련사이트</a>
+                                        <ul>
+                                            <li><a href="#!">산학협력단/연구정보처</a></li>
+                                            <li><a href="#!">LINC+사업단</a></li>
+                                            <li><a href="#!">창업지원단</a></li>
+                                            <li><a href="#!">BK21플러스사업단</a></li>
+                                        </ul>
+                                    </dd>
+                                    <dd><a href="#!">연구기관</a>
+                                    </dd>
+                                    <dd><a href="#!">윤리연구</a>
+                                        <ul>
+                                            <li><a href="#!">기관생명윤리위원회</a></li>
+                                        </ul>
+                                    </dd>
+                                    <dd><a href="#!">세미나/포럼</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>                   
+                        <li><a href="#!">학사지원</a>
+                            <div class="gnb-submenu">
+                                <dl>
+                                    <dt>학사지원</dt>
+                                    <dd class="on"><a href="#!">학사일정</a>
+                                    </dd>
+                                    <dd><a href="#!">등록/장학</a>
+                                        <ul>
+                                            <li><a href="#!">등록금</a></li>
+                                            <li><a href="#!">장학생 선발</a></li>
+                                            <li><a href="#!">교내장학</a></li>
+                                            <li><a href="#!">교외장학</a></li>
+                                            <li><a href="#!">학자금대출</a></li>
+                                            <li><a href="#!">아주희망 SOS</a></li>
+                                        </ul>
+                                    </dd>
+                                    <dd><a href="#!">학사정보</a>
+                                        <ul>
+                                            <li><a href="#!">교육정보</a></li>
+                                            <li><a href="#!">수강신청</a></li>
+                                            <li><a href="#!">수업</a></li>
+                                            <li><a href="#!">학적</a></li>
+                                            <li><a href="#!">비교과프로그램</a></li>
+                                        </ul>
+                                    </dd>
+                                    <dd><a href="#!">학사자료실</a>
+                                        <ul>
+                                            <li><a href="#!">다시듣고 싶은 명강의</a></li>
+                                            <li><a href="#!">함께하고 싶은 나의 교수님</a></li>
+                                            <li><a href="#!">학사Q&A</a></li>
+                                            <li><a href="#!">원격수업 불편접수</a></li>
+                                        </ul>
+                                    </dd>
+                                    <dd><a href="#!">요람/규정집</a>
+                                        <ul>
+                                            <li><a href="#!">요람</a></li>
+                                            <li><a href="#!">규정집</a></li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li> 
+                        <li><a href="#!">대학생활</a>
+                            <div class="gnb-submenu">
+                                <dl>
+                                    <dt>대학생활</dt>
+                                    <dd class="on"><a href="#!">학생지원</a>
+                                        <ul>
+                                            <li><a href="#!">종합지원센터</a></li>
+                                            <li><a href="#!">커리어</a></li>
+                                            <li><a href="#!">장애학생지원실</a></li>
+                                            <li><a href="#!">보건진료소</a></li>
+                                            <li><a href="#!">학생상담</a></li>
+                                            <li><a href="#!">병무</a></li>
+                                        </ul>
+                                    </dd>
+                                    <dd><a href="#!">시설이용</a>
+                                        <ul>
+                                            <li><a href="#!">생활관</a></li>
+                                            <li><a href="#!">교내식당</a></li>
+                                            <li><a href="#!">체육시설</a></li>
+                                            <li><a href="#!">편의시설</a></li>
+                                            <li><a href="#!">학교버스</a></li>
+                                            <li><a href="#!">중앙도서관</a></li>
+                                        </ul>
+                                    </dd>
+                                    <dd><a href="#!">증명서 발금</a>
+                                        <ul>
+                                            <li><a href="#!">증명서신청/발급 안내</a></li>
+                                            <li><a href="#!">인터넷우편발송 신청/조회</a></li>
+                                            <li><a href="#!">인터넷증명서 즉시 발급</a></li>
+                                            <li><a href="#!">교육비납입증명서 출력</a></li>
+                                        </ul>
+                                    </dd>
+                                    <dd><a href="#!">학생문화</a>
+                                        <ul>
+                                            <li><a href="#!">학생기구</a></li>
+                                        </ul>
+                                    </dd>
+                                    <dd><a href="#!">스마트캠퍼스</a>
+                                        <ul>
+                                            <li><a href="#!">소개</a></li>
+                                            <li><a href="#!">학생증</a></li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li><a href="#!">아주광장</a>
+                            <div class="gnb-submenu">
+                                <dl>
+                                    <dt>아주광장</dt>
+                                    <dd class="on"><a href="#!">공지사항</a>
+                                    </dd>
+                                    <dd><a href="#!">캘린더</a>
+                                    </dd>
+                                    <dd><a href="#!">미디어센터</a>
+                                        <ul>
+                                            <li><a href="#!">Ajou News</a></li>
+                                            <li><a href="#!">교내소식</a></li>
+                                            <li><a href="#!">아주인칼럼</a></li>
+                                            <li><a href="#!">웹진</a></li>
+                                        </ul>
+                                    </dd>
+                                    <dd><a href="#!">커뮤니티</a>
+                                        <ul>
+                                            <li><a href="#!">자유게시판</a></li>
+                                            <li><a href="#!">자료실</a></li>
+                                            <li><a href="#!">학교에 바라는 글</a></li>
+                                            <li><a href="#!">아주교차로</a></li>
+                                            <li><a href="#!">개인정보 제3자 제공</a></li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>                                                                            
+                    </ul>
+                </div>
+            </nav>        
+        </header>
+        <main id="main">
+        <section id="section01">
+            <div class="bg-slide">
+                <figure class="bg01">
+                    <img src="./img/slogan_01.png" alt="">
+                </figure>
+                <figure class="bg02">
+                    
+                </figure>
+            </div>
+        </section>
+        <section id="section02">
+            <div class="container">
+                <div class="calendar-l row">
+                    <h2>
+                        <strong>A</strong>
+                        <strong>J</strong>
+                        <strong>O</strong>
+                        <strong>U</strong>
+                        <span>캘</span>
+                        <span>린</span>
+                        <span>더</span>
+                    </h2>
+                    <div>
+                        <span>05<br>03</span>
+                        <a href="#!"><p><em>[학사일정]</em>전공(제1전공·복수·부·연계)신청, 취소, 변경</p></a>
+                        <a href="#!"><p><em>[기타]</em>취업연계 무료교육(스마트제조산업 전문인력 양성과정)</p></a>
+                    </div>
+                    <div>
+                        <span>05<br>04</span>
+                        <a href="#!"><p><em>[기타]</em>코로나19 '사회적거리두기' 2단계 시행 장기화에 따른 체육시설 이용 안내</p></a>
+                        <a href="#!"><p><em>[교외장학]</em>2021학년도 1학기 이재운장학회 장학생 선발 공고</p></a>
+                    </div>
+                    <div>
+                        <span>05<br>13</span>
+                        <a href="#!"><p><em>[사무]</em>교섭요구 사실의 공고(의과대학 교수노동조합)</p></a>
+                        <a href="#!"><p><em>[장학]</em>국가고시장학, 국가자격장학 신청</p></a>
+                    </div>
+                    <div>
+                        <span>05<br>22</span>
+                        <a href="#!"><p><em>[장학]</em>신입학장학 도서구입비, 어학지원금 신청_05.28(금) 17:00까지</p></a>
+                        <a href="#!"><p><em>[장학]</em>코로나극복장학(바르게장학)결과발표</p></a>
+                    </div>
+                </div>
+                <div  class="calendar-r">
+                    <h2>AJOU 교내소식</h2>
+                    <div class="today-slide">
+                        <figure>
+                            <a href="#!">
+                                <img src="./img/ts-01.jpg" alt="">
+                                <span>[박물관] '길 위의 인문학' 사업 선정 - 더보기</span>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="#!">
+                                <img src="./img/ts-02.jpg" alt="">
+                                <span>[박물관] 특별전시 연계 강연회 - 신청하기</span>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="#!">
+                                <img src="./img/ts-03.jpg" alt="">
+                                <span>[박물관] 제 43회 교양문화강좌 개최 - 신청하기</span>
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section03">
+            <h2><strong>AJOU</strong>NEWS</h2>
+            <div class="container">
+                <div><img src="./img/news02.jpg" alt=""></div>
+                <div>
+                    <a href="#!">
+                        <h3>'THE 아시아 대학평가' 49계단 올라 130위, 4년 연속 ↑</h3>
+                        <p>우리 학교가 ‘2021 THE 아시아 대학평가’에서 130위에 올랐다.<br>지난해 대비 49위 뛰어오른 결과로 우리 학교는 4년째 상승세를 이어가고 있다.</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#!">
+                        <h3>국제대학원 ‘Share Your Country Report’ 개최</h3>
+                        <p>KOICA와 우리 학교 국제대학원이 진행하는 ‘KOICA-아주대 에너지 정책 역량 강화 석사학위 과정’에 재학 중인 학생들이 발표를 맡았다.</p>
+                    </a>
+                </div>
+                <div><img src="./img/news05.jpg" alt=""></div>
+            </div>
+        </section>
+        <section id="section04">
+            <figure>
+                <div class="row">
+                    <p>이제 화상 미팅도 아주와 함께 -</p>
+                    <h3><span>2021</span>AJOU BACKGROUNDS</h3>
+                    <a href="#!">SEE MORE<i class="xi-plus"></i></a>
+                </div>
+            </figure>
+        </section>
+        <section id="section05">
+            <h2><strong>AJOU</strong>연구성과</h2>
+            <div class="container">
+                <div class="research-img">
+                    <figure><img src="./img/r01.jpg" alt=""></figure>
+                    <figure><img src="./img/r02.jpg" alt=""></figure>
+                    <figure><img src="./img/r05.jpg" alt=""></figure>
+                    <figure><img src="./img/r04.jpg" alt=""></figure>
+                </div>
+                <div class="research-text">
+                    <div>
+                        <h3>Research Stories</h3>
+                        <strong>이제찬 교수 연구 <리액션 케미스트리&엔지니어링> 표지 논문 선정</strong>
+                        <p>우리 학교 환경안전공학과 이제찬 교수가 기존 공정에 비해 훨씬 경제적인 고분자 단량체 생산 공정을 개발, 관련 논문이 <리액션 케미스트리 & 엔지니어링(Reaction Chemistry & Engineering)> 온라인 최신호의 표지 논문으로 선정됐다.</p>
+                        <p>이 교수는 “공정의 경제성을 향상시키는 연구는 공학 분야에서 공정의 상업화를 위해서는 필수적인 부분”이라며 “단일 연구실 규모에서 관련 연구를 체계적으로 진행하기는 것이 쉽지만은 않지만, 이번 연구를 바탕으로 앞으로도 경제성 있는 공정의 개발을 위한 연구를 지속적으로 해 나가겠다”고 말했다.  </p>
+                        <a href="#!"></a>
+                    </div>
+                    <div>
+                        <h3>Research Stories</h3>
+                        <strong>박대찬 교수 연구팀, 세포 노화 타이머를 제어할 수 있는 새로운 방법 발견</strong>
+                        <p>우리 학교와 서울대학교 공동 연구팀이 세포 노화 타이머를 제어할 수 있는 새로운 방법을 발견했다. ‘세포 분열의 타이머’로도 불리는 텔로미어가 새롭게 재구성된 사례를 발견한 것으로, 세포 노화의 비밀을 푸는 단서가 될 것으로 보인다.</p>
+                        <p>연구팀은 "이번 연구를 통해 인간 암 세포에서 또 다른 형태의 텔로미어가 존재할 가능성이 드러났다“며 ”텔로미어라는 개념이 염색체 끝 부분의 반복서열구조와 텔로머레이즈 효소로 이루어진 단순 공식이 아니라 염색체 끝을 보호하는 다양한 기전을 총칭하는 말로 확장되는 데 기여하게 됐다"고 밝혔다.</p>
+                        <a href="#!"></a>
+                    </div>
+                    <div>
+                        <h3>Research Stories</h3>
+                        <strong>서형탁 교수팀, 인간 생체시각 모사한 환경적응형 광센서 개발</strong>
+                        <p>우리 학교 서형탁 교수팀이 인간 생체 시각을 모사해 다양한 환경에 적응할 수 있는 일체형 광전소자를 개발하는 데 성공했다. 이에 인공신경형 시각 장치 개발 뿐 아니라 지능형 광센서와 데이터 처리 및 로봇 공학 등에 응용될 수 있을 것으로 기대된다.</p>
+                        <p>연구팀은 개발한 소자에서 3×3 어레이를 사용하여, 회로 수준에서 다양한 환경에서도 인지가 가능한 시각 인지 기술을 구현해냈다. 이를 통해 광신호 패턴이 같더라도 시야의 각이나 빛의 세기, 광신호의 지속 시간과 간격 등 여러 환경 변수에 따라 광신호에 대한 기억의 강도와 시간이 달라지는 것을 확인했다. </p>
+                        <a href="#!"></a>
+                    </div>
+                    <div>
+                        <h3>Research Stories</h3>
+                        <strong>김주민 교수 공동 연구팀, 균일나노입자 합성 가능 미세유체반응기 개발</strong>
+                        <p>우리 학교 김주민 교수 연구팀을 필두로 한 공동 연구진이 균일한 나노입자를 합성할 수 있는 미세유체공학 기술을 개발하는 데 성공했다. 이에 현장 의료 진단기기를 비롯한 미세유체공학 관련 기술에서의 시료 전처리와 반응 공정 등에 널리 활용될 수 있을 것으로 기대된다. </p>
+                        <p>아주대 김주민 교수와 충남대 이창수 교수, 취리히연방공과대학 이성식 박사가 공동 교신저자로 참여했고 올해 아주대 대학원 에너지시스템학과 박사과정을 마친 홍선옥 씨(현 롯데캐미칼)가 제1저자로 함께 했다. </p>
+                        <a href="#!"></a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section id="section06">
+            <div class="container">
+                <div class="content row">
+                    <h2>
+                        <strong>A</strong>
+                        <strong>J</strong>
+                        <strong>O</strong>
+                        <strong>U</strong>
+                        <span>콘</span>
+                        <span>텐</span>
+                        <span>츠</span>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="./img/c01.jpg" alt="">
+                            <a href="#!"><i class="xi-facebook"></i></a></figure>
+                        </figure>
+                        <figure>
+                            <img src="./img/c02.jpg" alt="">
+                            <a href="#!"><i class="xi-facebook"></i></a>
+                        </figure>
+                        <figure>
+                            <img src="./img/c03.jpg" alt="">
+                            <a href="#!"><i class="xi-instagram"></i></a></figure>
+                        <figure>
+                            <img src="./img/c04.jpg" alt="">
+                            <a href="#!"><i class="xi-naver"></i></a>
+                        </figure>
+                        <figure>
+                            <img src="./img/c09.jpg" alt="">
+                            <a href="#!"><i class="xi-instagram"></i></a>
+                        </figure>
+                        <figure>
+                            <img src="./img/c08.jpg" alt="">
+                            <a href="#!"><i class="xi-naver"></i></a></figure>
+                    </div>
+                </div>
+                <div  class="notice">
+                    <h2>AJOU공지사항</h2>
+                    <div class="scroll">
+                        <dl>
+                            <dt>대학일자리플러스센터</dt>
+                            <dd><a href="#!">현장실습 지원자를 위한 지원서 작성법 특강</a><span>2021-05-21</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>창업교육센터</dt>
+                            <dd><a href="#!">2021 제6회 LINC+ 창업아이디어 경진대회 참여 안내( 05.24 마감)</a><span>2021-05-21</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>정보시스템팀</dt>
+                            <dd><a href="#!">[재공지]교내 정전으로 인한 전산 서비스 중지 안내(5/23, 일)</a><span>2021-05-21</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>공학교육혁신센터</dt>
+                            <dd><a href="#!">2021 기술나눔 캡스톤디자인 프로그램 참가팀 발표</a><span>2021-05-21</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>학생지원팀</dt>
+                            <dd><a href="#!">2021학년도 1학기 강화군 다자녀 보육가정 대학생 등록금 지원 사업 신청안내</a><span>2021-05-21</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>국제교류팀</dt>
+                            <dd><a href="#!">[홍보] 미국 Kettering University 10주 ESL 온라인 프로그램 안내</a><span>2021-05-21</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>현장실습지원센터</dt>
+                            <dd><a href="#!">2021 제13회 LINC+ 캡스톤디자인 경진대회 개최 안내(05.24까지)</a><span>2021-05-21</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>공학교육혁신센터</dt>
+                            <dd><a href="#!">2021 학생포트폴리오 경진대회 및 특강 개최</a><span>2021-05-21</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>대학일자리플러스센터</dt>
+                            <dd><a href="#!">농업정책보험금융원 2021상반기 신입직원 공개채용 오픈채팅 설명회</a><span>2021-05-21</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>대학일자리플러스센터</dt>
+                            <dd><a href="#!">2021중견기업 일자리박람회(입사지원 5.17~5.31 / 행사기간 5.24~6.4)</a><span>2021-05-21</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>대학일자리플러스센터</dt>
+                            <dd><a href="#!">취업준비생을 위한 뉴스</a><span>2021-05-21</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>대학일자리플러스센터</dt>
+                            <dd><a href="#!">2021전북 상반기 온라인 취업박람회(5.17 ~ 5.31)</a><span>2021-05-21</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>학생지원팀</dt>
+                            <dd><a href="#!">[5월24일] 총장티타임 행사 안내</a><span>2021-05-21</span></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section07">
+            <div class="row">
+                <div class="txt">
+                    <h2><strong>AJOU</strong>BANNER</h2>
+                    <i class="xi-angle-left"></i>
+                    <i class="xi-angle-right"></i>
+                </div>
+                <div class="bn-wrap">
+                    <div class="banner-slide">
+                        <figure><a href="#!"><img src="./img/bn01.jpg" alt=""></a></figure>
+                        <figure><a href="#!"><img src="./img/bn02.jpg" alt=""></a></figure>
+                        <figure><a href="#!"><img src="./img/bn03.jpg" alt=""></a></figure>
+                        <figure><a href="#!"><img src="./img/bn04.jpg" alt=""></a></figure>
+                        <figure><a href="#!"><img src="./img/bn05.jpg" alt=""></a></figure>
+                        <figure><a href="#!"><img src="./img/bn06.jpg" alt=""></a></figure>
+                        <figure><a href="#!"><img src="./img/bn07.jpg" alt=""></a></figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section08">
+            <div class="container">
+                <ul>
+                    <li><a href="#!">발전기금</a></li>
+                    <li><a href="#!">취업/진로</a></li>
+                    <li><a href="#!">증명서발급</a></li>
+                    <li><a href="#!">구매입찰</a></li>
+                    <li><a href="#!">수강신청안내</a></li>
+                </ul>
+            </div>
+        </section>
+        </main>
+        <footer id="footer">
+            <div class="container">
+                <figure><img src="./img/foot.png" alt=""></figure>
+                <div>
+                    <ul>
+                        <li><a href="#!">개인정보처리방침</a></li>
+                        <li><a href="#!">대학정보공시</a></li>
+                        <li><a href="#!">예/결산공고</a></li>
+                        <li><a href="#!">대학자체평가</a></li>
+                        <li><a href="#!">행정서비스헌장</a></li>
+                        <li><a href="#!">청탁금지법</a></li>
+                        <li><a href="#!">사이트맵</a></li>
+                    </ul>
+                    <address>
+                        <div>
+                            <a href="tel=031-219-2114">T. 031-219-2114</a>
+                            <a href="mailto:hongbo@ajou.ac.kr">관리자메일보내기</a>
+                        </div>
+                        <p>16499 경기도 수원시 영통구 월드컵로 206 아주대학교</p>
+                        <span>COPYRIGHT 2020 Ajou University. All Rights Reserved.</span>
+                    </address>
+                </div>
+            </div>
+            <div class="totop">
+                <i class="xi-arrow-top"></i>
+            </div>
+        </footer>
+        <div id="quick">
+            <div>
+                <div class="txt">
+                    <h3>QUICK<i class="xi-long-arrow-left"></i></h3>
+                </div>
+                <ul class="quick-menu">
+                    <li><img src="./img/quick01.png" alt=""><span>학생</span></li>
+                    <li><img src="./img/quick02.png" alt=""><span>동문</span></li>
+                    <li><img src="./img/quick03.png" alt=""><span>교직원</span></li>
+                    <li><img src="./img/quick04.png" alt=""><span>일반인</span></li>
+                </ul>
+                <div class="quick-smenu">
+                    <dl>
+                        <dt>학생</dt>
+                        <dd><a href="#!">공지사항</a></dd>
+                        <dd><a href="#!">학사일정</a></dd>
+                        <dd><a href="#!">수업계획서</a></dd>
+                        <dd><a href="#!">중앙도서관</a></dd>
+                        <dd><a href="#!">증명서발급</a></dd>
+                        <dd><a href="#!">식당</a></dd>
+                        <dd><a href="#!">캘린더</a></dd>
+                        <dd><a href="#!">대학규정</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>동문</dt>
+                        <dd><a href="#!">Ajou News</a></dd>
+                        <dd><a href="#!">발전기금</a></dd>
+                        <dd><a href="#!">아주인칼럼</a></dd>
+                        <dd><a href="#!">증명서발급</a></dd>
+                        <dd><a href="#!">역사</a></dd>
+                        <dd><a href="#!">중앙도서관</a></dd>
+                        <dd><a href="#!">아주대병원</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>교직원</dt>
+                        <dd><a href="#!">공지사항</a></dd>
+                        <dd><a href="#!">Ajou News</a></dd>
+                        <dd><a href="#!">증명서발급</a></dd>
+                        <dd><a href="#!">중앙도서관</a></dd>
+                        <dd><a href="#!">PORTAL</a></dd>
+                        <dd><a href="#!">교직원검색</a></dd>
+                        <dd><a href="#!">아주대병원</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>일반인</dt>
+                        <dd><a href="#!">발전기금</a></dd>
+                        <dd><a href="#!">교수채용</a></dd>
+                        <dd><a href="#!">직원채용</a></dd>
+                        <dd><a href="#!">중앙도서관</a></dd>
+                        <dd><a href="#!">캘린더</a></dd>
+                        <dd><a href="#!">캠퍼스맵</a></dd>
+                        <dd><a href="#!">오시는길</a></dd>
+                        <dd><a href="#!">아주대병원</a></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="mopen"></div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
