@@ -1,1 +1,711 @@
-001
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial">
+    <title>한예림 PORTPOLIO</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/yerim.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/fullpage.js"></script>
+    <script src="js/circle-progress.min.js"></script>
+    <script src="js/yerim.js"></script>
+</head>
+<body>
+   <header>
+      <h1>Yerim's Portfolio</h1>
+       <nav>
+           <ul>
+               <li><a href="#1Page">Title</a></li>
+               <li><a href="#2Page">Web Design</a></li>
+               <li><a href="#3Page">Visual Design</a></li>
+               <li><a href="#4Page">Profile</a></li>
+               <li><a href="#5Page">Contact</a></li>
+           </ul>
+           <div class="nav-bg">
+               <figure class="line"><img src="etc/line.svg" alt=""></figure>
+           </div>
+       </nav>
+   </header>
+<!-- 메뉴버튼 -->
+   <div class="m-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+<!--  로딩화면  -->
+   <section id="loading">
+      <div class="load-box">
+          <div class="load-c">
+               <figure>
+                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0{display:none;}
+                        .st1{display:inline;fill:none;stroke:#DDDDDD;stroke-miterlimit:10;}
+                        .st2{fill:#ffe59d;}
+                        .st3{fill:#fdf3c3;}
+                        .st4{fill:#354652;}
+                        .st5{fill:none;stroke:#354652;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                        .st6{fill:none;stroke:#354652;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                        .st7{fill:none;stroke:#354652;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                        .st8{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    </style>
+                    <g id="Layer_3" class="st0">
+                        <circle class="st1" cx="200" cy="200" r="200"/>
+                    </g>
+                    <path class="st2" d="M204.1,136.1c0,0-2.9,29.6,33.6,39c2.4,0.6,5.1,23.1,5.1,23.1s5.6-9.9,11.7-9.9s11,6.5,11,14.4
+                        c0,8-10,18.1-16.1,18.1c0,0,0,88.5-32.9,112.8l24.1,4.6c18.3-2.7,23.4-32.7,23.4-32.7l3.2,30c28.3-16.6,6.6-150.2,6.6-150.2
+                        l-1.6-6.2c8.4-49.7-34.5-69.2-51.4-70.2c-11.8-0.7-16.8,3.3-16.8,3.3s2.6-20.5-17.2-18l11.1,17.2c0,0-2.9-3.5-19-3.3
+                        c-12.9,0.2-26.8,8.5-37,18.6s-29.2,30.6-24.8,56c0.4,2.1,2.4,9.3,9.5,14.1l2.9,4.8c0,0,10.8,113.7-6.9,129.4l12.6,7.4l13.7,4
+                        c21.6-4.3,13-88.8,13-88.8l-19-35.3c-1.6-1.5-8-28.2-5.6-33C153.1,154,176,135,176,135s-24.1,22.1-6.8,42.4c4.2,5,33-0.8,33-0.8
+                        c-4.3-6.7-8.6-29.5,1.2-41.6"/>
+                    <circle class="st3" cx="224.7" cy="226.9" r="13.8"/>
+                    <path class="st4" d="M169.2,211.6c0.1,2.4-1.7,4.5-4.1,4.6l0,0c-2.4,0.1-4.5-1.7-4.6-4.1l-0.6-9.5c-0.1-2.4,1.7-4.5,4.1-4.6l0,0
+                        c2.4-0.1,4.5,1.7,4.6,4.1L169.2,211.6z"/>
+                    <path class="st2" d="M162.6,211.5v0.8c0.1,1.2,1.1,2.1,2.3,2.1c1.2-0.1,2.1-1.1,2.1-2.3l-0.1-1.2c-0.4-0.2-0.9-0.4-1.5-0.4
+                        C164.3,210.2,163.3,210.7,162.6,211.5z"/>
+                    <path class="st4" d="M214.5,211.6c0.1,2.4-1.7,4.5-4.1,4.6l0,0c-2.4,0.1-4.5-1.7-4.6-4.1l-0.6-9.5c-0.1-2.4,1.7-4.5,4.1-4.6l0,0
+                        c2.4-0.1,4.5,1.7,4.6,4.1L214.5,211.6z"/>
+                    <path class="st2" d="M207.4,211.3l0.1,0.9c0.1,1.5,1.3,2.6,2.8,2.5s2.6-1.3,2.5-2.8l-0.1-1.5c-0.5-0.3-1.1-0.5-1.8-0.5
+                        C209.5,209.8,208.3,210.4,207.4,211.3z"/>
+                    <path class="st5" d="M186.8,136.1"/>
+                    <path class="st6" d="M264.1,305.7c0,0-5.1,30-23.4,32.7"/>
+                    <path class="st3" d="M147.9,218.2c-1.1,0-2.1,0.1-3.2,0.4c-1.6,4.8-2.8,8.7-2.9,9.3c-1.1,6.2,2.8,11.6,9,16
+                        c5.8-1.3,10.1-6.5,10.1-12.7C161,224.1,155.1,218.2,147.9,218.2z"/>
+                    <g>
+                        <path class="st6" d="M197.9,111.6c0,0-2.9-3.5-19-3.3c-12.9,0.2-26.8,8.5-37,18.6c-10.2,10.2-29.2,30.6-24.8,56
+                            c0.4,2.1,2.4,9.3,9.5,14.1"/>
+                        <path class="st6" d="M176.1,135.1c0,0-14.1,6.6-14.1,24.9c0,15.9,9.6,19,11,19.3"/>
+                        <path class="st6" d="M186.8,136.1c0,0-4.7,12.1-3.4,23.4c1.5,12.4,8.8,17.9,17.8,17.2"/>
+                        <path class="st6" d="M204.1,136.1c0,0-2.9,29.6,33.6,39c2.4,0.6,5.1,23.1,5.1,23.1s5.6-9.9,11.7-9.9s11,6.5,11,14.4
+                            c0,8-10,18.1-16.1,18.1"/>
+                        <path class="st6" d="M272.3,179.2c8.4-49.7-34.5-69.2-51.4-70.2c-11.8-0.7-16.8,3.3-16.8,3.3s2.6-20.5-17.2-18"/>
+                        <path class="st6" d="M153.2,154.1c0,0-7.9,21.4-15.8,31.3c-3.3,4.2,4,31.6,5.6,33"/>
+                        <path class="st6" d="M273.9,185.5c0,0,21.6,133.7-6.6,150.2"/>
+                        <path class="st6" d="M249.4,220.9c0,0,0,88.5-32.9,112.8"/>
+                        <path class="st6" d="M129.5,201.9c0,0,10.8,113.7-6.9,129.4"/>
+                        <path class="st6" d="M162,253.8c0,0,8.5,84.6-13,88.8"/>
+                        <path class="st6" d="M135.2,338.7c11.2-4.9,10.2-19.1,10.2-19.1"/>
+                        <path class="st6" d="M169,256.7c0,0-2.9,5.5,0,9.9"/>
+                        <path class="st6" d="M237.7,242.8c0,0,6.9,3.7,5.1,11c-1.8,7.3,4.3,1.2,4.3,1.2"/>
+                        <path class="st6" d="M173.8,269.9c0,0,0.2,12.1,18.4,12.1s40.8-17.2,40.8-17.2"/>
+                        <path class="st6" d="M285,271.3c0,0,22.4,1.8,17.7,51c0,0,5.6,0,5.6,5.6c0,1.5,14.2,24.7,15.1,31.5"/>
+                        <path class="st6" d="M297.7,325.4c0,0-11.5-3-27.5,22.2"/>
+                        <path class="st6" d="M249.4,210.7c0,0,2.9-10.6,9.5-8.8"/>
+                        <g id="mo01">
+                            <line class="st6" x1="99.1" y1="61.1" x2="99.1" y2="231.9"/>
+                            <line class="st6" x1="99.1" y1="5.2" x2="99.1" y2="52.5"/>
+                            <path class="st6" d="M97.9,266.6c1.7-0.7,3.2-1.8,4.2-3.4c1.7-2.5,1.9-5.6,0.9-8.5c1.2-0.7,2.3-1.6,3.1-2.9
+                                c3.1-4.6,1.3-11.2-4-14.7s-12.1-2.6-15.2,2c-1.7,2.5-1.9,5.6-0.9,8.5c-1.2,0.7-2.3,1.6-3.1,2.9c-1.7,2.5-1.9,5.6-0.9,8.5
+                                c-1,0.3-1.8,0.8-2.3,1.6c-2,2.9,0.8,8.2,6.1,11.7c5.3,3.5,11.2,4,13.1,1C100,271.6,99.5,269.1,97.9,266.6z"/>
+                            <path class="st6" d="M98.2,232.6c-0.6-3.5,6.4-3.3,11.7,0.2c5.3,3.5,9.3,12.7,7.3,15.6"/>
+                            <path class="st6" d="M117.7,250.1c1.2,2.6,1.7,8.1-3.5,16c-5.3,7.9-13.3,11.8-18,8.7"/>
+                            <path class="st6" d="M96.5,260"/>
+                            <path class="st6" d="M82,275.3c0,0-1.1,4.8,2.9,8.7c8.4,8,26.7,5.8,31.5-4.3"/>
+                            <path class="st6" d="M114.2,266.2c0,0,9,2.7,8.4,9.1c-1.1,11.4,5.1,3.5,1.3,29.6"/>
+                            <path class="st6" d="M83.5,286.7c0,0-1.7,5.3-1.6,15.3s-7.4,14.5-2.9,26.4c1.2,3.1,4.3,23.6,18.6,23.6c11,0,25-9.1,25-20.8"/>
+                            <path class="st6" d="M108,245.9c0,0,2.3,2.9,4.5,3.2"/>
+                        </g>
+                        <path class="st7" d="M209.3,186.4c0,0,6.2-0.6,8.1,5.3"/>
+                        <path class="st6" d="M245.5,225.5c0,0-12.6,29.5-59.7,29.5c-16.6,0-46.7-11.2-44-27.1c0.3-1.9,1.3-4.4,1.3-4.4"/>
+                    </g>
+                    <path class="st8" d="M149.3,123.9c0,0,0.5,3.7,6.4,3.7s10.8-8.6,14.5-7.4s1.5,7.4,5.6,6.7c4-0.8,13.4-6.8,13.4-6.8"/>
+                    </svg>
+
+
+               </figure>
+           </div>
+           <span>HanYerim Portpolio</span>
+      </div>
+   </section>
+    
+    <div id="fullpage">
+        <!--  pf01  -->
+        <section id="pf01" class="section">
+            <div class="box">
+                <h2><span>2018-2021</span><br>PORTPOLIO</h2>
+                <h3>이름값하는 디자이너,<br>「한예림」입니다.</h3>
+                <h4>예림(叡琳):밝고 아름다운</h4>
+                <p>디자인은 보여주고자 하는 모든 것을 전달하고 표현하는 행위.<br>전하고자 하는 뜻을 정확히 파악해 ‘예림’다운 디자인으로<br>제 이름이 부끄럽지 않을 자신있는 디자인을 합니다.</p>
+            </div>
+            <div class="c-svg">
+                <div class="c01"></div>
+                <div class="c02"></div>
+                <div class="c03"></div>
+                <div class="c-s01"></div>
+                <div class="c-ss01"></div>
+                <div class="c-ss02"></div>
+                <div class="c-ss03"></div>
+            </div>
+            <figure class="line02"><img src="etc/line.svg" alt="yerim" class="line-svg"></figure>
+            <figure class="line03"><img src="etc/line.svg" alt="yerim" class="line-svg"></figure>
+        </section>
+
+    <!--pf02-->
+        <section id="pf02" class="section">
+            <div class="box">
+                <h2>WEB DESIGN</h2>
+                <div class="pf02-slide">
+                    <div class="pf02-item row">
+                        <div class="pf02-img">
+                            <figure><img src="img/sw.png" alt=""></figure>
+                            <div class="page01"><img src="img/swarobski-main.jpg" alt=""></div>
+                            <span class="hover-p"><i class="xi-mouse"></i></span>
+                            <div class="mobile">
+                                <img src="img/sw-mobile.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="pf02-text row">
+                            <h3>스와로브스키</h3>
+                            <p>SWAROBSKI</p>
+                            <dl>
+                                <dt>TYPE</dt>
+                                <dd>반응형 웹페이지</dd>
+                                <dt>DATE</dt>
+                                <dd>2020.10.19 - 10.23</dd>
+                                <dt>TOOLS</dt>
+                                <dd>
+                                    <ul>
+                                        <li>Html5</li>
+                                        <li>Css3</li>
+                                        <li>Javascript(jQuery)</li>
+                                        <li>Adobe Photoshop</li>
+                                    </ul>
+                                </dd>
+                                <dt>COLOR</dt>
+                                <dd>
+                                    <ul class="color sw">
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <ul class="btn">
+                                <li><a href="http://hanyerim.pe.kr/pf05/" target="_blank">PUBLISHING</a></li>
+                                <li><a href="img/sw-sg.jpg"  target="_blank">DESIGN</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pf02-item row">
+                        <div class="pf02-img">
+                            <figure><img src="img/slou.png" alt=""></figure>
+                            <div class="page01"><img src="img/slou-main.png" alt=""></div>
+                            <span class="hover-p"><i class="xi-mouse"></i></span>
+                        </div>
+                        <div class="pf02-text row">
+                            <h3>슬로우</h3>
+                            <p>SLOU</p>
+                            <dl>
+                                <dt>TYPE</dt>
+                                <dd>메인페이지 + 서브페이지 2개</dd>
+                                <dt>DATE</dt>
+                                <dd>2020.10.26 - 11.07</dd>
+                                <dt>TOOLS</dt>
+                                <dd>
+                                    <ul>
+                                        <li>Html5</li>
+                                        <li>Css3</li>
+                                        <li>Javascript(jQuery)</li>
+                                        <li>Adobe Photoshop</li>
+                                    </ul>
+                                </dd>
+                                <dt>COLOR</dt>
+                                <dd>
+                                    <ul class="color slou">
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <ul class="btn">
+                                <li><a href="http://hanyerim.pe.kr/pf06/" target="_blank">PUBLISHING</a></li>
+                                <li><a href="img/slou-sg.jpg"  target="_blank">DESIGN</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pf02-item row">
+                        <div class="pf02-img">
+                            <figure><img src="img/paradise.png" alt=""></figure>
+                            <div class="page01"><img src="img/hotel-main.jpg" alt=""></div>
+                            <span class="hover-p"><i class="xi-mouse"></i></span>
+                        </div>
+                        <div class="pf02-text row">
+                            <h3>파라다이스호텔 부산</h3>
+                            <p>PARADISE HOTEL BUSAN</p>
+                            <dl>
+                                <dt>TYPE</dt>
+                                <dd>메인페이지 + 서브페이지 1개</dd>
+                                <dt>DATE</dt>
+                                <dd>2020.11.09 - 11.18</dd>
+                                <dt>TOOLS</dt>
+                                <dd>
+                                    <ul>
+                                        <li>Html5</li>
+                                        <li>Css3</li>
+                                        <li>Javascript(jQuery)</li>
+                                        <li>Adobe Photoshop</li>
+                                    </ul>
+                                </dd>
+                                <dt>COLOR</dt>
+                                <dd>
+                                    <ul class="color paradise">
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <ul class="btn">
+                                <li><a href="http://hanyerim.pe.kr/pf07/" target="_blank">PUBLISHING</a></li>
+                                <li><a href="img/paradise-sg.jpg"  target="_blank">DESIGN</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pf02-item row">
+                        <div class="pf02-img">
+                            <figure><img src="img/ksu.png" alt=""></figure>
+                            <div class="page01"><img src="img/ksu-main.jpg" alt=""></div>
+                            <span class="hover-p"><i class="xi-mouse"></i></span>
+                            <div class="mobile">
+                                <img src="img/ksu-mobile.png" alt="">
+                            </div>
+                        </div>
+                        <div class="pf02-text row">
+                            <h3>경성대학교</h3>
+                            <p>KYUNGSUNG UNIVERSITY</p>
+                            <dl>
+                                <dt>TYPE</dt>
+                                <dd>반응형 웹페이지</dd>
+                                <dt>DATE</dt>
+                                <dd>2020.11.23 - 12.04</dd>
+                                <dt>TOOLS</dt>
+                                <dd>
+                                    <ul>
+                                        <li>Html5</li>
+                                        <li>Css3</li>
+                                        <li>Javascript(jQuery)</li>
+                                        <li>Adobe Photoshop</li>
+                                    </ul>
+                                </dd>
+                                <dt>COLOR</dt>
+                                <dd>
+                                    <ul class="color ksu">
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <ul class="btn">
+                                <li><a href="http://hanyerim.pe.kr/pf08/" target="_blank">PUBLISHING</a></li>
+                                <li><a href="img/ksu-sg.jpg"  target="_blank">DESIGN</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pf02-item row">
+                        <div class="pf02-img">
+                            <figure><img src="img/edae.png" alt=""></figure>
+                            <div class="page01"><img src="img/edae-main.jpg" alt=""></div>
+                            <span class="hover-p"><i class="xi-mouse"></i></span>
+                        </div>
+                        <div class="pf02-text row">
+                            <h3>이대서울병원</h3>
+                            <p>EWHA WOMANS UNIVERSITY MEDICAL CENTER</p>
+                            <dl>
+                                <dt>TYPE</dt>
+                                <dd>메인페이지</dd>
+                                <dt>DATE</dt>
+                                <dd>2020.12.07 - 12.11</dd>
+                                <dt>TOOLS</dt>
+                                <dd>
+                                    <ul>
+                                        <li>Html5</li>
+                                        <li>Css3</li>
+                                        <li>Javascript(jQuery)</li>
+                                        <li>Adobe Photoshop</li>
+                                    </ul>
+                                </dd>
+                                <dt>COLOR</dt>
+                                <dd>
+                                    <ul class="color edae">
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <ul class="btn">
+                                <li><a href="http://hanyerim.pe.kr/pf09/" target="_blank">PUBLISHING</a></li>
+                                <li><a href="img/edae-sg.jpg"  target="_blank">DESIGN</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pf02-item row">
+                        <div class="pf02-img">
+                            <figure><img src="img/leica.png" alt=""></figure>
+                            <div class="page01"><img src="img/leica-main.jpg" alt=""></div>
+                            <span class="hover-p"><i class="xi-mouse"></i></span>
+                            <div class="mobile">
+                                <img src="img/leica-mobile.png" alt="">
+                            </div>
+                        </div>
+                        <div class="pf02-text row">
+                            <h3>라이카 카메라</h3>
+                            <p>LEICA</p>
+                            <dl>
+                                <dt>TYPE</dt>
+                                <dd>반응형 웹페이지</dd>
+                                <dt>DATE</dt>
+                                <dd>2020.09.07 - 09.11</dd>
+                                <dt>TOOLS</dt>
+                                <dd>
+                                    <ul>
+                                        <li>Html5</li>
+                                        <li>Css3</li>
+                                        <li>Javascript(jQuery)</li>
+                                        <li>Adobe Photoshop</li>
+                                    </ul>
+                                </dd>
+                                <dt>COLOR</dt>
+                                <dd>
+                                    <ul class="color leica">
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <ul class="btn">
+                                <li><a href="http://hanyerim.pe.kr/pf10/" target="_blank">PUBLISHING</a></li>
+                                <li><a href="img/leica-sg.jpg"  target="_blank">DESIGN</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-svg">
+                <div class="c01"></div>
+                <div class="c-s03"></div>
+                <div class="c01-s04"></div>
+            </div>
+            <figure class="line01"><img src="etc/line.svg" alt=""></figure>
+        </section>
+
+    <!--    pf03-->
+        <section id="pf03" class="section">
+            <div class="box">
+                <h2>VISUAL DESIGN</h2>
+                <div class="vd-slider">
+                    <div class="vd-item">
+                       <div class="vd-wrap">
+                           <figure><img src="img/hkmy_.jpg" alt=""></figure>
+                           <div class="vd-text">
+                               <h4>한끼멍냥</h4>
+                               <p>BRAND DESIGN</p>
+                               <span><a href="img/hkmy-sg.jpg" target="_blank">MORE VIEW</a></span>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="vd-item">
+                       <div class="vd-wrap">
+                           <figure><img src="img/iriver.jpg" alt=""></figure>
+                           <div class="vd-text">
+                               <h4>아이리버 리브랜딩</h4>
+                               <p>ADTISEMENT DESIGN</p>
+                               <span><a href="img/iriver-sg.jpg" target="_blank">MORE VIEW</a></span>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="vd-item">
+                       <div class="vd-wrap">
+                           <figure><img src="img/alice.jpg" alt=""></figure>
+                           <div class="vd-text">
+                               <h4>Alices in Wonderland</h4>
+                               <p>INTERACTIVE DESIGN</p>
+                               <span><a href="img/alice-sg.png" target="_blank">MORE VIEW</a></span>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="vd-item">
+                       <div class="vd-wrap">
+                           <figure><img src="img/yh.jpg" alt=""></figure>
+                           <div class="vd-text">
+                               <h4>전통시장 대학협력사업</h4>
+                               <p>BRAND DESIGN</p>
+                               <span><a href="img/yh-sg.jpg" target="_blank">MORE VIEW</a></span>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="vd-item">
+                       <div class="vd-wrap">
+                           <figure><img src="img/mybook.jpg" alt=""></figure>
+                           <div class="vd-text">
+                               <h4>예노보노처럼 살다니 다행이야!</h4>
+                               <p>BOOK DESIGN</p>
+                               <span><a href="img/mybook-sg.jpg" target="_blank">MORE VIEW</a></span>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="vd-item">
+                       <div class="vd-wrap">
+                           <figure><img src="img/happause_.jpg" alt=""></figure>
+                           <div class="vd-text">
+                               <h4>Happause in Yume</h4>
+                               <p>GRAPHIC DESIGN</p>
+                               <span><a href="img/happause-sg.jpg" target="_blank">MORE VIEW</a></span>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="vd-item">
+                       <div class="vd-wrap">
+                           <figure><img src="img/daon.jpg" alt=""></figure>
+                           <div class="vd-text">
+                               <h4>향초 브랜딩 - 다온</h4>
+                               <p>BRAND DESIGN</p>
+                               <span><a href="img/daon-sg.jpg" target="_blank">MORE VIEW</a></span>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="vd-item">
+                       <div class="vd-wrap">
+                           <figure><img src="img/smking.jpg" alt=""></figure>
+                           <div class="vd-text">
+                               <h4>스무디킹 캐릭터</h4>
+                               <p>BRAND CHARACTER DESIGN</p>
+                               <span><a href="img/sumoodie-sg.png" target="_blank">MORE VIEW</a></span>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c-svg">
+                <div class="c01"></div>
+                <div class="c-s04"></div>
+                <div class="c01-s02"></div>
+                <div class="c01-s03"></div>
+            </div>
+            <figure class="line01"><img src="etc/line.svg" alt=""></figure>
+            <figure class="line02"><img src="etc/line-w.svg" alt=""></figure>
+        </section>
+
+    <!--    pf04-->
+        <section id="pf04" class="section">
+           <div class="box">
+                <div class="profile01">
+                    <div class="prof-wrap">
+                       <div class="prof row">
+                           <div class="photo">
+                                <figure class="my-photo">
+                                    <img src="img/myphoto.jpg" alt="">
+                                </figure>
+                                <figure class="line-pro"><img src="etc/line.svg" alt="" class="svg"></figure>
+                            </div>
+                            <h3>회사의 이름을 빛낼 <br>‘예림’다운 디자이너가 되겠습니다.</h3>
+                            <div>
+                               <div class="name">
+                                   <h4>한예림</h4><span>Han Yerim</span>
+                               </div>
+                                <ul class="info">
+                                    <li><i class="xi-crown"></i>1998.01.31</li>
+                                    <li><i class="xi-call"></i>010.3928.3128</li>
+                                    <li><i class="xi-mail-o"></i>fla3128@naver.com</li>
+                                </ul>
+                            </div>
+                            <div class="interest">
+                               <h2>Interest</h2>
+                                <div class="int-item">
+                                    <figure><img src="etc/draw.svg" alt="yerim" class="i-svg"></figure>
+                                    <p>Drawing</p>
+                                </div>
+                                <div class="int-item">
+                                    <figure><img src="etc/game-controller.svg" alt="yerim" class="i-svg"></figure>
+                                    <p>Game</p>
+                                </div>
+                                <div class="int-item">
+                                    <figure><img src="etc/note.svg" alt="yerim" class="i-svg"></figure>
+                                    <p>Diary</p>
+                                </div>
+                                <div class="int-item">
+                                    <figure><img src="etc/musical-notes.svg" alt="yerim" class="i-svg"></figure>
+                                    <p>Music</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile02">
+                  <div class="prf02-top row">
+                     <div class="prf02-left">
+                         <div class="text">
+                            <h2>Education</h2>
+                                <ul>
+                                    <li><strong>2013.03 - 2016.02</strong>부산 남산고등학교</li>
+                                    <li><strong>2016.03 - 2020.02</strong>경성대학교 디자인학부 시각디자인전공</li>
+                                    <li><strong>2020.08 - 2021.01</strong>부산그린컴퓨터아카데미 웹디자인과정 수료</li>
+                                </ul>
+                           </div>
+                           <div class="text">
+                                <h2>License</h2>
+                                <ul>
+                                    <li>중등교사자격증 2급 디자인·공예</li>
+                                    <li>MOS 자격증 - (Office Excel 2010 Expert)</li>
+                                </ul>
+                           </div>
+                           <div class="text">
+                                <h2>Award</h2>
+                                <ul>
+                                    <li>2019 부산지방교훈청 호국보훈의 달 표창장</li>
+                                    <li>2018 제 9회 양성평등 디자인 전국공모전 입선</li>
+                                    <li>2017 부산사인 엑스포 옥외광고대상전 입선</li>
+                                    <li>2015 제 2회 경성대학교 전국 고등학생<br>디자인·애니메이션 실기대회 사고의전환 부문 입선</li>
+                                </ul>
+                           </div>
+                     </div>
+                     <div class="prf02-right">
+                         <div class="text">
+                            <h2>Activity</h2>
+                                <ul>
+                                    <li><strong>2019.05</strong>(1개월)</li>
+                                    <li>부산영상예술고등학교 3학년 디자인·공예과목 교생실습 활동</li>
+                                    <li><strong>2019.03 - 2019.11</strong>(8개월)</li>
+                                    <li>경성대학교 시각디자인 졸업전시 편집팀 활동</li>
+                                    <li><strong>2018.04 -2018.12</strong>(8개월)</li>
+                                    <li>부산 용호시장 브랜딩, 캐릭터 디자인 참여</li>
+                                    <li><strong>2018.04 - 2018.08</strong>(4개월)</li>
+                                    <li>부산지방보훈청 호국보훈 캐릭터 이모티콘 제작</li>
+                                    <li><strong>2018.04 - 2018.06</strong>(2개월)</li>
+                                    <li>부산지방보훈청 서비스러닝 활동</li>
+                                    <li><strong>2017.03 - 2017.12</strong>(9개월)</li>
+                                    <li>경성대학교 디자인학부 시각디자인전공 문화부장</li>
+                                    <li><strong>2016.05 - 2019.01</strong>(2년 8개월)</li>
+                                    <li>비투비 미술학원 동래 본원 인턴</li>
+                                    <li><strong>2016.04 -2018.11 </strong>(2년 7개월)</li>
+                                    <li>경성대학교 시각디자인 그래픽동아리 ‘KKONN’ 활동 및 전시참여</li>
+                                </ul>
+                           </div>
+                     </div>
+                  </div>
+                  <div class="prf02-bottom">
+                      <div class="text">
+                          <h2>Skill</h2>
+                          <div class="skill">
+                              <div class="skill-item ps">
+                                  <figure><img src="etc/photoshop.svg" alt=""></figure>
+                                  <p></p>
+                              </div>
+                              <div class="skill-item ai">
+                                  <figure><img src="etc/illustrator.svg" alt=""></figure>
+                                  <p></p>
+                              </div>
+                              <div class="skill-item id">
+                                  <figure><img src="etc/indesign.svg" alt=""></figure>
+                                  <p></p>
+                              </div>
+                              <div class="skill-item ae">
+                                  <figure><img src="etc/after-effects.svg" alt=""></figure>
+                                  <p></p>
+                              </div>
+                              <div class="skill-item pr">
+                                  <figure><img src="etc/premier.svg" alt=""></figure>
+                                  <p></p>
+                              </div>
+                              <div class="skill-item ht">
+                                  <figure><img src="etc/html.svg" alt=""></figure>
+                                  <p></p>
+                              </div>
+                              <div class="skill-item cs">
+                                  <figure><img src="etc/css.svg" alt=""></figure>
+                                  <p></p>
+                              </div>
+                              <div class="skill-item js">
+                                  <figure><img src="etc/javascript.svg" alt=""></figure>
+                                  <p>jQuery - 50%</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="c-svg">
+                <div class="c01"></div>
+                <div class="c02"></div>
+                <div class="c-s05"></div>
+                <div class="c01-s07"></div>
+                <div class="c03"></div>
+                <div class="c-s06"></div>
+                <div class="c01-s08"></div>
+            </div>
+            <figure class="line01"><img src="etc/line.svg" alt=""></figure>
+            <figure class="line02"><img src="etc/line.svg" alt=""></figure>
+        </section>
+
+    <!-- 푸터 -->
+        <footer id="pf05" class="section">
+            <div class="box">
+               <h2>CONTACT</h2>
+               <div class="pf05-con row">
+                    <div class="pf05-text">
+                        <h3>모두와 함께<br>디자인하고싶습니다.</h3>
+                        <p>Thank you for watching</p>
+                        <dl>
+                            <dt>모든 작품은 비상업적 용도로 제작하였습니다.</dt>
+                            <dd>COPYRIGHT© Hanyerim. ALL RIGHTS RESERVED.</dd>
+                        </dl>
+                    </div>
+                    <div class="pf05-cont ">
+                       <div class="contact-c">
+                          <div class="c-svg">
+                                <div class="contact-bg"></div>
+                                <div class="c05-s02"></div>
+                                <div class="c05-s03"></div>
+                          </div>
+                           <div class="contact">
+                                <dl>
+                                    <dt>한예림</dt>
+                                    <dd><i class="xi-call"></i>010.3928.3128</dd>
+                                    <dd><i class="xi-mail-o"></i>fla3128@naver.com</dd>
+                                </dl>
+                            </div>
+                            <figure class="line"><img src="etc/line.svg" alt=""></figure>
+                       </div>
+                    </div>
+                </div>
+           </div>
+           <div class="c-svg c-box">
+               <div class="c01"></div>
+               <div class="c05-s01"></div>
+           </div>
+           <figure class="line01"><img src="etc/line.svg" alt=""></figure>
+        </footer>
+        <section>xx</section>
+    </div>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="circle-g">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -7" result="bbq" />
+          <feBlend in="SourceGraphic" in="bbq" operator="atop"/>
+        </filter>
+      </defs>
+    </svg>
+</body>
+</html>
