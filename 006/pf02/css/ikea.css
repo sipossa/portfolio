@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body{font-family: 'Noto Sans KR', sans-serif;}
+
+/*헤더*/
+header {height:150px;background:#fff;}
+header #head{width:1200px;padding:0 15px;margin:0 auto;}
+header #head>nav {width:33.33333%;}
+header #head .nav-left {float:left;}
+header #head .nav-left>ul>li{float:left;padding-left:60px;transition:0.3s;margin-top:65px;cursor:pointer;}
+header #head .nav-left>ul>li:first-child{padding-left:0px;margin-top:62px;}
+header #head .nav-left>ul>li>a {font-size:18px;font-weight:400;color:#333;letter-spacing:-0.025em;}
+header #head .nav-left>ul>li>a:after{content:"";display:block;width:1px;height:2px;background:#fff;transition:0.3s;margin-top:5px;}
+header #head .nav-left>ul>li>a:hover {color:#0159a2;}
+header #head .nav-left>ul>li:hover>a:after {content:"";display:block;width:100%;height:2px;background:#0159a2;margin-top:5px;}
+header #head .nav-left>ul>li.mbtn{width:30px;height:30px;border-radius:50%;text-align:center;}
+header #head .nav-left>ul>li.mbtn:hover {background:#eee;}
+header #head .nav-left>ul>li.mbtn>i {font-size:20px;line-height:30px;}
+
+
+header #head>h1 {width:33.33333%;float:left;text-align:center;padding-top:25px;}
+header #head .nav-right {float:left;text-align:right;}
+header #head .nav-right>ul{float:right;}
+header #head .nav-right>ul>li{float:left;padding-right:40px;}
+header #head .nav-right>ul>li:last-child{padding-right:0px;}
+header #head .nav-right>ul>li>a>i {font-size:30px;font-weight:500;color:#333;line-height:150px;transition:0.3s}
+header #head .nav-right>ul>li>a>i:hover{color:#0159a2}
+
+/*네비*/
+#nav{position:fixed;height:100%;background:#0159a2;width:420px;z-index:3;top:0;left:0;transform:translateX(-100%);transition:0.5s;color:#fff;}
+#nav.on {transform:translateX(0%)}
+#nav>div{width:300px;margin:0 auto;padding-top:50px;}
+#nav>div>h2 {width:100px;margin:0 auto;}
+#nav>div>h2>img{width:100%;}
+#nav>div .mbtn-c {position:absolute;top:55px;right:25px;width:30px; height:30px;text-align:center;border-radius:50%;transition:0.5s;cursor:pointer;}
+#nav>div .mbtn-c:hover {background:#fff;}
+#nav>div .mbtn-c i{font-size:20px;line-height:30px;}
+#nav>div .mbtn-c i:hover {color:#0159a2;}
+
+#nav>div .nav-01 {padding:80px 0 30px 0;text-align:center;}
+#nav>div .nav-01>li{width:100%;margin:20px 0;}
+#nav>div .nav-01>li>a {font-size:30px;font-weight:700;line-height:30px;}
+#nav>div .nav-01>li>a:after{content:"";display:block;width:1px;height:2px;background:#0159a2;margin:0 auto;margin-top:10px;transition:0.3s}
+#nav>div .nav-01>li:hover>a:after{content:"";display:block;width:80px;height:2px;background:#ffdb01;margin:0 auto;margin-top:10px;}
+#nav>div .nav-02 {text-align:center;padding-bottom:30px;}
+#nav>div .nav-02>li {width:100%;margin-bottom:10px;}
+#nav>div .nav-02>li>a:after {content:"";display:block;width:1px;height:2px;background:#0159a2;margin:0 auto;margin-top:5px;transition:0.3s}
+#nav>div .nav-02>li:hover>a:after {content:"";display:block;width:30px;height:2px;background:#ffdb01;margin:0 auto;margin-top:5px;}
+#nav>div .nav-02>li>a {font-size:16px;font-weight:500;line-height:16px;}
+#nav>div .nav-03 {text-align:center;}
+#nav>div .nav-03>li>a {font-size:14px; font-weight:300;line-height:30px;}
+#nav>div .nav-bt{margin:0 auto;padding:250px 40px 0 40px;}
+#nav>div .nav-bt>div{float:left;width:100px;height:30px;text-align:center;border:1px solid #fff;border-radius:30px;margin:0 5px;transition:0.3s;}
+#nav>div .nav-bt>div>a {line-height:29px;font-size:14px;font-weight:300;}
+#nav>div .nav-bt>div:hover {color:#0159a2;background:#fff;}
+
+/*슬라이더*/
+#slider .slider01 .slider-item01 {background:url(../img/ikea-slider01.jpg)no-repeat center center/cover;height:700px;}
+#slider .slider01 .slider-item02 {background:url(../img/ikea-slider02.jpg)no-repeat center center/cover;height:700px;}
+#slider .slider01 .slider-item03 {background:url(../img/ikea-slider03.jpg)no-repeat center center/cover;height:700px;}
+
+#slider .slider01 .slider-item01>h3 {color:#fff;font-size:48px;font-weight:700;text-align:center;line-height:72px;padding-top:450px;text-shadow:1px 1px 3px #000;letter-spacing:-0.025em;}
+#slider .slider01 .slider-item01>p {color:#fff;font-size:16px;font-weight:300;text-align:center;text-shadow:1px 1px 3px #000;padding-bottom:30px;line-height:24px;letter-spacing:-0.025em;}
+#slider .slider01 .slider-item01>span {display:block;height:40px;background:#0159a2;width:180px;color:#fff;font-size:16px;font-weight:500;text-align:center;margin:0 auto;border-radius:50px;line-height:40px;letter-spacing:-0.025em;transition:0.3s;}
+#slider .slider01 .slider-item01>span:hover {background:#fff;color:#333;}
+
+#slider .slider01 .slider-item02>h3 {color:#fff;font-size:48px;font-weight:700;text-align:center;line-height:72px;padding-top:250px;text-shadow:1px 1px 3px #000;letter-spacing:-0.025em;}
+#slider .slider01 .slider-item02>p {color:#fff;font-size:16px;font-weight:300;text-align:center;text-shadow:1px 1px 3px #000;padding-bottom:30px;line-height:20px;letter-spacing:-0.025em;}
+#slider .slider01 .slider-item02>span {display:block;height:40px;background:#0159a2;width:150px;color:#fff;font-size:16px;font-weight:500;text-align:center;margin:0 auto;border-radius:50px;line-height:40px;letter-spacing:-0.025em;transition:0.3s;}
+#slider .slider01 .slider-item02>span:hover {background:#fff;color:#333;}
+
+#slider .slider01 .slider-item03>h3 {color:#fff;font-size:48px;font-weight:700;text-align:center;line-height:72px;padding-top:450px;text-shadow:1px 1px 3px #000;letter-spacing:-0.025em;}
+#slider .slider01 .slider-item03>p {color:#fff;font-size:16px;font-weight:300;text-align:center;text-shadow:1px 1px 3px #000;padding-bottom:30px;line-height:24px;letter-spacing:-0.025em;}
+#slider .slider01 .slider-item03>span {display:block;height:40px;background:#0159a2;width:150px;color:#fff;font-size:16px;font-weight:500;text-align:center;margin:0 auto;border-radius:50px;line-height:40px;letter-spacing:-0.025em;transition:0.3s;}
+#slider .slider01 .slider-item03>span:hover {background:#fff;color:#333;}
+
+/*슬라이더 버튼*/
+#slider .slider01 .prev{position:absolute;border-top:1px solid #fff;border-left:1px solid #fff;width:70px;height:70px;z-index:2;top:50%;left:100px;transform:rotate(-45deg) translateY(-50%);cursor:pointer;}
+#slider .slider01 .next{position:absolute;border-top:1px solid #fff;border-left:1px solid #fff;width:70px;height:70px;z-index:2;right:100px;top:50%;transform:translateY(-50%) rotate(135deg);cursor:pointer;}
+
+#slider .slider01 ul.slick-dots{position:absolute;bottom:20px;text-align:center;width:100%}
+#slider .slider01>ul.slick-dots>li {display:inline-block;margin:0 10px;background:#ddd;width:20px;border-radius:3px;height:3px;border-radius:5px;cursor:pointer;transition:0.3s}
+#slider .slider01>ul.slick-dots>li button{display:none;}
+#slider .slider01>ul.slick-dots>li.slick-active {background:#0159a2;width:40px}
+
+/*이벤트01*/
+#event01 {height:250px;background:#eee;}
+#event01>h3 {text-align:center;font-weight:700;font-size:30px;padding-top:70px;line-height:40px;letter-spacing:-0.025em;}
+#event01>p {text-align:center;font-weight:300;font-size:16px;line-height:20px;letter-spacing:-0.025em;}
+#event01>span{display:block;width:225px;height:45px;background:#333;color:#fff;line-height:45px;text-align:center;margin:30px auto;border-radius:45px;letter-spacing:-0.025em;font-size:14px;}
+
+/*섹션01*/
+#section01 {padding-top:120px;padding-bottom:100px;;width:1200px;margin:0 auto;}
+#section01>div>h3 {font-size:30px;font-weight:700;text-align:center;line-height:40px;}
+#section01>div>p {font-size:18px;font-weight:300;text-align:center;line-height:20px;letter-spacing:-0.025em;padding-bottom:50px;}
+#section01>div>div>div{float:left;width:25%;padding:0 15px;text-align:center;}
+#section01>div>div>div>figure{border:1px solid #ddd;border-radius:50%;overflow:hidden;}
+#section01>div>div>div>figure>img{transition:0.5s;}
+#section01>div>div>div>figure:hover>img {transform:scale(1.05)}
+
+#section01>div>div>div>h4 {font-size:16px;font-weight:700;font-weight:20px;padding-top:30px;}
+#section01>div>div>div>p {font-size:16px;font-weight:300;line-height:20px;padding-bottom:15px;}
+#section01>div>div>div>span {font-size:20px;font-weight:700;}
+
+/*이벤트02*/
+#event02 {height:550px;background:url(../img/ikea-event02.jpg)no-repeat center center/cover;color:#fff;padding:150px 0 0 375px;}
+#event02>h3{font-size:64px;font-weight:700;letter-spacing:-0.025em;line-height:72px;}
+#event02>p{font-size:18px;font-weight:300;letter-spacing:-0.025em;line-height:20px;padding:30px 0;}
+#event02>span{display:block;width:135px;height:45px;text-align:center;line-height:45px;border:1px solid #fff;border-radius:45px;letter-spacing:-0.025em;}
+
+/*섹션02 탭메뉴*/
+#section02 {height:1920px;padding-top:120px;padding-bottom:100px;}
+#section02>div {width:1200px;margin:0 auto;}
+#section02>div>h3{font-size:30px;font-weight:700;text-align:center;line-height:40px;}
+#section02>div>p {font-size:18px;font-weight:300;text-align:center;line-height:20px;letter-spacing:-0.025em;padding-bottom:50px;}
+#section02>div .tab-m{text-align:center;padding-bottom:30px;}
+#section02>div .tab-m>li{display:inline-block;border:1px solid #0159a2;color:#0159a2;width:80px;height:30px;line-height:29px;text-align:center;border-radius:15px;margin: 0 5px;cursor:pointer;transition:0.3s}
+#section02>div .tab-con {height:1530px;overflow:hidden;}
+#section02>div .tab-con>div>div{width:50%;float:left;padding:0 15px 30px 15px;}
+#section02>div .tab-m>li.on {background:#0159a2;color:#fff}
+
+/*섹션03 아이디어*/
+#section03 {height:1880px;}
+#section03>div {width:1200px;margin:0 auto;padding:120px 0px 100px 0px;border-top:1px solid #eee;}
+#section03>div>h3{font-size:30px;font-weight:700;text-align:center;line-height:40px;}
+#section03>div>p {font-size:18px;font-weight:300;text-align:center;line-height:20px;letter-spacing:-0.025em;padding-bottom:50px;}
+#section03>div>div {padding:0 15px 30px 15px;}
+#section03>div>div:last-child {padding-bottom:0;}
+#section03>div>div>div {width:50%;float:left;}
+
+#section03>div>div .box01-right {border:1px solid #eee;height:760px;border-left:none;padding-top:290px;padding-left:60px;}
+#section03>div>div .box01-right>h4 {font-size:30px;font-weight:700;line-height:40px;letter-spacing:-0.025em;padding-bottom:10px;}
+#section03>div>div .box01-right>p {font-size:18px;font-weight:200;line-height:24px;letter-spacing:-0.025em;padding-bottom:30px;}
+#section03>div>div .box01-right>span{display:block;width:135px;height:40px;text-align:center;border:1px solid #333;line-height:39px;color:#333;border-radius:40px;transition:0.3s;letter-spacing:-0.025em;}
+#section03>div>div .box01-right>span:hover {background:#333;color:#fff;}
+
+#section03>div>div .box02-left {border:1px solid #eee;height:760px;border-right:none;padding-top:290px;padding-right:60px;text-align:right}
+#section03>div>div .box02-left>h4 {font-size:30px;font-weight:700;line-height:40px;letter-spacing:-0.025em;padding-bottom:10px;}
+#section03>div>div .box02-left>p {font-size:18px;font-weight:200;line-height:24px;letter-spacing:-0.025em;padding-bottom:30px;}
+#section03>div>div .box02-left>span{display:block;width:135px;height:40px;text-align:center;border:1px solid #333;line-height:39px;color:#333;border-radius:40px;transition:0.3s;float:right;letter-spacing:-0.025em;}
+#section03>div>div .box02-left>span:hover {background:#333;color:#fff;}
+
+/*이벤트03*/
+#event03 {height:180px;background:#eee;}
+#event03>div {width:1200px;margin:0 auto;padding-top:60px;}
+#event03>div>h3{font-size:30px;font-weight:700;text-align:center;line-height:40px;padding-bottom:50px;}
+#event03>div>div>div {width:16.66666%;float:left;text-align:center;padding:0 15px;}
+#event03>div>div>div>a>i {font-size:40px;line-height:50px;border-radius:50%;color:#999;transition:0.3s}
+#event03>div>div>div>a>i:hover {color:#333;}
+#event03>div>div>div>p{font-size:14px;font-weight:400;letter-spacing:-0.025em;color:#333;padding-top:10px;}
+
+/*푸터*/
+footer{height:700px;background:#333;color:#ccc;}
+footer #footer-top{margin:0 auto;width:1200px;padding:100px 15px 0 15px;}
+footer #footer-top>div{border-bottom:1px solid #888;height:390px;}
+footer #footer-top>div>div{width:41.6%;float:left}
+footer #footer-top>div>div>h3 {font-size:24px;font-weight:700;line-height:30px;color:#fff;}
+footer #footer-top>div>div>p {font-size:16px;font-weight:200;line-height:24px;padding:20px 0;letter-spacing:-0.025em;}
+footer #footer-top>div>div>span {display:block;width:180px;height:40px;letter-spacing:-0.025em;line-height:40px;font-size:14px;font-weight:400;text-align:center;border:1px solid #ccc;border-radius:40px;}
+footer #footer-top>div>div>div{padding-top:165px;}
+footer #footer-top>div>div>div>a>i{font-size:30px;transition:0.3s;margin-right:20px;}
+footer #footer-top>div>div>div>a>i:hover{color:#fff;}
+footer #footer-top>div>ul {width:58.4%;float:left;}
+footer #footer-top>div>ul>li {float:left;font-size:24px;font-weight:700;color:#fff;width:25%;letter-spacing:-0.025em;line-height:30px;}
+footer #footer-top>div>ul>li .footer-m{padding-top:12px;}
+footer #footer-top>div>ul>li .footer-m>li>a{font-weight:200;font-size:14px;line-height:30px;color:#ccc;}
+footer #footer-top>div>ul>li .footer-m>li>a:hover{color:#fff;}
+
+footer #footer-b {width:1200px;margin:0 auto;padding:0 15px;color:#ccc}
+footer #footer-b #top {padding:30px 0;}
+footer #footer-b #top>p {float:left;font-size:12px;font-weight:400;}
+footer #footer-b #top>ul {float:right;}
+footer #footer-b #top>ul>li {float:left;margin-left:30px;}
+footer #footer-b #top>ul>li>a {font-size:12px;font-weight:400;}
+footer #footer-b #top>ul>li>a:hover {color:#fff;}
+footer #footer-b #bottom>p{float:left;font-size:12px;font-weight:300;line-height:20px;color:#aaa}
+footer #footer-b #bottom>div{float:right;width:16.66666%;margin-top:30px;}
+footer #footer-b #bottom>div>span{float:left;width:85px;height:25px;text-align:center;line-height:25px;border:1px solid #aaa;border-radius:25px;font-size:12px;display:block;}
+
+footer #footer-b #bottom>div .lang>li{float:right;width:85px;height:25px;text-align:center;line-height:25px;border:1px solid #aaa;border-radius:25px;font-size:12px;cursor:pointer;}
+footer #footer-b #bottom>div .lang>li .lang-li {display:none;}
+footer #footer-b #bottom>div .lang>li .lang-li>li {height:20px;background:#aaa;color:#333;line-height:19px;width:80%;transform:translateX(8px);}
+footer #footer-b #bottom>div .lang>li .lang-li.on {display:block;}
