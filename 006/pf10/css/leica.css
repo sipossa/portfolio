@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/**{outline:1px solid #369;}*/
+body {font-family: 'Noto Sans KR', sans-serif;color:#333;}
+*{letter-spacing: 0.025em;}
+
+/*위 팝업창*/
+#popup-top{width:100%;height:50px;background:#222;color:#fff;position:absolute;top:-40px;transition:0.3s}
+#popup-top .top-con01 {width:1200px;height:50px;margin:0 auto;padding:0 15px;}
+#popup-top .top-con01>a{font-size:14px;font-weight:500;color:#aaa;line-height:50px;transition:0.2s;}
+#popup-top .top-con01>a:hover{color:#fff;}
+#popup-top .top-con01 ul{float:right;}
+#popup-top .top-con01 ul>li {float:left;font-size:12px;text-align:center;color:#aaa}
+#popup-top .top-con01 ul>li a{display:block;line-height:50px;padding:0 15px; position:relative;}
+#popup-top .top-con01 ul>li a:after {content:"";display:block;width:1px; height:10px;background:#666;position:absolute;top:50%;left:0;transform:translateY(-50%);}
+#popup-top .top-con01 ul>li:first-child a:after {display:none;}
+#popup-top .top-con01 ul>li:last-child a:after {display:none;}
+#popup-top .top-con01 ul>li:last-child a{display:block;background:#ed1c24;border-radius: 3px;width:120px;height:30px;color:#fff;line-height:0;padding:5px;margin:10px 0;}
+#popup-top .top-con01 ul>li a>i{transform:rotateY(180deg);font-size:14px;}
+
+#popup-top.on {top:0;}
+#popup-top>span {position:absolute;display:block;width:100px;height:20px;line-height:19px;text-align:center;background:#222;bottom:-15px;right:30px;font-size:12px;color:#fff;cursor:pointer;border-radius:0 0 5px 5px;}
+#popup-top.on>span i{transform:rotate(180deg)}
+#popup-top>span:after {content:" OPEN";font-size:12px;}
+#popup-top.on>span:after {content:" CLOSE";font-size:12px;}
+
+
+/*헤더*/
+header{background:#333;margin:0 auto;padding-top:20px;padding-bottom:20px;}
+header>h1{width:150px;padding:0 15px;margin:0 auto;font-size:0;}
+header>h1 img{width:100%;}
+
+/*모바일메뉴버튼*/
+.m-btn {display:none;}
+
+/*네비*/
+nav{border-bottom:1px solid #ddd;border-top:1px solid #ddd;position:relative;}
+nav .mnav-t{display:none;}
+nav .mnav-logo{display:none;}
+nav .mnav-sch{display:none;}
+nav .mnav-login{display:none;}
+
+
+nav>ul{width:1200px;margin:0 auto;text-align:center;padding:0 15px;}
+nav>ul>li>a{display:block;line-height:50px;font-weight:500;transition:0.2s;color:#333;}
+nav>ul>li:hover>a{color:#ed1c24;}
+nav>ul>li {float:left;width:20%;position:relative;z-index: 2;}
+nav>ul>li>ul {position:absolute;top:50px;left:0;width:100%;height:0;overflow:hidden;transition:0.5s;padding-top:5px;font-size:14px;color:#ddd;}
+nav>ul>li>ul>li{line-height:30px;}
+nav>ul>li>ul>li a{font-weight:300;transition:0.2s;}
+nav>ul>li>ul>li a:hover{color:#fff;;}
+nav>ul:hover>li>ul{display:block;height:140px;background:#222;border-top:1px solid #333;}
+nav .nav-bg{position:absolute;width:100%;height:0px;background:#222;z-index:1;transition:0.5s;}
+nav>ul:hover+div{height:140px;}
+
+/*슬라이드01*/
+#mslide .ms01-item{background:url(../img/leica-s1.jpg)no-repeat center center;height:600px;}
+#mslide .ms02-item{background:url(../img/leica-s2.jpg)no-repeat center center;height:600px;}
+#mslide .ms03-item{background:url(../img/leica-s3.jpg)no-repeat center center;height:600px;}
+#mslide .ms04-item{background:url(../img/leica-s4.jpg)no-repeat center center;height:600px;}
+#mslide .ms05-item{background:url(../img/leica-s5.jpg)no-repeat center center;height:600px;}
+
+#mslide .prev, #mslide .next {position:absolute;top:50%;width:50px;height:50px;border-top:1px solid #fff;border-left:1px solid #fff;z-index:1;cursor:pointer;}
+#mslide .prev {left:50px;transform:rotate(-45deg)}
+#mslide .next {right:50px;;transform:rotate(135deg)}
+
+#mslide ul.slick-dots {position:absolute;bottom:15px;width:100%;text-align:center;}
+#mslide ul.slick-dots button{display:none;}
+#mslide ul.slick-dots li {display:inline-block;width:10px;height:10px;border:1px solid #fff;margin:10px;border-radius:50%;cursor:pointer;}
+#mslide ul.slick-dots li.slick-active {background:#fff;}
+
+
+
+/*섹션*/
+#section01{width:1200px; margin:0 auto;padding:100px 0;text-align:center;}
+#section01>h3 {font-size:30px;font-weight:700;line-height:40px;color:#333;}
+#section01>p {font-size:16px;font-weight:300;line-height:20px;padding-bottom:30px;}
+#section01>div{float:left;width:33.33333%;padding:0 15px;}
+#section01>div figure {overflow:hidden;}
+#section01>div figure img{width:100%;transition:0.5s;}
+#section01>div figure:hover img{transform:scale(1.1);}
+#section01>div>h4 {font-size:20px;font-weight:700;line-height:30px;padding-top:10px;}
+#section01>div>span {font-size:14px;font-weight:300;}
+
+/*슬로건*/
+#bg {padding:150px 365px;background:url(../img/leica-bg.jpg)no-repeat center/cover;background-attachment: fixed;}
+#bg h2{color:#fff;font-size:60px;font-weight:700;line-height:70px;padding-bottom:10px;}
+#bg p{color:#fff;font-size:14px;font-weight:300;line-height:18px;}
+#bg span a{color:#fff;display:block;width:120px;height:30px;border:1px solid #fff;margin-top:20px;font-size:14px;padding:6px 10px;transition:0.2s;text-align:center;}
+#bg span a:hover{color:#666;background:#fff;}
+
+/*탭메뉴*/
+#tab {width:800px;padding:100px 15px;margin:0 auto;height:800px;margin-bottom:120px;}
+#tab>h3 {text-align:center;font-size:30px;font-weight:700;line-height:40px;}
+#tab>p {text-align:center;font-size:16px;font-weight:300;line-height:20px;padding-bottom:30px;}
+
+#tab .tab-m:after {content:"";display:block;clear:both;}
+#tab .tab-m>li{float:left; width:33.3333%;background:#333;height:50px;text-align:center;line-height:50px;color:#fff;border-left:1px solid #fff;cursor:pointer;transition:0.5s}
+#tab .tab-m>li:first-child {border-radius:20px 0 0 0;border-left:none;}
+#tab .tab-m>li:last-child {border-radius:0 20px 0 0;}
+#tab .tab-m>li.on {border:1px solid #ddd;color:#ed1c24;background:none;}
+#tab .tab-con {position:relative;}
+#tab .tab-con>div {position:absolute;width:100%;height:500px;display:none;background:#ddd;top:0;left:0;}
+#tab .tab-con>div:nth-child(1) {display:block;}
+#tab .tab-con>div img{width:100%;border-radius:0 0 20px 20px;}
+#tab .tab-con>div h4{font-size:18px;padding-top:10px;font-weight:500;text-align:center;line-height:30px;}
+#tab .tab-con>div p{font-size:16px;font-weight:300;text-align:center;color:#333;}
+
+/*슬라이드 2*/
+#mslide02 {padding:100px 0;background:#f3f3f3f3;}
+#mslide02>h3 {font-size:30px;font-weight:700;line-height:40px;text-align:center;}
+#mslide02>p {font-size:16px;font-weight:300;line-height:20px;;text-align:center;}
+.mslide02 {padding:30px 0;width:1200px;margin:0 auto;}
+.mslide02>div{overflow:hidden;}
+.mslide02 img{width:100%;padding:0 15px;}
+
+#mslide02 .prev, #mslide02 .next {position:absolute;top:50%;background:#333;width:30px;height:30px;border-radius: 50%;cursor:pointer;}
+#mslide02 .prev{left:-45px;text-align:center;line-height:30px;color:#fff;transition:0.2s;}
+#mslide02 .prev:hover{background:#ed1c24;}
+#mslide02 .next{right:-45px;text-align:center;line-height:30px;color:#fff;}
+#mslide02 .next:hover{background:#ed1c24;transition:0.2s;}
+
+#mslide02 ul.slick-dots {position:absolute;text-align:center;width:100%;margin:20px 0;}
+#mslide02 ul.slick-dots button {display:none;}
+#mslide02 ul.slick-dots li{display:inline-block;width:20px;height:2px;background:#ccc;margin:5px;cursor:pointer;}
+
+#mslide02 ul.slick-dots li.slick-active{background:#333;}
+
+/*전시회*/
+#exh {width:100%;background:linear-gradient(to bottom,#c32e1a,#e7371f 30%);}
+#exh>div{position:relative;width:1200px;margin:0 auto;padding:0 15px;}
+#exh figure{width:100%;overflow:hidden;font-size:0;}
+#exh img{width:100%;}
+#exh span{position:absolute;bottom:110px;left:15px;}
+#exh span a{display:block;width:120px;height:30px;padding:7px 10px;font-size:14px;border:1px solid #fff;color:#fff;font-weight:300;transition:0.2s;text-align:center;}
+#exh span a:hover{background:#fff;color:#333;}
+
+/*팝업창*/
+#popup {position:fixed;top:50%;left:10%;transform:translate(-15%,-50%);z-index:5;width:600px;}
+#popup img{width:100%;}
+#popup .close{width:100%;background:#e8d7c7;position:absolute;bottom:-29px;height:30px;padding:5px 15px;text-align:right;}
+#popup .close span{font-size:16px;font-weight:500;color:#333;display:block;cursor:pointer;}
+
+/*제품등록*/
+#bottom {width:100%;background:url(../img/f-top01.jpg)no-repeat center right;height:200px;color:#fff;padding:60px 0;}
+#bottom div{width:1200px;margin:0 auto;padding:0 15px;}
+#bottom h3{font-size:30px;font-weight:500;line-height:40px;padding-bottom:10px;}
+#bottom p a{font-size:14px;font-weight:300;line-height:20px;position:relative;}
+#bottom p a:after {content:"\e90b";font-family:xeicon;position:absolute;top:50%;transform:translateY(-50%);right:-30px;font-size:20px;transition:0.2s;}
+#bottom p a:hover:after {right:-40px;}
+
+/*푸터*/
+footer{background:#333;color:#ddd;padding:50px 0;}
+footer>div{width:1200px;margin:0 auto;padding:0 15px;}
+#f1 .f-logo {float:left;font-size:0;padding:19px 0;}
+#f1 .f-logo figure{width:80px;overflow:hidden;}
+#f1 .f-logo img{width:100%;}
+#f1>.footer1 {font-size:0;float:right;}
+#f1>.footer1 dl {float:left;text-align:left;padding:20px 30px;}
+#f1>.footer1 dl:first-child{padding-left:0px;}
+#f1>.footer1 dl:last-child{padding-right:0px;}
+#f1>.footer1 dt {padding-bottom:20px;font-size:14px;font-weight:500;}
+#f1>.footer1 dd {padding:5px 0;}
+#f1>.footer1 dd a {font-weight:100;font-size:12px;}
+#f1>.footer1 .sns dd{display:inline-block;color:#aaa;margin-right:10px;}
+#f1>.footer1 dd i {font-size:30px;transition:0.2s;}
+#f1>.footer1 dd:hover i{color:#fff;}
+#f2:after {content:"";display:block;clear:both;}
+#f2 .footer2 {padding:20px 0;border-top:1px solid #666;margin-top:20px;}
+#f2 .footer2 ul:after{content:"";display:block;clear:both;}
+#f2 .footer2 li{float:left;font-size:10px;font-weight:200;color:#aaa;padding:0 10px;position:relative;}
+#f2 .footer2 li:after{content:"";display:block;position:absolute;width:1px;height:10px;background:#666;top:50%;right:0;transform:translateY(-50%);}
+#f2 .footer2 li:first-child{padding-left:0;}
+#f2 .footer2 li:last-child{padding-right:0;}
+#f2 .footer2 li:last-child:after{display:none;}
+
+@media (max-width:768px){
+    /*위 팝업창*/
+    #popup-top{width:100%;height:50px;background:#222;color:#fff;position:absolute;top:-40px;transition:0.3s}
+    #popup-top .top-con01 {width:100%;height:50px;margin:0 auto;padding:0 15px;}
+    #popup-top .top-con01>a{font-size:10px;font-weight:500;color:#aaa;line-height:50px;transition:0.2s;}
+    #popup-top .top-con01>a:hover{color:#fff;}
+    #popup-top .top-con01 ul{float:right;}
+    #popup-top .top-con01 ul>li {float:left;font-size:10px;text-align:center;color:#aaa}
+    #popup-top .top-con01 ul>li a{display:block;line-height:50px;padding:0 5px; position:relative;}
+    #popup-top .top-con01 ul>li a:after {content:"";display:block;width:1px; height:10px;background:#666;position:absolute;top:50%;left:0;transform:translateY(-50%);}
+    #popup-top .top-con01 ul>li:first-child a:after {display:none;}
+    #popup-top .top-con01 ul>li:last-child a:after {display:none;}
+    #popup-top .top-con01 ul>li:last-child a{display:block;background:#ed1c24;border-radius: 3px;width:30px;height:30px;color:#fff;line-height:0;padding:5px;margin:10px 0;font-size:0;}
+    #popup-top .top-con01 ul>li a>i{transform:rotateY(180deg);font-size:20px;}
+
+    #popup-top.on {top:0;}
+    #popup-top>span {position:absolute;display:block;width:90px;height:20px;line-height:19px;text-align:center;background:#222;bottom:-15px;right:15px;font-size:12px;color:#fff;cursor:pointer;border-radius:0 0 5px 5px;}
+    #popup-top.on>span i{transform:rotate(180deg)}
+    #popup-top>span:after {content:" OPEN";font-size:12px;}
+    #popup-top.on>span:after {content:" CLOSE";font-size:12px;}
+
+
+    /*헤더*/
+    header{background:#333;margin:0 auto;padding-top:20px;padding-bottom:10px;}
+    header>h1{width:120px;padding:0 15px;margin:0 auto;font-size:0;}
+    header>h1 img{width:100%;}
+    
+    /*모바일메뉴버튼*/
+    .m-btn {display:block;position:fixed;width:40px;height:40px;z-index:9999;top:70px;right:15px;cursor:pointer;border-radius:50%;overflow:hidden;background:#333;}
+    .m-btn span{width:60%;height:2px; background:#fff;position:absolute;left:50%;transform:translateX(-50%);transition:0.3s;}
+    .m-btn span:nth-child(1){top:12px;}
+    .m-btn span:nth-child(2){top:20px;}
+    .m-btn span:nth-child(3){top:20px;}
+    .m-btn span:nth-child(4){top:28px;}
+    
+    .m-btn.on span:nth-child(1){width:0;opacity:0;}
+    .m-btn.on span:nth-child(2){transform:translateX(-50%) rotate(45deg)}
+    .m-btn.on span:nth-child(3){transform:translateX(-50%) rotate(-45deg);}
+    .m-btn.on span:nth-child(4){width:0;opacity:0;} 
+    
+    /*네비*/
+    nav{border-bottom:none;border-top:none;position:relative;position:fixed;top:0;left:-100%;width:100%;background:#333;height:100vh;z-index:999;transition:0.3s;}
+    nav.on{left:0;}
+    nav .mnav-t{display:block;height:30px;background:#ed1c24;}
+    nav .mnav-sch{display:block;padding:0 30px;}
+    nav .mnav-sch>div{width:100%;padding:20px 0;}
+    nav .mnav-sch>div:after{content:"";display:block;clear:both;}
+    nav .mnav-sch input{width:88%;background:none;border:none;border-bottom:1px solid #444;padding:10px;font-weight:300;font-size:14px;color:#fff;}
+    nav .mnav-sch input::-webkit-input-placeholder{color:#aaa;}
+    nav .mnav-sch button{width:10%;float:right;padding:10px;font-size:14px;background:#222;color:#fff;border:none;border-radius:3px;display:block;cursor:pointer;}
+    nav .mnav-logo{display:block;padding:35px 15px;}
+    nav .mnav-logo figure{width:50px;}
+    nav .mnav-logo img{width:100%;}
+    nav .mnav-sch{display:block;}
+    nav .mnav-login{display:block;color:#ddd;}
+    nav .mnav-login ul{padding:50px 15px 0;}
+    nav .mnav-login ul:after{content:"";display:block;clear:both;}
+    nav .mnav-login li{width:50%;float:left;text-align:center;}
+    nav .mnav-login li a{display:block;width:80%;padding:7px;margin:0 auto;font-size:12px;font-weight:300;height:30px;border-radius:3px;background:#222;}
+    
+    
+    nav>ul{width:100%;margin:0 auto;text-align:center;padding:0px;}
+    nav>ul>li>a{display:block;line-height:40px;font-weight:400;transition:0.2s;color:#ddd;border-bottom:1px solid #444;}
+
+    nav>ul>li:hover>a{color:#ed1c24;}
+    nav>ul>li {float:left;width:100%;position:relative;z-index: 2;}
+    nav>ul>li>ul {position:static;top:50px;left:0;width:100%;height:0;overflow:hidden;transition:0.5s;padding-top:0px;font-size:14px;color:#ddd;background:#222;}
+    nav>ul>li>a+ul{height:0;}
+    nav>ul>li:nth-child(1)>a.on+ul{height:90px;}
+    nav>ul>li:nth-child(2)>a.on+ul{height:60px;}
+    nav>ul>li:nth-child(3)>a.on+ul{height:60px;}
+    nav>ul>li:nth-child(4)>a.on+ul{height:60px;}
+    nav>ul>li>ul>li a{font-weight:300;transition:0.2s;display:block;line-height:30px;}
+    nav>ul>li>ul>li a:hover{color:#fff;}
+    nav>ul:hover>li>ul{display:block;height:0px;background:#222;border-top:none;}
+    
+    nav .nav-bg{position:absolute;width:100%;height:0px;background:#222;z-index:1;transition:0.5s;display:none;}
+    nav>ul:hover+div{height:0px;}
+
+    /*슬라이드01*/
+    #mslide .ms01-item{background:url(../img/leica-s1.jpg)no-repeat center center/cover;height:280px;}
+    #mslide .ms02-item{background:url(../img/leica-s2.jpg)no-repeat center center/cover;height:280px;}
+    #mslide .ms03-item{background:url(../img/leica-s3.jpg)no-repeat center center/cover;height:280px;}
+    #mslide .ms04-item{background:url(../img/leica-s4.jpg)no-repeat center center/cover;height:280px;}
+    #mslide .ms05-item{background:url(../img/leica-s5.jpg)no-repeat center center/cover;height:280px;}
+
+    #mslide .prev, #mslide .next {position:absolute;top:50%;width:50px;height:50px;border-top:1px solid #fff;border-left:1px solid #fff;z-index:1;cursor:pointer;}
+    #mslide .prev {left:50px;transform:rotate(-45deg);}
+    #mslide .next {right:50px;transform:rotate(135deg)}
+
+    #mslide ul.slick-dots {position:absolute;bottom:5px;width:100%;text-align:center;}
+    #mslide ul.slick-dots button{display:none;}
+    #mslide ul.slick-dots li {display:inline-block;width:10px;height:10px;border:1px solid #fff;margin:5px 5px;border-radius:50%;cursor:pointer;}
+    #mslide ul.slick-dots li.slick-active {background:#fff;}
+
+
+
+    /*섹션*/
+    #section01{width:100%; margin:0 auto;padding:70px 0;text-align:center;}
+    #section01>h3 {font-size:24px;font-weight:700;line-height:30px;color:#333;}
+    #section01>p {font-size:16px;font-weight:300;line-height:20px;padding-bottom:20px;}
+    #section01>div{float:none;width:100%;padding:0 30px 20px;}
+    #section01>div figure {overflow:hidden;font-size:0;}
+    #section01>div figure img{width:100%;transition:0.5s;}
+    #section01>div figure:hover img{transform:scale(1.1);}
+    #section01>div>h4 {font-size:18px;font-weight:700;line-height:30px;padding-top:10px;}
+    #section01>div>span {font-size:14px;font-weight:300;}
+
+    /*슬로건*/
+    #bg {padding:100px 15px;background:url(../img/leica-bg.jpg)no-repeat/cover;background-attachment: fixed;}
+    #bg h2{color:#fff;font-size:60px;font-weight:700;line-height:70px;padding-bottom:10px;}
+    #bg p{color:#fff;font-size:14px;font-weight:300;line-height:18px;}
+    #bg span a{color:#fff;display:block;width:120px;height:30px;border:1px solid #fff;margin-top:20px;font-size:14px;padding:6px 10px;transition:0.2s;text-align:center;}
+    #bg span a:hover{color:#666;background:#fff;}
+
+    /*탭메뉴*/
+    #tab {width:100%;padding:70px 15px;margin:0 auto;height:calc(295px + 75vw);margin-bottom:0px;}
+    #tab>h3 {text-align:center;font-size:24px;font-weight:700;line-height:30px;}
+    #tab>p {text-align:center;font-size:16px;font-weight:300;line-height:20px;padding-bottom:30px;}
+
+    #tab .tab-m:after {content:"";display:block;clear:both;}
+    #tab .tab-m>li{float:left; width:33.3333%;background:#333;height:50px;text-align:center;line-height:50px;color:#fff;border-left:1px solid #fff;cursor:pointer;transition:0.5s;font-size:14px;}
+    #tab .tab-m>li:first-child {border-radius:20px 0 0 0;border-left:none;}
+    #tab .tab-m>li:last-child {border-radius:0 20px 0 0;}
+    #tab .tab-m>li.on {border:1px solid #ddd;color:#ed1c24;background:none;}
+    #tab .tab-con {position:relative;}
+    #tab .tab-con>div {position:absolute;width:100%;height:305px;display:none;background:#fff;top:0;left:0;}
+    #tab .tab-con>div:nth-child(1) {display:block;}
+    #tab .tab-con>div img{width:100%;border-radius:0 0 20px 20px;}
+    #tab .tab-con>div h4{font-size:16px;padding-top:10px;font-weight:500;text-align:center;line-height:20px;padding-bottom:10px;}
+    #tab .tab-con>div p{font-size:14px;font-weight:300;text-align:center;color:#333;}
+
+    /*슬라이드 2*/
+    #mslide02 {padding:70px 0;background:#f3f3f3f3;}
+    #mslide02>h3 {font-size:24px;font-weight:700;line-height:30px;text-align:center;}
+    #mslide02>p {font-size:16px;font-weight:300;line-height:20px;;text-align:center;}
+    .mslide02 {padding:30px 40px;width:100%;margin:0 auto;}
+    .mslide02>div{overflow:hidden;}
+    .mslide02 img{width:100%;padding:0 5px;}
+
+    #mslide02 .prev, #mslide02 .next {position:absolute;top:50%;background:#333;width:30px;height:30px;border-radius: 50%;cursor:pointer;}
+    #mslide02 .prev{left:5px;text-align:center;line-height:30px;color:#fff;transition:0.2s;}
+    #mslide02 .prev:hover{background:#ed1c24;}
+    #mslide02 .next{right:5px;text-align:center;line-height:30px;color:#fff;}
+    #mslide02 .next:hover{background:#ed1c24;transition:0.2s;}
+
+    #mslide02 ul.slick-dots {position:absolute;text-align:center;width:100%;margin:20px 0;left:0}
+    #mslide02 ul.slick-dots button {display:none;}
+    #mslide02 ul.slick-dots li{display:inline-block;width:20px;height:2px;background:#ccc;margin:5px;cursor:pointer;}
+
+    #mslide02 ul.slick-dots li.slick-active{background:#333;}
+
+    /*전시회*/
+    #exh {width:100%;background:linear-gradient(to bottom,#c32e1a,#e7371f 30%);}
+    #exh>div{position:relative;width:100%;margin:0 auto;padding:0 15px;}
+    #exh figure{width:100%;overflow:hidden;font-size:0;}
+    #exh img{width:100%;}
+    #exh span{position:absolute;bottom:15px;left:15px;}
+    #exh span a{display:block;width:100px;height:30px;padding:7px 10px;font-size:12px;border:1px solid #fff;color:#fff;font-weight:300;transition:0.2s;text-align:center;}
+    #exh span a:hover{background:#fff;color:#333;}
+
+    /*팝업창*/
+    #popup {position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:5;width:350px;}
+    #popup img{width:100%;}
+    #popup .close{width:100%;background:#e8d7c7;position:absolute;bottom:-29px;height:30px;padding:5px 15px;text-align:right;}
+    #popup .close span{font-size:16px;font-weight:500;color:#333;display:block;cursor:pointer;}
+
+    /*제품등록*/
+    #bottom {width:100%;background:url(../img/f-top01.jpg)no-repeat center right/cover;height:170px;color:#fff;padding:50px 0;}
+    #bottom div{width:100%;margin:0 auto;padding:0 15px;}
+    #bottom h3{font-size:24px;font-weight:500;line-height:30px;padding-bottom:10px;}
+    #bottom p a{font-size:10px;font-weight:300;line-height:20px;position:relative;}
+    #bottom p a:after {content:"\e90b";font-family:xeicon;position:absolute;top:50%;transform:translateY(-50%);right:-30px;font-size:20px;transition:0.2s;}
+    #bottom p a:hover:after {right:-40px;}
+
+    /*푸터*/
+    footer{background:#333;color:#ddd;padding:50px 0;width:100%;}
+    footer>div{width:100%;margin:0 auto;padding:0 15px;}
+    #f1 .f-logo {float:none;font-size:0;padding:0px 0 20px;}
+    #f1 .f-logo figure{width:80px;overflow:hidden;margin:0 auto;}
+    #f1 .f-logo img{width:100%;}
+    #f1>.footer1 {font-size:0;float:none;}
+    #f1>.footer1 dl {float:left;text-align:center;padding:10px 30px;width:50%;}
+    #f1>.footer1 dl:first-child{padding-left:30px;}
+    #f1>.footer1 dl:last-child{padding-right:30px;}
+    #f1>.footer1 dt {padding-bottom:20px;font-size:14px;font-weight:500;}
+    #f1>.footer1 dd {padding:5px 0;}
+    #f1>.footer1 dd a {font-weight:100;font-size:12px;}
+    #f1>.footer1 .sns dd{display:inline-block;color:#aaa;margin-right:10px;}
+    #f1>.footer1 .sns dd:last-child{margin-right:0px;}
+    #f1>.footer1 dd i {font-size:30px;transition:0.2s;}
+    #f1>.footer1 dd:hover i{color:#fff;}
+    #f2:after {content:"";display:block;clear:both;}
+    #f2 .footer2 {padding:20px 0 0;border-top:1px solid #666;margin-top:20px;}
+    #f2 .footer2 ul{}
+    #f2 .footer2 ul:after{content:"";display:block;clear:both;}
+    #f2 .footer2 li{float:none;font-size:10px;font-weight:200;color:#aaa;padding:0 10px 5px;position:relative;text-align:center;}
+    #f2 .footer2 li:after{content:"";display:none;}
+    #f2 .footer2 li:first-child{padding-left:10px;}
+    #f2 .footer2 li:last-child{padding-right:10px;}
+    #f2 .footer2 li:last-child:after{display:none;}
+}
