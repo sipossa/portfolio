@@ -1,0 +1,711 @@
+@font-face {
+    font-family: '양진체';
+    src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {outline: 1px solid#f00--;}
+html {
+    font-size:20px;
+}
+.container {
+    width:65rem;
+}
+.section {
+    background:url(./img/bg.png);
+}
+        
+/* #intro 메인 */
+nav {
+    position:fixed;
+    top:50%;left:2rem;
+    transform:translateY(-50%);
+    z-index:999;
+}
+nav li {position:relative;}
+nav li a {
+    display:block;
+    text-indent:-999px;
+    width:4rem;
+    line-height:1rem;
+}
+nav li:after {
+    content:"";
+    display:block;
+    width:1rem;
+    height:0.5rem;
+    background:#1d4e76;
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%) skew(20deg);
+    transition:1s;
+    z-index: -1;
+}
+nav li.on:after {
+    width:100%;
+    background: #f4c367;
+}
+.intro p{
+    padding :1rem 2rem 0 0;
+    overflow:hidden;
+    font-family: '양진체';
+    line-height:10rem; 
+    text-align:right;
+    font-size: 8rem;
+    color: #f4c367; 
+    text-shadow: 0px 0px #1d4e76, 0.05rem 0.05rem #1d4e76, 0.1rem 0.1rem #1d4e76, 0.15rem 0.15rem #1d4e76, 0.2rem 0.2rem #1d4e76, 0.25rem 0.25rem #1d4e76, 0.3rem 0.3rem #1d4e76, 0.35rem 0.35rem #1d4e76, 0.4rem 0.4rem #1d4e76, 0.45rem 0.45rem #1d4e76, 0.5rem 0.5rem #1d4e76, 0.55rem 0.55rem #1d4e76, 0.6rem 0.6rem #1d4e76, 0.65rem 0.65rem #1d4e76, 0.7rem 0.7rem #1d4e76, 0.75rem 0.75rem #1d4e76, 0.8rem 0.8rem #1d4e76, 0.85rem 0.85rem #1d4e76, 0.9rem 0.9rem #1d4e76, 0.95rem 0.95rem #1d4e76, 1rem 1rem #1d4e76, 1.05rem 1.05rem #1d4e76, 1.1rem 1.1rem #1d4e76, 1.15rem 1.15rem #1d4e76, 1.2rem 1.2rem #1d4e76, 1.25rem 1.25rem #1d4e76, 1.3rem 1.3rem #1d4e76, 1.35rem 1.35rem #1d4e76, 1.4rem 1.4rem #1d4e76, 1.45rem 1.45rem #1d4e76, 1.5rem 1.5rem #1d4e76, 1.55rem 1.55rem #1d4e76, 1.6rem 1.6rem #1d4e76, 1.65rem 1.65rem #1d4e76, 1.7rem 1.7rem #1d4e76, 1.75rem 1.75rem #1d4e76, 1.8rem 1.8rem #1d4e76, 1.85rem 1.85rem #1d4e76, 1.9rem 1.9rem #1d4e76, 1.98rem 1.98rem #1d4e76, 2rem 2rem #1d4e76, 2.05rem 2.05rem #1d4e76, 2.1rem 2.1rem #1d4e76, 2.15rem 2.15rem #1d4e76, 2.2rem 2.2rem #1d4e76, 2.25rem 2.25rem #1d4e76, 2.3rem 2.3rem #1d4e76, 2.35rem 2.35rem #1d4e76, 2.4rem 2.4rem #1d4e76, 2.45rem 2.45rem #1d4e76, 2.5rem 2.5rem #1d4e76, 2.55rem 2.55rem #1d4e76, 2.6rem 2.6rem #1d4e76, 2.65rem 2.65rem #1d4e76, 2.7rem 2.7rem #1d4e76, 2.75rem 2.75rem #1d4e76, 2.8rem 2.8rem #1d4e76, 2.85rem 2.85rem #1d4e76, 2.9rem 2.9rem #1d4e76, 2.95rem 2.95rem #1d4e76, 3rem 3rem #1d4e76, 3.05rem 3.05rem #1d4e76, 3.1rem 3.1rem #1d4e76, 3.15rem 3.15rem #1d4e76, 3.2rem 3.2rem #1d4e76, 3.25rem 3.25rem #1d4e76, 3.3rem 3.3rem #1d4e76, 3.35rem 3.35rem #1d4e76, 3.4rem 3.4rem #1d4e76, 3.45rem 3.45rem #1d4e76, 3.5rem 3.5rem #1d4e76, 3.55rem 3.55rem #1d4e76, 3.6rem 3.6rem #1d4e76, 3.65rem 3.65rem #1d4e76, 3.7rem 3.7rem #1d4e76, 3.75rem 3.75rem #1d4e76, 3.8rem 3.8rem #1d4e76, 3.85rem 3.85rem #1d4e76, 3.9rem 3.9rem #1d4e76, 4rem 4rem #1d4e76, 4.05rem 4.05rem #1d4e76, 4.1rem 4.1rem #1d4e76, 4.15rem 4.15rem #1d4e76, 4.2rem 4.2rem #1d4e76, 4.25rem 4.25rem #1d4e76, 4.3rem 4.3rem #1d4e76, 4.35rem 4.35rem #1d4e76, 4.4rem 4.4rem #1d4e76, 4.45rem 4.45rem #1d4e76, 4.5rem 4.5rem #1d4e76, 4.55rem 4.55rem #1d4e76, 4.6rem 4.6rem #1d4e76, 4.65rem 4.65rem #1d4e76, 4.7rem 4.7rem #1d4e76, 4.75rem 4.75rem #1d4e76, 4.8rem 4.8rem #1d4e76, 4.85rem 4.85rem #1d4e76, 4.9rem 4.9rem #1d4e76, 4.95rem 4.95rem #1d4e76, 5rem 5rem #1d4e76;
+}
+.intro p span {
+    display: block;
+}
+.intro i {
+    position: absolute;
+    top:2rem;
+    left: 60%;
+    font-size: 3.5rem;
+    color:#e33652;
+}
+.intro i:nth-of-type(1) {
+    transform: translate(2.5rem,2rem);
+}
+.intro i:nth-of-type(2) {
+    transform: translate(-6rem,4rem);
+}
+.intro i:nth-of-type(3) {
+    transform: translate(-13.5rem,9.5rem);
+}
+.intro i:nth-of-type(4) {
+    transform: translate(-16.5rem,17rem);
+}
+.intro i:nth-of-type(5) {
+    transform: translate(-14.5rem,26rem);
+}
+.intro i:nth-of-type(6) {
+    transform: translate(-10rem,32rem);
+}
+.intro i:nth-of-type(7) {
+    transform: translate(-2.5rem,36rem);
+}
+.intro i:nth-of-type(odd) {
+    animation: flash 1s infinite;
+}
+.intro i:nth-of-type(even) {
+    animation: flash 0.5s infinite;
+}
+
+/* #pf01 포트폴리오 */
+.pf01 p {
+    display: none;
+    text-align: left;
+    padding:3rem 0 0 3.5rem;
+    transform: translateY(3rem);
+    font-weight: 700;
+}
+.pf01 .pf_s{
+    position: relative;
+    transform: translateY(-5rem);
+    opacity:0;
+    transition: 0.5s;
+}
+.pf01 .slide.on.pf_s{
+    transform: translateY(0);
+    opacity: 1;
+}
+.pf01 .pf_s span {
+    position: absolute;
+    bottom:18%;
+    right:38%;
+    font-size: 5rem;
+    font-family: '양진체';
+    color: #f4c367;
+    text-shadow:0.5rem 0.5rem #1d4e76;
+}
+.slide.pf_s figure {
+    float: left;
+    width: 60%;
+    height: 25rem;
+    overflow: hidden;
+    border:1rem double#1d4e76;
+    border-radius:2.5rem;
+}
+.slide.pf_s figure img {
+    position:relative;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+
+.slide.pf_s .ptf01 img:hover {
+    top:-70rem;
+    transition: 4s;
+}
+.slide.pf_s .ptf02 img:hover {
+    top:-108rem;
+    transition: 5s;
+}
+.slide.pf_s .ptf03 img:hover {
+    top:-102rem;
+    transition: 5s;
+}
+.slide.pf_s .ptf04 img:hover {
+    top:-113.5rem;
+    transition: 7s;
+}
+.slide.pf_s .ptf05 img:hover {
+    top:-83rem;
+    transition:4s;
+}
+.pf_slide_text {
+    float: right;
+    width: 35%;
+}
+.pf_slide_text h2 {
+    text-align: center;
+    background-color: #fff;
+    box-shadow:0.5rem 0.5rem #f4c367;
+    margin-top: 2rem;
+    padding: 0.5rem 0;
+}
+.pf01 .name01 {
+    box-shadow:0.5rem 0.5rem #1dcad3;
+}
+.pf01 .name02, .pf01 .name03 {
+    box-shadow:0.5rem 0.5rem #000;
+}
+.pf01 .name04 {
+    box-shadow:0.5rem 0.5rem #f5e548;
+}
+.pf01 .name05 {
+    box-shadow:0.5rem 0.5rem #005bac;
+}
+.pf_slide_text dl {
+    margin-top:1.5rem;
+    text-align:right;
+}
+.pf_slide_text dl em {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 900;
+    padding:1.5rem 0 0.5rem 0;
+}
+.pf_slide_text dl strong {
+    background-color: #fff;
+    position: relative;
+    font-size:1rem;
+    font-weight: 300;
+}
+.pf_slide_text dl dd:last-child strong {
+    background-color: transparent;
+}
+.pf_slide_text dl dd:last-child strong a {
+    position: relative;
+    
+    
+}
+.pf_slide_text dl dd:last-child strong a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 30%;
+    background-color: #f4c367;
+    position: absolute;
+    top:50%;
+    right: 0;
+    z-index: -1;
+}
+
+
+
+
+/* #pf02 실습 */
+.pf02 .container div {
+    float: left;
+    width: 33.333333%;
+    padding:1.5rem 0.75rem;
+    text-align: center;
+}
+.pf02 img {
+    width: 100%;
+    border:1rem double#f4c367;
+    border-radius:2.5rem;
+    transition: 0.3s;
+}
+.pf02 div:hover>a img {
+    border-color:#1d4e76 ;
+}
+.pf02 div:hover>h3 {
+    color: #f4c367;
+}
+.pf02 h3 {
+    font-family: '양진체';
+    color: #1d4e76;
+    font-size:2rem;
+    transition: 0.3s;
+}
+.pf02 h2 {
+    font-family: '양진체';
+    color: #f4c367;
+    text-shadow:0.5rem 0.5rem #1d4e76;
+    font-size: 5rem;
+    margin-top: 5rem;
+}
+
+/* #profile 프로필 */
+.profile .photo {
+    float: left;
+    width: 50%;
+   position: relative;
+}
+.profile .bg{
+    position: absolute;
+    top:0;
+    left:20%;
+    animation:ph 20s infinite ;
+}
+@keyframes ph {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(360deg);}
+    100% {transform: rotate(0);}
+}
+.profile .pht {
+    width: 18.1rem;
+    height: 18.1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top:1.7rem;
+    left:8.4rem;
+}
+.profile .info {
+    float: right;
+    width: 40%;
+}
+.profile .right {
+    text-align: right;
+}
+.profile dt {
+    font-size: 1rem;
+    font-family: '양진체';
+    margin: 1rem 0;
+}
+.profile dd {
+    font-size: 1rem;
+    font-weight:400;
+    line-height:1.5;
+}
+.profile dd a {
+    position: relative;
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+.profile dd a::after {
+    content: "";
+    display: block;
+    width: 120%;
+    height: 30%;
+    background-color: #f4c367;
+    position: absolute;
+    top:50%;
+    left: -1rem;
+    z-index: -1;
+}
+
+/* footer */
+footer {
+    position:fixed;
+    bottom:1.5rem;
+    left:2.5rem;
+    background-color: #fff;
+    z-index:999;
+}
+
+/* 모바일 버튼 */
+.mopen {
+    display: none;
+    position: absolute;
+    top:0;
+    right:0;
+    transform: translateX(3rem);
+    transition: 0.5s;
+    z-index: 1001;
+}
+.mopen.on {
+    transform: translateX(0);
+}
+
+/* 모바일 메뉴 */
+.cover {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.cover .wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.cover .wrap>ul>li>a {
+    display: block;
+    font-size: 4rem;
+    font-family: '양진체';
+    padding: 1.5rem 0;
+    color: #fff;
+    text-shadow: 1px 1px #191919,2px 2px #191919,3px 3px #191919,4px 4px #191919,5px 5px #191919,6px 6px #191919,7px 7px #191919,8px 8px #191919,9px 9px #191919,10px 10px #191919
+}
+.cover .pf li {
+    font-size: 2rem;
+    line-height: 2;
+    color: #666;
+    font-weight: 500;
+}
+.cover .pf li:first-child {
+    padding-top: 1rem;
+}
+.cover .pf li:last-child {
+    padding-bottom: 2rem;
+}
+
+
+
+
+/* 
+-------------------------------------------반응형------------------------------------------------------------------
+*/
+
+
+@media (max-width:768px) {
+    
+    html {
+        font-size:10px;
+    }
+    .container {
+        width:100%;
+    }
+    .section {
+        background:url(./img/bg01.png);
+    }
+            
+    /* #intro 메인 */
+    nav {
+        position:fixed;
+        top:3rem;left:3.5rem;
+        transform:translateY(-50%);
+        z-index:999;
+    }
+    nav li {
+        position:relative;
+        display: inline-block;
+    }
+    nav li a {
+        display:block;
+        text-indent:-999px;
+        width:3rem;
+        line-height:1rem;
+        margin-right: 1rem;
+    }
+    nav li:after {
+        content:"";
+        display:block;
+        width:3rem;
+        height:1rem;
+        background:#1d4e76;
+        position:absolute;
+        top:50%;
+        left:0;
+        transform:translateY(-50%) skew(20deg);
+        transition:0s;
+        z-index: -1;
+    }
+    nav li.on:after {
+        width:3rem;
+        background: #f4c367;
+    }
+    .intro p{
+        padding :1rem 2rem 0 0;
+        overflow:hidden;
+        font-family: '양진체';
+        line-height:10rem; 
+        text-align:right;
+        font-size: 8rem;
+        color: #f4c367; 
+        text-shadow: 0px 0px #1d4e76, 0.05rem 0.05rem #1d4e76, 0.1rem 0.1rem #1d4e76, 0.15rem 0.15rem #1d4e76, 0.2rem 0.2rem #1d4e76, 0.25rem 0.25rem #1d4e76, 0.3rem 0.3rem #1d4e76, 0.35rem 0.35rem #1d4e76, 0.4rem 0.4rem #1d4e76, 0.45rem 0.45rem #1d4e76, 0.5rem 0.5rem #1d4e76, 0.55rem 0.55rem #1d4e76, 0.6rem 0.6rem #1d4e76, 0.65rem 0.65rem #1d4e76, 0.7rem 0.7rem #1d4e76, 0.75rem 0.75rem #1d4e76, 0.8rem 0.8rem #1d4e76, 0.85rem 0.85rem #1d4e76, 0.9rem 0.9rem #1d4e76, 0.95rem 0.95rem #1d4e76, 1rem 1rem #1d4e76, 1.05rem 1.05rem #1d4e76, 1.1rem 1.1rem #1d4e76, 1.15rem 1.15rem #1d4e76, 1.2rem 1.2rem #1d4e76, 1.25rem 1.25rem #1d4e76, 1.3rem 1.3rem #1d4e76, 1.35rem 1.35rem #1d4e76, 1.4rem 1.4rem #1d4e76, 1.45rem 1.45rem #1d4e76, 1.5rem 1.5rem #1d4e76, 1.55rem 1.55rem #1d4e76, 1.6rem 1.6rem #1d4e76, 1.65rem 1.65rem #1d4e76, 1.7rem 1.7rem #1d4e76, 1.75rem 1.75rem #1d4e76, 1.8rem 1.8rem #1d4e76, 1.85rem 1.85rem #1d4e76, 1.9rem 1.9rem #1d4e76, 1.98rem 1.98rem #1d4e76, 2rem 2rem #1d4e76, 2.05rem 2.05rem #1d4e76, 2.1rem 2.1rem #1d4e76, 2.15rem 2.15rem #1d4e76, 2.2rem 2.2rem #1d4e76, 2.25rem 2.25rem #1d4e76, 2.3rem 2.3rem #1d4e76, 2.35rem 2.35rem #1d4e76, 2.4rem 2.4rem #1d4e76, 2.45rem 2.45rem #1d4e76, 2.5rem 2.5rem #1d4e76, 2.55rem 2.55rem #1d4e76, 2.6rem 2.6rem #1d4e76, 2.65rem 2.65rem #1d4e76, 2.7rem 2.7rem #1d4e76, 2.75rem 2.75rem #1d4e76, 2.8rem 2.8rem #1d4e76, 2.85rem 2.85rem #1d4e76, 2.9rem 2.9rem #1d4e76, 2.95rem 2.95rem #1d4e76, 3rem 3rem #1d4e76, 3.05rem 3.05rem #1d4e76, 3.1rem 3.1rem #1d4e76, 3.15rem 3.15rem #1d4e76, 3.2rem 3.2rem #1d4e76, 3.25rem 3.25rem #1d4e76, 3.3rem 3.3rem #1d4e76, 3.35rem 3.35rem #1d4e76, 3.4rem 3.4rem #1d4e76, 3.45rem 3.45rem #1d4e76, 3.5rem 3.5rem #1d4e76, 3.55rem 3.55rem #1d4e76, 3.6rem 3.6rem #1d4e76, 3.65rem 3.65rem #1d4e76, 3.7rem 3.7rem #1d4e76, 3.75rem 3.75rem #1d4e76, 3.8rem 3.8rem #1d4e76, 3.85rem 3.85rem #1d4e76, 3.9rem 3.9rem #1d4e76, 4rem 4rem #1d4e76, 4.05rem 4.05rem #1d4e76, 4.1rem 4.1rem #1d4e76, 4.15rem 4.15rem #1d4e76, 4.2rem 4.2rem #1d4e76, 4.25rem 4.25rem #1d4e76, 4.3rem 4.3rem #1d4e76, 4.35rem 4.35rem #1d4e76, 4.4rem 4.4rem #1d4e76, 4.45rem 4.45rem #1d4e76, 4.5rem 4.5rem #1d4e76, 4.55rem 4.55rem #1d4e76, 4.6rem 4.6rem #1d4e76, 4.65rem 4.65rem #1d4e76, 4.7rem 4.7rem #1d4e76, 4.75rem 4.75rem #1d4e76, 4.8rem 4.8rem #1d4e76, 4.85rem 4.85rem #1d4e76, 4.9rem 4.9rem #1d4e76, 4.95rem 4.95rem #1d4e76, 5rem 5rem #1d4e76;
+    }
+    .intro p span {
+        display: block;
+    }
+    .intro i {
+        position: absolute;
+        top:2rem;
+        left: 60%;
+        font-size: 3.5rem;
+        color:#e33652;
+    }
+    .intro i:nth-of-type(1) {
+        transform: translate(2.5rem,2rem);
+    }
+    .intro i:nth-of-type(2) {
+        transform: translate(-6rem,4rem);
+    }
+    .intro i:nth-of-type(3) {
+        transform: translate(-13.5rem,9.5rem);
+    }
+    .intro i:nth-of-type(4) {
+        transform: translate(-16.5rem,17rem);
+    }
+    .intro i:nth-of-type(5) {
+        transform: translate(-14.5rem,26rem);
+    }
+    .intro i:nth-of-type(6) {
+        transform: translate(-10rem,32rem);
+    }
+    .intro i:nth-of-type(7) {
+        transform: translate(-2.5rem,36rem);
+    }
+    .intro i:nth-of-type(odd) {
+        animation: flash 1s infinite;
+    }
+    .intro i:nth-of-type(even) {
+        animation: flash 0.5s infinite;
+    }
+    
+    /* #pf01 포트폴리오 */
+    .pf01 p {
+        display: block;
+    }
+    .pf01 .pf_s{
+        position: relative;
+        padding: 0 4rem;
+        transform: translateY(0);
+        opacity:1;
+        transition: 0.5s;
+    }
+    .pf01 .slide.on.pf_s{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    .pf01 .pf_s span {
+        position: absolute;
+        bottom:18%;
+        right:18%;
+        font-size: 5rem;
+        font-family: '양진체';
+        color: #f4c367;
+        text-shadow:0.5rem 0.5rem #1d4e76;
+    }
+    .slide.pf_s figure {
+        float: left;
+        width: 100%;
+        height: 20rem;
+        overflow: hidden;
+        border:1rem double#1d4e76;
+        border-radius:2.5rem;
+        
+    }
+    .slide.pf_s figure img {
+        position:relative;
+        top:0;
+        left: 0;
+        width: 100%;
+    }
+    
+    .slide.pf_s .ptf01 img:hover {
+        top:-70rem;
+        transition: 4s;
+    }
+    .slide.pf_s .ptf02 img:hover {
+        top:-108rem;
+        transition: 5s;
+    }
+    .slide.pf_s .ptf03 img:hover {
+        top:-102rem;
+        transition: 5s;
+    }
+    .slide.pf_s .ptf04 img:hover {
+        top:-113.5rem;
+        transition: 7s;
+    }
+    .slide.pf_s .ptf05 img:hover {
+        top:-83rem;
+        transition:4s;
+    }
+    .pf_slide_text {
+        float: right;
+        width: 100%;
+        padding:2rem 0 7rem 0;
+    }
+   
+    .pf_slide_text h2 {
+        text-align: center;
+        background-color: #fff;
+        box-shadow:0.5rem 0.5rem #f4c367;
+        margin-top: 1rem;
+        padding: 0.5rem 0;
+    }
+    .pf01 .name01 {
+        box-shadow:0.5rem 0.5rem #1dcad3;
+    }
+    .pf01 .name02, .pf01 .name03 {
+        box-shadow:0.5rem 0.5rem #000;
+        
+    }
+    .pf01 .name01 img, .pf01 .name02 img, .pf01 .name03 img {
+        width: 70%;
+    }
+    .pf01 .name04 {
+        box-shadow:0.5rem 0.5rem #f5e548;
+    }
+    .pf01 .name05 {
+        box-shadow:0.5rem 0.5rem #005bac;
+    }
+    .pf_slide_text dl {
+        margin-top:1rem;
+        text-align:left;
+    }
+    .pf_slide_text dl em {
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 900;
+        padding:1.5rem 0 0.5rem 0;
+    }
+    .pf_slide_text dl strong {
+        background-color: #fff;
+        position: relative;
+        font-size:1.6rem;
+        font-weight: 300;
+    }
+    
+    
+    /* #pf02 실습 */
+    .pf02 {
+        padding:0 3rem;
+    }
+    .pf02 .container div {
+        float: left;
+        width: 50%
+        ;padding:1.5rem 0.75rem;
+        text-align: center;
+    }
+    .pf02 img {
+        width: 100%;
+        border:1rem double#f4c367;
+        border-radius:2.5rem;
+        transition: 0.3s;
+    }
+    .pf02 div:hover>a img {
+        border-color:#1d4e76 ;
+    }
+    .pf02 div:hover>h3 {
+        color: #f4c367;
+    }
+    .pf02 h3 {
+        font-family: '양진체';
+        color: #1d4e76;
+        font-size:2rem;
+        transition: 0.3s;
+    }
+    .pf02 h2 {
+        font-family: '양진체';
+        color: #f4c367;
+        text-shadow:0.5rem 0.5rem #1d4e76;
+        font-size: 5rem;
+        margin-top: 5rem;
+    }
+    
+    /* #profile 프로필 */
+    .profile .photo {
+        float: left;
+        width: 100%;
+        position: relative;
+    }
+    .profile .bg{
+        position: absolute;
+        top:-3rem;
+        left:50%;
+        
+        animation:ph 20s infinite ;
+        z-index: -3;
+    }
+    
+    @keyframes ph {
+        0% {transform: rotate(0deg);}
+        50% {transform: rotate(360deg);}
+        100% {transform: rotate(0);}
+    }
+    .profile .pht {
+        width: 362px;
+        height: 362px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: absolute;
+        top:0.6rem;
+        left:57.5%;
+    }
+    .profile .info {
+        float: right;
+        width: 100%;
+        padding: 0 3.5rem;
+        
+    }
+    .profile .right {
+        text-align:left;
+    }
+    .profile dt {
+        font-size: 1.2rem;
+        font-family: '양진체';
+        margin: 3rem 0 1rem 0;
+    }
+    .profile dd {
+        font-size: 1.2rem;
+        font-weight:400;
+        line-height:1.5;
+        
+    }
+    .profile dd a {
+        position: relative;
+        font-weight: 300;
+        font-size: 1.8rem;
+    }
+    .profile dd a::after {
+        content: "";
+        display: block;
+        width: 120%;
+        height: 30%;
+        background-color: #f4c367;
+        position: absolute;
+        top:50%;
+        left: -1rem;
+        z-index: -1;
+    }
+    
+    /* footer */
+    footer {
+        position:fixed;
+        bottom:1.5rem;
+        left:0;
+        margin: 0 3.5rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        background-color: #fff;
+        z-index:999;
+    } 
+    
+    /* 모바일 버튼 */
+    .mopen {
+        display: block;
+    }
+
+    
+
+
+}
+
+
+
