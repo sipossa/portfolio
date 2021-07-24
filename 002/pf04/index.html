@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruscello</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/ruscello.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/ruscello.js"></script>
+</head>
+<body>
+<header>
+    <div class="header">
+    <h1><a href="index.html">Ruscello</a></h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html">Rooms</a>
+                <ul>
+                    <li><a href="#">Superior</a></li>
+                    <li><a href="#">Deluxe</a></li>
+                    <li><a href="#">Suite</a></li>
+                </ul>
+            </li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="reserve.html">Reserve</a></li>
+            <li><a href="customer.html">Customer</a>
+                <ul>
+                    <li><a href="#">Notice</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="m-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="snav">
+        <li><a href="#"><i class="xi-emoticon-smiley-o"></i></a><span>Login</span></li>
+        <li><a href="#"><i class="xi-pen-o"></i></a><span>Join</span></li>
+        <li><a href="#"><i class="xi-calendar-check"></i></a><span>Check</span></li>
+    </div>
+    </div>
+</header>
+<div class="top">TOP</div>
+<section id="main">
+    <div class="main-slider">
+        <div><img src="img/main01.jpg" alt=""></div>
+        <div><img src="img/main02.jpg" alt=""></div>
+        <div><img src="img/main03.jpg" alt=""></div>
+    </div>
+</section>
+<section id="m-reserve">
+    <div class="reserve">
+        <h3>Premium Resort</h3>
+        <h2>RUSCELLO</h2>
+        <p>최고의 서비스를 선사하는 루셀로 전 객실에서 최상의 만족감을 느껴보세요.<br>고품격 인테리어와 시설을 갖춰 차별화된 편안함을 누릴 수 있는 특별한 공간입니다.</p>
+        <span><a href="reserve.html">- 실시간예약 바로가기</a></span>
+    </div>
+    <div class="reserve-box row">
+        <div class="box01">
+            <p class="t03">CHECK-IN/OUT</p>
+            <p class="t04">2020.12.09 월 - 2020.12.10 화 | 1 박</p>
+        </div>
+        <div class="box02">
+            <p class="t03">ROOM</p>
+            <p class="t04">
+                <span class="sub"><i class="xi-minus-thin"></i></span>
+                <span class="num">1</span>
+                <span class="add"><i class="xi-plus-thin"></i></span>
+            </p>
+            <p class="t03">ADULT</p>
+            <p class="t04">
+                <span class="sub"><i class="xi-minus-thin"></i></span>
+                <span class="num">1</span>
+                <span class="add"><i class="xi-plus-thin"></i></span>
+            </p>
+            <p class="t03">CHILDREN</p>
+            <p class="t04">
+                <span class="sub"><i class="xi-minus-thin"></i></span>
+                <span class="num">1</span>
+                <span class="add"><i class="xi-plus-thin"></i></span>
+            </p>
+        </div>
+        <div class="box03">SEARCH</div>
+    </div>
+</section>
+<section id="img" class="row">
+    <div class="left-box">
+        <div class="img"><img src="img/img01.jpg" alt=""></div>
+        <div class="img"><img src="img/img02.jpg" alt=""></div>
+        <div class="img"><img src="img/img06.jpg" alt=""></div>
+    </div>
+    <div class="right-box">
+        <div class="img"><img src="img/img03.jpg" alt=""></div>
+        <div class="img"><img src="img/img04.jpg" alt=""></div>
+        <div class="img"><img src="img/img05.jpg" alt=""></div>
+    </div>
+</section>
+<section id="story">
+    <h2>Luxurious Facility in Private Space.</h2>
+    <p class="t02">이탈리아어 [ Ruscello : 루셀로 ] 는 ‘개울’ , ‘계곡’ 이라는 뜻으로 개울과 숲이 주는 ‘시각적’ , ‘청각적’ , ‘심리적’ 인 힐링의 요소들을<br>모든 장소에서 고객님들에게 제공할 수 있도록 계획하였습니다. ‘Ruscello' 라는 이름 아래 풀 빌라 펜션인 ’Pension Ruscello' 와<br>독립 이탈리안 레스토랑 ‘Kitchen Ruscello’ 의 서비스를 제공, 기존의 펜션과는 차별화된 호텔과 같은 럭셔리함을 저희 Ruscello에서 즐기십시오.</p>
+    <div class="img-box row">
+        <div class="img01">
+            <a href="overview.html">
+            <img src="img/story02.jpg" alt="">
+            <span>Kitchen Ruscello</span>
+            </a>
+        </div>
+        <div class="img02">
+            <a href="rooms.html">
+            <img src="img/story01.jpg" alt="">
+            <span>Rooms</span>
+            </a>
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+        $("nav>ul>li").eq(0).addClass("on");
+    })
+</script>
+<footer>
+    <div>Ruscello, 대표자명: 조재호, 사업자등록번호 : 652-03-01169, 대표전화: 055-681-2032, 이메일: skel87@naver.com<br>주소 : 경남 거제시 일운면 1861 (망치리), 구주소: 경남 거제시 일운면 망치리 35</div>
+    <div>
+        <li><a href="">통신판매업확인</a></li>
+        <li><a href="">저작권</a></li>
+        <li><a href="">이용약관</a></li>
+        <li><a href="">개인정보처리방침</a></li>
+        <li><a href="">INSTAGRAM</a></li>
+    </div>
+    <p>COPYRIGHT© 2020 Ruscello. All rights reserved. Designed by sooooojin</p>
+</footer>
+</body>
+</html>
