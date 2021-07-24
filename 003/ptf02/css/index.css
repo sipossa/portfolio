@@ -1,0 +1,123 @@
+/* header */
+header {padding:50px;height:100vh;position: sticky;top:0}
+header nav {float:left;width:20%;margin-top:50px;font-family: "MangoSans Light";}
+header nav>ul>li {text-transform: uppercase;font-size:16px;position: relative;}
+nav>ul>li>a {display:block;line-height:40px;}
+nav .sub-menu {height:0;overflow:hidden;position:static;top:40px;left:0;width:50%;background:#1b2024;color:#fbedea;padding:0 20px;transition:0.3s;}
+nav>ul>li:hover .sub-menu {height:170px;}
+nav ul ul a {line-height:24px;font-size:14px;}
+nav ul ul a:hover {text-decoration:underline;}
+nav ul ul>li:nth-child(1) {padding-top:10px;}
+header figure {float:left;width:60%;}
+header figure {width:1080px;height:750px;background: #ddd;}
+header .icon {float:right;margin-top:50px;font-size:24px;}
+header .icon i {margin-left:15px;}
+header h1 {position:absolute;bottom:50px;left:50%;transform:translateX(-50%);}
+
+/* section01 */
+#section01 {height: 100vh;padding:100px 0;background:#fbedea;position: sticky;top:0}
+#section01 .wrap {width:1300px;;margin:0 auto;}
+#section01 .wrap figure {float:left;width:50%;position:relative;}
+.visual-item01 {background:url(../img/women02.jpg);height: 385px;transition:0.3s;}
+.visual-item02 {background:url(../img/men02.jpg);height: 385px;transition:0.3s;}
+.visual-item03 {background:url(../img/boys01.jpg);height: 385px;transition:0.3s;}
+.visual-item04 {background:url(../img/girls03.jpg);height: 385px;transition:0.3s;}
+.visual-item01:hover {background:url(../img/women01.jpg);height: 385px;}
+.visual-item02:hover {background:url(../img/men01.jpg);height: 385px;}
+.visual-item03:hover {background:url(../img/boys02.jpg);height: 385px;}
+.visual-item04:hover {background:url(../img/girls01.jpg);height: 385px;}
+#section01 .wrap figure h2 {position: absolute;font-size:100px;font-weight:900;letter-spacing:8px;text-transform: uppercase;opacity:0;transition:0.3s;}
+#section01 .wrap figure .left-text {top:50%;left:-100px;transform:translateY(-50%);}
+#section01 .wrap figure .right-text {top:50%;right:-100px;transform:translateY(-50%);}
+#section01 .wrap figure:hover h2 {opacity:1;}
+
+/* section02 */
+#section02 {height: 100vh;padding:100px 0;background:#fff;position: sticky;top:0}
+#section02  h2 {font-size:100px;font-weight:900;margin-bottom:30px;letter-spacing:8px;text-align:center;}
+#section02 .wrap {width:1500px;margin:0 auto;background: #fff;}
+#section02 .insta-img01 {float:left;width:25%;padding:10px 10px 0 0;}
+#section02 .insta-img02 {float:left;width:50%;padding:10px 10px 0 0;}
+#section02 .wrap figure img {width:100%;cursor: pointer;}
+#section02 .content {position: relative;}
+#section02  .content>div {width:100%;height:652px;background:#fbedea;position: absolute;top:0;left:0;z-index:-1;}
+#section02 .content>div>div {width:1200px;margin:100px auto;}
+#section02 .content>div>div figure {float:left;width:25%;padding:0 15px;}
+#section02 .content>div>div a {float:right;display: block;width:25%;text-align: center;line-height:50px;margin-top:135px;background: #1b2024;color:#fbedea;}
+#section02 .content>div>div a:hover {border:1px solid#1b2024;color:#1b2024;background:transparent;}
+#section02 .content>div.on {z-index:1;} 
+#section02 .content>div i {position:absolute;top:30px;right:50px;font-size:30px;cursor: pointer;color: #1b2024;}
+#section02 .order h3 {text-align:center;margin:15px 0 10px 0;color: #1b2024;}
+#section02 .order p {text-align:center;color: #1b2024;font-size: 14px;}
+
+/* section03 */
+#section03 {height: 100vh;padding:100px 0;background:#fbedea;position: sticky;top:0}
+#section03 .wrap {width:1520px;margin:0 auto;}
+#section03 .container {float:left;width:33.333333%;padding:0 10px;position: relative;}
+#section03 .container img {width:100%;}
+#section03 .container h2 {font-size:100px;}
+#section03 .container .cover03{background:#fff;color:#1b2024;height:500px;padding-top:100px;text-align:center;}
+#section03 .container .cover03 h3 {font-size:20px;margin-bottom:30px;}
+#section03 .container .cover03 p {font-size:14px;padding:0 50px 50px 50px;font-family: "MangoSans Light";line-height:1.5;}
+#section03 .container .cover03 a {font-size:14px;font-family: "MangoSans Light";text-decoration:underline;}
+#section03 .container .cover03 a:hover {font-family:"MangoSans Bold"}
+#section03 .wrap .container:last-child{padding-top:100px ;}
+.container .news-item {position: relative;height:678px;}
+.container .news-item figure {visibility:hidden;position: absolute;width:100%;}
+.container .news-item figure:nth-child(1) {visibility:visible;}
+.container ul {text-align:right;font-size:16px;line-height:1.5;color:#1b2024;font-family: "MangoSans Light";margin-bottom:30px;}
+.container li.on {color:#6e1420;font-family:"MangoSans Bold"}
+.container li.on:after {content:"";display: block;width:100%;height:2px;background:#6e1420;}
+
+/* section04 */
+#section04  {height: 100vh;padding:100px 0;background:#fff;position: sticky;top:0}
+#section04 .wrap {width:1500px;margin:135px auto;height:300px;background:#fbedea;position: relative;}
+.img-item01 {position: absolute;top:-150px;right:30px;}
+.img-item02 {position: absolute;top:-120px;right:410px;}
+.img-item03 {position: absolute;bottom:-360px;right:410px;}
+#section04 .wrap>p {position: absolute;top:-110px;left:30px;font-size:100px;font-weight:900;color:#1b2024;}
+#section04 .wrap figure>div {position: absolute;top:0;left:0;width:100%;height:100%;text-align: center;background:rgba(0,0,0,0.5);color:#fff;padding-top:30%;font-family: "MangoSans Light";font-size:20px;opacity: 0;transition:0.5s;}
+#section04 .wrap figure>div:hover {opacity:1;}
+#section04 .wrap .img-item01>div {padding-top:300px;}
+#section04 .wrap figure>div p {margin-bottom:50px;}
+#section04 .wrap figure>div a {font-size:14px;text-decoration:underline;}
+#section04 .wrap figure>div a:hover {font-family:"MangoSans Bold"}
+
+/* section05 */
+#section05 {height: 100vh;background:url(../img/about.jpg) no-repeat center center/cover;position: sticky;top:0}
+
+/* section06 */
+#section06 {height: 100vh;position: sticky;top:0}
+#section06 .container {float: left;width: 50%;padding:150px 0 0 100px;color:#fff;}
+#section06 .container strong {font-size:70px;line-height:1.2;font-family:"MangoSans Light"}
+#section06 .container p {font-size:14px;line-height:1.8;font-family: "MangoSans Light";margin:70px 0 40px 0;}
+#section06 .container a {font-size:14px;font-family: "MangoSans Light";text-decoration:underline;}
+#section06 .container a:hover {font-family:"MangoSans Bold"}
+
+/* section07 */
+#section07 {height: 100vh;position: sticky;top:0}
+#section07 .container {float:right;width: 50%;padding:150px 100px 0 0;color:#fff;text-align: right;background:url(../img/woman.jpg);height:100vh;}
+#section07 .container strong {font-size:70px;line-height:1.2;font-family:"MangoSans Light"}
+#section07 .container p {font-size:14px;line-height:1.8;font-family: "MangoSans Light";margin:70px 0 40px 0;}
+#section07 .container a {font-size:14px;font-family: "MangoSans Light";text-decoration:underline;}
+#section07 .container a:hover {font-family:"MangoSans Bold"}
+
+/* section08 */
+#section08 {height: 100vh;position: sticky;top:0}
+#section08 .container {float: left;width: 50%;}
+#section08 .container figure img {width:100%;}
+
+/* footer */
+footer {height: 100vh;position: sticky;top:0}
+footer .container {float:right;width: 50%;text-align:center;background:#1b2024;height: 100vh;padding-top: 300px;}
+footer .container figure img {width:80%;}
+footer .container>div dl {padding-top:170px;font-size:0;}
+footer .container>div dt {display:inline-block;color:#fbedea;font-family: "MangoSans Light";padding:0 15px;font-size:16px;}
+footer .sns {padding-top:30px;color:#fbedea;font-size:0;}
+footer .sns i {margin:0 10px;font-size:20px;}
+footer p {padding-top:70px;color:#999;font-family: "MangoSans Light";font-size:12px;}
+footer p span {padding-left:20px;}
+
+
+
+
+
