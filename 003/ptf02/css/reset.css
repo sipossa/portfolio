@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://db.onlinewebfonts.com/c/1da0278ca091df7b3568d5e65ce7395e?family=MangoSans+Bold');
+@import url('https://db.onlinewebfonts.com/c/35e7f1ee3761b734c1d98eaa4163f64e?family=MangoSans+Light');
+
+*, *:before,*:after {box-sizing:border-box;}
+
+h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,p,body,a,figure,aside,article,section,div {margin:0;padding:0;font-size:inherit;font-weight:inherit;color:inherit;outline:none;}
+ul, ol {list-style:none;}
+a {text-decoration:none;}
+img {vertical-align:middle;}
+address, em {font-style:normal;}
+strong,b {font-weight:normal;}
+
+
+body {font-family:"MangoSans Bold", sans-serif;line-height:1;overflow-x:hidden;}
+
+address, em {font-size:normal;}
+.cf:after, .row:after {content:"";display:block;clear:both;}
