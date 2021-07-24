@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="img/icon.ico">
     <title>koreauniversity</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">       
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">       
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/koreauni.css">
