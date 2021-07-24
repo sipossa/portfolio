@@ -1,1 +1,503 @@
-001
+<!DOCTYPE html>
+<html lang="ko">
+<head> 
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/icon.ico">
+    <title>2021 하진영 Portfolio</title>
+    <!--반응형 세팅 뷰포트 선언-->   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <!--css-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"> 
+    <link rel="stylesheet" href="css/portfolio.css">
+    <!--js-->
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/fullpage.js"></script>
+    <script src="js/portfolio.js"></script>            
+</head>
+<body>
+    <!------------------ header ------------------>
+    <header>
+        <!--로고-->
+        <h1 id="cursor-c"><a href="index.html">Haha</a></h1>
+        <!--메뉴-->
+        <div class="m-btn" id="cursor-c">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!--메뉴내용-->
+        <nav class="m-bg">
+            <ul>
+                <li><span>01.</span><a href="#1Page">Home</a></li>
+                <li><span>02.</span><a href="#2Page">Project</a></li>
+                <li><span>03.</span><a href="#5Page">About</a></li>
+                <li><span>04.</span><a href="#6Page">Contact</a></li>
+            </ul>
+            <p>2021 Web Design Portfolio</p>
+        </nav>
+       <!--스크롤-->
+        <nav class="scroll">
+            <ul>
+                <li><a href="#1Page"></a></li>
+                <li><a href="#2Page"></a></li>
+                <li><a href="#3Page"></a></li>
+                <li><a href="#4Page"></a></li>
+                <li><a href="#5Page"></a></li>
+                <li><a href="#6Page"></a></li>
+            </ul>
+        </nav>
+        <!--배경음악-->
+        <div class="sound" id="cursor-c">
+            <i class="xi-play"></i><i class="xi-pause"></i>
+            <div class="soundbox">Music <i class="xi-music"></i></div>
+        </div>
+        <!--커서-->
+        <div id="cursor"></div>
+    </header>
+    <div id="fullpage">
+        <!------------------ m01 ------------------>
+        <section id="m01" class="section">
+            <div class="box">
+                <!--우측 텍스트-->
+                <div class="right-text">
+                    <p>Ha Jinyoung</p>
+                    <p>2021</p>
+                </div>
+                <!--메인내용-->
+                <div class="main">
+                    <figure><img src="img/main-bg.jpg" alt="hjy portfolio"></figure>
+                    <div class="m-title">
+                        <h2>UX/UI<br>Designer</h2>
+                        <p>That loves spending time coding</p>
+                        <span></span>
+                        <!--메인 메뉴-->
+                        <ul>
+                            <li><a href="#2Page">PROJECTS</a></li>
+                            <li><a href="#5Page">ABOUT</a></li>
+                            <li><a href="#6Page">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------ m02 --------------->
+        <section id="m02" class="section">
+            <div class="box">
+                <figure class="circle01"><img src="img/bg01.png" alt="hjy portfolio"></figure>
+                <!--m02 슬라이드 버튼-->
+                <div class="m02-btn slide-btn">
+                    <p>01</p>
+                    <p>02</p>
+                </div>
+                <!--m02 슬라이드 시작-->
+                <div class="m02-slider">
+                    <div class="m02-item">  
+                        <!--m02 타이틀-->         
+                        <div class="n-title">
+                            <p>RESPONSIVE WEB</p>
+                            <h3>KOREA<br>UNIVERSITY</h3>
+                            <!--버튼-->
+                            <span><a href="http://hjy030.pe.kr/pf08" target="_blank">MAIN PAGE</a></span>        
+                            <span><a href="http://hjy030.pe.kr/pf08/sub01.html" target="_blank">SUB PAGE</a></span>        
+                            <span><a class="p-btn01 p-btn">DESIGN GUIDE</a></span>
+                            <!--m02 내용-->
+                            <dl>
+                                <dt>PROJECT</dt>
+                                <dd>고려대학교 홈페이지 리뉴얼</dd>
+                                <dt>TYPE</dt>
+                                <dd>반응형 웹디자인</dd>       
+                                <dt>TOOLS</dt>
+                                <dd>HTML5 CSS6 JAVASCRIPT(jQuery)</dd>       
+                                <dt>기여도</dt>
+                                <dd>개인작업 100%</dd> 
+                            </dl>      
+                        </div>
+                        <div class="n-con">
+                            <img src="img/mokup01.png" alt="hjy portfolio">
+                            <img src="img/mokup02.png" alt="hjy portfolio">
+                            <img src="img/mokup02-1.png" alt="hjy portfolio">
+                            <div class="n-mac"><img src="img/c01-m.jpg" alt="hjy portfolio"></div>
+                            <div class="n-iphone"><img src="img/c01-i.png" alt="hjy portfolio"></div>
+                        </div>
+                    </div>
+                    <div class="m02-item">
+                        <!--m02-2 타이틀-->           
+                        <div class="n-title">
+                            <p>RESPONSIVE WEB</p>
+                            <h3>HI FERTILITY<br>CENTER</h3>
+                            <!--버튼-->
+                            <span><a href="http://hjy030.pe.kr/pf09" target="_blank">PUBLISHING</a></span>        
+                            <span><a class="p-btn02 p-btn">DESIGN GUIDE</a></span>
+                            <!--m02-2 내용-->
+                            <dl>
+                                <dt>PROJECT</dt>
+                                <dd>에이치아이여성의원 홈페이지 리뉴얼</dd> 
+                                <dt>TYPE</dt>
+                                <dd>반응형 웹디자인</dd>     
+                                <dt>TOOLS</dt>
+                                <dd>HTML5 CSS6 JAVASCRIPT(jQuery)</dd>       
+                                <dt>기여도</dt>
+                                <dd>개인작업 100%</dd> 
+                            </dl>     
+                        </div>
+                        <!--목업 & 도형-->
+                        <div class="n-con">
+                            <img src="img/mokup01.png" alt="hjy portfoliohjy portfolio">
+                            <img src="img/mokup02.png" alt="hjy portfolio">
+                            <img src="img/mokup02-1.png" alt="hjy portfolio">
+                            <div class="n-mac"><img src="img/c02-m.jpg" alt="hjy portfolio"></div>
+                            <div class="n-iphone"><img src="img/c02-i.png" alt="hjy portfolio"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--m02 슬라이드 끝--> 
+            </div>               
+        </section>
+        <!------------------ m03 --------------->
+        <section id="m03" class="section">
+            <div class="box">
+                <figure class="circle02"><img src="img/bg02.png" alt=""></figure>
+                <!--m03 슬라이드 버튼-->
+                <div class="m03-btn slide-btn">
+                    <p>01</p>
+                    <p>02</p>
+                </div>
+                <!--m03 슬라이드 시작-->
+                <div class="m03-slider">
+                    <div class="m03-item">  
+                        <!--m03 타이틀-->         
+                        <div class="n-title">
+                            <p>STANDARD WEB</p>
+                            <h3>MOVEMENT<br>LAB</h3>
+                            <!--버튼-->
+                            <span><a href="http://hjy030.pe.kr/pf06" target="_blank">MAIN PAGE</a></span>        
+                            <span><a href="http://hjy030.pe.kr/pf06/sub01.html" target="_blank">SUB PAGE</a></span>        
+                            <span><a class="p-btn03 p-btn">DESIGN GUIDE</a></span>
+                            <!--m03 내용-->
+                            <dl>
+                                <dt>PROJECT</dt>
+                                <dd>무브먼트랩 홈페이지 리뉴얼</dd>
+                                <dt>TYPE</dt>
+                                <dd>스탠다드 웹디자인</dd>       
+                                <dt>TOOLS</dt>
+                                <dd>HTML5 CSS6 JAVASCRIPT(jQuery)</dd>       
+                                <dt>기여도</dt>
+                                <dd>개인작업 100%</dd> 
+                            </dl>      
+                        </div>
+                        <div class="n-con">
+                            <img src="img/mokup01.png" alt="hjy portfolio">
+                            <div class="n-mac"><img src="img/c03-m.jpg" alt="hjy portfolio"></div>
+                        </div>
+                    </div>
+                    <div class="m03-item">
+                        <!--m03-2 타이틀-->           
+                        <div class="n-title">
+                            <p>STANDARD WEB</p>
+                            <h3>TODAY'S<br>HOUSE</h3>
+                            <!--버튼-->
+                            <span><a href="http://hjy030.pe.kr/pf02" target="_blank">PUBLISHING</a></span>        
+                            <span><a class="p-btn04 p-btn">DESIGN GUIDE</a></span>
+                            <!--m03-2 내용-->
+                            <dl>
+                                <dt>PROJECT</dt>
+                                <dd>오늘의집 홈페이지 리뉴얼</dd> 
+                                <dt>TYPE</dt>
+                                <dd>스탠다드 웹디자인</dd>     
+                                <dt>TOOLS</dt>
+                                <dd>HTML5 CSS6 JAVASCRIPT(jQuery)</dd>       
+                                <dt>기여도</dt>
+                                <dd>개인작업 100%</dd> 
+                            </dl>     
+                        </div>
+                        <!--목업 & 도형-->
+                        <div class="n-con">
+                            <img src="img/mokup01.png" alt="hjy portfolio">
+                            <div class="n-mac"><img src="img/c05-m.jpg" alt="hjy portfolio"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--m03 슬라이드 끝-->                                 
+            </div>    
+        </section>
+        <!------------------ m04 --------------->
+        <section id="m04" class="section">
+            <div class="box">
+                <figure class="circle03"><img src="img/bg03.png" alt="hjy portfolio"></figure>
+                <!--m04 슬라이드 버튼-->
+                <div class="m04-btn slide-btn">
+                    <p>01</p>
+                    <p>02</p>
+                </div>
+                <!--m04 돌아가는 원--> 
+                <div class="circle">
+                    <span></span>
+                </div>
+                <!--m04 슬라이드 시작-->
+                <div class="m04-slider">
+                    <div class="m04-item">  
+                        <!--m04 타이틀-->         
+                        <div class="n-title">
+                            <p>FULLPAGE WEB</p>
+                            <h3>O!Oi<br>COLLECTION</h3>
+                            <!--버튼-->
+                            <span><a href="http://hjy030.pe.kr/pf05" target="_blank">MAIN PAGE</a></span>           
+                            <span><a class="p-btn05 p-btn">DESIGN GUIDE</a></span>
+                            <!--m04 내용-->
+                            <dl>
+                                <dt>PROJECT</dt>
+                                <dd>O!Oi 홈페이지 리뉴얼</dd>
+                                <dt>TYPE</dt>
+                                <dd>풀페이지 웹디자인</dd>       
+                                <dt>TOOLS</dt>
+                                <dd>HTML5 CSS6 JAVASCRIPT(jQuery)</dd>       
+                                <dt>기여도</dt>
+                                <dd>개인작업 100%</dd> 
+                            </dl>      
+                        </div>
+                        <div class="n-con">
+                            <img src="img/mokup03.png" alt="hjy portfolio">
+                            <div class="n-ipad"><img src="img/c06-m.jpg" alt="hjy portfolio"></div>
+                        </div>
+                    </div>
+                    <div class="m04-item">
+                        <!--m04-2 타이틀-->           
+                        <div class="n-title">
+                            <p>FULLPAGE WEB</p>
+                            <h3>AHHA<br>GUESTHOUSE</h3>
+                            <!--버튼-->
+                            <span><a href="http://hjy030.pe.kr/pf07" target="_blank">PUBLISHING</a></span>        
+                            <span><a class="p-btn06 p-btn">DESIGN GUIDE</a></span>
+                            <!--m04-2 내용-->
+                            <dl>
+                                <dt>PROJECT</dt>
+                                <dd>AHHA게스트하우스 홈페이지 리뉴얼</dd> 
+                                <dt>TYPE</dt>
+                                <dd>풀페이지 웹디자인</dd>     
+                                <dt>TOOLS</dt>
+                                <dd>HTML5 CSS6 JAVASCRIPT(jQuery)</dd>       
+                                <dt>기여도</dt>
+                                <dd>개인작업 100%</dd> 
+                            </dl>     
+                        </div>
+                        <!--목업 & 도형-->
+                        <div class="n-con">
+                            <img src="img/mokup03.png" alt="hjy portfolio">
+                            <div class="n-ipad"><img src="img/c07-m.jpg" alt="hjy portfolio"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--m04 슬라이드 끝-->                                 
+            </div>    
+        </section>
+        <!------------------ m05 --------------->
+        <section id="m05" class="section">
+            <div class="box">   
+                <!--m05 배경 도형들-->
+                <figure class="circle04"><img src="img/bg06.png" alt="hjy portfolio"></figure>
+                <figure class="circle05"><img src="img/bg07.png" alt="hjy portfolio"></figure>
+                <!--m05 프로필-->
+                <div class="profile">
+                    <div class="profile-img">
+                        <span><span></span></span>
+                        <figure><img src="img/title-me.jpg" alt="hjy portfolio"></figure>
+                    </div>
+                    <dl>
+                        <span>PROFILE</span>
+                        <dt>Name</dt>
+                        <dd>하진영 / Ha Jinyoung</dd>
+                        <dt>Birth</dt>
+                        <dd>1994.11.24</dd>
+                        <dt>Phone</dt>
+                        <dd>010.8409.3317</dd>
+                        <dt>Email</dt>
+                        <dd>hjy030@naver.com</dd>
+                    </dl>
+                </div>
+                <!--m05 프로필 두번째 줄-->
+                <div class="profile2">
+                    <dl class="edu">
+                        <span>EDUCATION</span>
+                        <dd>2020</dd>
+                        <dt>부산 그린 컴퓨터 아카데미<p>2020.08 - 2021.01</p></dt>
+                        <dt>스마트 UI/UX 웹디자인(웹퍼블리셔) 과정 수료</dt> 
+                        <dd>2013</dd>
+                        <dt>동서대학교<p>2013.03 - 2019.02</p></dt>
+                        <dt>건축토목공학부 건축(5년제) 전공</dt>
+                    </dl>
+                    <dl class="sch">
+                        <span>SCHOLASHIP</span>
+                        <dd>2018</dd>
+                        <dt>동서대학교</dt>
+                        <dt>성적우수장학금 · 성장우수장학금</dt> 
+                        <dd>2013</dd>
+                        <dt>동서대학교</dt>
+                        <dt>성적우수장학금</dt>            
+                    </dl>
+                    <dl class="exp">
+                        <span>EXPRIENCE</span>
+                        <dd>2019</dd>
+                        <dt>동서대학교 건축학부 졸업展</dt>
+                        <dt>기획부문 팀장</dt> 
+                        <dd>2020</dd>
+                        <dt>(주) 다움종합건축사사무소</dt>
+                        <dt>기장군 주민센터 공모 우수상 수상</dt>               
+                        <dt>부산대정문입구 디자인 공모 우수상 수상</dt>          
+                        <dt>부산대역사 리모델링 디자인 최종당선</dt>               
+                        <dt>마곡지구 OO사옥 공모 최우수상 수상</dt>               
+                    </dl>            
+                </div>
+                <!--m05 프로필 세번째 줄-->
+                <div class="profile3">
+                    <div class="skill">
+                        <span>SKILLS</span>
+                        <div>
+                            <span>
+                                <img src="img/p01.png" alt="hjy portfolio">
+                                <p>HTML5</p>
+                            </span>
+                            <span>
+                                <img src="img/p02.png" alt="hjy portfolio">
+                                <p>CSS3</p>
+                            </span>
+                            <span>
+                                <img src="img/p03.png" alt="hjy portfolio">
+                                <p>Jquery</p>
+                            </span>
+                            <span>
+                                <img src="img/p04.png" alt="hjy portfolio">
+                                <p>photo<br>shop</p>
+                            </span>
+                            <span>
+                                <img src="img/p05.png" alt="hjy portfolio">
+                                <p>illustrator</p>
+                            </span>
+                        </div>  
+                        <div>
+                            <span>
+                                <img src="img/p06.png" alt="hjy portfolio">
+                                <p>auto CAD</p>
+                            </span>
+                            <span>
+                                <img src="img/p07.png" alt="hjy portfolio">
+                                <p>Skech up</p>
+                            </span>
+                            <span>
+                                <img src="img/p08.png" alt="hjy portfolio">
+                                <p>3D<br>max</p>
+                            </span>
+                            <span>
+                                <img src="img/p09.png" alt="hjy portfolio">
+                                <p>Premiere</p>
+                            </span>
+                            <span>
+                                <img src="img/p10.png" alt="hjy portfolio">
+                                <p>Microsoft</p>
+                            </span>
+                        </div>                      
+                    </div>
+                    <dl>
+                        <span>LICENSE</span>
+                        <dd>2019</dd>
+                        <dt>운전면허증</dt>
+                        <dt>2종 보통</dt> 
+                        <dd>2016</dd>
+                        <dt>실내건축기능사</dt>                       
+                    </dl>
+                    <dl class="hobby">
+                        <span>HOBBY</span> 
+                        <dd><i class="xi-movie"></i></dd>
+                        <dt>영화감상</dt>
+                        <dt>Favorite Movie / 노트북</dt> 
+                        <dd><i class="xi-headset"></i></dd>
+                        <dt>음악감상</dt>   
+                        <dt>Favorite Music / 가을밤에 든 생각 - 잔나비</dt>  
+                        <dd><i class="xi-cafe"></i></dd>
+                        <dt>차마시기</dt>  
+                        <dt>Favorite Tea / 얼그레이</dt>                 
+                    </dl>
+                </div>
+            </div>
+        </section>
+        <!------------------ m06 --------------->
+        <section id="m06" class="section">
+            <div class="box">    
+                <!--m06 사진-->
+                <div class="end-img">
+                    <figure><img src="img/con-01.jpg" alt="hjy portfolio"></figure>
+                    <figure><img src="img/me.png" alt="hjy portfolio"></figure>
+                </div>
+                <!--m06 타이틀&내용-->
+                <div class="end-text">
+                    <span>HAJINYOUNG</span>    
+                    <span><a href="mailto:hjy030@naver.com">@ SEND MESSAGES</a></span> 
+                    <p class="kakao-btn"><a>KAKAOTALK</a></p>   
+                    <p><a href="https://www.instagram.com/_jing.ha/" target="_blank">INSTAGRAM</a></p>   
+                </div>
+                <!--탑버튼-->
+                <a href="#1Page" class="top-btn">
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>       
+        </section>                           
+    </div>
+    <!--스타일가이드-->
+    <div class="guide guide01">
+        <i class="xi-close"></i>
+        <div class="guide01">
+            <img src="img/guide01.jpg" alt="hjy portfolio">
+        </div>       
+    </div> 
+    <div class="guide guide02">
+        <i class="xi-close"></i>
+        <div class="guide01">
+            <img src="img/guide02.jpg" alt="hjy portfolio">
+        </div>       
+    </div>
+    <div class="guide guide03">
+        <i class="xi-close"></i>
+        <div class="guide01">
+            <img src="img/guide03.jpg" alt="hjy portfolio">
+        </div>       
+    </div>
+    <div class="guide guide04">
+        <i class="xi-close"></i>
+        <div class="guide01">
+            <img src="img/guide04.jpg" alt="hjy portfolio">
+        </div>       
+    </div>
+    <div class="guide guide05">
+        <i class="xi-close"></i>
+        <div class="guide01">
+            <img src="img/guide05.jpg" alt="hjy portfolio">
+        </div>       
+    </div>
+    <div class="guide06 guide">
+        <i class="xi-close"></i>
+        <div class="guide01">
+            <img src="img/guide06.jpg" alt="hjy portfolio">
+        </div>       
+    </div>
+    <div class="kakao">
+        <figure><img src="img/kakao.jpg" alt="hjy portfolio"></figure>
+        <i class="xi-close"></i>
+        <ul>
+            <li>ID</li>
+            <li>hjy030</li>
+            <li>MAIL</li>
+            <li>hjy030@naver.com</li>
+            <li>* QR코드 촬영시 카카오톡으로 연결됩니다.</li>
+        </ul>
+    </div>    
+</body>
+</html>
