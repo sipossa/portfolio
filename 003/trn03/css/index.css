@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+html {font-size: 20px;}
+body {font-size: 0.8rem;min-width: 1900px;}
+
+
+header {padding:1rem 2rem;position: fixed;top:0;left: 0;width:100%;min-width:1900px;z-index: 999;}
+header .container {width: 100%;line-height: 4rem;color: #fff;font-size:0;}
+header h1 {float: left;width: 15%;}
+header nav {float: left;width: 70%;}
+header nav a {display: block;padding: 0 0.75rem;font-size: 1rem;}
+header .tel {float: right;font-size: 1.4rem;}
+header .tel i {border:2px solid rgba(255,255,255,0.8);border-radius: 50%;padding: 0.3rem;}
+header .tel strong {font-weight: 700;}
+header.on {background: rgba(0, 0, 0,0.7);}
+
+.gnb {text-align: center;}
+.gnb li {display: inline-block;}
+
+.main-slide figure {height:100vh;background-repeat:no-repeat;background-position:center center;background-size:cover;}
+.main-slide .item01 {background-image:url(../img/bg_intro01.jpg)}
+.main-slide .item02 {background-image:url(../img/bg_intro02.jpg)}
+.main-slide .item03 {background-image:url(../img/bg_intro03.jpg)}
+
+
+.main-slide .slick-dots {position:absolute;bottom:3rem;width:100%;text-align:center;z-index:222;}
+.main-slide .slick-dots button {display:none;}
+.main-slide .slick-dots li {display:inline-block;width:5rem;height:0.2rem;margin:0 0.2rem;background:#fff;position:relative;}
+.main-slide .slick-dots li:after {content:"";display:block;position:absolute;top:0;left:0;width:0;height:100%;background:#866750;}
+.main-slide .slick-dots li.slick-active:after {width:100%;transition:3s}
+
+section {text-align: center;}
+.main-visual {position: relative;color: #fff;}
+.main-visual .slogan {position: absolute;top:50%;left:50%;transform: translate(-50%,-50%);z-index:111;}
+.main-visual .slogan h3 {font-size:1.3rem;}
+.main-visual .slogan h3 strong {display: block;font-family: 'Nanum Myeongjo', serif;font-size: 3rem;font-weight:700;margin:1.2rem 0;}
+.main-visual .slogan p {line-height: 1.5;}
+.main-visual:after {content:"";display:block;width:100%;height:100%;position:absolute;top:0;left:0;background:rgba(0,0,0,0.3);}
+
+
+.sec01 {padding: 5rem 0;}
+.sec01 h2 {margin-bottom:1rem;}
+.sec01 h2 strong {display: block;font-family: 'Nanum Myeongjo', serif;font-size: 2rem;font-weight:300;color:#866750;}
+.sec01 h3 {margin: 1rem 0 0.5rem 0;}
+.sec01 em {font-size: 1rem;font-weight: 500;}
+
+.sec01 figure {float: left;width: 50%;padding:0.75rem;}
+.sec01 figure img {width: 100%;transition:1s;}
+.sec01 figure:hover img {transform: scale(1.2);}
+.sec01 .case {overflow: hidden;position: relative;}
+.sec01 .case:after {content:attr(rel);display: block;background:#866750;color: #fff;padding: 0.4rem 0;font-size: 0.7rem;font-family: 'Nanum Myeongjo', serif;width: 100%;position: absolute;bottom: 0;left: 0;}
+
+
+.sec02 {height: 100vh;padding: 5rem 0;background: url(../img/bg_main2.jpg)no-repeat center center/cover;color: #fff;}
+.sec02 h2 {margin-bottom: 2rem;font-size: 1.4rem;line-height: 1.2;}
+.sec02 .text-box {float: left;width: 33.333333%;padding:0 0.75rem;font-weight: 300;font-size: 0.7rem;line-height: 1.2;}
+.sec02 .text-box a {display: block;padding:3rem 2rem;background:rgba(251,139,30,0.5);border-radius:0.8rem;}
+.sec02 .text-box h3 {font-size:1.4rem;font-weight: 500;margin-bottom: 1rem;}
+.sec02 .text-box p {line-height: 1.5;}
+
+footer {background:#f2f2f2;padding:3rem 0;text-align:center;font-size:0;}
+footer li {display:inline-block;font-size:0.6rem;padding:0 0.5rem;line-height:1.4;position:relative;}
+footer li:after {content:"";display:block;width:0.05rem;height:0.5rem;position:absolute;top:0.2rem;right:0;background:#999;}
+footer li:last-child:after {display:none;}
+footer address {font-size:0.6rem;line-height:1.4;}
+
+.mopen {display: none;position: fixed;top: 1.5rem;right: 1.5rem;width: 1.5rem;height: 1.5rem;}
+.mopen>span {position: absolute;left: 0;width: 100%;height: 1px;background: #fff;transition: 0.5s;}
+.mopen>span:nth-child(1) {top: 0;}
+.mopen>span:nth-child(2) {top: 0.5rem;}
+.mopen>span:nth-child(3) {top: 0.5rem;}
+.mopen>span:nth-child(4) {top: 1rem;}
+.mopen.ox>span:nth-child(1) {opacity: 0;}
+.mopen.ox>span:nth-child(2) {transform: rotate(45deg);}
+.mopen.ox>span:nth-child(3) {transform: rotate(-45deg);}
+.mopen.ox>span:nth-child(4) {opacity: 0;}
+
+/* 
+----------------------------------------------------------------------------------------------------------------------
+반응형 768px ipad 대응
+----------------------------------------------------------------------------------------------------------------------
+*/
+
+@media (max-width:768px) {
+    html {font-size:20px;}
+    body {font-size: 0.8rem;}
+    .container{width:100%; margin:0 auto;}
+
+    header {padding:1rem 2rem;position:fixed;top:0;left:-100%;width:calc(100% - 90px);height:100vh;background:#866750;min-width:0;transition:0.5s;z-index:999;}
+    header .container {width:100%;line-height:2rem;color:#fff;font-size:0;}
+    header h1 {float:left;width:auto;position:fixed;top:1rem;left:2rem;}
+    header nav {float:left;width:100%;padding:1rem 0;margin-top:4rem;}
+    header nav a {display:block;padding:0 0;font-size:0.8rem;}
+    header .tel {float:left;width:100%;font-size:1.4rem;}
+    header .tel i {border:2px solid rgba(255,255,255,0.8);border-radius:50%;padding:0.3rem;}
+    header .tel strong {font-weight:700;}
+    header.on {background:#866750;}
+    header.ox {left:0;}
+
+
+    .gnb {text-align: center;}
+    .gnb li {display:block;text-align: left;border-bottom: 1px solid rgba(255,255,255,0.4);}
+
+    .main-slide figure {height:100vh;background-repeat:no-repeat;background-position:center center;background-size:cover;}
+    .main-slide .item01 {background-image:url(../img/bg_intro01.jpg)}
+    .main-slide .item02 {background-image:url(../img/bg_intro02.jpg)}
+    .main-slide .item03 {background-image:url(../img/bg_intro03.jpg)}
+
+    .main-slide .slick-dots {position:absolute;bottom:3rem;width:100%;text-align:center;z-index:222;}
+    .main-slide .slick-dots button {display:none;}
+    .main-slide .slick-dots li {display:inline-block;width:5rem;height:0.2rem;margin:0 0.2rem;background:#fff;position:relative;}
+    .main-slide .slick-dots li:after {content:"";display:block;position:absolute;top:0;left:0;width:0;height:100%;background:#866750;}
+    .main-slide .slick-dots li.slick-active:after {width:100%;transition:3s}
+
+    section {text-align: center;}
+    .main-visual {position: relative;color: #fff;}
+    .main-visual .slogan {position: absolute;top:50%;left:50%;transform: translate(-50%,-50%);z-index:111;}
+    .main-visual .slogan h3 {font-size:1.3rem;}
+    .main-visual .slogan h3 strong {display: block;font-family: 'Nanum Myeongjo', serif;font-size:2rem;font-weight:700;margin:1.2rem 0;}
+    .main-visual .slogan p {font-size: 0.7rem;}
+    .main-visual:after {content:"";display:block;width:100%;height:100%;position:absolute;top:0;left:0;background:rgba(0,0,0,0.3);}
+
+    .sec01 {padding: 5rem 0;}
+    .sec01 h2 {margin-bottom:1rem;}
+    .sec01 h2 strong {display: block;font-family: 'Nanum Myeongjo', serif;font-size: 2rem;font-weight:300;color:#866750;}
+    .sec01 h3 {margin: 1rem 0 0.5rem 0;}
+    .sec01 em {font-size: 1rem;font-weight: 500;}
+
+    .sec01 figure {float: left;width:100%;padding:0.75rem;}
+    .sec01 figure img {width: 100%;transition:1s;}
+    .sec01 figure:hover img {transform: scale(1.2);}
+    .sec01 .case {overflow: hidden;position: relative;}
+    .sec01 .case:after {content:attr(rel);display: block;background:#866750;color: #fff;padding: 0.4rem 0;font-size: 0.7rem;width: 100%;position: absolute;bottom: 0;left: 0;}
+
+
+    .sec02 {height:auto;padding: 5rem 0;background: url(../img/bg_main2.jpg)no-repeat center center/cover;color: #fff;}
+    .sec02 h2 {margin-bottom: 2rem;font-size: 1rem;line-height: 1.2;}
+    .sec02 .text-box {float: left;width:100%;padding:0.75rem;font-weight: 300;font-size: 0.7rem;line-height: 1.2;}
+    .sec02 .text-box a {display: block;padding:3rem 1rem;background:rgba(251,139,30,0.5);border-radius:0.8rem;}
+    .sec02 .text-box h3 {font-size:1.4rem;font-weight: 500;margin-bottom: 1rem;}
+
+    footer {background:#f2f2f2;padding:3rem 0;text-align:center;font-size:0;}
+    footer li {display:block;font-size:0.6rem;padding:0.3rem 0;line-height:1;position:relative;}
+    footer li:after {content:"";display:none;width:0.05rem;height:0.5rem;position:absolute;top:0.2rem;right:0;background:#999;}
+    footer li:last-child:after {display:none;}
+    footer address {font-size:0.6rem;line-height:1.4;margin-top:1rem;}
+
+    .mopen {display: block;}
+
+}
