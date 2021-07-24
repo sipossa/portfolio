@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/icon.ico">
+    <title>AHHA</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">               
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/ahha.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/ahha.js"></script>    
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div><img src="img/logo.png" alt="스테이아하"></div>    
+            <div></div>    
+            <div>
+                <p class="map-icon">위치찾기 <i class="xi-search"></i></p>
+                <select class="lang">
+                    <option>KR</option>
+                    <option>EN</option>
+                </select>               
+                <span class="res">RESERVATION</span>
+            </div>
+            <div class="map">
+                <img src="img/tag03.png" alt="스테이아하">
+                <div><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3330.939869771729!2d126.25847138294476!3d33.39873291784848!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9cb7f365b428e1e4!2sSTAY%20AHHA!5e0!3m2!1sko!2skr!4v1605102378120!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+                <i class="xi-close-thin"></i>
+                <h3>오시는길</h3>
+                <p><i class="xi-map"></i>주소</p>
+                <p>지번 : <a>제주시 한림읍 옹포남2길 43</a></p>
+                <p>도로명 : <a>제주시 한림읍 옹포리 774-2</a></p>
+                <p><i class="xi-flight-on"></i>공항에서 오시는 길</p>
+                <p>버스 이용 시 (약 1시간 내외) : <a>151(운진항)(제주국제공항(대정,회순,일주서로)) <i class="xi-long-arrow-right"></i> 820-2(동광환승정류장)<br>(동광한승정류장2(영어교육도시방면)) <i class="xi-long-arrow-right"></i> 방림원정류장 하차 (도보 약 3분)</a></p>
+                <p>자가용 이용 시 (35km) : <a>건물 우측에 주창이 마련되어 있습니다. 전기차를 이용하시는 경우 400m내에<br> 위치한 제주현대미술관 주차장 내 전기충전기를 이용하시기 바랍니다.</a></p>      
+            </div>
+            <div class="reservation">
+                <i class="xi-close-thin"></i>
+                <img src="img/tag06.png" alt="스테이아하">
+                <img src="img/tag05.png" alt="스테이아하">
+                <h3>예약안내</h3>
+                <span></span>
+                <div class>
+                   <div class="res-t">
+                        <h3>- 요금안내 -</h3>
+                        <p><span></span>room_01 / 02 <a>(17평 + studio type, 최대 2인)</a></p>
+                        <a>평일(월~목) 130,000원</a><br>
+                        <a>주말(금, 토, 일, 공휴일 전날, 공휴일 당일) 150,000원</a><br>
+                        <a>성수기 (6~9월, 12월 24일, 12월 25일) 170,000원</a>
+                        <p><span></span>room_03 / 04 <a>(18평 + 복층 type, 최대 4인)</a></p>
+                        <a>평일(월~목) 160,000원</a><br>
+                        <a>주말(금, 토, 일, 공휴일 전날, 공휴일 당일) 180,000원</a><br>
+                        <a>성수기 (6~9월, 12월 24일, 12월 25일) 200,000원</a> 
+                    </div>
+                    <div class="res-t02">
+                        <h3>- 예약방법 -</h3>
+                        <p><span></span>예약일자, 인원, 원하시는 객실을 '문자' 남겨주시면 예약가능여부 확인 후 연락 드립니다.</p> 
+                        <p><span></span>예약신청 후 계좌번호 등 예약안내 문자를 보내드립니다.</p> 
+                        <p><span></span>예약일즈음 체크인 안내문자 드립니다. </p> 
+                        <p>예약문의 : <a>010-6445-0774</a></p> 
+                        <a>(전화를 못 받는 경우가 많습니다. 문자로 남겨주세요)</a>
+                        <p>문의시간 : <a>9:00~21:00</a></p> 
+                    </div>
+                    <div class="res-t03">
+                        <h3>- 유의사항 -</h3>
+                        <p><span></span>예기준인원 외에 추가 입실은 불가합니다.</p>  
+                        <p><span></span>최대인원은 유아 및 아동 포함입니다.</p>  
+                        <p><span></span>보호자 동행 없이 미성년자 입실하실 수 없습니다.</p>  
+                        <p><span></span>반려동물은 입실이 불가합니다.</p>  
+                        <p><span></span>객실 내 전 구역 금연입니다. 외부 흡연장소에서 흡연 부탁드립니다.</p>  
+                        <p><span></span>2박 숙박시 수건, 침구 교체 및 청소가 제공되지 않습니다.</p>  
+                        <p><span></span>3박 이상 숙박시 중간 청소 해드립니다.</p>  
+                        <p><span></span>제주 특성상 곤충, 벌레들이 외부에서 유입될 수 있는 점 참고하시고 예약 부탁드립니다.<br><a>(이로인한 환불은 불가 합니다.)</a></p>   
+                    </div>
+                    <div class="res-t04">
+                        <h3>- 환불규정 -</h3>
+                        <p><span></span>10일 전 100% 환불</p> 
+                        <p><span></span>9일 ~ 7일 전 70% 환불</p> 
+                        <p><span></span>6일 ~ 5일 전 50% 환불</p>  
+                        <a>이용 3일 전 변경 및 취소는 불가 합니다. 단, 기상악화로 비행기, 배 결항시 증빙서류를 보내주시면<br>100% 환불해드립니다.</a>  
+                        <br><a>( 환불 시 위 기준일에 따른 금액을 환불 드립니다. )</a>  
+                    </div>                                                               
+                </div>
+            </div>
+        </div>
+<!--    모바일 메뉴 시작    -->
+        <div class="m-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div> 
+        <span class="menubg">
+            <ul>
+                <li><a href="#m01">home</a></li>
+                <li><a href="#m02">about</a></li>
+                <li><a href="#m03">room</a></li>
+                <li><a href="#m04">pool</a></li>
+                <li><a href="#m05">review</a></li>
+            </ul>
+        </span>
+<!--    모바일 메뉴 끝    --> 
+<!--    바로이동네비 시작   -->                     
+        <nav>
+            <ul>
+                <li><a href="#m01">home</a></li>
+                <li><a href="#m02">about</a></li>
+                <li><a href="#m03">room</a></li>
+                <li><a href="#m04">pool</a></li>
+                <li><a href="#m05">review</a></li>
+            </ul>
+        </nav>
+<!--    바로이동네비 끝   -->        
+    </header>
+    <span></span>
+    <section id="m01" class="content">
+        <img src="img/main.jpg" alt="스테이아하">
+        <div>
+            <h2>혼저옵서예</h2>
+            <span></span>
+        </div>
+        <figure><img src="img/mouse.png" alt="스테이아하"></figure>
+        <span class="blink"><i class="xi-angle-down-thin"></i></span>
+    </section>
+    <section id="m02" class="content">
+        <div>
+            <div class="about">
+                <img src="img/about01.jpg" alt="스테이아하">
+                <img src="img/about02.jpg" alt="스테이아하">
+                <img src="img/about05-01.jpg" alt="스테이아하">
+                <img src="img/about06-01.jpg" alt="스테이아하">
+                <img src="img/about07-01.jpg" alt="스테이아하">
+            </div>
+            <div class="note">
+                <p>자연 속 숨겨진,<br>나만의 쉼을 위한 공간</p>
+                <h3>stay AHHA</h3>
+                <p>자연을 따라 흐르는 시간</p>
+                <p>아름다운 자연의 순간들과 조우할 수 있는 테라스에서 지금 그리고 현재만 집중하는 휴식</p>
+                <p>여독을 풀어 줄 욕실 공간</p>
+                <p>여행지에서의 하루를 마무리 해 줄 반신욕</p>
+                <p>매일 아침 함께하는 시간</p>
+                <p>산지 식재료를 이용해 만든 정성스로운 아침 식사</p> 
+                <div>
+                    <span><i class="xi-check"></i></span>
+                    <span><i class="xi-check"></i></span>
+                    <span><i class="xi-check"></i></span>
+                </div>
+                <p>Contact</p>                        
+                <p><span>tel</span><a>010-6445-0774</a></p>                               
+                <p><span>instagram</span><a>stay__ahha</a></p>                               
+            </div>
+        </div>
+    </section>
+    <section id="m03" class="content">
+        <img src="img/logo-b.png" alt="스테이아하">
+        <span class="room01 room-p">
+            <div>
+                <img src="img/tag01.png" alt="스테이아하">
+                <i class="xi-close-thin"></i>
+                <ul>
+                    <li class="prev"><i class="xi-angle-left-thin"></i></li>
+                    <li class="next"><i class="xi-angle-right-thin"></i></li>
+                </ul>
+                <div class="room01-s">
+                    <img src="img/room01-01.jpg" alt="스테이아하">
+                    <img src="img/room01-02.jpg" alt="스테이아하">
+                    <img src="img/room01-03.jpg" alt="스테이아하">
+                    <img src="img/room01-04.jpg" alt="스테이아하">
+                    <img src="img/room01-05.jpg" alt="스테이아하">
+                    <img src="img/room01-06.jpg" alt="스테이아하">
+                    <img src="img/room01-07.jpg" alt="스테이아하">
+                    <img src="img/room01-08.jpg" alt="스테이아하">
+                </div>
+                <span></span>
+                <p>room_01</p>
+                <ul>
+                    <li>모든 객실의 기본구조는 싱글베드가 두 개 놓여진 트윈 룸입니다. </li>
+                    <li>
+supplies <a>TV, WIFI, 블루투스스피커, 에어컨, 테이블, 식기, 조리도구, 냉장고, 전기쿡탑, 전자레인지, 전기포트, 토스터, 드라이어 구비</a></li>
+                    <li>room type <a>스튜디오 ( 2인기준 )</a></li>
+                </ul>
+            </div>  
+        </span>
+        <span class="room02 room-p">
+            <div>
+                <img src="img/tag02.png" alt="스테이아하">
+                <i class="xi-close-thin"></i>
+                <ul>
+                    <li class="prev02"><i class="xi-angle-left-thin"></i></li>
+                    <li class="next02"><i class="xi-angle-right-thin"></i></li>
+                </ul>
+                <div class="room02-s">
+                    <img src="img/room02-01.jpg" alt="스테이아하">
+                    <img src="img/room02-02.jpg" alt="스테이아하">
+                    <img src="img/room02-02.jpg" alt="스테이아하">
+                    <img src="img/room02-04.jpg" alt="스테이아하">
+                    <img src="img/room02-05.jpg" alt="스테이아하">
+                    <img src="img/room02-06.jpg" alt="스테이아하">
+                    <img src="img/room02-07.jpg" alt="스테이아하">
+                    <img src="img/room02-08.jpg" alt="스테이아하">
+                </div>
+                <span></span>
+                <p>room_02</p>
+                <ul>
+                    <li>모든 객실의 기본구조는 싱글베드가 두 개 놓여진 트윈 룸입니다. </li>
+                    <li>
+supplies <a>TV, WIFI, 블루투스스피커, 에어컨, 테이블, 식기, 조리도구, 냉장고, 전기쿡탑, 전자레인지, 전기포트, 토스터, 드라이어 구비</a></li>
+                    <li>room type <a>스튜디오 ( 2인기준 )</a></li>
+                </ul>
+            </div>  
+        </span>
+        <span class="room03 room-p">
+            <div>
+                <img src="img/tag03.png" alt="스테이아하">
+                <i class="xi-close-thin"></i>
+                <ul>
+                    <li class="prev03"><i class="xi-angle-left-thin"></i></li>
+                    <li class="next03"><i class="xi-angle-right-thin"></i></li>
+                </ul>
+                <div class="room03-s">
+                    <img src="img/room03-01.jpg" alt="스테이아하">
+                    <img src="img/room03-02.jpg" alt="스테이아하">
+                    <img src="img/room03-03.jpg" alt="스테이아하">
+                    <img src="img/room03-04.jpg" alt="스테이아하">
+                    <img src="img/room03-05.jpg" alt="스테이아하">
+                    <img src="img/room03-06.jpg" alt="스테이아하">
+                </div>
+                <span></span>
+                <p>room_03</p>
+                <ul>
+                    <li>모든 객실의 기본구조는 싱글베드가 두 개 놓여진 트윈 룸입니다. </li>
+                    <li>
+supplies <a>TV, WIFI, 블루투스스피커, 에어컨, 테이블, 식기, 조리도구, 냉장고, 전기쿡탑, 전자레인지, 전기포트, 토스터, 드라이어 구비</a></li>
+                    <li>room type <a>복층 ( 4인기준 )</a></li>
+                </ul>
+            </div>  
+        </span>
+        <span class="room04 room-p">
+            <div>
+                <img src="img/tag04.png" alt="스테이아하">
+                <i class="xi-close-thin"></i>
+                <ul>
+                    <li class="prev04"><i class="xi-angle-left-thin"></i></li>
+                    <li class="next04"><i class="xi-angle-right-thin"></i></li>
+                </ul>
+                <div class="room04-s">
+                    <img src="img/room04-01.jpg" alt="스테이아하">
+                    <img src="img/room04-02.jpg" alt="스테이아하">
+                    <img src="img/room04-03.jpg" alt="스테이아하">
+                    <img src="img/room04-04.jpg" alt="스테이아하">
+                    <img src="img/room04-05.jpg" alt="스테이아하">
+                    <img src="img/room04-06.jpg" alt="스테이아하">
+                    <img src="img/room04-07.jpg" alt="스테이아하">
+                    <img src="img/room04-08.jpg" alt="스테이아하">
+                    <img src="img/room04-09.jpg" alt="스테이아하">
+                </div>
+                <span></span>
+                <p>room_04</p>
+                <ul>
+                    <li>모든 객실의 기본구조는 싱글베드가 두 개 놓여진 트윈 룸입니다. </li>
+                    <li>
+supplies <a>TV, WIFI, 블루투스스피커, 에어컨, 테이블, 식기, 조리도구, 냉장고, 전기쿡탑, 전자레인지, 전기포트, 토스터, 드라이어 구비</a></li>
+                    <li>room type <a>복층 ( 3인기준 )</a></li>
+                </ul>
+            </div>  
+        </span>                                          
+        <div>
+            <div class="room-t">
+                <img src="img/p01.png" alt="스테이아하">
+                <h3>room_01</h3>
+                <p>오픈 테라스에서는 돌담 너머 펼쳐지는 저지 오름의 모습을,<br>아치형 창문에서는 제주의 햇살과 수채화 빛 노을을 고스란히 느낄 수 있습니다.</p>
+                <h3>room_02</h3>
+                <p>창 너머 보이는 나무들이 더욱 아늑하게 느껴지는 공간으로<br>돌담으로 둘러싸인 프라이빗 테라스는 작은 숲 속 정원을 연상케 합니다.</p>
+                <h3>room_03</h3>
+                <p>마당 너머 보이는 감귤 밭과 마중오름을 마주한 공간으로<br>작은 주방이 있어 간단한 요리를 함께 즐길 수 있습니다.</p>
+                <h3>room_04</h3>
+                <p>2층으로 이루어져 있으며, 창 너머 따스한 햇살이 느껴지는 공간으로<br>작지만 소중한 쉼을 선물합니다.</p>
+                <img src="img/p02.png" alt="스테이아하">                                                
+            </div>
+            <div class="room">
+                <div>
+                    <img src="img/room01.jpg" alt="스테이아하">
+                    <span class="room01-01">
+                        <p>_01</p>  
+                    </span>
+                </div>
+                <div>
+                    <img src="img/room02.jpg" alt="스테이아하">
+                    <span class="room02-01">
+                        <p>_02</p>     
+                    </span>
+                </div>
+                <div>
+                    <img src="img/room03.jpg" alt="스테이아하">
+                    <span class="room03-01">
+                        <p>_03</p>      
+                    </span>
+                </div>
+                <div>
+                    <img src="img/room04.jpg" alt="스테이아하">
+                    <span class="room04-01">
+                        <p>_04</p>     
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section id="m04" class="content">
+        <img src="img/logo-b.png" alt="스테이아하">
+        <div class="pool-s">
+            <img src="img/p01-01.jpg" alt="스테이아하">
+            <img src="img/p02.jpg" alt="스테이아하">
+            <img src="img/p03.jpg" alt="스테이아하">
+            <img src="img/p04.jpg" alt="스테이아하">
+            <img src="img/p05.jpg" alt="스테이아하">
+        </div>
+        <span></span>
+        <span></span>
+        <img src="img/girl02.png" alt="스테이아하">
+        <img src="img/rock01.png" alt="스테이아하">
+        <img src="img/rock02.png" alt="스테이아하">
+        <div class="pool-t">
+            <span></span>
+            <p>pool</p>
+            <ul>
+                <li>제주의 매력을 흠뻑느낄 수 있는 감성적인 풀입니다. </li>
+                <li>time <a>AM 9:00 ~ PM 8:00</a></li>
+                <li>season <a>6~9월</a></li>
+                <li>notice<a>반드시 수영복을 착용하고 입수 해주세요.</a><a>타올 2장 제공, 객실에 비치해둡니다.</a><a>안전사고에 대비하여 CCTV를 설치했습니다.</a><a>스테이아하의 모든 공간은 금연구역입니다.</a></li>
+                <li>service<a>어메니티(샴푸, 컨디셔너, 샤워젤, 비누)</a><a>페이스 타올, 바디 타올</a><a>칫솔, 치약은 제공하지 않습니다.</a></li>
+            </ul>                
+        </div>
+        <div class="buble">
+            <img src="img/buble01.png" alt="스테이아하">
+            <img src="img/buble02.png" alt="스테이아하">
+            <img src="img/buble03.png" alt="스테이아하">
+        </div>
+        <div class="buble2">
+            <img src="img/buble01.png" alt="스테이아하">
+            <img src="img/buble02.png" alt="스테이아하">
+            <img src="img/buble03.png" alt="스테이아하">
+        </div>        
+    </section> 
+    <section id="m05" class="content">
+        <img src="img/logo-b.png" alt="스테이아하">
+        <div class="photo">
+            <div></div>
+        </div>
+        <div class="photo-s">
+                <img src="img/r01.jpg" alt="스테이아하">
+                <img src="img/r02.jpg" alt="스테이아하">
+                <img src="img/r03.jpg" alt="스테이아하">
+                <img src="img/r04.jpg" alt="스테이아하">
+                <img src="img/r05.jpg" alt="스테이아하">
+                <img src="img/r06.jpg" alt="스테이아하">
+                <img src="img/r07.jpg" alt="스테이아하">
+                <img src="img/r08.jpg" alt="스테이아하">
+                <img src="img/r09.jpg" alt="스테이아하">
+                <img src="img/r10.jpg" alt="스테이아하">
+        </div>
+        <div class="photo-tag">     
+            <img src="img/tag01.png" alt="스테이아하">    
+            <img src="img/tag02.png" alt="스테이아하">    
+        </div>        
+        <div class="photo-t">
+            <h3>stay ahha _ 01</h3>    
+            <h3>stay ahha _ 02</h3>    
+            <h3>stay ahha _ 03</h3>    
+            <h3>stay ahha _ 04</h3>    
+            <h3>stay ahha _ 05</h3>    
+            <h3>stay ahha _ 06</h3>    
+            <h3>stay ahha _ 07</h3>    
+            <h3>stay ahha _ 08</h3>    
+            <h3>stay ahha _ 09</h3>    
+            <h3>stay ahha _ 10</h3>    
+        </div>
+        <span></span>
+        <span></span>
+    </section>          
+    <footer>
+        <i class="xi-instagram"></i>
+        <p>stay AHHA</p>
+        <p>제주특별자치도 제주시 한림읍 옹포남2길 43</p>
+        <p>Tel. 010-6445-0774 (09:00~21:00)</p>
+        <span class="top">top</span>
+    </footer>
+</body>
+</html>    
