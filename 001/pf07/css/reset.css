@@ -1,0 +1,8 @@
+/* reset */
+* {margin:0;padding:0;box-sizing:border-box;font-weight:400;font-size:inherit;}
+ul,ol {list-style:none;}
+a {text-decoration:none;color:inherit;}
+
+/* font,clearfix */
+body		{font-family: 'NanumSquare', sans-serif;}
+.cf:after {content:"";display:block;clear:both}
