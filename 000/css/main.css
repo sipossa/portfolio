@@ -1,0 +1,266 @@
+* {outline: 1px solid yellowgreens3}
+body {font-family:'Noto Sans KR', sans-serif;}
+body::-webkit-scrollbar {display: none;}
+
+
+@font-face {
+  font-family: spartan;
+  src: url(../css/fonts/Spartan-VariableFont_wght.woff);
+}
+@font-face {
+  font-family: montserrat;
+  src: url(../css/fonts/Montserrat-Light.woff);
+}
+
+
+#section1 {position: relative; width: 100%; height: 100vh; background: url(../images/main_bg.jpg); background-size: cover; background-attachment: fixed; color: #fff; overflow: hidden; padding: 230px 260px;}
+#section1>div:nth-of-type(1) {width: 335px; float: left; font-family: spartan; font-size: 90px; letter-spacing: .2rem; text-align: center; line-height: 120px; }
+#section1>div:nth-of-type(1) span {display: block;}
+#section1>div:nth-of-type(1) span:first-child {letter-spacing: 1.3rem}
+
+#section1>div:nth-of-type(2) {position: absolute; bottom: 450px; left: 260px; width: 335px; height: 20px; font-family: montserrat; font-size: 16px; text-align: right; line-height: 35px;}
+#section1>div:nth-of-type(2) span {display: block;}
+#section1>div:nth-of-type(2)>div {float: left; width: 140px; height: 1px; background: #fff; margin: 16px 0px 0 10px;}
+
+#section1>div:nth-of-type(4) {position: absolute; right: 380px; bottom: 300px; opacity: 0; transition: .8s;}
+#section1.on>div:nth-of-type(4) {right: 270px; opacity: 1;}
+
+#section1 .c_1 {position: absolute; bottom: 370px; left: 425px; width: 340px; font-size: 25px; font-weight: 200; font-family: spartan; line-height: 30px; opacity: 1; transition: 1.5s;}
+/*#section1.on .c_1 {left: 260px; opacity: 1;}*/
+#section1 .c_1 span {display: inline-block; font-weight: 300; font-size: 30px; padding: 0 7px;}
+
+
+
+/*섹션02*/
+#section2 {position: relative;width: 100%; height: 100vh; background: url(../images/02bg02.png); background-size: cover; color: #333; padding: 150px 0 0 160px; background-attachment: fixed;}
+#section2 span {display: block;}
+#section2 .name { font-size: 18px;}
+
+#section2>img {position: absolute; top: 90px; left: 80px; display: block;opacity: 0; transition: linear .3s;}
+#section2.on>img {opacity: 1; left: 150px;}
+
+#section2 h1 {width: 200px; font-size: 20px; font-weight: 500; line-height: 70px;}
+#section2 .c_4 {padding-top: 380px; padding-left: 75px;}
+
+#section2 .c_4>div:nth-of-type(1) {float: left; width: 100px; line-height: 30px; font-weight: 500;}
+#section2 .c_4>div:nth-of-type(1)>span:last-child {line-height: 85px;}
+#section2 .c_4>div:nth-of-type(2) {float: left; width: 230px; line-height: 30px; padding-left: 30px; font-size: 14px;}
+#section2 .c_4>div:nth-of-type(2) img {display: block; padding-top: 10px;}
+/*#section2 .c_4>div:nth-of-type(2)>span:nth-of-type(1) */
+
+#section2 .c_2 {position: absolute; top: 170px; left: 750px; width: 1000px; color: #333;}
+#section2 .c_2 span {display: block; font-size: 15px;}
+#section2 .c_2 h1 {width: 270px; font-size: 22px; font-weight: 400; line-height: 80px;}
+#section2 .c_2 i {color: #999; padding-right: 5px;}
+#section2 .c_2 p {font-size: 14px; color: #666; padding: 0 0 5px 20px;}
+
+#section2 .b_1 {float: left; width: 500px;}
+#section2 .b_1 div:nth-of-type(1)::after {content: ""; display: block; width: 480px; border-bottom: 1px solid #999; opacity: .5; padding-top: 30px;}
+#section2 .b_1 div:nth-of-type(2) span {line-height: 25px;}
+#section2 .b_1 div:nth-of-type(2) p {padding-top: 5px}
+#section2 .b_1 div:nth-of-type(2) p:nth-of-type(2){line-height: 23px;}
+
+#section2 .b_2 {float: left; width: 500px; padding: 0 0 0 80px; font-size: 15px;}
+#section2 .b_2>div:nth-of-type(1) { padding-top: 115px;}
+#section2 .b_2>div:nth-of-type(1)::after {content: ""; display: block; width: 350px; border-bottom: 1px solid #999; opacity: .5; padding-top: 32px;}
+#section2 .b_2 span {font-size: 15px; line-height: 35px;}
+#section2 .tool div:nth-of-type(2) {padding: 15px 0 0 40px;}
+#section2 .tool {padding-top: 5px;}
+#section2 .tool div:nth-of-type(1) {padding-top: 5px;}
+#section2 .tool img {padding: 3px 10px 0 10px;}
+#section2 .tool img:first-child {padding-left: 0;}
+
+#section2 .c_3 {position: absolute; top: 590px; right: -250px; width: 590px; height: 20px; font-family: montserrat; font-size: 16px; transform: rotate(90deg); color: #333;}
+#section2 .c_3 span {float: left; display: block; width: 200px;}
+#section2 .c_3 span:nth-of-type(2) {float: left;display: block; float: left; width: 150px; height: 1px; margin: 10px 0; background: #888;}
+#section2 .c_3 span:nth-of-type(3) {float: right;}
+
+
+/*섹션03 카카오뱅크*/
+#section3 {position: relative; width: 100%; height: 100vh; background: url(../images/section03_bg.png); background-size: cover; color: #333; padding: 240px 0 200px 200px; overflow: hidden;}
+#section3 .c_5 {width: 700px; padding-left: 100px; opacity: 0; transition: linear .4s;}
+#section3.on .c_5 {opacity: 1; padding-left: 0px;}
+
+#section3 .c_5 h1 {font-size: 20px; font-weight: 300; padding: 20px 0 0 0;}
+#section3 .c_5 h1:nth-of-type(1)::after {content: ""; display: block; width: 30px; border-bottom: 2px solid #333; margin: 25px 0 40px 0;;}
+
+#section3 .c_5>span {line-height: 40px;}
+#section3 .c_5>p {font-size: 15px; font-weight: 300; padding-bottom: 25px;}
+
+#section3 .color03 {width: 250px;}
+#section3 .color03 div {float: left; width: 120px; padding: 5px 0;}
+#section3 .color03 p {display: inline-block; padding-left: 8px; font-size: 15px;line-height: 15px; font-weight: 300;}
+
+#section3 .color03>div:nth-of-type(1) span {display: inline-block; background: #ffdf00; width: 15px; height: 15px; border-radius: 20px;}
+#section3 .color03>div:nth-of-type(2) span {display: inline-block; background: #52678d; width: 15px; height: 15px; border-radius: 20px;}
+#section3 .color03>div:nth-of-type(3) span {display: inline-block; background: #5c6875; width: 15px; height: 15px; border-radius: 20px;}
+#section3 .color03>div:nth-of-type(4) span {display: inline-block; background: #ffffff; width: 15px; height: 15px; border-radius: 20px; border: 1px solid #999;}
+
+#section3 .mac {position: absolute; top: 165px; right: 130px; cursor: pointer; z-index: 1;}
+#section3 .mac .mac2 {position: absolute; top: 77px; right: 126px; width: 795px; height: 475px; background: #999; border-radius: 10px; overflow: hidden;}
+#section3 .mac .mac2:hover img {animation: linear mac3 20s infinite;}
+
+
+@keyframes mac3 {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-1240px);}
+    100% {transform: translateY(0);}
+}
+
+
+#section3 .c_3 {position: absolute; top: 430px; left: -260px; width: 590px; height: 20px; font-family: montserrat; font-size: 15px; transform: rotate(-90deg); color: #333;}
+#section3 .c_3 span {float: left; display: block; width: 200px;}
+#section3 .c_3 span:nth-of-type(2) {float: left;display: block; float: left; width: 150px; height: 1px; margin: 10px 0; background: #888;}
+#section3 .c_3 span:nth-of-type(3) {float: right;}
+
+#section3 .btn {position: absolute; top: 380px; left: 800px; width: 100px; opacity: 0; transition: linear .4s; z-index: 5;}
+#section3.on .btn {opacity: 1; left: 730px;}
+#section3 .btn img {display: block; padding: 15px 0;}
+
+
+
+
+/*섹션04 나이키*/
+#section4 {position: relative; width: 100%; height: 100vh; background: url(../images/section04_bg.png); background-size: cover; color: #333; padding: 300px 200px 210px 0; overflow: hidden;}
+#section4 .c_6 {float: right; width: 585px; text-align: right; opacity: 0; transition: linear .4s;margin-right: 120px;}
+#section4.on .c_6 {opacity: 1; margin-right: 0px;}
+
+#section4 .c_6 h1 {font-size: 22px; font-weight: 300; padding: 20px 0 0 0;}
+#section4 .c_6 h1:nth-of-type(1)::after {content: ""; display: block; width: 30px; border-bottom: 2px solid #333; margin: 20px 0 40px 555px;}
+
+#section4 .c_6>span {line-height: 40px;}
+#section4 .c_6>p {font-size: 15px; font-weight: 300; padding-bottom: 25px;}
+
+#section4 .color04 {width: 200px; margin-left: 400px; text-align: left;}
+#section4 .color04 div {float: right; width: 100px; padding: 5px 5px;}
+#section4 .color04 p {display: inline-block; padding-left: 8px; font-size: 15px;line-height: 15px; font-weight: 300;}
+
+#section4 .color04>div:nth-of-type(1) span {display: inline-block; background: #240337; width: 15px; height: 15px; border-radius: 20px;}
+#section4 .color04>div:nth-of-type(2) span {display: inline-block; background: #4c4c4c; width: 15px; height: 15px; border-radius: 20px;}
+#section4 .color04>div:nth-of-type(3) span {display: inline-block; background: #b2d6e2; width: 15px; height: 15px; border-radius: 20px;}
+#section4 .color04>div:nth-of-type(4) span {display: inline-block; background: #fa5e2d; width: 15px; height: 15px; border-radius: 20px;}
+#section4 .color04>div:nth-of-type(5) span {display: inline-block; background: #ffcc00; width: 15px; height: 15px; border-radius: 20px;}
+#section4 .color04>div:nth-of-type(6) span {display: inline-block; background: #ffffff; width: 15px; height: 15px; border-radius: 20px; border: 1px solid #999;}
+
+
+#section4>div:nth-of-type(2) {position: absolute; top: -50px; left: 40px;}
+#section4>div:nth-of-type(3) {position: absolute; top: 300px; left: 90px;}
+#section4>div:nth-of-type(4) {position: absolute; bottom: -120px; left: 220px;}
+#section4>div:nth-of-type(5) {position: absolute; top: 75px; right: 480px;}
+#section4>div:nth-of-type(6) {position: absolute; bottom: -100px; right: 600px;}
+#section4>div:nth-of-type(7) {position: absolute; top: -35px; left: 500px;}
+#section4>div:nth-of-type(8) {position: absolute; top: 220px; right: 790px;}
+
+#section4 .btn {position: absolute; top: 340px; right: 410px; width: 200px; opacity: 0; transition: linear .4s;}
+#section4.on .btn {opacity: 1; right: 350px}
+    
+#section4 .btn img {display: inline-block; padding: 0 15px;}
+
+/*섹션05 에버랜드*/
+#section5 {position: relative; width: 100%; height: 100vh; background: url(../images/section05_bg.png); background-size: cover; color: #333; padding: 210px 0 200px 200px;  overflow: hidden;}
+#section5 .c_7 {width: 500px; padding-left: 100px; opacity: 0; transition: linear .4s;}
+#section5.on .c_7 {opacity: 1; padding-left: 0px;}
+
+#section5 .c_7 h1 {font-size: 20px; font-weight: 300; padding: 20px 0 0 0;}
+#section5 .c_7 h1:nth-of-type(1)::after {content: ""; display: block; width: 30px; border-bottom: 2px solid #333; margin: 25px 0 40px 0;;}
+
+#section5 .c_7>span {font-size: 16px; line-height: 40px;}
+#section5 .c_7>p {font-size: 15px; font-weight: 300; padding-bottom: 20px;}
+
+#section5 .color05 {width: 250px;}
+#section5 .color05 div {float: left; width: 120px; padding: 5px 0;}
+#section5 .color05 p {display: inline-block; padding-left: 8px; font-size: 15px;line-height: 15px; font-weight: 300;}
+
+#section5 .color05>div:nth-of-type(1) span {display: inline-block; background: #012339; width: 15px; height: 15px; border-radius: 20px;}
+#section5 .color05>div:nth-of-type(2) span {display: inline-block; background: #52678d; width: 15px; height: 15px; border-radius: 20px;}
+#section5 .color05>div:nth-of-type(3) span {display: inline-block; background: #e46401; width: 15px; height: 15px; border-radius: 20px;}
+
+#section5 .mac {position: absolute; top: 165px; right: 130px; cursor: pointer; z-index: 1;}
+#section5 .mac .mac2 {position: absolute; top: 77px; right: 126px; width: 795px; height: 475px; background: #999; border-radius: 10px; overflow: hidden;}
+#section5 .mac .mac2:hover img {animation: linear mac5 15s infinite;}
+
+@keyframes mac5 {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-1300px);}
+    100% {transform: translateY(0);}
+}
+
+#section5 .btn {position: absolute; top: 380px; left: 800px; width: 100px; opacity: 0; transition: linear .4s; z-index: 5;}
+#section5.on .btn {opacity: 1; left: 730px;}
+#section5 .btn img {display: block; padding: 15px 0;}
+
+
+/*섹션06 아웃스탁*/
+#section6 {position: relative; width: 100%; height: 100vh;background: url(../images/section06_bg.png); background-size: cover; color: #333; padding: 210px 200px 0 0; overflow: hidden;}
+#section6 .c_8 {float: right;width: 585px; text-align: right; opacity: 0; transition: linear .4s; margin-right: 100px;}
+#section6.on .c_8 {opacity: 1; margin-right: 0;}
+
+#section6 .c_8 h1 {font-size: 22px; font-weight: 300; padding: 20px 0 0 0;}
+#section6 .c_8 h1:nth-of-type(1)::after {content: ""; display: block; width: 30px; border-bottom: 2px solid #333; margin: 25px 0 40px 555px;}
+
+#section6 .c_8>span {line-height: 40px;}
+#section6 .c_8>p {font-size: 15px; font-weight: 300; padding-bottom: 25px;}
+
+#section6 .color06 {width: 200px; margin-left: 395px; text-align: left;}
+#section6 .color06 div {float: right; width: 100px; padding: 5px 5px;}
+#section6 .color06 p {display: inline-block; padding-left: 8px; font-size: 15px;line-height: 15px; font-weight: 300;}
+
+#section6 .color06>div:nth-of-type(1) span {display: inline-block; background: #333333; width: 15px; height: 15px; border-radius: 20px;}
+#section6 .color06>div:nth-of-type(2) span {display: inline-block; background: #1e1e1e; width: 15px; height: 15px; border-radius: 20px;}
+#section6 .color06>div:nth-of-type(4) span {display: inline-block; background: #f5f5f5; width: 15px; height: 15px; border-radius: 20px;}
+#section6 .color06>div:nth-of-type(5) span {display: inline-block; background: #ffffff; width: 15px; height: 15px; border-radius: 20px; border: 1px solid #999;}
+
+#section6>div:nth-of-type(2) {position: absolute; top: -100px; left: 50px;}
+#section6>div:nth-of-type(3)>img {position: absolute; top: 0px; right: 0; height: 100vh;}
+
+#section6 .btn {position: absolute; top: 280px; right: 760px; width: 200px; opacity: 0; transition: linear .4s;}
+#section6.on .btn {opacity: 1; right: 830px;}
+#section6 .btn img {display: inline-block; padding: 0 10px;}
+
+
+/*섹션07 KCC건설*/
+#section7 {position: relative; width: 100%; height: 100vh; background: url(../images/section07_bg.png); background-size: cover; color: #333; padding: 230px 0 200px 200px; overflow: hidden;}
+#section7 .c_9 {width: 500px; padding-left: 120px; opacity: 0; transition: linear .4s;}
+#section7.on .c_9 {opacity: 1; padding-left: 0px;}
+
+#section7 .c_9 h1 {font-size: 22px; font-weight: 300; padding: 20px 0 0 0;}
+#section7 .c_9 h1:nth-of-type(1)::after {content: ""; display: block; width: 30px; border-bottom: 2px solid #333; margin: 25px 0 30px 0;;}
+
+#section7 .c_9>span {line-height: 40px;}
+#section7 .c_9>p {font-size: 15px; font-weight: 300; padding-bottom: 25px;}
+
+#section7 .color07 {width: 250px;}
+#section7 .color07 div {float: left; width: 120px; padding: 5px 0;}
+#section7 .color07 p {display: inline-block; padding-left: 8px; font-size: 15px;line-height: 15px; font-weight: 300;}
+
+#section7 .color07>div:nth-of-type(1) span {display: inline-block; background: #005295; width: 15px; height: 15px; border-radius: 20px;}
+#section7 .color07>div:nth-of-type(2) span {display: inline-block; background: #28282e; width: 15px; height: 15px; border-radius: 20px;}
+#section7 .color07>div:nth-of-type(3) span {display: inline-block; background: #ffffff; width: 15px; height: 15px; border-radius: 20px; border: 1px solid #999;}
+
+#section7 .mac {position: absolute; top: 165px; right: 130px; cursor: pointer; z-index: 1;}
+#section7 .mac .mac2 {position: absolute; top: 77px; right: 126px; width: 795px; height: 475px; background: #999; border-radius: 10px; overflow: hidden;}
+#section7 .mac .mac2:hover img {animation: linear mac7 15s infinite;}
+
+@keyframes mac7 {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-1300px);}
+    100% {transform: translateY(0);}
+}
+
+
+#section7 .btn {position: absolute; top: 380px; left: 800px; width: 100px; transition: linear .4s; opacity: 0; z-index: 5;}
+#section7.on .btn {opacity: 1; left: 730px;}
+#section7 .btn img {display: block; padding: 15px 0;}
+
+
+
+/*Pullpage Button*/
+#gnb {position: fixed; top: 45%; right: 80px; font-size: 15px; transition: 1s;}
+#gnb>ul>li>a>span {display: inline-block; width: 15px; height: 1px; background: #555; transition: .2s;}
+#gnb>ul>li {text-align: right;}
+#gnb>ul>li:hover span{width: 60px;}
+#gnb>ul>li.on span{width: 50px;}
+
+#gnb>ul>li>a {display: inline-block; vertical-align: middle; color: #555;}
+
+
