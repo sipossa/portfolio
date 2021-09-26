@@ -1,0 +1,140 @@
+* {outline: 1px solid tomatos}
+html body {font-family: 'Noto Sans KR', sans-serif; color: #333;}
+
+
+
+/*header*/
+#header {position: relative; z-index: 1; width: 1900px; padding: 35px 0 20px 0;}
+#header::after {content: ""; display: block; background: rgba(255,255,255,.4); width: 1900px; height: 1px; margin: 10px auto; }
+#header>.m_open {position: absolute; top: 35px; left: 52%; width: 30px; height: 30px; cursor: pointer;}
+#header>.m_open span {position: absolute; display: block; background: #333; width: 30px; height: 1px; transition: .3s;}
+#header>.m_open span:nth-of-type(2) {top: 10px;}
+#header>.m_open span:nth-of-type(3) {top: 20px;}
+#header>.m_open.on >span:nth-of-type(1) {height: 1px; top: 10px; transform: rotate(135deg); transition: .3s;}
+#header>.m_open.on >span:nth-of-type(2) {height: 1px; top: 10px; transform: rotate(-135deg); transition: .3s;}
+#header>.m_open.on >span:nth-of-type(3) {height: 1px; transform: rotate(-135deg); transition: .3s; opacity: 0;}
+
+#header .gnb {width: 1200px; margin: 0 auto; padding-right: 50px;}
+#header .gnb h1 {position: relative; z-index: 2; float: left;}
+#header .gnb>ul {float: right;}
+#header .gnb>ul>li {display: inline-block; padding-left: 40px; font-weight: 300;}
+
+
+/*visual*/
+#visual {width:1900px; height: 850px;}
+#visual video {position: fixed; top: 0; left:-300px; z-index: -2; width: 1900px; height: 850px; overflow: hidden;}
+#visual .bg {position: fixed; top: 0; left: 0; width: 960px; height: 850px; background: rgba(0,0,0,.4); z-index: -1; overflow: hidden;}
+#visual>img {position: fixed; top: 0; right: 0; z-index: -1}
+
+#visual .c1 {width: 950px; float: left; padding: 250px 0 0 250px;}
+#visual .c1 h1 {color: #fff; font-size: 40px; font-weight: 200; line-height: 50px;}
+#visual .c1 img {display: inline-block; cursor: pointer; padding:  60px 20px 0 0;}
+
+#visual .c2 {position: relative; z-index: 1; width: 950px; float: right; padding: 250px 0 0 100px;}
+#visual .c2 h1 {color: #000; font-size: 40px; font-weight: 200; line-height: 50px;}
+#visual .c2 p {color: #000; font-size: 15px; font-weight: 300; padding-top: 40px; line-height: 25px; }
+#visual .c2 span {display: block; float: left; font-size: 14px; text-align: center; width: 200px; height: 50px; border: 1px solid #333; border-radius: 10px; text-align: center; line-height: 50px; margin: 25px 5px 0px 0px; font-weight: 300;}
+#visual .c2 span a {display: block;}
+#visual .c2 span a i {transition: .3s;}
+#visual .c2 span a:hover i {padding-left: 10px;}
+#visual .iphone {position: absolute; bottom: 200px; right: 0px; transition: 1s; opacity: 0;}
+#visual.on .iphone {right: 140px; opacity: 1;}
+
+
+/*섹션1*/
+#section1 {position: relative; width: 100%; background: #fff; padding: 0 310px 100px 0;}
+#section1 .box {position: absolute; top: 80px; left: 260px; background: #ffde00; width: 415px; height: 365px; border-radius: 35px; transition: .3s; opacity: 0;}
+#section1.on .box {left: 310px; opacity: 1;}
+
+#section1>img {position: absolute; left: 500px; top: 150px; opacity: 0; transition: .5s .2s;}
+#section1.on>img {left: 550px; opacity: 1;}
+
+#section1 .c1 {width: 400px; float: right; padding: 260px 0 180px 0;}
+#section1 .c1 h1 {font-size: 40px; font-weight: 300; text-align: right; line-height: 50px;}
+#section1 .c1 p {font-size: 15px; padding-top: 40px; line-height: 25px; text-align: right; font-weight: 300; color: #000;}
+#section1 .c1 span {display: block; float: right; font-size: 14px; text-align: center; width: 200px; height: 50px; border: 1px solid #777; border-radius: 10px; text-align: center; line-height: 50px; margin: 35px 0px 0px 0px; transition: .4s;}
+#section1 .c1 span a {display: block;}
+/*
+#section1 .c1 span a i {transition: .3s;}
+#section1 .c1 span a:hover i {padding-left: 10px;}
+*/
+#section1 .c1 span a:hover {color: #fff;}
+#section1 .c1 span:hover {background: #333;}
+
+
+
+/*section2*/
+#section2 {width: 100%; background: #fafafa; padding: 0 310px 220px 310px; overflow: hidden; position: relative;}
+#section2 .c1 {width: 1280px;margin: 0 auto;}
+#section2 .c1 .c2 {width: 400px; float: left; margin-top: 250px;}
+#section2 .c1 .c2 h1 {font-size: 40px; font-weight: 300; text-align: left; line-height: 50px;}
+#section2 .c1 .c2 p {font-size: 15px; padding-top: 40px; line-height: 25px; text-align: left; font-weight: 300; color: #000;}
+#section2 .c1 .c2 span {display: block; float: left; font-size: 15px; text-align: center; width: 200px; height: 50px; border: 1px solid #333; border-radius: 10px; text-align: center; line-height: 50px; margin: 35px 5px 0px 0px; transition: .4s;}
+#section2 .c1 .c2 span a {display: block;}
+#section2 .c1 .c2 span a:hover {color: #fff;}
+#section2 .c1 .c2 span:hover {background: #333;}
+
+/*#section2 img {float: right;}*/
+#section2 img:nth-of-type(1) {position: absolute; bottom: -255px; right: 870px; transition: .5s; opacity: 0;}
+#section2 img:nth-of-type(2) {position: absolute; top: -265px; right: 530px; transition: .5s .2s; opacity: 0;}
+#section2 img:nth-of-type(3) {position: absolute; top: -175px; right: 580px; transition: .5s .4s; opacity: 0;}
+#section2 img:nth-of-type(4) {position: absolute; bottom: -490px; right: 75px; transition: .5s .6s; opacity: 0;}
+
+
+#section2.on img:nth-of-type(1) {position: absolute; bottom: -55px; right: 670px; opacity: 1;}
+#section2.on img:nth-of-type(2) {position: absolute; top: 65px; right: 275px; opacity: 1;}
+#section2.on img:nth-of-type(3) {position: absolute; top: -75px; right: 710px; opacity: 1;}
+#section2.on img:nth-of-type(4) {position: absolute; bottom: -375px; right: 175px; opacity: 1;}
+
+
+/*section3*/
+#section3 {position: relative; width: 100%; height: 740px; background: url(../images/03bg.png); background-size: cover; color: #fff; text-align: center; padding: 100px 0 0 0; overflow: hidden;}
+#section3 a {display: block; color: #fff;}
+#section3 .c1 {width: 1280px; margin: 0 auto;}
+#section3 .c1 h1 {font-size: 40px; font-weight: 200; line-height: 45px;}
+#section3 .c1 p {font-size: 15px; line-height: 40px; font-weight: 200; }
+#section3 .c1 div>span {display: inline-block; border: 1px solid #fff; border-radius: 10px; width: 200px; height: 50px; margin: 15px 5px 0px 0px; line-height: 50px; font-size: 14px; font-weight: 200; transition: .3s;}
+/*
+#section3 .c1 span a i {transition: .3s;}
+#section3 .c1 span a:hover i {padding-left: 10px;}
+*/
+#section3 .c1 div>span a:hover {font-weight: 400; color: #000;}
+#section3 .c1 div>span:hover {background: #fff;}
+
+#section3 .c1 img {padding-top: 250px; opacity: 0; transition: .5s;}
+#section3.on .c1 img {padding-top: 97px; opacity: 1;}
+
+#section3 .moon {position: absolute; top: -250px; right: 450px;}
+
+/*section4*/
+#section4 {position: relative; width: 100%; background: #fff; padding: 250px 0 230px 0}
+#section4 .c1 img {float: left; padding-top: 60px;}
+
+#section4 .c1 {width: 1280px; margin: 0 auto;}
+#section4 .c1 .c2 {width: 400px; float: right;}
+#section4 .c1 .c2 h1 {font-size: 40px; font-weight: 300; line-height: 50px; text-align: right;}
+#section4 .c1 .c2 p {font-size: 15px; padding-top: 40px; line-height: 25px; text-align: right; font-weight: 300; color: #000; text-align: right;}
+#section4 .c1 .c2 span {display: block; float: right; font-size: 14px; font-weight: 300; color: #000; text-align: center; width: 220px; height: 50px; border: 1px solid #777; border-radius: 10px; text-align: center; line-height: 50px; margin: 35px 5px 0px 0px; transition: .4s;}
+#section4 .c1 .c2 span a {display: block;}
+/*#section4 .c1 .c2 span a i {transition: .3s;}*/
+/*#section4 .c1 .c2 span a:hover i {padding-left: 10px;}*/
+#section4 .c1 .c2 span a:hover {color: #fff;}
+#section4 .c1 .c2 span:hover {background: #333;}
+
+
+
+/*footer*/
+#footer {width: 100%; background: #5d6877; color: #fff; text-align: center; padding: 30px 350px 30px 350px; font-size: 14px; font-weight: 200;}
+#footer a {display: inline-block; color: #fff;}
+#footer div a {font-size: 22px; padding: 5px 10px;}
+#footer ul {width: 100%;}
+#footer ul li {display: inline-block; padding: 10px 14px;}
+#footer p {padding-top: 10px; letter-spacing: .01rem;}
+
+
+
+
+
+
+
+
