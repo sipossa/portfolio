@@ -1,0 +1,4 @@
+*{margin: 0; padding:0; box-sizing:border-box;}
+.row:after {content: ""; display:block; clear:both;}
+ul,ol {list-style:none;}
+a {color:#fff; text-decoration:none;}

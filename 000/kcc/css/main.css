@@ -1,0 +1,316 @@
+*{outline: 1px solid tomatos}
+body {font-family: 'Noto Sans KR', sans-serif; }
+/*body::-webkit-scrollbar {display: none;}*/
+
+
+
+#header {width: 1900px; color: #fff; position: absolute; top: 0;}
+
+/*슬라이드*/
+#header>.slider {position:relative; top: 0; left: 0; width:1900px; height: 800px;}
+#header>.slider img {width:100%; display: block;}
+
+/*방향표시 자식선택으로 설정하면X*/
+#slider .xi-angle-left-thin, .xi-angle-right-thin {position:absolute; top:50%; display:block; cursor:pointer; z-index:1; color: rgba(255,255,255,.7); background:transparent; font-size: 50px;}
+#slider .xi-angle-left-thin {left:50px; transform:translateY(-80%);}
+
+#slider .xi-angle-right-thin {right:50px; transform:translateY(-80%); }
+/*//슬라이드*/
+
+
+#header>.gnb {width: 100%; padding: 30px 0 60px 0px; position: relative; top: 0; margin:0 auto; z-index: 2; text-align:center;}
+#header>.gnb:after {content: ""; display: block; width: 100%; height: 1px; background: rgba(255,255,255,.3);}
+
+#header>.gnb>h1 {display:inline-block; position: absolute; z-index: 3;}
+#header>.gnb>ul {display:inline-block; width:1200px; margin-left: 330px;}
+#header>.gnb>ul>li {float: left; width:200px; font-size: 18px; position: relative; z-index: 2;}
+
+/*gnb after이벤트*/
+#header>.gnb>ul>li>a {display: block; text-align: center; line-height: 60px; position: relative;}
+#header>.gnb>ul>li>a:after {content: ""; display: block; background: #fff; width:0; height: 1px; visibility: hidden; position: absolute; bottom:-5px; left: 50%; transform: translateX(-50%);  transition: .3s; margin: 0 auto;}
+#header>.gnb>ul>li>a:hover:after {content:""; display: block; width:100px; height: 1px; background: #fff; margin: 0 auto; visibility: visible;}
+/*//gnb after이벤트*/
+
+#header>.gnb>ul>li>ul {position: absolute; width: 100%; height: 0; z-index: 3; overflow: hidden;}
+#header>.gnb>ul>li>ul>li {font-size: 16px; font-weight: 300; line-height: 55px;}
+#header>.gnb>ul>li>ul>li>a {position: relative;display: block; text-align: center; width: 100%; }
+
+/* 메뉴 호버시 밑에 가상요소 라인을 만듬. +라인이 중앙에서 펼처지게함*/
+#header>.gnb>ul>li>ul>li>a:after {position: absolute; left: 50%; transform: translateX(-50%); content:""; display: block; width:0px; background: #fff; margin: 0 40px; visibility: hidden; transition: .3s;}
+#header>.gnb>ul>li>ul>li>a:hover:after {content:""; display: block; width:80px; height: 1px; background: #fff; margin: 0 auto; visibility: visible;}
+
+#header>.gnb:hover ul>li>ul{height: 280px; }
+#header .gnb_bg {position: absolute; top:0; left: 0px; width: 1920px; height: 0; background:  rgba(0, 82, 149,.9); transition: .3s; z-index: 1;}
+#header>.gnb:hover +.gnb_bg {visibility: visible; height: 450px; transition: .4s;}
+/*메뉴 이벤트 끝*/
+
+/*Input*/
+#header>.gnb>.gnb_c  {display:inline-block; width:280px; margin: 15px 0 0 0px; position:relative; vertical-align: top;}
+#header>.gnb>.gnb_c i {float: right; font-size: 18px; line-height: 20px; padding-right: 5px; cursor: pointer;}
+#header>.gnb>.gnb_c >input{ float: right; width: 0px; height: 20px; background: transparent; border: none; border-bottom: 1px solid #fff; transition: .3s;}
+#header>.gnb>.gnb_c >input.on {display: block; width: 130px;}
+/*#header>.gnb>.gnb_c :after {content:"\e97a"; color: #fff;font-family:xeicon;position:absolute;display: block; top:0px;}*/
+
+/*Form*/
+#header>.gnb>.gnb_c>form>select {float:right; width: 50px; height: 25px; border: 0; margin-left: 20px; background: transparent; color: #fff;}
+#header>.gnb>.gnb_c>form>select>option {color: #333; background: transparent;}
+
+
+/*슬라이드 컨텐츠*/
+#slider .slider-m {color: #fff;}
+#slider .slider-m .slider_c1 {position: relative;}
+#slider .slider-m .slider_c1>div {position: absolute; bottom: 310px; left: 350px; width:100%;z-index: 999;}
+#slider .slider-m .slider_c1>div>h2 {font-size: 16px; font-weight:300; line-height: 38px;}
+#slider .slider-m .slider_c1>div>span {font-size: 45px; font-weight: 200; line-height: 50px;}
+
+#slider .slider-m .slider_c1>div>.bnt {width: 180px;}
+#slider .slider-m .slider_c1>div>.bnt>a {display: block; width:80px; height: 40px; text-align: center; border:1px solid #fff;font-size: 16px; margin: 30px 0; line-height: 38px; overflow: hidden; transition:.3s;}
+
+#slider .slider-m .slider_c1>div>.bnt>a>img {padding: 8px 0px 0px 1px; position: absolute; left: 13px; transition:.3s;}
+#slider .slider-m .slider_c1>div>.bnt>a:hover { width:180px; transition: .4s;}
+#slider .slider-m .slider_c1>div>.bnt>a:hover { width:180px; transition: .4s;}
+#slider .slider-m .slider_c1>div>.bnt>a:hover img {transform: translate(95px); transition:.4s;}
+
+/*자세히보기&화살표 투명도조절/overflow*/
+#slider .slider-m .slider_c1>div>.bnt>a>span {position: absolute; left:18px;  opacity: 0;}
+#slider .slider-m .slider_c1>div>.bnt>a:hover >span{transition:.3s; opacity: 1;}
+
+/*두번째*/
+#slider .slider-m .slider_c2 {position: relative;}
+#slider .slider-m .slider_c2>div {position: absolute; bottom: 310px; left: 350px; width:100%;z-index: 999;}
+#slider .slider-m .slider_c2>div>h2 {font-size: 16px; font-weight: 200; line-height: 38px;}
+#slider .slider-m .slider_c2>div>span {font-size: 45px; font-weight: 200; line-height: 50px;}
+
+
+#slider .slider-m .slider_c2>div>.bnt>a {display: block; width:80px; height: 40px; text-align: center; border:1px solid #fff;font-size: 16px; margin: 30px 0; line-height: 38px; overflow: hidden;}
+
+#slider .slider-m .slider_c2>div>.bnt>a>img {padding: 8px 0px 0px 1px; position: absolute; left: 13px;}
+#slider .slider-m .slider_c2>div>.bnt>a:hover { width:180px; transition: .4s;}
+#slider .slider-m .slider_c2>div>.bnt>a:hover img {transform: translate(95px); transition:.4s;}
+
+/*자세히보기&화살표 투명도조절/overflow*/
+#slider .slider-m .slider_c2>div>.bnt>a>span {position: absolute; left:18px;  opacity: 0;}
+#slider .slider-m .slider_c2>div>.bnt:hover a>span{transition:.3s; opacity: 1;}
+
+/*세번째*/
+#slider .slider-m .slider_c3 {position: relative;}
+#slider .slider-m .slider_c3>div {position: absolute; bottom: 310px; left: 350px; width:100%;z-index: 999;}
+#slider .slider-m .slider_c3>div>h2 {font-size: 16px; font-weight: 200; line-height: 38px;}
+#slider .slider-m .slider_c3>div>span {font-size: 45px; font-weight: 200; line-height: 50px;}
+
+
+#slider .slider-m .slider_c3>div>.bnt>a {display: block; width:80px; height: 40px; text-align: center; border:1px solid #fff;font-size: 16px; margin: 30px 0; line-height: 38px; overflow: hidden;}
+
+#slider .slider-m .slider_c3>div>.bnt>a>img {padding: 8px 0px 0px 1px; position: absolute; left: 13px;}
+#slider .slider-m .slider_c3>div>.bnt>a:hover { width:180px; transition: .4s;}
+#slider .slider-m .slider_c3>div>.bnt>a:hover img {transform: translate(95px); transition:.4s;}
+
+/*자세히보기&화살표 투명도조절/overflow*/
+#slider .slider-m .slider_c3>div>.bnt>a>span {position: absolute; left:18px;  opacity: 0;}
+#slider .slider-m .slider_c3>div>.bnt:hover a>span{transition:.3s; opacity: 1;}
+
+/*네번째*/
+#slider .slider-m .slider_c4 {position: relative;}
+#slider .slider-m .slider_c4>div {position: absolute; bottom: 310px; left: 350px; width:100%;z-index: 999;}
+#slider .slider-m .slider_c4>div>h2 {font-size: 16px; font-weight: 200; line-height: 38px;}
+#slider .slider-m .slider_c4>div>span {font-size: 45px; font-weight: 200; line-height: 50px;}
+
+
+#slider .slider-m .slider_c4>div>.bnt>a {display: block; width:80px; height: 40px; text-align: center; border:1px solid #fff;font-size: 16px; margin: 30px 0; line-height: 38px; overflow: hidden;}
+
+#slider .slider-m .slider_c4>div>.bnt>a>img {padding: 8px 0px 0px 1px; position: absolute; left: 13px;}
+#slider .slider-m .slider_c4>div>.bnt>a:hover { width:180px; transition: .4s;}
+#slider .slider-m .slider_c4>div>.bnt>a:hover img {transform: translate(95px); transition:.4s;}
+
+/*자세히보기&화살표 투명도조절/overflow*/
+#slider .slider-m .slider_c4>div>.bnt>a>span {position: absolute; left:18px;  opacity: 0;}
+#slider .slider-m .slider_c4>div>.bnt:hover a>span{transition:.3s; opacity: 1;}
+/*//슬라이드 컨텐츠*/
+
+/*슬라이드버튼*/
+.slick-dots {position: absolute; bottom:40px; width:1900px; text-align: center; cursor:pointer;}
+.slick-dots>li {display: inline-block; width:10px; height: 10px; margin:0 12px; position: relative; }
+.slick-dots>li:before {content:""; position: absolute; display: block; border: 2px solid #fff; width: 5px; height: 5px; border-radius: 10px;left:50%;transition: .3s; }
+
+.slick-dots>li.slick-active:before {content:""; position: absolute; display:block; background: #fff; width: 20px; height: 5px; left:-50%;border-radius: 10px;}
+
+.slick-dots>li>button {display: none;}
+/*//슬라이드버튼*/
+
+/*
+#header>#bar {position: absolute; top: 720px; left: 350px; width: 1200px; height: 80px; background: rgba(0, 82, 149,.9); }
+#header>#bar>.left {width: 990px; height: 80px; float: left; padding:25px 0 20px 20px;}
+#header>#bar>.left>img {padding-right: 10px;}
+#header>#bar>.right {width: 210px; height: 80px; float: left; padding:20px 0;}
+#header>#bar>.right>div:first-child {float: left; padding: 12px;}
+#header>#bar>.right>div:nth-child(2) {float: left; padding: 10px;}
+#header>#bar>.right>div:last-child {float: left; padding: 12px;}
+*/
+
+
+#section01 {width: 100%; background: #fff; color: #333; padding: 90px 0 550px 0; }
+#section01>.container {width: 1200px; margin: 0 auto;text-align: center; position: relative;}
+#section01>.container>h2 {font-size: 40px; font-weight: 300; line-height:80px; color: #000;}
+#section01>.container>span {font-size: 18px; font-weight: 200; color: #000;}
+
+
+#section01>.container>.circle {width: 1200px; padding-top: 70px; text-align: center;}
+#section01>.container>.circle>div {width: 400px; height: 400px; background: rgba(253, 227, 227,.5); }
+#section01>.container>.circle>div:first-child {position: absolute; top:430;left: 30px; border-radius:500px;}
+#section01>.container>.circle>div:nth-child(2) {position: absolute; top:430;left: 393px; border-radius:500px;}
+#section01>.container>.circle>div:last-child {position: absolute; top:430; right: 45px; border-radius:500px;}
+
+
+#section01>.container>.circle>div {padding: 90px 0;}
+#section01>.container>.circle>div>h2 {font-size: 18px; padding-top: 25px;}
+#section01>.container>.circle>div>span {display: block; font-weight: 300;}
+
+/*섹션02 슬라이드*/
+#section02 {width: 100%; padding: 0 0 50px 0; color: #333; background-image:url("../images/12_01.jpg"); background-size: cover; background-attachment: fixed;}
+#section02 .center {width: 1900px; height: 500px; position: relative; }
+/*건축분야*/
+#section02 .center .center_c01 {width:100%;text-align: center; position: relative; left: 130px;}
+#section02 .center .center_c01 div:first-child {display: block;margin:0 auto;position: relative;}
+#section02 .center .center_c01 div:nth-of-type(2) {position: absolute;bottom: 0px; right: 350px; z-index: 9; transition: .3s;}
+#section02 .center .center_c01 div:nth-of-type(3){position: absolute;bottom: 130px; right: 410px; transition: .3s;}
+#section02 .center .center_c01 div:nth-of-type(3):hover {transform: translate(15px) scaleX(.9);}
+
+/*주택분야*/
+#section02 .center .center_c02 {width:100%;text-align: center; position: relative; left: 130px;}
+#section02 .center .center_c02 div:first-child {display: block;margin:0 auto;position: relative;}
+#section02 .center .center_c02 div:nth-of-type(2) {position: absolute;bottom: -50px; right: 328px; z-index: 9; transition: .3s;}
+#section02 .center .center_c02 div:nth-of-type(2):hover {transform: translateX(-40px)}
+/*//주택분야*/
+
+/*플랜트분야*/
+#section02 .center .center_c03 {width:100%;text-align: center; position: relative; left: 130px;}
+#section02 .center .center_c03 div:first-child {display: block;margin:0 auto;position: relative;}
+#section02 .center .center_c03 div:nth-of-type(2) {position: absolute;bottom: -55px; right: 260px; z-index: 9; transition: .3s;}
+#section02 .center .center_c03 div:nth-of-type(2):hover {transform: translateY(-40px);}
+/*//플랜트분야*/
+
+/*토목분야*/
+#section02 .center .center_c04 {width:100%;text-align: center; position: relative; left: 130px;}
+#section02 .center .center_c04 div:first-child {display: block;margin:0 auto;position: relative;}
+
+#section02 .center .center_c04 div:nth-of-type(2){position: absolute;bottom: 25px; right: 300px; transition: .3s;}
+#section02 .center .center_c04 div:nth-of-type(2):hover {transform:  scale(1.1)}
+/*//토목분야*/
+
+
+.slick-slide.slick-current.slick-active.slick-center{opacity:1;transform: scale(1); }
+
+/*자세히보기*/
+#section02 .center li div a{position: absolute; display: block; top: 280px; left: 45px; font-size: 14px; color: #333; border: 1px solid #333; width: 100px; line-height: 32px; text-align: center; padding-left: 5px; transition: .3s;}
+#section02 .center li div a:hover {background: #0c4ca3; color: #fff;border: 1px solid #fff;}
+/*//자세히보기*/
+
+#section02 .center .arrow01, .arrow02 {position:absolute; top:50%; display:block; cursor:pointer; z-index:999; font-size:100px; color:#333; background:transparent;}
+#section02 .center .arrow01 {left:420px; transform:translateY(-80%);}
+#section02 .center .arrow02 {right:420px; transform:translateY(-80%);}
+
+#section02>h2 {font-size: 42px; font-weight: 200; text-align: center; padding: 100px 0 115px 0;}
+/*//섹션02 슬라이드*/
+
+
+/*이미지 hover+scale 동시에 삽입*/
+#section03 {width: 100%; padding: 40px 0 125px 0; background: #fff; color: #fff;}
+#section03>.container {width:1200px; margin: 0 auto; overflow: hidden;}
+#section03>.container>h2 {color: #333; font-size: 40px; font-weight: 200; text-align: center; line-height:200px;}
+#section03>.container>div {position: relative; float: left; width: 400px; height: 530px; overflow: hidden;}
+#section03>.container>div:hover >img{cursor: pointer; transform: scale(1.1); transition: .5s;}
+
+#section03>.container>div>span:nth-of-type(1) {position: absolute; top: 10px; left: 10px;display: block;width: 0px; height: 1px; background: #fff;}
+#section03>.container>div:hover span:nth-of-type(1){width: 380px; transition: .5s;}#section03>.container>div>span:nth-of-type(2) {position: absolute; top: 10px; left: 10px; display: block; width: 1px; height: 0px; background: #fff;}
+#section03>.container>div:hover span:nth-of-type(2){ height: 510px;transition: .5s;}
+#section03>.container>div>span:nth-of-type(3) {position: absolute; bottom: 10px; right: 10px;display: block;width: 1px; height: 0px; background: #fff;}
+#section03>.container>div:hover span:nth-of-type(3){height: 510px; transition: .5s;}#section03>.container>div>span:nth-of-type(4) {position: absolute; bottom: 10px; right: 10px; display: block; width: 0px; height: 1px; background: #fff;}
+#section03>.container>div:hover span:nth-of-type(4){ width: 380px;transition: .5s;}
+/*
+#section03>.container>div:before {position: absolute; top: 10px; left: 0; content: ""; display: block; width: 380px; height: 1px; background: #fff; transition: .3s;visibility: hidden;}
+#section03>.container>div:hover:before {visibility: visible;}
+*/
+/*#section03>.container>div>div {position: absolute; top: 10px; left: 10px; width: 380px; height: 510px; border: 1px solid #fff; opacity: 0; transition: .3s; }
+#section03>.container>div:hover >div{opacity: 1;}
+*/
+#section03>.container>div>h2 {position: absolute; top: 10px; left: 0; padding: 75px 0 35px 40px; font-size: 22px; font-weight: 300; line-height: 27px;}
+#section03>.container>div>div {position: absolute; top: 170px; left: 0; font-size: 18px; font-weight: 300; padding-left: 40px;}
+#section03>.container>div>div>a {display: block; }
+#section03>.container .smallc span {font-size: 14px;}
+/*바로가기가상요소라인
+#section03>.container>div>.span01>a:first-child:after {content:""; display:block; width: 155px; height: 1px; background:#fff; transition: .3s; opacity: 0; margin-top: 5px;}
+
+#section03>.container>div:hover >span01>a:after {opacity: .7;}
+*/
+
+
+#section04 {width: 100%; background: rgba(253, 227, 227,.4); color: #333; padding: 30px 0 130px 0;}
+#section04>.container {position: relative; width: 1200px; margin: 0 auto;}
+#section04>.container>h2 {color: #333; font-size: 40px; font-weight: 200; text-align: center; line-height: 170px;}
+#section04>.container>.tabmenu {width: 590px; height: 350px; float: left; background: #fff; box-shadow: 1px 1px 5px 1px #d1d1d1 ;}
+#section04>.container>.tabmenu>ul {float: left;}
+#section04>.container>.tabmenu>ul>li {display: inline-block; background: #024377; line-height: 60px; padding:  0 72.25px; text-align: center; cursor: pointer; font-weight: 300; color: #fff;}
+#section04>.container>.tabmenu>ul>li.active {background: #fff; color: #024377;}
+
+#section04>.container>.tabmenu>div {float: left;}
+#section04>.container>.tabmenu>div>div {display: none;}
+#section04>.container>.tabmenu>div>div:nth-of-type(1) {display: block;}
+
+
+#section04>.container>.tabmenu a {color: #000;}
+#section04>.container>.tabmenu .tab01 {width: 100%;}
+#section04>.container>.tabmenu .tab01>h2 {display: block; width: 100%; font-size: 16px; font-weight: 300; text-align: right; padding: 20px 25px 10px 0;}
+#section04>.container>.tabmenu .tab01>span {float: left; width:410px; font-size: 15px; line-height: 35px; padding-left: 25px;}
+#section04>.container>.tabmenu .tab01>p {float: right; font-size: 14px; line-height: 35px; padding-right: 25px;}
+
+
+#section04>.container>.tabmenu>.tab02 {width: 100%;}
+#section04>.container>.tabmenu .tab02>h2 {display: block; width: 100%; font-size: 16px; font-weight: 300; text-align: right; padding: 20px 25px 10px 0;}
+#section04>.container>.tabmenu .tab02>span {float: left; width:350px; font-size: 15px; line-height: 35px; padding-left: 25px;}
+#section04>.container>.tabmenu .tab02>p {float: right; font-size: 14px; line-height: 35px; padding-right: 25px;}
+
+
+#section04>.container>.tabmenu>.tab03 {position: relative; width: 100%; text-align: center;}
+#section04>.container>.tabmenu>.tab03 div {position: relative;}
+#section04>.container>.tabmenu>.tab03 div div {float: left; width: 50%; height: 150px;}
+#section04>.container>.tabmenu>.tab03 div h1 {font-size: 18px; line-height: 50px;}
+#section04>.container>.tabmenu>.tab03 div span {display: block; font-size: 15px; font-weight: 300; color: #000; line-height: 30px;}
+#section04>.container>.tabmenu>.tab03 div img {position: absolute;}
+#section04>.container>.tabmenu>.tab03 div div:nth-of-type(1) {padding: 54px 0 0 0;}
+#section04>.container>.tabmenu>.tab03 div div:nth-of-type(1) img {top: 55px; left: 80px;}
+#section04>.container>.tabmenu>.tab03 div div:nth-of-type(1) h1 {line-height: 23px; padding-left: 55px;}
+#section04>.container>.tabmenu>.tab03 div div:nth-of-type(1) p{font-weight: 500; font-size: 18px; padding-left: 50px;}
+#section04>.container>.tabmenu>.tab03 div div:nth-of-type(1) span{padding-left: 45px;}
+#section04>.container>.tabmenu>.tab03 div div:nth-of-type(2) {padding: 40px 0;}
+#section04>.container>.tabmenu>.tab03 div div:nth-of-type(2) img {top: 45px; left: 85px;}
+#section04>.container>.tabmenu>.tab03 div div:nth-of-type(2) h1 {padding-left: 30px;}
+#section04>.container>.tabmenu>.tab03 div div:nth-of-type(2) span {line-height: 20px;}
+#section04>.container>.tabmenu>.tab03 div div:nth-of-type(3) {padding: 25px 0;}
+#section04>.container>.tabmenu>.tab03 div div:nth-of-type(3) img {top: 30px; left: 80px;}
+#section04>.container>.tabmenu>.tab03 div div:nth-of-type(3) h1 {padding-left: 40px;}
+#section04>.container>.tabmenu>.tab03 div div:nth-of-type(4) {padding: 25px 0;}
+#section04>.container>.tabmenu>.tab03 div div:nth-of-type(4) img {top: 25px; left: 80px;}
+#section04>.container>.tabmenu>.tab03 div div:nth-of-type(4) h1 {font-weight: 500; font-size: 18px; padding-left: 50px;}
+#section04>.container>.tabmenu>.tab03 div div:nth-of-type(4) span {line-height: 20px;}
+
+#section04>.container>.tabmenu>.tab03>span:nth-of-type(1) {position: absolute; top: 150px; left: 35px; width: 520px; height: 1px; background: #ddd;}
+#section04>.container>.tabmenu>.tab03>span:nth-of-type(2) {position: absolute; top: 20px; left: 300px; width: 1px; height: 250px; background: #ddd;}
+
+
+#section04>.container .youtube {float: right;} 
+
+/*footer*/
+#footer {width:100%; background: #666; color: #fff; padding: 15px 0;}
+#footer>div {width: 1200px; margin: 0 auto; font-size: 14px; font-weight: 200;}
+#footer>div div {font-size: 14px; color: #ccc;}
+#footer>div>ul {float: left; width: 990px;}
+#footer>div>ul>li {display:inline-block;line-height: 28px; padding: 10px;}
+#footer>div>ul>li:first-child {padding: 0;}
+
+#footer>div>form {float: right; width: 210px; height: 168px; padding-top: 15px;}
+#footer>div>form>select {background: #555; color: #fff;width: 200px; height: 35px; padding:0 10px; }
+#footer>div>form>select>option {padding:30px 0 ;}
+
+#footer>div>img {padding: 30px 0 0 0;}
+
+#top {width: 100%; line-height: 50px; background: #024377; text-align: center; color: #fff; font-weight: 200; font-size: 15px;}
