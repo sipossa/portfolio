@@ -12,3 +12,5 @@
   <li> https://sipossa.github.io/007 </li>
 </ul>
 
+1002 실습링크. <br>
+https://sipossa.github.io/trn/index.html
