@@ -1,0 +1,99 @@
+#wrap {min-width:1900px;}
+
+
+
+#top_banner {background:#333;color:#fff;}
+#top_banner .container {width:1200px;margin:0 auto;padding:15px 15px;position:relative;}
+#top_banner .container i {position:absolute;top:15px;right:15px;padding:5px;background:#555;}
+
+#top_banner2 {color:#fff;position:relative;}
+#top_banner2 .case {background:#444;height:70px;overflow:hidden;transition:0.4s;}
+#top_banner2 .container {width:1200px;margin:0 auto;padding:15px 15px;}
+#top_banner2 .case.on {height:0;}
+#top_banner2 .btn {position:absolute;bottom:-26px;left:50%;transform:translateX(-50%);text-align:right;width:1200px;padding:0 15px;z-index: 999;}
+#top_banner2 .btn i {padding:5px;background:#444;}
+#top_banner2 .btn i:after {content:"close"}
+#top_banner2 .btn i.on:after {content:"open"}
+
+#top_banner3 {color:#333;position:relative;}
+#top_banner3 .case {background:#f2f2f2;}
+#top_banner3 .container {width:1200px;margin:0 auto;padding:30px 15px;}
+#top_banner3 .btn {position:absolute;bottom:-26px;left:50%;transform:translateX(-50%);text-align:right;width:1200px;padding:0 15px;z-index: 999;}
+#top_banner3 .btn i {padding:5px;background:#f2f2f2;transition:0.2s;}
+#top_banner3 .btn i.on {transform:rotate(180deg)}
+
+#top_banner4 {color:#fff;position:relative;}
+#top_banner4 .case {background:#444;height:70px;overflow:hidden;transition:0.4s;}
+#top_banner4 .container {width:1200px;margin:0 auto;padding:15px 15px;}
+#top_banner4 .case.on {height:0;}
+#top_banner4 .btn {position:absolute;bottom:-26px;left:50%;transform:translateX(-50%);text-align:right;width:1200px;padding:0 15px;z-index: 999;}
+#top_banner4 .btn i {display:inline-block;padding:5px;background:#444;}
+#top_banner4 .btn i:before {content:"\e913 닫기";font-family:xeicon, 'Noto Sans KR';}
+#top_banner4 .btn i.on:before {content:"\e912 열기";font-family:xeicon, 'Noto Sans KR';}
+
+
+
+#header {display:flex;justify-content:space-between;padding:10px 70px 10px 100px;line-height:100px;}
+/* text-align:center 박스안의 인라인 요소(그림 글자 링크)를 가운데로 오게한다.*/
+#header h1 {text-align:center;}
+
+/* 
+display:flex 는 자시block을 가로로 배열한다.
+justify-content:center; 는 display:flex로 가로 배열된 박스들을 가운데로 오게한다.
+*/
+#header nav>ul {display:flex;}
+#header nav>ul>li {position:relative;}
+#header nav>ul>li~li:after {content:"";display:block;width:1px;height:12px;background:#333;position:absolute;top:46px;left:0;}
+/* #header nav>ul>li:first-child:after {display:none;} */
+#header nav>ul>li>a {display:block;padding:0 30px;}
+
+
+#main_visual {height:500px;background:url(../lib/base/main_visual01.jpg) no-repeat center center/cover;text-align:center;color:#fff;padding:200px 0 0 0;}
+#main_visual h2 {font-size:30px;font-weight:500;margin-bottom:30px;}
+
+#content01 {padding:150px 0;text-align:center;}
+#content01 h2 {font-size:30px;font-weight:500;margin-bottom:10px;}
+#content01 p {font-size:15px;font-weight:300;margin-bottom:30px;}
+
+/*margin:0 auto; margin-left:auto,margin-right:auto 사이즈가 있는 block을 가운데로 오게한다. */
+#content01 .container {display:flex;width:1200px;margin:0 auto;}
+#content01 .container figure {flex:1;padding:0 15px;}
+/* #content01 .container figure:first-child {flex:2;order:2;} */
+#content01 .container figure img {width:100%;}
+
+#footer {padding:80px 0 100px 0;background:#f4f4f4;text-align:center;border-top:1px solid #ddd;}
+
+#left_banner {position:fixed;top:400px;left:-300px;transition:0.4s;}
+#left_banner.on {left:0;}
+#left_banner ul {background:#f7f7f7;width:300px;height:500px;padding:0 15px;}
+#left_banner ul>li {line-height:50px;border-bottom:1px solid #ddd;}
+#left_banner i {position:absolute;top:0;right:-50px;font-size:30px;padding:10px;background:#ddd;}
+#left_banner i.on {transform:rotate(-180deg)}
+
+#right_banner {position:fixed;top:400px;right:-300px;transition:0.4s;}
+#right_banner.on {right:0;}
+#right_banner ul {background:#f7f7f7;width:300px;height:500px;padding:0 15px;}
+#right_banner ul>li {line-height:50px;border-bottom:1px solid #ddd;}
+#right_banner i {position:absolute;top:0;left:-50px;font-size:30px;padding:10px;background:#ddd;}
+#right_banner i.on {transform:rotate(-180deg)}
+
+#scroll_banner {position:absolute;top:300px;right:300px;transition:1s;}
+#scroll_banner li {padding:20px;background:#333;color:#fff;margin:5px 0;}
+
+#bottom_banner {position:fixed;bottom:0;color:#fff;width:100%;}
+#bottom_banner .case {background:#333;}
+#bottom_banner .container {width:1200px;margin:0 auto;padding:30px 15px;}
+#bottom_banner .btn {position:absolute;top:-26px;left:50%;transform:translateX(-50%);text-align:right;width:1200px;padding:0 15px;z-index: 999;}
+#bottom_banner .btn i {padding:5px;background:#333;transition:0.2s;}
+#bottom_banner .btn i.on {transform:rotate(180deg)}
+
+#toTop {display:none;position:fixed;bottom:200px;right:200px;}
+#toTop i {padding:10px;font-size:30px;color:#fff;background:#333;}
+
+
+
+
+
+
+
+

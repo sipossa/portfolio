@@ -1,0 +1,144 @@
+body {color:#333;}
+#wrap {}
+
+
+
+
+/*top banner 이창훈 20111103 최종수정*/
+#top_banner {background:#f7f7f7;}
+#top_banner .container {position:relative;width:1200px;margin:0 auto;padding:25px 15px;}
+#top_banner h2 {font-size:24px;font-weight:100;letter-spacing:0.04em;margin-bottom:10px;}
+#top_banner p {font-weight:300;letter-spacing:-0.025em;}
+#top_banner i {position:absolute;top:25px;right:15px;font-size:24px;}
+
+#header {}
+#header .container {display:flex;justify-content:space-between;width:1200px;margin:0 auto;padding:0 15px;line-height:100px;}
+
+#header h1 {}
+#header h1 img {max-width:200px;}
+#header nav>ul {display:flex;justify-content:center;}
+#header nav>ul>li>a {display:block;padding:0 15px;position:relative;}
+#header nav>ul>li~li>a:before {content:"";display:block;width:1px;height:12px;background:#666;position:absolute;top:50%;left:0;transform:translateY(-50%);}
+
+#header .header_search input {border:none;outline:none;border-bottom:1px solid #555;padding:5px 0;}
+
+#header .header_search button {background:none;border:none;outline:none;padding:5px 0;}
+#header .header_search i {font-size:20px;color:#fff;padding:10px;background:#333;border-radius:50%}
+
+#main_visual {position:relative;}
+#main_visual .main_slider figure{height:600px;background:#333;}
+#main_visual .main_slider .itm01 {background:url(../lib/base/main_visual01.jpg) no-repeat center center/cover;}
+#main_visual .main_slider .itm02 {background:url(../lib/base/main_visual02.jpg) no-repeat center center/cover;}
+#main_visual .main_slider .itm03 {background:url(../lib/base/main_visual03.jpg) no-repeat center center/cover;}
+
+#main_visual .slogan {position:absolute;top:50%;left:50%;width:1200px;padding:0 15px;transform:translate(-50%,-50%);color:#fff;text-align:center;}
+
+#main_visual .slogan h2 {font-size:60px;font-weight:900;margin-bottom:10px;text-shadow:0 0 3px #666;}
+#main_visual .slogan p {font-weight:300;}
+#main_visual .slogan a {display:block;width:150px;height:35px;line-height:30px;background:#333;text-align:center;margin:20px auto;}
+
+
+#product01 {padding:100px 0;text-align:center;}
+#product01 h2 {font-size:24px;font-weight:500;margin-bottom:10px;}
+#product01 p {font-weight:300;letter-spacing:-0.025em;margin-bottom:30px;}
+
+#product01 .container {display:flex;width:1200px;margin:0 auto;}
+#product01 img {max-width:100%;}
+#product01 figure {flex:1;padding:0 15px;}
+
+#product01 figure strong {display:block;margin:10px 0;}
+#product01 figure span {display:block;margin:10px 0;}
+#product01 figure span.price {color:#fe5500;}
+
+#product01 .case {overflow:hidden;}
+#product01 figure img {transition:0.4s;}
+#product01 figure:hover img {transform:scale(1.2)}
+
+#main_banner {padding:150px 0;background:url(../lib/base/main_visual01.jpg) no-repeat center center/cover;background-attachment: fixed;color:#fff;text-align:center;}
+
+#main_banner h2 {font-size:24px;font-weight:500;margin-bottom:10px;}
+#main_banner p {font-weight:300;letter-spacing:-0.025em;margin-bottom:20px;}
+#main_banner i {font-size:20px;padding:5px;background:#fe5500;border-radius:50% 0;vertical-align:middle;margin-left:10px;}
+
+#product02 {padding:150px 0;}
+#product02 .container {display:flex;flex-wrap:wrap;width:1200px;margin:0 auto;padding:0 15px;}
+#product02 img {max-width:100%;}
+#product02 .pic {width:50%;}
+#product02 .dis {display:flex;width:50%;text-align:center;background:#f7f7f7;}
+#product02 .dis .dis_con {margin:auto;padding:0 30px;}
+
+#product02 .dis .dis_con h3 {font-size:24px;font-weight:500;margin-bottom:10px;}
+#product02 .dis .dis_con h3:after {content:"";display:block;width:1px;height:40px;background:#fe5500;margin:20px auto;}
+#product02 .dis .dis_con p {font-weight:300;letter-spacing:-0.025em;margin-bottom:20px;line-height:24px;}
+#product02 .dis .dis_con a i {font-size:20px;padding:5px;background:#fe5500;color:#fff;border-radius:50% 0;vertical-align:middle;margin-left:10px;transition:0.4s;}
+#product02 .dis .dis_con a:hover i {border-radius:50% 50%;}
+
+#product03 {padding:100px 0;text-align:center;background:#f7f7f7;}
+#product03 h2 {font-size:24px;font-weight:500;margin-bottom:10px;}
+#product03 p {font-weight:300;letter-spacing:-0.025em;margin-bottom:30px;}
+
+#product03 .container {width:1200px;margin:0 auto;}
+#product03 img {max-width:100%;}
+#product03 figure {padding:30px 15px;}
+#product03 .case {margin-bottom:30px;background:#f7f7f7;}
+#product03 figure img {transition:0.5s;border:0 solid #f7f7f7;}
+#product03 figure.on img {transform:scale(1.6);border:5px solid #f7f7f7;}
+#product03 figure strong {display:block;}
+#product03 figure.on strong {position:absolute;top:50%;color:#fe5500}
+#product03 .slide_bar {position:relative;width:600px;height:5px;background:#ddd;border-radius:3px;margin:30px auto;}
+#product03 .slide_bar>span {display:block;width:100px;height:5px;border-radius:3px;background:#333;position:absolute;top:0;left:0;transition:0.5s;}
+
+
+#product04 {padding:100px 0;}
+#product04 h2 {font-size:24px;font-weight:500;margin-bottom:10px;}
+#product04 p {font-weight:300;letter-spacing:-0.025em;margin-bottom:30px;}
+
+#product04 .container {display:flex;width:1200px;margin:0 auto;}
+
+#product04 .container .dis {flex:1;padding:0 15px;}
+#product04 .container .con {flex:2;overflow:hidden;position:relative;}
+#product04 .container .con figure {padding:0 15px;}
+#product04 .container .con img {max-width:100%;}
+
+#product04 .container .con i {position:absolute;top:50%;background:#fff;padding:10px;border:1px solid #ddd;}
+#product04 .container .con i.xi-arrow-left {left:0;}
+#product04 .container .con i.xi-arrow-right {right:0;}
+
+
+#product04 .dis h3 {font-size:24px;font-weight:500;margin-bottom:10px;}
+#product04 .dis h3:after {content:"";display:block;width:40px;height:1px;background:#fe5500;margin:20px 0;}
+#product04 .dis p {font-weight:300;letter-spacing:-0.025em;margin-bottom:20px;line-height:24px;}
+#product04 .dis a i {font-size:20px;padding:5px;background:#fe5500;color:#fff;border-radius:50% 0;vertical-align:middle;margin-left:10px;transition:0.4s;}
+#product04 .dis a:hover i {border-radius:50% 50%;}
+
+#tab {padding:100px 0;background:#f7f7f7;}
+#tab .container {width:1200px;margin:0 auto;padding:0 15px;}
+#tab .tab_menu {display:flex;border-bottom:1px solid #ddd;margin-bottom:10px;}
+#tab .tab_menu li a {display:block;line-height:40px;padding:0 50px;background:#369;color:#fff;text-align:center;}
+#tab .tab_menu li~li {border-left:1px solid #f7f7f7;}
+
+#tab .tab_con {position:relative;height:300px;}
+#tab .tab_con .tab_slider {position:absolute;top:0;left:0;width:100%;visibility:hidden;}
+#tab .tab_con .tab_slider.on {visibility:visible;}
+#tab .tab_con figure {padding:0 15px;}
+#tab .tab_con figure img {width:100%;}
+
+#footer {background:#333;color:#f4f4f4;font-weight:300;}
+#footer .container {display:flex;justify-content:space-between;width:1200px;margin:0 auto;line-height:100px;padding:0 15px;}
+#footer .customer_link {display:flex;}
+#footer .customer_link li {position:relative;}
+#footer .customer_link li a {display:block;padding:0 20px;}
+#footer .customer_link li~li:before {content:"I";position:absolute;top:0;left:0;}
+#footer .customer_link li:first-child a {padding:0 20px 0 0;}
+#footer hr {border:none;border-top:1px solid #666;}
+#footer .sns {font-size:30px;}
+#footer select {width:200px;background:#333;padding:5px 15px;outline:none;}
+
+
+
+
+
+
+
+
+

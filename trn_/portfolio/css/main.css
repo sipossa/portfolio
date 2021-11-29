@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+
+#header h1 {position:fixed;top:50px;left:50px;font-family: 'Lato', sans-serif;font-weight:300;z-index:999;}
+
+.section {background:#fff url(../img/bg01.png)}
+.section:nth-child(even) {background:#f9f9f9 url(../img/bg02.png);}
+.container {text-align:center;}
+
+.sc01 h2 {font-family: 'Lato', sans-serif;font-weight:100;font-size:150px;margin-bottom:50px;transform:translateY(100px);opacity:0;}
+.sc01.on h2 {transform:translateY(0);opacity:1;transition:0.8s;}
+
+.sc01 p {font-family: 'Lato', sans-serif;font-weight:300;font-size:14px;margin-bottom:50px;transform:translateY(100px);opacity:0;}
+.sc01.on p {transform:translateY(0);opacity:1;transition:0.8s 1s;}
+
+.sc01 figure {width:250px;margin:0 auto;background:#f4f4f4;margin-bottom:30px;border-radius:50%;overflow:hidden;transform:scale(0.3);opacity:0;position:relative;}
+.sc01 figure:before {content:"";display:block;width:100%;height:100%;position:absolute;top:0;left:0;background:url(../img/bg03.png);opacity:0.5;color:#fff;font-size:80px;}
+.sc01.on figure {transform:scale(1);opacity:1;transition:0.8s 0.5s;}
+.sc01 figure img {width:100%;}
+
+
+
+
+
+
+

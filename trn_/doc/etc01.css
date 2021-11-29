@@ -1,0 +1,25 @@
+#wrap {}
+#header {}
+#header .container {display:flex;width:1200px;margin:0 auto;padding:0 15px;}
+#header nav {margin-left:auto;}
+#header nav>ul {display:flex;}
+#header nav>ul>li>a {display:block;padding:0 20px;line-height:100px;}
+
+
+
+#header i {margin-left:50px;line-height:100px;}
+#visual {position:relative;height:1000px;background:url(../lib/base/main_visual01.jpg) no-repeat center center/cover;padding:200px 0 0 0;}
+#visual .container {width:1200px;margin:0 auto;color:#fff;padding:0 15px;}
+
+#customer {padding:150px 0;}
+#customer .container {display:flex;width:1200px;margin:0 auto;}
+#customer .container figure {flex:1;padding:0 15px;}
+#customer .container figure img {max-width:100%;}
+
+#footer {background:#333;color:#fff;padding:80px 0 3000px 0;}
+#footer .container {display:flex;width:1200px;margin:0 auto;padding:0 15px;}
+#footer .container .sns {margin-left:auto;}
+
+
+
+

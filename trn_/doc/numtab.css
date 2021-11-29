@@ -1,0 +1,10 @@
+.num {padding:100px 0;}
+.num .container li{display:flex;width:400px;height:100px;margin:0 auto;}
+.num .container i {flex:1;text-indent:-99999px;background:url(../lib/base/num.png) repeat-y;}
+
+
+
+
+
+
+

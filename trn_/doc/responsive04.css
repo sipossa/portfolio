@@ -1,0 +1,115 @@
+html {font-size:20px;}
+body {font-size:0.8rem;}
+
+/* * {outline:1px solid #f00;} */
+
+.wrap {min-width:60rem;}
+.header {line-height:5rem;}
+.header img {width:10rem;}
+.header .container {display:flex;width:60rem;margin:0 auto;}
+.header .container>* {padding:0 0.75rem;}
+
+.gnb {margin-left:auto;}
+.gnb>ul {display:flex;}
+.gnb>ul>li {position:relative;}
+.gnb>ul>li>a {display:block;padding:0 2rem;position:relative;}
+.gnb>ul>li~li>a:after {content:"";display:block;width:1px;height:0.65rem;background:#666;position:absolute;top:50%;left:0;transform:translateY(-50%)}
+.gnb>ul>li .submenu {visibility:hidden;line-height:1.5rem;width:100%;background:#fff;border:1px solid #ddd;padding:0.5rem 0.2rem 1rem 0.2rem;position:absolute;top:6rem;opacity:0;left:0;z-index:999;}
+.gnb>ul>li:hover .submenu {visibility:visible;top:4.5rem;opacity:1;transition:0.4s;}
+.gnb>ul .submenu a {display:block;text-align:center;}
+.gnb>ul .submenu li~li a {border-top:1px solid #ddd;}
+
+.main_visual {position:relative;}
+.main_visual .main_slider {}
+.main_visual figure {height:calc(100vh - 10rem);}
+.main_visual .itm01 {background:url(../lib/base/main_visual01.jpg) no-repeat center center/cover}
+.main_visual .itm02 {background:url(../lib/base/main_visual02.jpg) no-repeat center center/cover}
+.main_visual .itm03 {background:url(../lib/base/main_visual03.jpg) no-repeat center center/cover}
+
+.main_visual .slogan {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;width:60rem;padding:0 0.75rem;text-align:center;}
+.main_visual .slogan h2 {font-size:2rem;font-weight:700;margin-bottom:0.5rem;}
+.main_visual .slogan p {font-size:0.75rem;font-weight:100;}
+
+.footer {background:#333;color:#f2f2f2;line-height:5rem;text-align:center;}
+
+.mopen {display:none;position:fixed;top:1rem;right:1rem;font-size:1.5rem;z-index:999;}
+.mopen i {padding:0.25rem;background:#ddd;}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    html {font-size:20px;}
+    body {font-size:0.8rem;}
+    
+    /* * {outline:1px solid #f00;} */
+    
+    .wrap {min-width:auto;}
+    .header {line-height:5rem;}
+    .header img {width:10rem;}
+    .header .container {display:flex;width:auto;margin:0 auto;}
+    .header .container>* {padding:0 0.75rem;}
+    .header .sns {display:none;position:fixed;top:1rem;left:1rem;font-size:1.5rem;z-index:1000;}
+    
+    .gnb {margin-left:auto;position:fixed;top:0;left:-100%;background:#fff;border-right:1px solid #ddd;width:calc(100% - 80px);height:100vh;transition:0.4s;z-index:999;}
+    .gnb.on {left:0;}
+    .gnb>ul {display:flex;flex-direction:column;padding:5rem 0.5rem 0 0.5rem}
+    .gnb>ul>li {position:relative;}
+    .gnb>ul>li>a {display:block;padding:0 2rem;position:relative;line-height:2rem;border-bottom:1px solid #ddd;}
+    .gnb>ul>li~li>a:after {content:"";display:none;width:1px;height:0.65rem;background:#666;position:absolute;top:50%;left:0;transform:translateY(-50%)}
+    .gnb>ul>li .submenu {display:none;line-height:1.5rem;width:100%;background:#f4f4f4;border:none;padding:0.2rem 0.2rem 0.2rem 0.2rem;position:static;top:4.5rem;left:0;visibility:visible;opacity:1;z-index:999;}
+    .gnb>ul>li:hover .submenu {display:none;visibility:visible;opacity:1;transition:none;}
+    .gnb>ul .submenu a {display:block;text-align:left;padding:0 2rem;}
+    .gnb>ul .submenu a:before {content:"- ";}
+    .gnb>ul .submenu li~li a {border-top:1px solid #ddd;}
+    
+    .main_visual {position:relative;}
+    .main_visual .main_slider {}
+    .main_visual figure {height:calc(100vh - 10rem);}
+    .main_visual .itm01 {background:url(../lib/base/main_visual01.jpg) no-repeat center center/cover}
+    .main_visual .itm02 {background:url(../lib/base/main_visual02.jpg) no-repeat center center/cover}
+    .main_visual .itm03 {background:url(../lib/base/main_visual03.jpg) no-repeat center center/cover}
+    
+    .main_visual .slogan {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;width:100%;padding:0 0.75rem;text-align:center;}
+    .main_visual .slogan h2 {font-size:2rem;font-weight:700;margin-bottom:0.5rem;}
+    .main_visual .slogan p {font-size:0.75rem;font-weight:100;}
+    
+    .footer {background:#333;color:#f2f2f2;line-height:5rem;text-align:center;}
+
+    .mopen {display:block;}
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
