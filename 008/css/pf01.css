@@ -1,0 +1,548 @@
+html {font-size: 16px}
+body {font-family: 'Noto Sans KR', sans-serif}
+h2 {font-family: 'Yellowtail', cursive;}
+* {margin:0;padding:0;box-sizing: border-box;font-size: inherit;font-weight:300;}
+*:after , *:before {box-sizing:border-box}
+ul,li {list-style: none;font-weight: 100}
+a {text-decoration: none;color:inherit}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*          bar        */
+
+
+
+
+.bar {position: fixed;right:80px;top:30%;color:white;text-align: center;line-height: 20px;z-index: 105}
+.bar li {position: relative;width: 35px;height: 20px;cursor: pointer;}
+.bar li:after {content: "";display: block;height: 1px;width:35px;background: white;position: absolute;top:8px}
+.bar li:first-child {display: none}
+.bar li a {opacity:0;display: block;width:100%;padding:15px 0;height:1px;text-align: center;transition:0.5s}
+.bar li.on {height: 100%}
+.bar li.on a {opacity:1;height: 100%}
+.bar li.on:after {height: 2px}
+.bar li:hover:after {height: 2px;}
+
+nav.on a {color:black}
+nav.on li:after {background: black;}
+
+
+
+
+
+/*          main         */
+
+
+
+
+#main {
+    display: block;
+    background:white;
+    width: 1920px;
+    height: 100vh;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    perspective: 1500px;
+    transition: all 10s;
+    z-index:100;
+    overflow: hidden
+}
+
+
+
+#main h2 {position: absolute;top:49%;left:50%;transform: translate(-50%,-50%);color:#304026;font-weight: 500;font-size: 50px;z-index: 10;transition:0.5s}
+#main h3 {position: absolute;top:44%;left:50%;transform: translate(-50%,-50%);color:#666;font-size: 24px;opacity: 0;transition:1s}
+#main p {position: absolute;top:51%;left:50%;transform: translate(-50%,-50%);color:#666;font-size: 20px;;opacity: 0;}
+#main span {position: absolute;top:60%;left:50%;transform: translate(-50%,-50%);color:#304026;font-size: 20px;;opacity: 0;}
+#main span:after {content: "";display: block;height: 1px; width:0px;background:#304026;position: absolute;top:50%;left:-50px}
+#main span:before {content: "";display: block;height: 1px; width:0px;background:#304026;position: absolute;top:50%;right:-40px}
+
+
+#main>div {position: absolute;top:0;left:0;width: 1920px;height: 100%;}
+#main img {width:100%}
+#main .scene01 {z-index: 6;top:-300px}
+#main .scene02 {z-index: 5;top:-300px}
+#main .scene02 img {width:105%}
+#main .scene03 {z-index: 4}
+#main .scene04 {z-index: 3}
+#main .scene05 {z-index: 2}    
+#main .scene06 {z-index: 1;top:-100px;left:-50px}    
+
+#main a {display: block;position: absolute;bottom:35%;left:50%;transform: translateX(-50%);letter-spacing: 0.1em;color:#304026;font-size: 14px;text-transform: capitalize;z-index: 30;opacity: 0.8}
+#main i {display: block;position: absolute;bottom:32.5%;left:50%;transform: translateX(-50%);color:#304026;font-size: 18px;animation:flash 2s infinite;z-index: 30;opacity: 0.8}
+
+
+#main.off a {display: none}
+#main.off i {display: none}
+#main.active h2 {top:45%}
+#main.active p {opacity:1;letter-spacing: 0.1em;transition:0.8s}
+#main.go span {opacity: 1;transition:0.8s;letter-spacing: 0.5em}
+#main.go span:after {width:30px}
+#main.go span:before {width:30px}
+
+
+
+
+#main.bb h2 {top:10%}
+#main.bb p {display: none}
+#main.bb span {display: none}
+
+#main.cc h2 {top:10%}
+#main.cc p {top:15%;display: block;font-size: 14px}
+
+
+
+
+#bg {display: block;height: 3000px;}
+
+
+
+
+
+
+
+
+/*          basic         */
+
+
+
+
+
+section {position: relative;height:100vh;width:100%;z-index:101}
+
+.wrap {width:1200px;margin:0 auto;position: relative}
+.img {position: relative;top:110px}
+.homepage {position: absolute;width:850px;height: 500px;border-radius: 15px;overflow: hidden;top:20px;left:153px;cursor: pointer}
+ .homepage img {position:absolute;display: block;width:100%;}
+
+
+.web-box {position:absolute;z-index: 102;left:90%;top:33%}
+.web-box>div {position: relative;width:130px;height: 130px;top:0;cursor: pointer;}
+.web-box>div.on>div {transform: rotateY(360deg);}
+.web-box>div .front {background: url(../img/pactagon.png) no-repeat;width:100px;height: 100px;text-align: center;line-height: 100px;position: absolute;transform-style: preserve-3d;transition:0.8s}
+.web-box .web a {display: block;text-align: center;width:100%}
+
+
+ 
+
+.description {margin:100px auto 70px;width:900px;color:black;padding-top:10px;position: relative}
+.description:after {content: "";display: block;clear: both}
+.description h2 {display: block;float: left;padding-right: 30px;width:15px}
+.description h2 img {display: block;}
+.description p {position: absolute;top:60px;left:5px;font-size: 18px;font-weight: 300}
+
+
+.description>div {float: left}
+.description .font {width:20%}
+.description .color {width:12%}
+.description .info {margin-left:160px;width:40%}
+
+.description>div h3 {font-size: 18px;margin-bottom: 30px}
+.description>div div {font-size: 12px}
+.description .color>div:after {content: "";display: block;clear: both}
+.description .color>div>div {float: left;margin-bottom: 20px}
+.description .color>div {line-height:10px}
+.description .color .color-box {width:12px;height: 12px;border-radius: 100%;margin-right: 10px}
+.description .color03 .color-box  {background: #000}
+.description .color04 .color-box  {background: #fff}
+
+
+
+
+/*         work         */
+
+
+#work {
+	width:100%;
+	height:100vh;
+	color: white;
+	background: url(../img/bg-jestina03.jpg) no-repeat center center/cover;
+	color:black
+}
+
+
+
+
+/*         jestina       */
+
+
+
+
+
+
+
+
+#jestina  {width:100%;height:100vh;color: white;background: url(../img/bg-jestina03.jpg) no-repeat center center/cover;color:black}
+
+
+
+#jestina  .description .color01 .color-box   {background: #e50b2f}
+#jestina  .description .color02 .color-box   {background: #f0a3b8}
+
+#jestina .description p {position: absolute;top:90px;left:5px}
+
+
+#jestina .web-box {position:absolute;z-index: 102;left:90%;top:30%}
+#jestina .web-box>div {position: relative;width:130px;height: 130px;top:0;cursor: pointer}
+#jestina .web-box>div>div {background: url(../img/pactagon01.png) no-repeat;color:black;width:100px;height: 100px;text-align: center;line-height: 100px;position: absolute;transform-style: preserve-3d;transition:0.8s}
+
+#jestina .web-box>div.on>div {transform: rotateY(360deg);}
+
+#jestina .phone {position: absolute;top:150px;left:-150px}
+#jestina .phone>img {position: relative;z-index: 2;cursor: pointer}
+.react-web {position: absolute;width:200px;height: 430px;overflow: hidden;top:30px;left:15px;cursor: pointer}
+.react-web img {position:absolute;display: block;width:100%;}
+
+
+
+
+
+
+
+
+
+/*          yes24          */
+
+
+
+#yes24 {width:100%;height:100vh;background: url(../img/bg-yes2405.jpg) no-repeat  center center/cover;color: white}
+
+
+#yes24 .web-box {position:absolute;z-index: 102;left:90%;top:30%}
+#yes24 .web-box>div {position: relative;width:130px;height: 130px;top:0;;cursor: pointer}
+#yes24 .web-box>div>div {background: url(../img/pactagon.png) no-repeat;width:100px;height: 100px;text-align: center;line-height: 100px;position: absolute;transform-style: preserve-3d;transition:0.8s}
+
+#yes24 .web-box>div.on>div {transform: rotateY(360deg);}
+
+
+#yes24 .description .color01 .color-box   {background: #ba2731}
+
+#yes24 .phone {position: absolute;top:150px;left:200px}
+#yes24 .phone>img {position: relative;z-index: 2;cursor: pointer}
+.react-web {position: absolute;width:200px;height: 430px;overflow: hidden;top:30px;left:15px;cursor: pointer}
+ .react-web img {position:absolute;display: block;width:100%;}
+
+
+
+/*          fila       */
+
+
+
+
+
+#fila {width:100%;height:100vh;background: url(../img/bg-fila06.jpg) no-repeat center center/cover;color: white}
+
+
+
+#fila  .description .color01 .color-box   {background: #e51837}
+#fila  .description .color02 .color-box  {background: #03234c}
+
+
+
+
+
+
+/*         bentley        */
+
+
+
+
+#bentley  {width:100%;height:100vh;color: white;background: url(../img/bg-bentley07.jpg) no-repeat center center/cover;color: white}
+
+
+#bentley .web-box {position:absolute;z-index: 102;left:90%;top:30%}
+#bentley .web-box>div {position: relative;width:130px;height: 130px;top:0;transform-style: preserve-3d;cursor: pointer}
+#bentley .web-box>div>div {background: url(../img/pactagon.png) no-repeat;width:100px;height: 100px;text-align: center;line-height: 100px;position: absolute;transform-style: preserve-3d;transition:0.8s}
+
+#bentley .web-box>div.on>div {transform: rotateY(360deg);}
+
+
+#bentley  .description .color01 .color-box   {background: #9caec9}
+
+
+
+
+/*          jinro       */
+
+
+
+
+#jinro  {width:100%;height:100vh;color: white;background: url(../img/bg-jinro03.jpg) no-repeat center center/cover;color:black}
+
+#jinro .web-box {position:absolute;z-index: 102;left:90%;top:30%}
+#jinro .web-box>div {position: relative;width:130px;height: 130px;top:0;cursor: pointer}
+#jinro .web-box>div>div {background: url(../img/pactagon.png) no-repeat;color:white;width:100px;height: 100px;text-align: center;line-height: 100px;position: absolute;transform-style: preserve-3d;transition:0.8s}
+#jinro .web-box>div.on>div {transform: rotateY(360deg);}
+
+
+#jinro  .description .color01 .color-box   {background: #0098dc}
+
+
+#jinro .scroll-event {position: absolute;top:0;left:180px;opacity: 0;transition: 1s;z-index: 1}
+#jinro.on .scroll-event {;top:100px;opacity: 1}
+
+
+
+
+
+
+/*         contact      */
+
+
+#contact {width:100%;height: 100vh;background: url(../img/main-bg16.png) no-repeat center center/cover}
+
+#contact h3 {transition: 1s}
+
+#contact .wrap {padding:200px 15px}
+#contact .wrap:after {content: "";display: block;clear: both}
+#contact .wrap>div {float:left}
+
+#contact .myprofile {width:30%;margin-top:-150px;transition: 1s;opacity: 0}
+#contact .introduce {width:65%;padding-top: 30px;margin-top:-150px;transition: 1s 0.5s;opacity: 0}
+
+#contact .photo {width:300px;height: 300px;;}
+#contact .photo img {display: block;width:100%;margin-top:35px}
+
+#contact .profile {padding:30px 15px 0 20px;}
+#contact .profile:after {content: "";display: block;clear: both}
+#contact .profile >div {float: left;}
+#contact .profile >div:first-child {width:90px;}
+#contact .profile >div:first-child  p {font-weight: 400}
+
+#contact .profile >div>div {padding-top:10px}
+
+
+#contact .school {}
+#contact .experience {}
+#contact .certificate {width:225px}
+
+
+#contact .me>div {float:left;;height: 300px;margin:0 10px;padding:0 25px;background:rgb(240,240,240,0.5)}
+#contact .me .school {margin-left:0}
+#contact .me .certificate {margin-right:0}
+#contact .me>div h3 {font-size: 18px;text-align: center;line-height: 70px;font-weight: 300}
+#contact .me p {font-size: 14px;line-height: 30px;font-weight: 200}
+
+#contact .experience>div:after {content: "";display: block;clear: both}
+#contact .experience>div>div {float:left;}
+#contact .experience>div>div:first-child {padding-right: 20px}
+
+#contact .certificate>div:after {content: "";display: block;clear: both}
+#contact .certificate>div>div {float:left;}
+#contact .certificate>div>div:first-child {width:40%;}
+
+
+#contact .skill {width:600px;height: 200px;margin-top: 330px;margin-left:-20px;}
+#contact .skill:after {content: "";display: block;clear: both}
+
+#contact .skill h3 {font-size: 24px;line-height: 70px;font-weight: 300;padding-left: 25px}
+
+#contact .skill>div {float:left;width:20%}
+#contact .skill>div img {text-align: center;width:100%;}
+
+
+#contact.on .myprofile  {margin-top:0;opacity: 1}
+
+#contact.on .introduce {margin-top:0;opacity: 1}
+
+#contact.on h3 {letter-spacing: 0.2em}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*      반응형       */
+
+
+
+
+@media (max-width:1800px){
+	
+    
+/*          bar        */
+
+
+
+
+/*          main         */
+
+
+
+
+/*          basic         */
+
+
+
+
+
+section {position: relative;height:100vh;width:100%;z-index:101}
+
+.wrap {width:1200px;margin:0 auto;position: relative}
+.img {position: relative;top:110px;width:1050px;left:50%;transform: translateX(-50%)}
+.img img {display: block;width:100%}    
+.homepage {position: absolute;width:785px;height: 460px;border-radius: 15px;overflow: hidden;top:15px;left:135px;cursor: pointer}
+ .homepage img {position:absolute;display: block;width:100%;}
+
+
+
+/*         jestina       */
+
+
+
+
+#jestina .phone {position: absolute;top:120px;left:-150px}
+#jestina .phone>img {position: relative;z-index: 2;cursor: pointer}
+.react-web {position: absolute;width:200px;height: 430px;overflow: hidden;top:30px;left:15px;cursor: pointer}
+.react-web img {position:absolute;display: block;width:100%;}
+
+
+
+
+
+
+
+
+
+/*          yes24          */
+
+
+
+    
+#yes24 .phone {position: absolute;top:120px;left:100px}
+#yes24 .phone>img {position: relative;z-index: 2;cursor: pointer}
+.react-web {position: absolute;width:200px;height: 430px;overflow: hidden;top:30px;left:15px;cursor: pointer}
+ .react-web img {position:absolute;display: block;width:100%;}
+
+
+    
+
+/*          fila       */
+
+
+
+
+
+#fila {width:100%;height:100vh;background: url(../img/bg-fila06.jpg) no-repeat center center/cover;color: white}
+
+
+
+#fila  .description .color01 .color-box   {background: #e51837}
+#fila  .description .color02 .color-box  {background: #03234c}
+#fila .web-box {position:absolute;z-index: 102;left:90%;top:29%}
+
+
+
+
+
+/*         bentley        */
+
+
+
+
+
+
+/*          jinro       */
+
+
+
+
+
+#jinro .scroll-event {position: absolute;top:0px;left:140px;opacity: 0;transition: 1s;z-index: 1}
+#jinro .scroll-event>div {width:225px}  
+#jinro .scroll-event img {display: block;width:100%}
+#jinro.on .scroll-event {;top:110px;opacity: 1}
+
+
+
+
+
+
+/*         contact      */
+
+
+#contact {width:100%;height: 100vh;background: url(../img/main-bg16.png) no-repeat center center/cover}
+
+#contact h3 {transition: 1s}
+
+#contact .wrap {padding:200px 15px}
+#contact .wrap:after {content: "";display: block;clear: both}
+#contact .wrap>div {float:left}
+
+#contact .myprofile {width:30%;margin-top:-150px;transition: 1s;opacity: 0}
+#contact .introduce {width:65%;padding-top: 30px;margin-top:-150px;transition: 1s 0.5s;opacity: 0}
+
+#contact .photo {width:300px;height: 300px;;}
+#contact .photo img {display: block;width:100%;margin-top:35px}
+
+#contact .profile {padding:30px 15px 0 20px;}
+#contact .profile:after {content: "";display: block;clear: both}
+#contact .profile >div {float: left;}
+#contact .profile >div:first-child {width:90px;}
+#contact .profile >div:first-child  p {font-weight: 400}
+
+#contact .profile >div>div {padding-top:10px}
+
+
+#contact .school {}
+#contact .experience {}
+#contact .certificate {width:225px}
+
+
+#contact .me>div {float:left;;height: 300px;margin:0 10px;padding:0 25px;background:rgb(240,240,240,0.5)}
+#contact .me .school {margin-left:0}
+#contact .me .certificate {margin-right:0}
+#contact .me>div h3 {font-size: 18px;text-align: center;line-height: 70px;font-weight: 300}
+#contact .me p {font-size: 14px;line-height: 30px;font-weight: 200}
+
+#contact .experience>div:after {content: "";display: block;clear: both}
+#contact .experience>div>div {float:left;}
+#contact .experience>div>div:first-child {padding-right: 20px}
+
+#contact .certificate>div:after {content: "";display: block;clear: both}
+#contact .certificate>div>div {float:left;}
+#contact .certificate>div>div:first-child {width:40%;}
+
+
+#contact .skill {width:600px;height: 200px;margin-top: 330px;margin-left:-20px;}
+#contact .skill:after {content: "";display: block;clear: both}
+
+#contact .skill h3 {font-size: 24px;line-height: 70px;font-weight: 300;padding-left: 25px}
+
+#contact .skill>div {float:left;width:20%}
+#contact .skill>div img {text-align: center;width:100%;}
+
+
+#contact.on .myprofile  {margin-top:0;opacity: 1}
+
+#contact.on .introduce {margin-top:0;opacity: 1}
+
+#contact.on h3 {letter-spacing: 0.2em}
+
+
+
+    
+    
+    
+
+}

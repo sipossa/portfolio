@@ -10,6 +10,7 @@
   <li> https://sipossa.github.io/005 </li>
   <li> https://sipossa.github.io/006 </li>
   <li> https://sipossa.github.io/007 </li>
+  <li> https://sipossa.github.io/008 </li>
 </ul>
 
 1002 실습링크. <br>
