@@ -1,0 +1,156 @@
+#wrap {
+  margin: 0 auto;
+}
+
+/*---------------------- 헤더 -----------------------*/
+
+/* text-align:center 박스의 인라인요소를 센터로 오게함 */
+#header h1 {
+  text-align: center;
+  padding: 10px 0;
+}
+
+#header nav {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+/* display: flex 자식블록을 배열한다 */
+/* justify-content: center 배열된박스를 가운데로 오게하는 명령 */
+
+#header nav>ul {
+  display: flex;
+  justify-content: center;
+  line-height: 40px;
+}
+
+#header nav>ul>li {
+  border-left: 1px solid #ddd;
+}
+
+#header nav>ul>li a {
+  display: block;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+#header nav>ul>li:last-child {
+  border-right: 1px solid #ddd;
+}
+
+
+
+/* ------------------main visual-------------------- */
+
+#main_visual {
+  background: url(../lib/base/main_visual01.jpg) no-repeat center center/cover;
+  height: 500px;
+  text-align: center;
+  color: #fff;
+  padding: 200px 0 0 0;
+}
+
+#main_visual h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+/* ------------------content 01-------------------- */
+
+#content01 {
+  padding: 150px 0;
+  text-align: center;
+}
+
+#content01 h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#content01 p {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+#content01 .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#content01 .container figure {
+  flex: 1;
+  padding: 0 15px;
+}
+
+#content01 .container figure:first-child {
+  flex: 2;
+  order: 2;
+}
+
+#content01 .container figure img {
+  width: 100%;
+}
+
+/* tabmenu 01  */
+#customer {
+  padding: 150px 0;
+  background: #ececec;
+}
+
+#customer .container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#customer .tab_menu {
+  display: flex;
+}
+
+#customer .tab_menu li {
+  flex: 1;
+  text-align: center;
+  line-height: 40px;
+  background: #ddd;
+}
+
+#customer .tab_menu li.on {
+  background: chocolate;
+  color: #fff;
+}
+
+#customer .tab_menu>li~li {
+  border-left: 1px solid #eee;
+}
+#customer .tab_content {
+position: relative;
+height: 200px;  
+}
+
+
+#customer .tab_content>div {
+visibility: hidden;
+height: 40px;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%; 
+}
+
+#customer .tab_content>div.on {
+
+visibility: visible;
+}
+ 
+
+#footer {
+  padding: 80px 0 100px 0;
+  background: #fff;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}

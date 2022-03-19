@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+/* *{outline:  1px solid #f00;} */
+
+:root {  
+  --intro-color:#e6e6e6;;
+  --intro-color2:#818181;;
+  --mc:#383838;
+  --lc:#ffffff;
+  --dc:#333333;
+  --dc1:#8b8b8b;
+  --dc2:#b9b9b9;
+}
+html {font-size:20px;}
+body {font-size:0.8rem;color:var(--dc2); background:var(--intro-color);}
+#Wrap {min-width:95rem;}
+
+.section .container {position: relative;  display: grid;grid-template-columns: 600px 550px;  grid-template-rows: 600px; justify-content: center; align-items: center;padding: 2rem 0;  width: 70%; margin: 0 auto; background: var(--lc); color: var(--dc); z-index:888;} 
+.profile .container {grid-template-columns: 450px 700px;grid-template-rows: auto; align-items: flex-start;padding: 5rem; margin-bottom: 3rem;}
+.portfolio_05 p {line-height: 1.3; font-size: 0.7rem; margin-bottom: 1rem;}
+.section .mockup img {width: 100%;}
+
+/* 헤더 */
+#header { color:var(--dc1);}
+#header h1 {position:fixed;top:23rem;left:-4rem;z-index:999;}
+#header h1 a {display: block; width: 15rem; transform: rotate(-90deg);}
+#header nav {position:fixed;top:50%;right:3rem;transform:translateY(-50%);z-index:999;}
+
+#header .cover_btn {position:fixed;top:3rem;right:3rem;cursor: pointer; z-index:999;}
+#header .cover_btn button {font-size:1.5rem;padding:.5rem; z-index:999;}
+
+/* 전체메뉴 */
+#cover {display: none; position: fixed;top: 0;left: 0; background: url(./lib/base/index_bg.jpg)no-repeat center 100%/cover; width: 100%; height: 100vh;z-index: 900;}  
+#cover ul {position: absolute;top: 50%;left: 50%; transform: translate(-50%,-50%); color: var(--dc); font-size: 1.5rem; font-weight: 400;line-height: 1.7; text-align: center;text-transform: uppercase; background:var(--dc);padding: 5rem; border-radius: 50%;}
+#cover ul li  { color: transparent;  text-shadow: 0 0 2px #ffffff;  transition: all 250ms ease-in;}
+#cover ul li:hover {text-shadow: none; color: #dddddd;}
+#cover figure {opacity: 0;transition:1s ease-in-out;}
+#cover.on figure {opacity: 1;transition:1s ease-in-out; animation: moving forwards 80s;}
+#cover.on figure img{animation: shaving  infinite alternate ease-in-out 2s;}
+
+@keyframes moving {
+  0%{transform: translateX(0); }
+  100%{transform: translateX(-800px);}
+}
+@keyframes shaving{
+  0%{ content: url('./lib/base/boat_b1.png');}
+  100%{content: url('./lib/base/boat_b2.png');} 
+}
+
+#header nav li a {position: relative; display: block; width: 3rem; height: 1rem; text-indent: -9999px; }
+#header nav li a::after {content: "";position: absolute;top: 0.35rem;right: 0; display: block; width: 40%; height: 0.1rem; background: var(--dc1);   transition: 0.3s;}
+#header nav li.on a::after {width: 100%;}
+
+
+/* 목업슬라이드*/ 
+.pop-wrap {width:560px;height:336px; border-radius:14px 14px 0 0;position:absolute;top:31px;left:22px;overflow:hidden;}
+.pop-wrap img {position:absolute;top:50%;left:0; width: 100%;}
+.pf-slide.show02 { height: 100%; overflow: hidden;}
+
+section .slick-current.on .pop-wrap img {animation:3.5s 0.5s pf-slide linear both;}
+@keyframes pf-slide {
+    0% {top:0;}
+    100% {transform: translateY(-100%); top: 100%;}
+}
+/* 슬라이드버튼 */ 
+.slick-dots{position: absolute; transform: translateY(-100%); display:flex;}
+.slick-dots li{width:50px; overflow:unset;height:5px;background:#ddd;  margin-right: 1rem; cursor: pointer;}
+.slick-dots li.slick-active{background:#333; cursor:pointer}
+.slick-dots li button{display:none}
+ 
+/* 프로젝트 텍스트 */
+.section .description {padding-left: 3rem;font-weight: 300;}
+.section .description h3 {font-family: 'Racing Sans One', sans-serif; margin-bottom: 1rem;  font-size: 1.8rem;}
+.section .description h3 img {width: auto;}
+.section .description .brand-epi {display: block; margin-bottom: 2rem;font-size: 0.9rem;font-weight: 300; color: var(--dc1);}
+ 
+
+.section .description dl {margin-bottom: 2rem; font-size:15px;}
+.section .description dl div{display: flex;flex-flow: row wrap; line-height: 2; }
+.section .description dl dt {flex: 25%; text-transform: uppercase;}
+.section .description dl dt::before {content: "-";  margin-right: 0.5rem;} 
+.section .description dl dd{flex: 75%;}
+.section .description .color span {display: inline-block; width: 0.6rem; height: 0.6rem;border-radius: 50%; }
+
+.section .description ul {display: flex; gap: 0.5rem;}
+.section .description ul li {margin-right: 5px;}
+.section .description .link_btn{display: block; background: transparent;color: var(--dc); line-height: 1.8; padding:0.3rem 1rem; font-size: 18px;border-radius: 10px; font-weight: 200;box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;transition: 0.2s ease-in-out;}
+.section .description .link_btn:hover {background-color: var(--dc); color: var(--lc);}
+.portfolio_02 .description .link_btn:hover {background-color: #3C789B;}
+.portfolio_03 .description .link_btn:hover {background-color: #F0BD00;}
+.portfolio_04 .description .link_btn:hover {background-color: #0C4F9F;}
+.portfolio_05 .description .link_btn:hover {background-color: #847DFF;}
+
+ /* 메인 INTRO */ 
+.intro{position: relative;width:100%;height: 100vh;overflow: hidden;display: flex;justify-content: center;align-items: center; color:#fff;}
+.intro .slogan p {font-size: 1rem; margin-bottom: 1rem;}
+.intro .slogan strong {font-size: 1rem; font-weight: 300; letter-spacing: -.05em; margin-bottom: 1rem;}
+
+.intro .wheel {position: absolute; bottom: 3rem; left: 50%; transform: translateX(-50%);width: 1.5rem;height: 2.5rem; border: 2px solid var(--lc); font-size: 0; border-radius: 0.7rem; z-index: 899;}
+.intro .wheel span {position: absolute; top: .3rem;left: 50%; transform: translateX(-50%);width: 0.2rem; height: 0.5rem; background: var(--lc); border-radius: 0.1rem; animation: wheel 0.7s infinite;}
+
+@keyframes wheel {
+  to {top: 0.6rem;}
+}
+
+.intro::before {content: '';position: absolute;bottom: 0;width: 100%;height: 200px;background: linear-gradient(to top, var(--intro-color2),transparent); z-index: 100;}
+.portfolio_01::before {content: '';position: absolute;top: 0;width: 100%;height: 200px;background: linear-gradient(to bottom, var(--intro-color2),transparent); z-index: 100;}
+.intro::after{content: '';position: absolute;top: 0;left:0;  width: 100%;height: 100%; background:  #7c6b0b15; mix-blend-mode:color; z-index: 3;}
+.intro img {position: absolute; top: 0;left: 0;width: auto;height:auto;object-fit:cover;pointer-events: none;}
+#text {position: relative; color: #fff; font-family: 'Noto Sans KR', 'cursive'; line-height: 1.5;   text-shadow : rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px; z-index: 1;}
+ #sea {z-index: 2;}
+ #boat {z-index: 3;}
+ #text h2 {font-size: 100px;text-align: center; font-weight: 600;}
+ #text strong {display: block; font-size: 20px;text-align: left;width: 1000px; margin: 0 auto; font-weight:400;}
+ 
+
+ /* StyleGuide modal */  
+.section{position: relative; overflow: hidden;}
+.modal{display:none;overflow: hidden; z-index:999;width:100%;height:100vh;position:absolute;top:0;left:0;background-color:rgba(0,0,0,0.8); }
+.modal button{position:absolute;top:3rem;right:3rem;background:transparent;border:0;color:#ffffff;font-size:3rem}
+.modalBox{position:relative;top:50%;left:50%;transform:translate(-50%,-50%);background-color:#ffffff;width:1440px;height:80%;overflow: hidden;overflow-y: scroll; text-align:center} 
+.modalBox img {width: auto;}
+ 
+.turnOff,
+.turnOn {cursor: pointer; z-index: 999; }
+
+/* modal-scroll css */
+.modalBox::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);background-color:#F5F5F5}
+.modalBox::-webkit-scrollbar{width:10px;background-color:#F5F5F5}
+.modalBox::-webkit-scrollbar-thumb{background-color:#465439} 
+.portfolio_02 .modalBox::-webkit-scrollbar-thumb{background-color: #3C789B} 
+.portfolio_03 .modalBox::-webkit-scrollbar-thumb{background-color: #F0BD00;} 
+.portfolio_04 .modalBox::-webkit-scrollbar-thumb{background-color: #0C4F9F;}  
+  
+
+/* 프로젝트별 컬러 팔레트 */
+ .description .color span {margin-right: 5px;}
+.portfolio_01 .description .color span:nth-of-type(1) {background: #333;}
+.portfolio_01 .description .color span:nth-of-type(2) {background: #fff; border: 1px solid #ddd;}
+.portfolio_01 .description .color span:nth-of-type(3) {background: #000;}
+.portfolio_01 .description .color span:nth-of-type(4) {background: #465439;}
+
+.portfolio_02 .description .color span:nth-of-type(1) {background: #0054A5;}
+.portfolio_02 .description .color span:nth-of-type(2) {background: #008ED1;}
+.portfolio_02 .description .color span:nth-of-type(3) {background: #00ACAB;}
+.portfolio_02 .description .color span:nth-of-type(4) {background: #3C789B;}
+
+.portfolio_03 .description .color span:nth-of-type(1) {background: #F0BD00;}
+.portfolio_03 .description .color span:nth-of-type(2) {background: #222222;}
+.portfolio_03 .description .color span:nth-of-type(3) {background: #EEEAE6;}
+.portfolio_03 .description .color span:nth-of-type(4) {background: #CCCCCC;}
+
+.portfolio_04 .description .color span:nth-of-type(1) {background: #0C4F9F;}
+.portfolio_04 .description .color span:nth-of-type(2) {background: #0265AC;}
+.portfolio_04 .description .color span:nth-of-type(3) {background: #fff; border: 1px solid #ddd;}
+.portfolio_04 .description .color span:nth-of-type(4) {background: #222222;}
+
+
+ /* 프로필 */ 
+.profile .inner {position: relative; }
+.profile .inner figure{display: block; width: 16rem; height: 16rem;margin: 1rem;  border-radius: 50%; overflow: hidden;}
+.profile .inner figure img{width: 100%;}
+
+.profile  {font-weight: 300; }
+.profile  dt{display: inline-block; margin-right: 0.5rem; font-size: 0.9rem; text-transform: uppercase; font-family:'Staatliches'; color: var(--dc);}
+.profile .profile-info {line-height: 1.5;margin-left: 5rem;}
+.profile .profile-info dd {display: inline-block;}
+
+.profile .about .about-me {display: flex;flex-flow: row wrap; line-height: 1.6;color: var(--dc1); margin-bottom: 2rem;}
+.profile .about .about-me div {margin-bottom: 1rem;}
+.profile .about .about-me div:nth-of-type(1) {flex: 100%;}
+.profile .about .about-me div:nth-of-type(2) {flex: 50%;}
+.profile .about .about-me div:nth-of-type(3) {flex: 50%;}
+.profile .about .about-me div:nth-of-type(4) {flex: 100%;}
+.profile .about .about-me  dt{ font-size: 1.3rem;}
+
+.profile .about .skills {display: flex; flex-wrap: wrap;}
+.profile .about .skills dt{flex: 100%;}
+.profile .about .skills dd{ margin: 0 0.25rem;}
+.profile .about .skills i{padding: 0.5rem;background: var(--dc);color: var(--lc); font-size: 1.5rem; border-radius: 50%;}
+.profile .about .skills  figure { width: 50px;}
+.profile .about .skills  figure img {display: block; width:100%;}
+.profile .copyright {position: absolute; left: 50%; transform: translate(-50%,50%); text-align: center; color: var(--dc); font-weight: 300;line-height: 1.2; z-index: 20;} 
+
+
+.profile strong {display: block; text-transform: uppercase; font-family:'Staatliches';font-size: 1.3rem; margin-bottom: 1rem;}
+.profile .link_btn{display: block; background: transparent;color: var(--dc); line-height: 1.8; padding:0.3rem 1rem; font-size: 18px;border-radius: 10px; font-weight: 200;box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;transition: 0.2s ease-in-out;}
+.profile .link_btn:hover {background-color: var(--dc); color: var(--lc);}
+.profile .link {display: flex;}
+.profile .link .link_btn {margin-right:10px;}
+.profile .link .link_btn>:nth-child(1) {padding-right: 5px;}
+canvas {display: block;}
+
+/* 배경 그라데이션 */
+.section{position: relative; background: #e6e6e6;}
+ 
+ /*  wave */
+@keyframes move_wave{0%{transform:translateX(0) translateZ(0) scaleY(0.7)}
+50%{transform:translateX(-25%) translateZ(0) scaleY(0.55)}
+100%{transform:translateX(-50%) translateZ(0) scaleY(0.7)}
+}.waveWrapper{overflow:hidden;position:absolute;left:0;right:0;bottom:0;top:0;margin:auto}
+.waveWrapperInner{position:absolute;width:100%;overflow:hidden;height:100%;bottom:-1px}
+.bgTop{z-index:12;opacity:0.5}
+.bgMiddle{z-index:10;opacity:0.75}
+.bgBottom{z-index:5}
+.wave{position:absolute;left:0;bottom:0;width:200%;height:60%;background-repeat:repeat no-repeat;background-position:0 bottom;transform-origin:center bottom}
+.waveTop{background-image:url(./lib/base/wave-top.png); background-size: 50% 400px;}
+.waveAnimation .waveTop{animation:move-wave 3s;-webkit-animation:move-wave 3s;-webkit-animation-delay:1s;animation-delay:1s}
+.waveMiddle{background-image:url(./lib/base/wave-mid.png);background-size:60% 520px}
+.waveAnimation .waveMiddle{animation:move_wave 15s linear infinite}
+.waveBottom{background:url(./lib/base/wave-bot.png);background-size:50% 600px}
+.waveAnimation .waveBottom{animation:move_wave 20s linear infinite}
+
+ 

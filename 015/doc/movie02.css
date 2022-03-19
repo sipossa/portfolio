@@ -1,0 +1,188 @@
+#wrap {}
+
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  z-index: 1;
+}
+
+#header .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#header nav {
+  margin-left: auto;
+}
+
+#header nav>ul {
+  display: flex;
+}
+
+#header nav>ul>li a {
+  display: block;
+  padding: 0 20px;
+  line-height: 100px;
+}
+
+#header i {
+  margin-left: 50px;
+  line-height: 100px;
+}
+
+/* visaul */
+#visual {
+  position: relative;
+  height: 100vh;
+  background: url(../lib//base/main_visual01.jpg) no-repeat center center/cover;
+  padding: 400px 0 0 0;
+  filter:grayscale(1)
+}
+
+#visual .container {
+  width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 0 15px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 2;
+  text-transform: uppercase;
+}
+
+#visual .container h2 {
+  letter-spacing: 1.5em;
+  margin-bottom: 30px;
+}
+
+#visual .container p {
+  margin-bottom: 20px;
+}
+
+#visual i {
+  font-size: 20px;
+  padding: 10px;
+  background: #444;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+/* movie01 */
+#movie01 {
+  padding: 150px 0;
+}
+
+#movie01 .container {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+#movie01 .container figure {
+  flex: 1 1;  
+  padding: 0 15px;
+} 
+#movie01 .container figure img {
+  display: block;
+}
+/* movie2 */
+#movie02 .case {
+  flex: 1 1;  
+  position: relative;
+  /* background: #f00; */
+}
+#movie02 .case iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#movie02 {
+  padding: 150px 0;
+  background: #f7f7f7;
+}
+#movie02 .container {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+#movie02 .container figure {
+  flex: 1 1;  
+  padding: 0 15px;
+} 
+#movie02 .container figure img {
+  display: block;
+}
+#movie02 .case {
+  flex: 1 1;  
+  position: relative;
+  /* background: #f00; */
+}
+
+#movie02 .case iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+#movie02 i {
+  font-size: 20px;
+  padding: 10px;
+  background: #444;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+section h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+section p {
+  font-size: 14px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+
+
+/* footer  */
+#footer {
+  background: #333;
+  color: #fff;
+  padding: 80px 0;
+}
+
+#footer .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#footer .container .sns {
+  margin-left: auto;
+}
+
+@media screen and(max-width:768px) {
+  #visual .container {
+    width: auto !important;
+  }
+
+}

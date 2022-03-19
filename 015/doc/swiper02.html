@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스와이프 슬라이드 01</title>
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <link rel="stylesheet" href="../lib/css/swiper-bundle.min.css">
+    <script src="../lib/js/swiper-bundle.min.js"></script>
+    <style>
+        .main_slider {background:#ddd;}
+        .main_slider .swiper-slide {width:1600px;height:600px;padding:180px 0;text-align:center;box-sizing:border-box;color:#fff;}
+        /* .main_slider .swiper-slide.swiper-slide-active {color:#fff;transition:0.5s 0.5s;} */
+
+        .main_slider .swiper-slide h2 {font-size:40px;font-weight:900;margin-bottom:20px;transform:translateY(100px);opacity:0;}
+        .main_slider .swiper-slide p {font-size:15px;font-weight:300;transform:translateY(100px);opacity:0;}
+
+        .main_slider .swiper-slide.on h2 {transform:translateY(0);opacity:1;transition:0.5s;}
+        .main_slider .swiper-slide.on p {transform:translateY(0);opacity:1;transition:0.5s 0.3s;}
+
+        .main_slider .itm01 {background:url(../lib/base/main_visual01.jpg) no-repeat center center/cover;}
+        .main_slider .itm02 {background:url(../lib/base/main_visual02.jpg) no-repeat center center/cover;}
+        .main_slider .itm03 {background:url(../lib/base/main_visual03.jpg) no-repeat center center/cover;}
+
+        .section {height:500vh;}
+    </style>
+</head>
+<body>
+
+    <section id="visual">
+        <div class="swiper main_slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide itm01">
+                  <div class="txt">
+                      <h2>01 Lorem ipsum dolor sit.</h2>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eos.<br>Quisquam doloremque pariatur veritatis maiores accusantium nihil dolores.</p>
+                  </div>
+              </div>
+              <div class="swiper-slide itm02">
+                <div class="txt">
+                    <h2>02 Lorem ipsum dolor sit.</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eos.<br>Quisquam doloremque pariatur veritatis maiores accusantium nihil dolores.</p>
+                </div>
+              </div>
+              <div class="swiper-slide itm03">
+                <div class="txt">
+                    <h2>03 Lorem ipsum dolor sit.</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eos.<br>Quisquam doloremque pariatur veritatis maiores accusantium nihil dolores.</p>
+                </div>
+              </div>
+            </div>
+        </div>       
+    </section>
+    <section class="section"></section>
+    <section class="section"></section>
+    <section class="section"></section>
+    <section class="section"></section>
+    <section class="section"></section>
+
+<script>
+
+const mainSlider = new Swiper('.main_slider', {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    loop:true,
+    autoplay:{
+        delay:2000,
+    },
+
+    
+});
+
+
+//swiper addClass on
+const sItm = document.querySelectorAll('.swiper-slide');
+// $('.swiper-slide');
+const itm = document.querySelector('.swiper-slide-active');
+itm.classList.add('on');
+mainSlider.on('slideChangeTransitionEnd',()=>{
+    const itm = document.querySelector('.swiper-slide-active');
+    itm.classList.add('on');
+});
+mainSlider.on('slideChangeTransitionStart', ()=>{
+    sItm.forEach(e=>e.classList.remove('on'));
+});
+
+//scroll event
+const sec = document.querySelectorAll('.section');
+window.addEventListener("scroll", ()=>{
+        let sct=window.scrollY;
+        console.log(sct);
+        sec.forEach((e,idx)=>{
+            let itmTop = sec[idx].offsetTop;
+            itmTop > sct ? e.classList.remove('on') : sec[idx].classList.add('on')
+            //e.classList.add('on');
+            console.log(itmTop)
+        });
+
+        //$(".section").each(function(){
+            //let this_top=$(this).offset().top;
+            //sct>this_top-400 ? $(this).addClass("on") : $(this).removeClass("on");
+        //})
+    });
+</script>
+</body>
+</html>

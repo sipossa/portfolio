@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Momentum</title>
+  <script src="./js/greetings.js" defer></script>
+  <script src="./js/clock.js" defer></script>
+  <script src="./js/quotes.js" defer></script>
+  <script src="./js/todo.js" defer></script>
+  <script src="./js/background.js" defer></script>
+  <script src="./js/weather.js" defer></script>
+
+</head>
+
+<body>
+  <div class="mainmode">
+    <div class="container">
+      <div class="row top">
+        <div class="col-xl-12 col-12 col-md-12">
+          <h2 id="clock" class="hidden">00:00:00</h2>
+          <!-- 로그인 첫화면 -->
+          <form id="login-form" class="hidden">
+            <h3>What's your name?</h3>
+            <input required maxlength="11" type="text" placeholder="write your name and press enter"/>
+            <!-- <button type="submit">Log In</button> -->
+          </form>
+          <!-- 메인화면시작 -->
+          <h1 id="greeting" class="hidden"></h1>
+          <div id="weather">
+            <span></span>
+            <span></span>
+          </div>
+          <figure class="concept-img hidden"></figure>
+        </div>
+        <div class="col-xl-6 col-12 col-md-12 ">
+          <div id="todo" class="hidden">
+            <form id="todo-form">
+              <input type="text" placeholder="Write a To do and Press Enter" required />
+            </form>
+            <ul id="todo-list"></ul>
+          </div>
+        </div>
+      </div> 
+      <div class="row">
+        <div class="col-xl-12 col-12 col-md-12">
+          <div id="quote" class="hidden">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

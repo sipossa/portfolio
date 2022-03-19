@@ -1,0 +1,109 @@
+#wrap {  
+  min-width: 1900px;
+}
+
+/*---------------------- 헤더 -----------------------*/
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 70px 10px 100px;
+  line-height: 100px;
+}
+
+/* text-align:center 박스의 인라인요소를 센터로 오게함 */
+#header h1 {
+  text-align: center;
+}
+ 
+/* display: flex 자식블록을 배열한다 */
+/* justify-content: center 배열된박스를 가운데로 오게하는 명령 */
+
+#header nav>ul {
+  display: flex;
+}
+#header nav>ul>li {
+position: relative;
+}
+
+#header nav>ul>li~li:after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 12px;
+  background: #333;
+  position: absolute;
+  top: 50%;
+  left:0;
+  transform: translateY(-50%);
+} 
+
+#header nav>ul>li a {
+  display: block;
+  padding: 0 30px;
+  cursor: pointer;
+}
+ 
+
+
+/* ------------------main visual-------------------- */
+
+#main_visual {
+  background: url(../lib/base/main_visual01.jpg) no-repeat center center/cover;
+  height: 500px;
+  text-align: center;
+  color: #fff;
+  padding: 200px 0 0 0;
+}
+
+#main_visual h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+/* ------------------content 01-------------------- */
+
+#content01 {
+  padding: 150px 0;
+  text-align: center;
+}
+
+#content01 h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#content01 p {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+#content01 .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#content01 .container figure {
+  flex: 1;
+  padding: 0 15px;
+}
+
+/* #content01 .container figure:first-child {
+  flex: 2;
+  order: 2;
+} */
+
+#content01 .container figure img {
+  width: 100%;
+}
+
+#footer {
+  padding: 80px 0 100px 0;
+  background: #f4f4f4;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}

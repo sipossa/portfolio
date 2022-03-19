@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+html {font-size: 20px;}
+body {font-size: 0.8rem;}
+:root { 
+  --main-color01: #FF7C98;
+  --main-color02: #425879;
+  --title-font: 2rem;
+  --title: 'Viga', sans-serif;
+  --medium-font: 1.3rem;
+  --desc-font: 0.8rem;
+}
+.wrap {  min-width: 60rem;}
+.container {display: flex;  width: 60rem; margin: 0 auto;}
+.container>* {padding: 0 0.75rem;}
+/* *{outline: 1px solid #ff0;} */
+
+/* Header */
+.header{ position: absolute;top: 0; left: 0; width: 100%; color: #fff; line-height: 5rem; z-index: 2; padding: 1rem 0 0; transition: 0.5s ease-in-out; }
+.header .container {justify-content: space-between;}
+.header:hover {background: #fff; color: #000;}
+.header img{ width: 2.9rem;position: relative; z-index: 900; }
+/* 다단메뉴 */
+.gnb {}
+.gnb .main-menu {display: flex; text-align: left;}
+.gnb .main-menu>li>a {display: block; padding: 0 2.5rem; }
+.gnb .main-menu>li {position: relative;}
+
+.gnb .submenu { position: absolute; height: 0;overflow: hidden; top: 5rem; left: 0; width: 100%; transition: 0.5s; z-index: 100; font-size: 0.7rem; }
+.gnb::before {content: '';display: block;height: 0; width: 100%;  background: #fff; position: absolute;top: 5rem; left: 0; z-index:100; transition: 0.5s;}
+.gnb:hover:before {height: 13rem;}
+.gnb:hover .submenu {height: 13rem;} 
+.gnb .submenu a {display: block; line-height: 2rem; text-align: center;}
+.gnb .submenu a:hover {color: var(--main-color01);}
+ 
+.header .icons {font-size: 1rem;}
+.header .icons>:last-child { margin-left: 1rem;}
+  /* 메뉴밑 호버 */
+.header .main-menu>li::before {content: "";  display: block;  width: 0;  height: 4px;  background: var(--main-color01); position: absolute; top: 85px;  left: 0; transition:0.5s ease-in; z-index: 999;}
+.header .main-menu>li:hover::before {display: block; width: 100%;}
+ 
+
+/* 메인화면 */
+.main_visual {position: relative;}
+.main_visual {}
+.main_visual figure {height:1050px;}
+.main_visual .itm01{background: url(../img/main_visual01.jpg) no-repeat center center  ; z-index: 2; }
+
+.main_visual .slogan {position: absolute; top: 54.5%; left: 55%; transform: translate(-50%,-50%); color: #fff; width: 60rem; padding: 0 0.75rem; text-align: left; }
+.main_visual .slogan h2 { font-size: 3rem; font-weight: 700; margin-bottom: 1rem;}
+.main_visual .slogan p { font-size: 0.75rem; font-weight: 100; }
+.btn02 {display:block;width:150px; background:var(--main-color02);text-align:center;line-height:44px;border-radius:15px;transition:0.5s;}
+.btn02:hover {border-radius:30px; background: #ADB639;}
+
+
+
+
+
+
+/* 먼슬리 메뉴 */
+.monthly_item {padding: 150px 0; text-align: center; z-index:1;}
+.monthly_item .container {position: relative; width: 1200px;  margin: 0 auto;}
+.monthly_item .container .title  {display: flex; flex-direction: column; position: absolute; top: -40px; left: 28%; font-weight: 500; z-index: 10;}
+.monthly_item .container .title h2 { font-size: var(--medium-font);  color: #333; margin-bottom: 15px;}
+.monthly_item .container .title img {margin-bottom: 30px;}
+.monthly_item .title span {color: #555; line-height: 1.5;}
+
+.monthly_item .list{margin: 0 auto;}
+.monthly_item ul {display: flex; flex-flow: column wrap; width: 52.5rem; height: 32rem; padding: 0px 15px;}
+
+.monthly_item ul>li a {display: flex; align-items: center; width: 200px; height: 270px; background: #f5f5f5; border-radius: 20px;  margin: 20px 15px; transition: 0.3s ease-in-out;}
+.monthly_item ul>li a:hover {background: #ddd;}
+.monthly_item ul>li:hover span {color: #333;}
+.monthly_item ul>li {position: relative; font-size: 12px;  text-align: center; }
+
+.monthly_item ul>li:nth-child(3)::before {content:''; display: block; width: 200px;  height: 310px; background: #fff;}
+.monthly_item ul>li:nth-child(4)::before {content:''; display: block;  width: 200px;  height: 310px; background: #fff;}
+
+.monthly_item ul li span {font-size: var(--medium-font);text-align: left; color:#e0e0e0; font-weight: 600; position: absolute; left: 12%; transform: translateY(40px) ;  display: block;  margin-bottom: 10px; transition: 0.3s ease-in-out; }
+
+.monthly_item ul>li img {  display: block;  margin: 0 auto; max-width: 100%;} 
+.monthly_item .hashtag {position: relative;}
+.monthly_item .hashtag :nth-child(2){background: url(../img/cheesenamu03.png) no-repeat center center;width: 10rem; height: 15rem; position: absolute; left: 5%; transition: 0.3s ease-in-out;  z-index: 900;}
+.monthly_item .hashtag:hover :nth-child(2){transform: translateY(10px);}
+.monthly_item .hashtag img{ border-radius: 20px;}
+.monthly_item .hashtag span {display: block; margin: 5rem 2.2rem; font-size: 35px; color: #f4e085;}
+
+
+
+
+
+/* bg scroll  */
+.about_brand {background: url(../img/bg_scroll.jpg)no-repeat center center/cover; background-attachment: fixed; text-align: center; position: relative;z-index: 1; padding: 7rem 0;}
+.about_brand .bg_scroll {color: #fff;}
+.about_brand .bg_scroll::after {width: 100%; height: 100%; content: '';background: #000; position: absolute;top: 0;left: 0; z-index: -1;opacity: 0.5;}
+.about_brand h3 {font-size: 1.75rem; margin-bottom: 2.5rem;}
+.about_brand h3::after {content: ''; display: block; width: 10rem; height: 1px; background: #fff; margin: 2rem auto;}
+.about_brand span {font-size: 1rem; font-weight: 100;}
+
+
+
+
+/* BR menu */
+.menu {position: relative; padding: 7.5rem 0; z-index: 100;}
+.menu .container {display: block; margin: 0 auto;}
+.menu h2 {color: #222; font-family: var(--title); font-size: var(--title-font); font-weight: 700; text-align: center; margin-bottom: 50px;}
+.menu img {width: 100%; border-radius: 10px;  }
+.menu figure {padding: 0 10px; cursor: pointer; }
+.menu .menu_slider {position: relative;}
+.menu h4 {position: absolute; top: 10%; transform: translateX(20px); font-size:var(--title-font); color:#fff; font-weight: 600; letter-spacing: -0.05rem;}
+.menu p {position: absolute; top: 22%; transform: translateX(20px); font-size: var(--desc-font);line-height: 1.5;  color:#fff; font-weight: 100; letter-spacing: -0.05rem;}
+
+/* #menu .btn i {position: absolute; top: 75%; left: 70%; background:#f5f5f5; color: #e0e0e0; padding: 6px;  border-radius: 50%; font-size: 100px; transition: 0.3s ease-in-out; cursor: pointer;}
+#menu .btn i:hover {background:#ddd; color: #333;} */
+.menu .slick-dots {position: absolute; bottom: -2rem; left: 0;width: 100%; text-align: center; z-index: 999;}
+.menu .slick-dots li {display: inline-block; width: 5rem; height: 0.5rem; background: #F5F5F5; border-radius: 0.1rem; margin: 0 0.25rem; overflow: hidden; cursor: pointer;}
+.menu .slick-dots li button {display: none;}
+
+.menu .slick-dots li .slick-active {}
+.menu .slick-dots li::after{content: ""; display: block;width: 0; height: 100%; background: var(--main-color01);}
+.menu .slick-dots li.slick-active::after{ width: 100%; transition: 0.3s;}
+
+
+
+.glass figure {  position: relative;}
+.glass figure::before {  position: absolute;  top: 0;  left: -75%;   z-index: 2;  display: block;  content: '';  width: 50%;  height: 100%; background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);   transform: skewX(-25deg);}
+ 
+ 
+/* flow wrap */
+.flow {padding: 150px 0;}
+  
+.content01 {background:#fff;position:relative;}
+.content-slider {position:relative;font-size:4rem;font-weight:900;}
+.content-slider em {color:#fff;text-shadow:-1px -1px 0 #333,1px -1px 0 #333,-1px 1px 0 #333,1px 1px 0 #333;}
+.content-slider em, .content-slider span {padding:1rem 0.5rem;}
+.content01 img {max-width: 200px;}
+@keyframes imgScale {
+    0% {transform:scale(0.7);}
+    10% {transform:scale(1);filter:grayscale(0)}
+    90% {transform:scale(1);filter:grayscale(0)}
+    100% {transform:scale(0.7);}
+}
+
+@keyframes opacIty {
+    0% {transform:translateY(0);opacity:0;}
+    10% {transform:translateY(-1.5rem);opacity:1;}
+    90% {transform:translateY(-1.5rem);opacity:1;}
+    100% {transform:translateY(0);opacity:0;}
+}
+
+/* Article */
+.article { padding: 7.5rem 0;}
+.article h3 {font-size: 1.75rem; margin-bottom: 2.5rem; line-height: 1.5; font-weight: 100;} 
+.article p {font-size: var(--desc-font);line-height: 1.3; margin-bottom: 2.5rem;} 
+
+.article .container {align-items: center;  margin: 0 auto; text-align: center;}
+.article .container .case {max-width: 100%; }
+.article .container figure {flex: 1 1;  }
+
+.article em:hover { background-size: 100% 88%;}
+.article a {display:block; font-size: 1rem;}
+.article a:hover i {animation:arrow 1s infinite; }
+
+
+@keyframes arrow {
+  0% {transform: translateX(0);}
+  50% {transform: translateX(10px);}
+  100% {transform: translateX(0);}
+}
+
+.card:nth-child(1){margin-bottom: 150px;}
+.video-player .inline-YTPlayer {max-width: 100% !important;}
+
+.video-player .underline {background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%) no-repeat; background-size: 100% 10px; background-position: 0 88%; transition: 0.25s ease-in;}
+.dessert-Recipe .underline { background: linear-gradient(120deg, #FFD64E 0%, #FC8B7A 100%) no-repeat; background-size: 100% 10px; background-position: 0 88%; transition: 0.25s ease-in;}
+ 
+
+/* 스크롤이벤트 디폴트값 */
+.card {opacity: 0;}
+
+
+
+/* insta section */
+.insta {padding: 7.5rem 0;}
+.insta h2 {font-size: var(--medium-font);color:#222; font-family: var(--title); font-weight: 700; text-align: center; margin-bottom: 3rem;}
+.insta .hidden {opacity: 0;}
+.insta li {position: relative; padding: 0 10px; cursor: pointer; }
+.insta li a{position: relative; display: block;}
+.insta li a::after {display: none; content: ''; width: 100%; height: 100%; background:rgba(0, 0, 0, 0.4); position: absolute; top: 0; left: 0;}
+.insta li a:hover::after {display: block;}
+
+.insta .img-info { font-size: 0.7rem; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);  color: #f2f2f2; z-index: 300; opacity: 0;}
+.insta li a:hover .img-info {opacity: 1;}
+.insta .img-info :nth-child(1) {margin-right: 0.5rem;}
+
+
+/* footer */
+.footer {font-size: 0.7rem; font-weight: 200; text-align: center; padding: 80px 0 50px; background: var(--main-color02); color: #f2f2f2; line-height: 2.5rem;}
+.footer .container {margin-bottom: 50px;}
+.footer ul>li {  padding: 0 10px;}
+.footer .box {margin: 0 auto;}
+.footer .box>li {display: inline-block; }
+.footer #link {display: inline-block; background: var(--main-color02);}
+.footer #link select {background: var(--main-color02); outline: none;}
+.footer strong {color: var(--main-color01);}
+.footer .box2 img{max-width: 15rem;}
+
+.mopen {display: none; position: fixed; top: 1rem; right: 1rem; font-size: 1.5rem; z-index: 999;}
+.mopen i {padding: 0.25rem; background: #ddd;}
+
+
+
+/*-------------------------반응형-------------------------------- */
+
+@media screen and (max-width:768px) {
+  html {font-size: 10px;}
+  body {font-size: 1.6rem;}
+  .container {display: flex;  width: auto; margin: 0 auto;}
+  .container>* {padding: 0 1.5rem;}
+  .wrap {  min-width: auto;}
+/* *{outline: 1px solid #ff0;} */
+
+/* Header  -768px mobile version */
+.header{  color: #000;  z-index: 900; padding: 1rem 0 0; }
+.header:hover {background: #fff; color: #000;}
+
+
+.header h1 {position:relative;z-index:1000;}
+.header h1 img {width:10rem;}
+.header .container {display:flex; }
+.header:hover {background: none;}
+/* .headertop {display:none;} */
+  /* 메뉴밑 호버 */
+  .header .main-menu>li::before {content: "";display: none;  
+    /* width: 0;  height: 4px;  background: var(--main-color01); position: absolute; top: 85px;  left: 0; transition:0.5s ease-in; z-index: 999; */
+  }
+  .header .main-menu>li:hover::before {display: none;}
+  .header .icons {display: none;}
+
+.gnb {position:fixed;top:0;left:-100%;width:calc(100% - 90px);height:100vh;background:#fff;padding:13rem 0 0 0;border-right:1px solid #333;transition:0.5s;z-index:999;}
+.gnb.on {left:0;}
+
+.gnb .main-menu {display:flex;flex-direction:column;}
+.gnb .main-menu>li>a {display:block;padding:0 3rem;line-height:4rem;border-bottom:1px solid #ddd;}
+.gnb .main-menu {position:relative;}
+.gnb .submenu {display:none;height:auto;overflow: visible; position:static;top:10rem;left:0;width:100%;transition:none;flex-direction:column;background:#f2f2f2;z-index:999;}
+.gnb:before {content:"";display:none;}
+.gnb:hover:before {height:auto;}
+.gnb:hover .submenu {height: auto;} 
+.gnb .submenu>li>a {display:block;line-height:3rem;text-align:left;font-size: 1.2rem; padding:0 3rem;}
+
+.mopen {display: block; position: fixed; top: 1rem; right: 1rem; font-size: 1.5rem; z-index: 999;}
+.mopen i {font-size: 2.2rem; padding: 0.25rem; background:  var(--main-color02); color:#fff;}
+.mopen>span {display:block;width:100%;height:3px;background:#333;transform:translateY(1.5rem);}
+.mopen>span::before {content:"";display:block;width:100%;height:3px;background:#333;transform:translateY(-1.15rem);transform-origin:left;transition:0.5s;}
+.mopen>span::after {content:"";display:block;width:100%;height:3px;background:#333;transform:translateY(1rem);transform-origin:left;transition:0.5s 0.5s;}
+
+/* 메인화면  -768px mobile version*/
+.main_visual {position: relative;}
+.main_visual {}
+.main_visual figure {height:100vh;}
+.main_visual .itm01{background: url(../img/main_visualM01.jpg) no-repeat center center  ; z-index: 2; }
+
+.main_visual .slogan {position: absolute; top: 35%; left: 55%; transform: translate(-50%,-50%); color: #fff; width: 20rem; padding: 0 0.75rem; text-align: left; }
+.main_visual .slogan h2 {  font-size: 3rem; font-weight: 700; margin-bottom: 1rem;}
+.main_visual .slogan p { font-size: 0.75rem; font-weight: 100; }
+.btn02:hover {border-radius:30px; background:  #32A0C5;}
+  
+/* Monthly -768px mobile version  */
+.monthly_item {padding: 7.5rem 0; text-align: center;  z-index:1;}
+.monthly_item .container {display: block; position: relative; width: auto; }
+.monthly_item .container .title  {display: flex; flex-direction: column; position:static; z-index: 10;}
+.monthly_item .container .title h2 { font-size: var(--title-font);  color: #333; margin-bottom: 15px;}
+.monthly_item .container .title img {max-width: 100%; margin: 0 auto 30px;}
+.monthly_item .title span {color: #555; line-height: 1.5; margin-bottom: 4rem;}
+
+.monthly_item .list ul{display: flex;align-items: center; flex-flow:row wrap; width: auto; height: auto;justify-content: center; }
+.monthly_item ul {}
+.monthly_item ul>li a {display: flex;  align-items: center; width:auto; height: auto; margin: 1rem; background: #f5f5f5; border-radius: 20px; transition: 0.3s ease-in-out; }
+.monthly_item ul>li a:hover {background: #ddd;}
+.monthly_item ul>li:hover span {color: #333;}
+.monthly_item ul>li {position: relative; font-size: 0.6rem;  text-align: center; }
+
+.monthly_item ul>li:nth-child(3)::before, 
+.monthly_item ul>li:nth-child(4)::before {display: none; }
+
+.monthly_item ul li span {font-size:var(--title-font);text-align: left; color:#e0e0e0; font-weight: 600; position: absolute; left: 12%; transform: translateY(40px) ;  display: block;  margin-bottom: 10px; transition: 0.3s ease-in-out; }
+
+.monthly_item ul>li img {  display: block;  margin: 0;  max-width: 100%;} 
+.monthly_item .hashtag {position: relative;}
+.monthly_item .hashtag :nth-child(2){background: url(../img/cheesenamu03.png) no-repeat center center;width: 100%; height: 100%; position: absolute; left: 0; transition: 0.3s ease-in-out;  z-index: 888;}
+.monthly_item .hashtag:hover :nth-child(2){transform: translateY(10px);}
+.monthly_item .hashtag img{max-width: 100%; height: auto; border-radius: 20px;}
+.monthly_item .hashtag span {display: inline-block; margin: 9rem 4.5rem; font-size: 2.5rem; color: #f4e085;}
+ 
+
+/* bg scroll  -768px mobile version */
+.about_brand {width: auto; background: url(../img/bg_scroll.jpg)no-repeat center center/cover; background-attachment: fixed; text-align: center; position: relative;z-index: 1; padding: 7.5rem 0;}
+.about_brand .bg_scroll {color: #fff;}
+.about_brand .bg_scroll::after {width: 100%; height: 100%; content: '';background: #000; position: absolute;top: 0;left: 0; z-index: -1;opacity: 0.5;}
+.about_brand h3 {font-size: 1.75rem; margin:1rem 2.5rem;}
+.about_brand h3::after {content: ''; display: block; width: 10rem; height: 1px; background: #fff; margin: 2rem auto;}
+.about_brand span {font-size: 1rem; font-weight: 100;}
+
+
+/* Article */
+.article { padding: 7.5rem 0;}
+.article h3 {font-size: 1.75rem; margin-bottom: 2.5rem; line-height: 1.5; font-weight: 100;} 
+.article p {font-size: var(--desc-font);line-height: 1.3; margin-bottom: 2.5rem;} 
+
+.article .container { align-items: center;  margin: 0 auto; text-align: center;}
+.article .container .case {max-width: 100%; }
+.article .container figure {flex: 1 1 50%;  }
+
+.article em:hover { background-size: 100% 88%;}
+.article a {display:block; font-size: 1.3rem;}
+.article a:hover i {animation:arrow 1s infinite; }
+
+.insta .img-info { font-size: 1rem;}
+}
+
+ 
+
+@media screen and (max-width:414px) {
+
+  /* .monthly_item .list ul {display: block;}
+  .monthly_item ul>li a {width: 20rem;}
+  .monthly_item .hashtag :nth-child(2) { background: url(../img/cheesenamu03.png) no-repeat center center; width: 65%; height: 100%;position: absolute; left: 0;  transition: 0.3s ease-in-out;  z-index: 888;} */
+  .article .container {flex-direction: column;align-items: stretch;}
+  .article  .dessert-Recipe {position: relative; width: auto; height: 45rem;}
+  .article .video-player figure:nth-child(1) {margin-bottom: 2rem;}
+  .article .dessert-Recipe figure:nth-child(1)  {  transform: translateY(27rem); }
+  .article .dessert-Recipe figure:nth-child(2)  {position: absolute; top: -10rem;  }
+
+  .insta .img-info { font-size: 1.2rem;}
+}

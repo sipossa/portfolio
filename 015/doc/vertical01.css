@@ -1,0 +1,9 @@
+#header {position: fixed;top: 0;left: 0;height: 100vh; width: 350px; background: #ff0;}
+#visual {margin: 0 350px; height: 100vh; background: #f00;}
+#footer{position: fixed;top: 0;right: 0;height: 100vh; width: 350px; background: #369;}
+
+@media screen and (max-width:768px) {
+  #header{position: static; width: auto;}
+  #visual{margin: 0;}
+  #footer{position: static; width: auto;}
+}

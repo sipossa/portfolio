@@ -1,0 +1,94 @@
+html {font-size: 20px;}
+body {font-size: 0.8rem;}
+
+/* *{outline: 1px solid #ff0;} */
+.wrap {min-width: 60rem;}
+.header{line-height: 5rem;}
+.header img{ width: 10rem;}
+.header .container {display: flex; width: 60rem; margin: 0 auto;}
+.header .container>* {padding: 0 0.75rem;}
+
+
+.gnb {margin-left: auto;}
+.gnb>ul {display: flex;}
+.gnb>ul>li {position: relative;}
+.gnb>ul>li>a {display: block; padding: 0 2rem; position: relative;}
+.gnb>ul>li~li>a::after {content: ''; display: block;width: 1px; height: 0.65rem; background: #666;top: 50%; left: 0;transform: translateY(-50%); position: absolute;}
+/* 다단메뉴 */
+.gnb>ul>li .submenu {display: none; line-height: 1.5rem;width: 100%; border: 1px solid #ddd; padding: 0.5rem 0.2rem 1rem 0.2rem ; background: #fff; position: absolute; top: 4.5rem; left: 0; z-index: 999;}
+.gnb>ul>li:hover .submenu {display: block;}
+.gnb>ul .submenu a {display: block; text-align: center; border-bottom: 1px solid #ddd;}
+.gnb>ul .submenu li~li a {border-top: 1px solid #ddd;}
+.gnb>ul .submenu a:hover {background: rgba(27, 65, 148,0.5); color: #fff;}
+
+
+
+
+
+
+.main_visual {position: relative;}
+.main_visual .main_slider {}
+.main_visual .main_slider figure {height:calc(100vh - 10rem);}
+.main_visual .main_slider .itm01{background: url(../lib/base/main_visual01.jpg) no-repeat center center/cover;}
+.main_visual .main_slider .itm02{background: url(../lib/base/main_visual02.jpg) no-repeat center center/cover;}
+.main_visual .main_slider .itm03{background: url(../lib/base/main_visual03.jpg) no-repeat center center/cover;}
+
+.main_visual .slogan {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff; width: 60rem; padding: 0 0.75rem; text-align: center;}
+.main_visual .slogan h2 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;}
+.main_visual .slogan p { font-size: 0.75rem; font-weight: 100; }
+
+
+.footer {background: #333; color: #f2f2f2;line-height: 5rem; text-align: center;}
+
+.mopen {display: none; position: fixed; top: 1rem; right: 1rem; font-size: 1.5rem; z-index: 999;}
+.mopen i {padding: 0.25rem; background: #ddd;}
+
+
+
+
+
+@media screen and (max-width:768px) {
+html {font-size: 20px;}
+body {font-size: 0.8rem;}
+
+.wrap {min-width: auto;}
+.header{line-height: 5rem;}
+.header img{ width: 10rem;}
+.header .container {display: flex; width: auto; margin: 0 auto;}
+.header .container>* {padding: 0 0.75rem;}
+.header .sns {display: none; position: fixed; top: 30rem; left: 2rem; font-size: 1.5rem; z-index: 1000;}
+
+
+.gnb {margin-left: auto; position: fixed; top: 0; left: -100%;background: #fff; height: 100vh;border-right: 1px solid #ddd; width: calc(100% - 80px); z-index: 999; transition: 0.5s ease-in-out;}
+.gnb.on {left: 0;}
+.gnb>ul {display: flex; flex-direction: column; padding: 5rem 0.5rem 0 0.5rem;}
+.gnb>ul>li {position: relative;}
+.gnb>ul>li>a {display: block; padding: 0 2rem; position: relative; line-height: 2rem; border-bottom: 1px solid #ddd;}
+.gnb>ul>li~li>a::after {content: ''; display: none;width: 1px; height: 0.65rem; background: #666;top: 50%; left: 0;transform: translateY(-50%); position: absolute;}
+/* 다단메뉴 */
+.gnb>ul>li .submenu {display: none; line-height: 1.5rem;width: 100%; border: none; padding:  0; background: #f3f3f3; position: static; top: 4.5rem; left: 0; z-index: 999;}
+.gnb>ul>li:hover .submenu {display: none;}
+.gnb>ul .submenu a {display: block; text-align: left; border-bottom: 1px solid #f7f7f7; padding: 0 2rem;}
+.gnb>ul .submenu a::before {content: '-'; } 
+.gnb>ul .submenu a:hover {background: rgba(27, 65, 148,0.5); color: #fff;}
+.gnb>ul .submenu li~li a {border-top: 1px solid #ddd;}
+
+ 
+
+.main_visual {position: relative;}
+.main_visual .main_slider {}
+.main_visual .main_slider figure {height:calc(100vh - 10rem);}
+.main_visual .main_slider .itm01{background: url(../lib/base/main_visual01.jpg) no-repeat center center/cover;}
+.main_visual .main_slider .itm02{background: url(../lib/base/main_visual02.jpg) no-repeat center center/cover;}
+.main_visual .main_slider .itm03{background: url(../lib/base/main_visual03.jpg) no-repeat center center/cover;}
+
+.main_visual .slogan {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff; width: 100%; padding: 0 0.75rem; text-align: center;}
+.main_visual .slogan h2 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;}
+.main_visual .slogan p { font-size: 0.75rem; font-weight: 100; }
+
+
+.footer {background: #333; color: #f2f2f2;line-height: 5rem; text-align: center;}
+
+.mopen {display: block; position: fixed; top: 1rem; right: 1rem; font-size: 1.5rem; z-index: 999;}
+.mopen i {padding: 0.25rem; background: #ddd;}
+}

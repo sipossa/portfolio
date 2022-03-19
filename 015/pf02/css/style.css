@@ -1,0 +1,333 @@
+html {  font-size: 20px;}
+
+body { font-size: 0.8rem;}
+
+#wrap {}
+
+.container { display: flex;  width: 1200px;  margin: 0 auto;}
+
+.container>* {padding: 0 15px;}
+section img{max-width: 100%;}
+
+
+/* 헤더 */
+#header {
+  line-height: 100px; 
+}
+
+#header h1 img { width: 200px;}
+
+#header .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto; 
+}
+
+#header .container nav {
+  margin-left: auto;
+}
+
+#header .container nav>ul {
+  display: flex;
+}
+
+#header .container nav>ul li a {
+  display: block;
+  position: relative;
+  padding: 0 30px;
+}
+
+#header .container nav>ul li~li a:after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 12px;
+  background: #333;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+#header .right {
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+#header .right .xi-bars:before {
+  margin-left: 10px;
+}
+
+/* 메인슬라이더 */
+#main_visual {
+  position: relative;
+}
+
+#main_visual figure {
+  position: relative;
+  height: 600px;
+  color: #fff;
+}
+
+#main_visual .item01 {
+  background: url(../img/main_visual01.jpg) no-repeat center center/cover;
+}
+
+#main_visual .item02 {
+  background: url(../img/main_visual02.jpg) no-repeat center center/cover;
+}
+
+#main_visual .item03 {
+  background: url(../img/main_visual04.jpg) no-repeat center center/cover;
+}
+
+#main_visual .container {  
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  text-align: left; 
+}
+/* #main_visual .container .item03.container a{ text-align: right;}   */
+ 
+ 
+/* transition 메인텍스트  */
+#main_visual .main_slider figure h2 {
+  font-size:  3rem;
+  font-weight: 900; 
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+#main_visual .main_slider figure.on h2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 0.5s;
+}
+
+#main_visual .main_slider figure span {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+#main_visual .main_slider figure.on span{
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s;
+}
+
+#main_visual .main_slider figure a {
+  display: block;
+  text-align: center; 
+  margin-left: 15px;
+  line-height: 30px;
+  width: 150px;
+  background: #333;
+  opacity: 0;
+  transform: translateY(100px);
+
+}
+#main_visual .main_slider figure a:hover {background: #620604;    }
+
+#main_visual .main_slider figure.on a {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1.5s; 
+}
+
+/*------- 3번째 메인슬라이드 왼쪽정렬 --------*/
+#main_visual .main_slider figure.item03 .container {
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+#main_visual .main_slider figure.item03 .container>a {
+  margin-left: 15px;
+}
+ 
+/* 메인슬라이더 버튼 */
+#main_visual .btn span {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-top: 5px solid #fff;
+  border-left: 5px solid #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+}
+
+#main_visual span.left {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  margin-left: -800px;
+}
+
+#main_visual span.right {
+  transform: translate(-50%, -50%) rotate(135deg);
+  margin-left: 800px;
+}
+
+
+/* 01 -MODELS  */
+#models {
+  position: relative;
+  padding: 150px 0;
+  text-align: center;
+}
+
+#models h2 {font-size: 35px;font-weight: 400;margin-bottom: 40px;}
+#models p {font-size: 12px; margin-bottom: 40px; line-height: 1.6;}
+ 
+ #models figure {cursor: pointer;}
+
+
+/* 슬릭 슬라이더 버튼 */
+
+#models .slick-dots {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: 0 auto;
+}
+
+#models .slick-dots li {
+  width: 80px;
+  height: 6px;
+  border-radius: 3px;
+  background: #666;
+  margin: 30px 4px;
+}
+
+#models .btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  font-size: 20px;
+  padding: 10px;
+  background: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#models .btn i.xi-arrow-left {
+  margin-left: -650px;
+}
+
+#models .btn i.xi-arrow-right {
+  margin-left: 650px;
+
+}
+
+/* 로케이터 */
+#locator {
+  padding: 60px;
+  background: url(../img/visual_item02.jpg)no-repeat fixed center center/cover;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+#locator .container {  justify-content: space-between;  align-items: center;
+  letter-spacing: -0.015em;
+}
+
+#locator::after {width: 100%; height: 100%; content: '';background: #000;
+  position: absolute;top: 0;left: 0;z-index: -1;opacity: 0.5;}
+
+#locator .title { display: flex;}
+
+#locator .title img { width: auto; height: 65px; margin-right: 20px;}
+#locator  .text h2 {font-size: 1.1rem; margin-bottom: 14px; }
+#locator  .text p {font-size: 0.8rem;  margin-bottom: 14px;}
+
+#locator .box {display: flex;align-items: center;justify-content:center; background: rgba(0, 0, 0, 0.5); width: 250px;
+  height: 100px; text-align:center;}
+
+#locator .box h3{width: 158px; font-size: 0.8rem;  margin:0 auto 10px;text-align:center;}
+#locator .box h3::after{display: block; content: ''; width: 100%; height: 1px; transform: scaleX(0); background: #fff; margin-top: 5px; transition: 0.5s; }
+#locator .box h3:hover::after{display: block; content: '';  height: 1px; transform: scaleX(1); background: #fff; margin-top: 5px; } 
+#locator .box span {  font-size: 0.6rem;}
+
+
+/* NEWS */
+#news {padding: 150px 0; }
+#news .container{ height: 700px;}
+
+#news h2 {font-size: 1.75rem;font-weight: 400;margin-bottom: 20px;}
+#news p {font-size: 0.8rem; margin-bottom: 40px; line-height: 1.6;}
+
+#news a img {display: block;  }
+
+#news .ch1  {display: block;  transform: translateY(30%);}
+#news .ch2 {transform: translateY(23%);}
+
+
+#news .container .case {position: relative; overflow: hidden; margin-bottom: 10px;}
+
+#news .container .case strong {position: absolute; top: 100%; left: 0; width: 100%; font-size: 1rem;
+  height: 100%;  background-color: rgba(0, 0, 0, 0.5); color: #fff; text-align: left; line-height: 1.5;
+  padding: 150px 0 0 40px; transition: 0.5s ease-in-out;}
+#news .container .case strong:after {content: ''; display: block; width: 90%; height: 1px; background: #fff; margin: 10px 0;}
+#news .container .case:hover strong { top: 0; cursor: pointer;}
+/* 두번째 hover  */
+#news .container .ch2 .case strong {position: absolute; top: 100%; left: 0; width: 100%; font-size: 1rem;
+  height: 100%;  background-color: rgba(0, 0, 0, 0.5); color: #fff; text-align: left; line-height: 1.5;
+  padding: 100px 0 0 40px; transition: 0.5s ease-in-out;}
+#news .container .ch2 .case:hover strong { top: 0; cursor: pointer;}
+  
+
+/* OFFER */
+#offer {text-align: center; padding: 100px 0; background: #f7f7f7; }
+#offer h2 {font-size: 1.75rem;font-weight: 400;margin-bottom: 30px; }
+#offer .container a{flex: 1; transition: 1s ease-in-out; }
+
+#offer a {position: relative;}
+#offer .container img { max-width: 100%; transition: 0.3s ease-in-out;}
+#offer .container a:hover img { transform: scale(1.2); filter: blur(3px); }
+
+#offer .container .case {overflow: hidden; margin-bottom: 10px; z-index: 1;}
+#offer a span { font-size: 1rem; line-height: 1.6; }
+
+#offer .container a:hover .detail {opacity: 1; top: 50%;   transform: translateY(-50%); transition: 0.6s ease-in-out;  }
+#offer .detail { opacity: 0; position: absolute; top: 60%; left: 10%; ; text-align: center; color: #fff;
+   font-size: 0.8rem;  line-height: 1.5; }
+
+#offer .detail p { margin-bottom: 10px; }
+#offer .detail span {display: inline-block; width: 120px;  margin: 0 auto; background: #333; font-size: 14px; position: relative;}
+#offer .detail span:hover {animation: headShake 2s infinite;}
+
+
+/* 푸터 */
+#footer {
+  padding: 80px 0 100px 0;
+  background: #333;
+  color: #f7f7f7;
+  font-weight: 300;
+}
+#footer .container {
+  width: 1200px; 
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  line-height: 50px; 
+}
+
+ 
+#footer .customer_link {font-size:14px;} 
+#footer .customer_link li {display:inline-block;line-height:1.4;padding: 0 10px;} 
+#footer .customer_link li:nth-child(2) {font-weight: 600;}
+
+#footer .sns   {text-align: right;} 
+#footer .sns i {font-size: 1.2rem;} 
+#footer select {  background: #333;  padding: 5px 15px;  outline: none;}
+
+ 

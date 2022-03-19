@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+#header h1 {
+  position: fixed;
+  top: 50px;
+left: 50px;
+z-index: 999; 
+}
+.section {
+  background: #fff url(../img/dot01.png);
+}
+.section:nth-child(even) {
+  background: #f9f9f9 url(../img/dot02.png);
+}
+
+.container  {
+  text-align: center;
+} 
+.sc01 h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 150px;
+  margin-bottom: 50px;
+  transform: translateY(100px);
+  opacity: 0;
+} 
+.sc01.on h2 {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 0.8s;
+}
+.sc01 p {
+  font-family: 'Amatic SC', cursive;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 50px;
+  transform: translateY(100px);
+  opacity: 0;
+} 
+.sc01.on p {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 0.8s 1s;
+}
+
+.sc01 figure {
+  width: 250px;
+  margin: 0 auto; 
+  background: #cfcfcf;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: scale(0.3);
+  opacity: 0;
+  transition: 0.8s 0.5s;
+  position: relative;
+}
+.sc01 figure:before {
+  content: "\e91c";
+  font-family: xeicon!important;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #333;
+  opacity: 0.5; 
+  color: #fff;
+  font-size: 80px;
+}
+
+.sc01.on figure {
+  transform: scale(1);
+  opacity: 1;
+}
+.sc01 figure img {
+  width:100%;
+}
