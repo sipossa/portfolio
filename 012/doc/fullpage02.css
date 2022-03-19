@@ -1,0 +1,51 @@
+/* .footer .left span {outline:1px solid #f00;}
+.footer .left strong {outline:1px solid #f00;}
+.footer .left .span_box {outline:1px solid #f00;} */
+
+body {background:#333;color:#f2f2f2;text-align:center;}
+
+.header h1 {position:fixed;top:30px;left:30px;z-index:999;}
+.header .right {position:fixed;top:30px;right:30px;z-index:999;}
+
+.header nav {position:fixed;top:50%;right:30px;transform:translateY(-50%);z-index:999;}
+.header nav>ul>li {width:60px;position:relative;}
+.header nav>ul>li a {display:block;position:relative;height:20px;text-indent:-99999px;}
+.header nav>ul>li a:after {content:"";display:block;width:30px;height:1px;background:#fff;position:absolute;top:50%;right:0;transform:translateY(-50%);transition:0.5s;}
+.header nav>ul>li.on a:after {background:#f00;width:100%;}
+
+.header nav>ul>li:before {content:attr(date-num);position:absolute;top:50%;left:-30px;transform:translateY(-50%);font-size:13px;font-weight:300;opacity:0;}
+.header nav>ul>li.on:before {opacity:1;transition:0.5s;}
+
+
+
+
+
+.section h2 {font-size:40px;font-weight:700;margin-bottom:20px;transform:translateY(100px);opacity:0;}
+.section p {transform:translateY(100px);opacity:0;}
+
+.section.on h2 {transform:translateY(0);opacity:1;transition:all 0.5s;}
+.section.on p {transform:translateY(0);opacity:1;transition:all 0.5s 0.5s;}
+
+.f01 {}
+.f02 {background:url(../lib/base/main_visual01.jpg) no-repeat fixed center center/cover;}
+.f03 {background:url(../lib/base/main_visual02.jpg) no-repeat fixed center center/cover;}
+.f04 {background:url(../lib/base/main_visual01.jpg) no-repeat fixed center center/cover;}
+
+.copyright {background:rgb(255, 127, 127);}
+
+
+
+.footer .right {position:fixed;bottom:30px;right:30px;z-index:999;}
+
+.footer .left {position:fixed;top:50%;left:0;transform:translateY(-50%);z-index:999;}
+.footer .left .span_box {display:block;padding:50px 10px 50px 50px;}
+.footer .left span {display:block;transform:rotate(-90deg);margin-bottom:20px;}
+.footer .left strong {display:block;border-top:1px solid #f00;padding:50px 10px 50px 50px;}
+
+
+
+
+
+
+
+

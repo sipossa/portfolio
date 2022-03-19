@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+#header h1 {position: fixed; top: 50px; left: 50px; font-family: 'Quicksand', sans-serif; font-weight: 300; z-index: 999;}
+
+.section {background: #fff}
+.section:nth-child(even) {background: #f4f4f4;}
+.container {text-align: center;}
+
+.se01 h2 {font-family: 'Quicksand', sans-serif; font-weight: 300; font-size: 100px; margin-bottom: 50px; transform: translateY(100px); opacity: 0;}
+.se01.on h2 {transform: translateY(0); opacity: 1; transition: 0.8s;}
+
+.se01 p {font-family: 'Quicksand', sans-serif; font-weight: 300; font-size: 20px; margin-bottom: 50px; transform: translateY(100px); opacity: 0;}
+.se01.on p {transform: translateY(0); opacity: 1; transition: 0.8s 1s;}
+
+.se01 figure {width:250px; margin: 0 auto; margin-bottom: 30px; border-radius: 50%; overflow:hidden;
+  transform: scale(0.3); opacity: 0; transition: 0.8s 0.5s; position: relative;}
+.se01 figure:before {content: ""; display: block; width: 100%; height: 100%;
+position: absolute; top: 0; left: 0; opacity: 0.3;}
+.se01.on figure {transform: scale(1); opacity: 1;}
+.se01 figure img {width:100%;}

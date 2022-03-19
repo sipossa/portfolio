@@ -1,0 +1,38 @@
+* {text-align:center;}
+/* html {scroll-behavior:smooth;} */
+
+
+#wrap {position:absolute;top:0;left:calc(50% + 100px);transform:translateX(-50%);text-align:center;}
+.container {width:1200px;margin:0 auto;}
+h1 {font-size:30px;padding:100px 0;font-weight:700;}
+h1:after {content:"김영훈";display:block;margin:10px 0;font-size:14px;color:#333;}
+.hp {display:inline-block;border:1px solid #888;padding:15px 20px;color:#333;font-size:14px;letter-spacing:0.1em;position:relative;}
+.hp:after {content:"";display:block;width:240px;height:10px;background:rgb(255, 0, 0, 0.1);position:absolute;top:50%;right:20px;transform:translateY(-50%);z-index:-1;}
+
+.ul_box .category {animation:shake 0.5s ease-out infinite;}
+.ul_box {position:fixed;top:0;left:0;width:200px;height:100vh;background:#333;color:#fff;line-height:50px;border-right:1px solid #222;outline:2px solid #999;}
+.ul_box ul {position:absolute;top:calc(50% + 30px);left:50%;transform:translate(-50%,-50%);width:150px;}
+.ul_box ul>li a {display:block;}
+.ul_box ul>li:hover {color:rgb(255, 110, 110)}
+.ul_box ul>li~li {border-top:1px solid #444;}
+.ul_box h2 {font-size:25px;font-weight:500;letter-spacing:0.1em;cursor:pointer;line-height:120px;}
+.ul_box h2:hover {font-size:0;}
+.ul_box h2:hover:after {content:"\e944";font-family: xeicon!important;font-size:30px;color:rgb(255, 110, 110);}
+
+.container h2 {font-size:25px;font-weight:500;letter-spacing:0.1em;padding:100px 0 70px 0;}
+.container h2:after {content:"";display:block;width:40px;height:3px;background:rgb(255, 110, 110);margin:20px auto;}
+.glyph_box {display:flex;flex-wrap:wrap;}
+.glyph {width:200px;height:150px;font-weight:400;font-size:14px;}
+.glyph i {font-size:30px;margin-bottom:15px;}
+.glyph h3 {margin-bottom:10px;user-select:all;}
+.glyph p {user-select:all;}
+
+.toTop {position:fixed;bottom:0;right:0;padding:15px 20px;background:rgba(255, 110, 110, 0.5);cursor:pointer;}
+.toTop i {display:block;margin-bottom:5px;font-size:20px;}
+.toTop span {font-size:16px;}
+
+@keyframes shake {
+    0% {transform:translateY(10px);}
+    50% {transform:translateY(0);}
+    100% {transform:translateY(10px);}
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2022 황다영 portfolio</title>
+    <link rel="stylesheet" href="./lib/css/common.css">
+    <link rel="stylesheet" href="./lib/css/slick.css">
+    <link rel="stylesheet" href="./lib/css/fullpage.css">
+    <link rel="stylesheet" href="./portfolio.css">
+    <script src="./lib/js/jquery-1.12.4.min.js"></script>
+    <script src="./lib/js/slick.min.js"></script>
+    <script src="./lib/js/fullpage.min.js"></script>
+    <script src="./lib/js/typed_cdn.js"></script>
+    <script src="./lib/js/circle-progress.min.js"></script>
+
+    <script src="./portfolio.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <h1>
+                <a href="#intro" style="display: block; width: 300px;">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 90.71 90.71"
+                        style="enable-background:new 0 0 90.71 90.71;" xml:space="preserve">
+                        <path class="st0" />
+                        <text transform="matrix(1 0 0 1 51.7363 145.7207)">
+                            <tspan x="0" y="0" class="txt1">2022</tspan>
+                            <tspan x="131.4" y="0" class="txt2">dddddddddd's portfolio</tspan>
+                        </text>
+                    </svg>
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#intro">intro</a></li>
+                    <li><a href="#portfolio_01">portfolio_01</a></li>
+                    <li><a href="#portfolio_02">portfolio_02</a></li>
+                    <li><a href="#portfolio_03">portfolio_03</a></li>
+                    <li><a href="#portfolio_04">portfolio_04</a></li>
+                    <li><a href="#portfolio_05">portfolio_05</a></li>
+                    <li><a href="#profile">profile</a></li>
+                </ul>
+            </nav>
+            <div class="cover_btn">
+                <i class="xi-bars"></i>
+            </div>
+        </header>
+        <main id="main">
+            <section class="section intro">
+                <div class="container">
+                    <div class="slogan">
+                        <h2><span class="slogan_txt"></span></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Similique dolorem itaque
+                            reiciendis eius alias! Quo neque tenetur suscipit.</p>
+                        <strong>2022 Dayoung's portfolio</strong>
+                    </div>
+                    <figure>
+                        <img src="./lib/base/intro.jpg" alt="2022 Dayoung's portfolio">
+                    </figure>
+                </div>
+                <a href="#portfolio_02" class="wheel">
+                    <span>wheel</span>
+                </a>
+            </section>
+            <section class="section portfolio_01">
+                <div class="container">
+                    <div class="itm mockup">
+                        <figure>
+                            <img src="./lib/base/portfolio01.jpg" alt="dayoung's portfolio 01 artbox">
+                        </figure>
+                    </div>
+                    <div class="description">
+                        <div class="gooey"><span>0</span><span>1</span></div>
+                        <h3>My Portfolio 01 -artbox</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                            Minima ratione, sequi cumque eveniet eum assumenda nulla?</p>
+                        <dl>
+                            <dt>font</dt>
+                            <dd>"Noto Sans Korean", "Montserrat"</dd>
+                        </dl>
+                        <dl>
+                            <dt>color</dt>
+                            <dd>
+                                <span></span> <strong>#33333</strong>
+                                <span></span> <strong>#66666</strong>
+                                <span></span> <strong>#99999</strong>
+                            </dd>
+
+                        </dl>
+                        <dl>
+                            <dt>process</dt>
+                            <dd>jquery / slick slide / YTPlayer / Typed</dd>
+                        </dl>
+                        <ul>
+                            <li><a href="dayoungh.github.io/pf03/index.html" target="_blank">link github</a></li>
+                            <li><a href="#!">style guide</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="section portfolio_02">
+                <div class="box_mask">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 90.71 90.71"
+                        style="enable-background:new 0 0 90.71 90.71;" xml:space="preserve">
+                        <style type="text/css">
+                            .st7 {
+                                fill: #ffffff;
+                            }
+                        </style>
+                        <defs>
+                            <mask id="photo-mask">
+                                <path class="st7" d="M59.8,79.67H29.67c-10.28,0-18.61-8.33-18.61-18.61V30.93c0-10.28,8.33-18.61,18.61-18.61H59.8
+                   c10.28,0,18.61,8.33,18.61,18.61v30.12C78.41,71.34,70.08,79.67,59.8,79.67z" />
+                            </mask>
+                        </defs>
+                        <image mask="url(#photo-mask)" xlink:href="./lib/base/main_item01.jpg" />
+                    </svg>
+                </div>
+
+            </section>
+            <section class="section portfolio_03">03</section>
+            <section class="section portfolio_04">04</section>
+            <section class="section portfolio_05">05</section>
+            <section class="section profile">profile</section>
+        </main>
+        <footer id="footer">
+            <div class="toTop">
+                <a href="#intro"><i class="xi-arrow-top"></i></a>
+            </div>
+            <address>
+                &copy; Dayoung 2022.
+            </address>
+        </footer>
+    </div>
+    <!-- gooey filter -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="bbq">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -5"
+                    result="bbq" />
+                <feBlend in="SourceGraphic" in="bbq" />
+            </filter>
+        </defs>
+    </svg>
+
+</body>
+
+</html>

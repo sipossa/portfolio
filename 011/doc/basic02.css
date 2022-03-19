@@ -1,0 +1,63 @@
+#wrap {}
+#header h1 {line-height:100px;}
+#header {position:sticky;top:0;left:0;background:#fff;z-index: 1;} /*익스플로러에서는 안먹힘,, 메뉴고정ㄴ*/
+#header .container {display:flex;width: 1200px;margin:0 auto;padding:0 15px;}
+#header nav {margin-left:auto;}
+#header nav>ul {display: flex;}
+#header nav>ul>li>a {display:block;padding:0 20px;line-height:100px;}
+
+#header nav>ul>li {position: relative;}
+#header nav>ul>li>ul>li~li {border-top:1px solid #fddd;} /*위에만연한 선을 줘서 구분하게*/
+#header nav>ul>li>ul {display:none;position: absolute;top:90px;left:50%;
+transform:translateX(-50%);width:150px;background:#fff;text-align:center;border:1px solid #ddd;z-index:999;}
+/*상자 크기가 위에 기준이되는 사이즈랑 동일하게 해라= 와이드 100퍼, 다르게 해주고싶으면 사이즈 다르게 더 크게 줘도됨 200xp 300px~~*/
+#header nav>ul>li>ul>li>a {display:block;line-height:30px;background:#fff;position: relative;z-index:1;}/*다단메뉴안에상자사이즈*/
+#header nav>ul>li>ul:before {content:"";display:block;width:15px;height:15px;background:#fff;border:1px solid #ddd;
+position: absolute;top:-10px;left:50%;transform:translateX(-50%) rotate(45deg);}/*뾰족한거 . 사각형만들고 위치잡고돌리기*/
+#header nav>ul>li:hover>ul {display: block;}
+/*위에 display:none 없애주고, 메뉴를 오버했을때 보여라*/
+
+
+
+
+
+#header i {margin-left:50px;line-height:100px;}
+
+
+
+
+
+
+
+#visual {position:relative;height:500px;background:url(../lib/base/main_visual01.jpg) no-repeat center center/cover;
+padding: 200px 0 0 0;}
+#visual .container {width:1200px;margin:0 auto;color:#fff;padding:0 15px;}
+
+#customer {padding:150px 0;} /*단락 분리 */
+#customer .container {display: flex;width:1200px;margin:0 auto;}
+#customer .container figure {flex:1;padding:0 15px;} /*이미지 양옆 15px */
+#customer .container figure img {max-width:100%;} /*이미지가 커서 1200px박스안에 이미지 비율에 맞게 3개 배열*/
+
+#footer {background:#333;color:#fff;padding:80px 0;}
+#footer .container {display: flex;width:1200px;margin:0 auto;padding:0 15px;}
+#footer .container .sns {margin-left:auto;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

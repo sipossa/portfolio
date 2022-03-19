@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper slide02</title>
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <link rel="stylesheet" href="../lib/css/swiper-bundle.min.css">
+    <script src="../lib/js/swiper-bundle.min.js"></script>
+    <style>
+        .main_slider {
+            background: #ddd;
+        }
+
+        .main_slider .swiper-slide {
+            width: 1600px;
+            height: 600px;
+            padding: 180px 0;
+            text-align: center;
+            box-sizing: border-box;
+            color: #fff;
+        }
+
+        /* .main_slider .swiper-slide.swiper-slide-active {color: #fff; transition: 0.5s 0.5s;} */
+        .main_slider .swiper-slide h2 {
+            font-size: 40px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            transform: translateY(100px);
+            opacity: 0;
+        }
+
+        .main_slider .swiper-slide p {
+            font-size: 15px;
+            font-weight: 300;
+            transform: translateY(100px);
+            opacity: 0;
+        }
+
+        .main_slider .swiper-slide.on h2 {
+            transform: translateY(0);
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        .main_slider .swiper-slide.on p {
+            transform: translateY(0);
+            opacity: 1;
+            transition: 0.5s 0.5s;
+        }
+
+
+        .main_slider .itm01 {
+            background: url(../lib/base/main_visual01.jpg) no-repeat center center/cover;
+        }
+
+        .main_slider .itm02 {
+            background: url(../lib/base/main_visual02.jpg) no-repeat center center/cover;
+        }
+
+        .main_slider .itm03 {
+            background: url(../lib/base/main_visual03.jpg) no-repeat center center/cover;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="visual">
+        <div class="swiper main_slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide itm01">
+                    <div class="txt">
+                        <h2>01 Lorem ipsum dolor sit.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Sunt earum, nemo commodi iure
+                            harum exercitationem placeat! Accusamus, quaerat!</p>
+                    </div>
+                </div>
+                <div class="swiper-slide itm02">
+                    <div class="txt">
+                        <h2>02 Lorem ipsum dolor sit.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Sunt earum, nemo commodi iure
+                            harum exercitationem placeat! Accusamus, quaerat!</p>
+                    </div>
+                </div>
+                <div class="swiper-slide itm03">
+                    <div class="txt">
+                        <h2>03 Lorem ipsum dolor sit.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Sunt earum, nemo commodi iure
+                            harum exercitationem placeat! Accusamus, quaerat!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script>
+        const main_slider = new Swiper('.main_slider', {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+            //   coverflowEffect: {
+            //   rotate: 50,
+            //   stretch: 0,
+            //   depth: 100,
+            //   modifier: 1,
+            //   slideShadows: true,
+            // },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+        const sItm = document.querySelectorAll('.swiper-slide');
+        // $('.swiper-slide');
+        const itm = document.querySelector('.swiper-slide-active');
+        itm.classList.add('on');
+        main_slider.on('slideChangeTransitionEnd', () => {
+            //let idx=main_slide.realIndex;
+            //console.log(idx);
+            //sItm[3].classList.add('on');
+            const itm = document.querySelector('.swiper-slide-active');
+            itm.classList.add('on');
+        });
+        main_slider.on('slideChangeTransitionStart', () => {
+            sItm.forEach(e => e.classList.remove('on'));
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+#wrap {min-width: 1200px;}
+
+.row::after {content: ""; display: block; clear: both;}
+.container {width: 1200px; margin: 0 auto;}
+.container::after {content: ""; display: block; clear: both;}
+
+
+.header {background: #f2f2f2; line-height: 100px;}
+.header h1 {float: left; padding: 0 15px;}
+.header h1 img {width: 200px;}
+.header nav {float: right;}
+
+.gnb>ul {float: left;}
+.gnb .sns {float: left; padding: 0 15px;}
+.gnb>ul>li {position: relative; float: left; padding: 0 30px;}
+.gnb>ul>li>a {display: block;}
+
+.gnb>ul>li .submenu {opacity: 0; position: absolute; top: 100px; left: 0; width: 200px; 
+text-align: center; line-height: 30px; background: #fff; border: 1px solid #ddd; visibility: hidden; z-index: 999;}
+.gnb>ul>li .submenu li~li {border-top: 1px solid #ddd;}
+.gnb>ul>li .submenu::before {content: ""; display: block; width: 15px; height: 15px; background: #fff;
+position: absolute; top: -7px; left: 30px; border: 1px solid #ddd; transform: rotate(45deg);}
+.gnb>ul>li:hover .submenu {opacity: 1; top: 85px; visibility: visible; transition: 0.5s;}
+
+.gnb>ul>li .submenu>li {position: relative; background: #fff;}
+
+
+
+.gnb>ul>li:nth-child(2) .submenu {border-radius: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+.gnb>ul>li:nth-child(2) .submenu::before {content: ""; display: block; width: 15px; height: 15px; background: #fff;
+position: absolute; top: -7px; left: 30px; border: 4px solid #f00; border-radius: 50%; transform: rotate(45deg);}
+.gnb>ul>li:nth-child(2) .submenu li {position: static; background: transparent;}
+.gnb>ul>li:nth-child(2) .submenu li:hover {background: #f00; color: #fff;}
+.gnb>ul>li:nth-child(2) .submenu li:first-child {border-radius: 20px 20px 0 0;}
+.gnb>ul>li:nth-child(2) .submenu li:last-child {border-radius: 0 0 20px 20px;}
+
+.main_slider figure {height: 600px;}
+.main_slider .item01 {background: url(../lib/base/main_visual01.jpg) no-repeat center center/cover;}
+.main_slider .item02 {background: url(../lib/base/main_visual02.jpg) no-repeat center center/cover;}
+.main_slider .item03 {background: url(../lib/base/main_visual03.jpg) no-repeat center center/cover;}
+
+
+
+section h2 {font-size: 30px; font-weight: 700; margin-bottom: 10px;}
+section p {font-size: 15px; font-weight: 300; margin-bottom: 30px;}
+
+
+.content {padding: 100px 0; text-align: center;}
+.content .container>div {float: left; width: 33.333%; padding: 0 15px;}
+.content h2 {width: 1200px; margin: 0 auto; padding: 0 15px; text-align: left;}
+.content h2::after {content: ""; display: block; clear: both;}
+.content h2 small {float: right; font-size: 13px; font-weight: 300;}
+
+.event {padding: 100px 0; text-align: center; background: #f2f2f2;}
+.event .container>div {float: left; width: 50%; padding: 0 15px;}
+
+.footer {padding: 50px 0; background: #333; color: #fff;}
+.footer .container>div {float: left; width: 50%; padding: 0 15px; text-align: center; font-size: 0;}
+.footer .container>div:nth-child(1) {text-align: left;}
+.footer address {display: inline-block; font-size: 16px;}

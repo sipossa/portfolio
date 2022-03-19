@@ -1,0 +1,58 @@
+#header {position: fixed; top: 0; left: 0; width: 350px; height: 100vh; padding: 30px 15px 0 15px;
+z-index: 999;}
+#header h1 {margin-bottom: 100px;}
+#header h1 img {width: 250px;}
+#header nav {}
+#header nav>ul>li {border-bottom: 1px solid #ddd; position: relative;}
+#header nav>ul>li a {display: block; line-height: 40px;}
+#header nav>ul>li .submenu {display: none; position: absolute; top: 0; left: 300px; width: 100%; background: #333;
+color: #fff; z-index: 999;}
+#header nav>ul>li .submenu li~li {border-top: 1px solid #ddd;}
+#header nav>ul>li .submenu a {padding-left: 20px;}
+#header nav>ul>li:hover .submenu {display: block;}
+
+#visual {margin: 0 350px 0 350px; background: #f00; height: 100vh;}
+#footer {position: fixed; top: 0; right: 0; width: 350px; background: #369; height: 100vh;}
+
+
+/* @media (max-width:768px) {
+    #header {position: static; width: auto;}
+    #visual {margin: 0 0 0 0;}
+    #footer {position: static; width: auto;}
+} */
+
+
+
+
+#visual {margin: 0 350px 0 350x; background: #f00; height: 100vh;}
+
+.main_visual figure {height: 100vh; position: relative;}
+.main_visual .item01 {background: url(../lib/base/main_visual01.jpg) no-repeat center center/cover;}
+.main_visual .item02 {background: url(../lib/base/main_visual02.jpg) no-repeat center center/cover;}
+.main_visual .item03 {background: url(../lib/base/main_visual03.jpg) no-repeat center center/cover;}
+
+
+.main_visual .container {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+color: #fff; text-shadow: 0 0 3px rgba(0,0,0,0.5); width: 1200px; text-align: center;}
+
+/* on붙었을때 텍스트 애니메이션 주기 */
+.main_visual figure .container h3 {opacity: 0; transform: translateY(100px); font-size: 30px; font-weight: 700; margin-bottom: 20px;}
+.main_visual figure .container p {opacity: 0; transform: translateY(100px); font-size: 15px; font-weight: 300; line-height: 20px;}
+
+.main_visual figure.on .container h3 {opacity: 1; transform: translateY(0); transition: 0.5s;}
+.main_visual figure.on .container p {opacity: 1; transform: translateY(0); transition: 0.5s 0.5s;}
+
+
+.main_visual .slick-dots {position: absolute; bottom: 100px; left: 0; width: 100%; text-align: center;}
+.main_visual .slick-dots li {display: inline-block; margin: 0 2px; color: #fff; text-shadow: 0 0 2px #333;}
+.main_visual .slick-dots li::after {content: "\e9bf"; font-family: xeicon!important; font-size: 30px;}
+.main_visual .slick-dots li.slick-active {color: rgb(253, 253, 103);}
+.main_visual .slick-dots li.slick-active::after {content: "\e9be"; font-family: xeicon!important; font-size: 30px;}
+.main_visual .slick-dots button {display: none;}
+
+
+.main_visual .slick-arrow {position: absolute; top: 50%; z-index: 998;}
+.main_visual .slick-arrow i {font-size: 40px; padding: 10px; background: rgba(0,0,0,0.5);
+color: #fff; border-radius: 50%;}
+.main_visual .slick-arrow.prev {left: 30px;}
+.main_visual .slick-arrow.next {right: 30px;}

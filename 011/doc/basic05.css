@@ -1,0 +1,227 @@
+body {color:#333;}  /*전체 글자색 동일할때 */
+#wrap {}
+
+
+
+/*top_banner 이혜민 20211103 최종수정*/
+#top_banner {background:#f7f7f7;}
+#top_banner .container {position:relative;width:1200px;margin:0 auto;padding:25px  15px;}
+#top_banner h2 {font-size:24px;font-weight:100;letter-spacing:-0.04em;margin-bottom:10px;}
+#top_banner p {font-size:16px;font-weight:300;letter-spacing:-0.025em;} 
+#top_banner i {position: absolute;top:25px;right:15px;font-size:24px;}/*container 박스기준으로 위치해라!*/
+
+
+
+#header {}
+#header .container {display:flex;justify-content:space-between;width:1200px;margin:0 auto;padding:0 15px;
+line-height:100px;}
+#header h1 {}
+#header h1 img {max-width:200px;}
+#header nav>ul {display: flex;justify-content: center;} 
+/*메뉴는 자식태그를 잡아서 써준다. 다단메뉴할때 ul이 많이 나와서 혼돈방지*/
+#header nav>ul>li>a {display:block;padding:0 15px;position:relative;}
+/*display:block*메뉴자체를 블록을 줘서 클릭할 수 있게*/
+#header nav>ul>li~li>a:before {content:"";display: block;width:1px;height:12px;background:#666;
+position: absolute;top:50%;left:0;transform:translateY(-50%);} 
+/*li~li>a:before 첫번째 자식 제외한 나머지것들 앞에 뭔가를 줘라*/
+
+
+#header .header_search input {border:none;outline: none;border-bottom:1px solid #666;padding:5px 0;}/*기본제공 디자인을 없애주는 과정*/
+#header .header_search button {background:none;border: none;outline:none;padding:5px 0;}/*기본제공 디자인을 없애주는 과정*/
+#header .header_search i {font-size:17px;color:#fff;padding:8px;background:#333;border-radius:50%;}
+
+
+
+#main_visual {position: relative;}
+#main_visual .main_slider figure {height: 600px;background:#666;}
+#main_visual .main_slider .item01 {background:url(../lib/base/main_visual01.jpg) no-repeat center center/cover;}
+#main_visual .main_slider .item02 {background:url(../lib/base/main_visual02.jpg) no-repeat center center/cover;}
+#main_visual .main_slider .item03 {background:url(../lib/base/main_visual03.jpg) no-repeat center center/cover;}
+
+
+
+#main_visual .slogan {position:absolute;top:50%;left:50%;width:1200px;padding: 0 15px;
+transform:translate(-50%,-50%);color:#fff;}
+#main_visual .slogan h2 {font-size:60px;font-weight:900;margin-bottom:10px;text-align: center;text-shadow:0 0 3px #000}
+#main_visual .slogan p {font-size:16px;font-weight:300;text-align: center}
+
+#main_visual .slogan a {display:block;width:150px;height:35px;line-height:30px;background:#333;text-align: center;
+margin:20px auto;}
+/*a를 display:block 해주면 공간이 생겨 밑으로 간다*/
+/*height:35px;글자박스를 더크게주고 라인하이트를 작게주면 가운데오는 착시효과*/
+
+
+
+
+
+#product01 {padding:150px 0;text-align: center;}
+#product01 h2 {font-size:24px;font-weight:500;margin-bottom:10px;}
+#product01 p {font-weight:300;margin-bottom:50px;letter-spacing:-0.025em;}
+
+#product01 .container {display:flex;width: 1200px;margin:0 auto;}
+/*margin:0 auto;컨테이너상자를 가운데오게함*/
+#product01 img {max-width:100%;}
+#product01 figure {flex:1;padding:0 15px;}
+/*flex:1이미지가 한자리씩 차지해라!*/
+
+
+#product01 figure strong {display: block;margin:10px 0;}
+#product01 figure span {display: block;margin:10px 0;}
+#product01 figure span.price {color: #fe5500;}
+
+
+
+#product01 .case {overflow: hidden;}
+#product01 figure img {transition:0.4s;} /*0.4초동안 커저라*/
+#product01 figure:hover img {transform:scale(1.2);}
+
+
+
+
+
+#main_banner {padding:150px 0;background:url(../lib/base/main_visual02.jpg)no-repeat center center/cover;
+background-attachment: fixed;color: #fff;text-align: center; }
+
+#main_banner h2 {font-size:24px;font-weight:500;margin-bottom:10px;}
+#main_banner p {font-size:14px;font-weight:100;margin-bottom:10px;}
+#main_banner i {font-size:16px;padding:5px;background:#333;border-radius:50% 0;vertical-align:middle;
+margin-left:10px;}
+/*vertical-align:middle; 글자가 작을 경우 밑에 붙어있는 상황이다. 중간으로 해주면 글자 박스 중앙라인에 온다 top,middle,bottom, ~~*/
+
+
+
+#product02 {padding:150px 0;}
+#product02 .container {display: flex;flex-wrap:wrap;width:1200px;margin:0 auto;padding:0 15px;}
+#product02 img {max-width:100%;}
+/*flex-wrap:wrap;상자안에감싸면서옆으로 배열해라*/
+
+#product02 .pic {width:50%;}
+#product02 .dis {display:flex;width:50%;text-align: center;background:#f7f7f7;}/*width:50% 가로로 50%씩 차지해라!*/
+#product02 .dis .dis_con {margin:auto;padding:0 30px}
+#product02 .dis .dis_con h3 {font-size:24px;font-weight:500;}
+#product02 .dis .dis_con h3:after {content:"";display:block;width:1px;height:50px;background:#333;
+margin:20px auto;}
+#product02 .dis .dis_con p  {font-size:14px;font-weight:100;margin-bottom:10px;line-height:1.5;}
+#product02 .dis .dis_con i  {font-size:16px;padding:5px;background:#333;border-radius:50% 0;vertical-align:middle;
+margin-left:10px;color:#fff;transition:0.4s;}
+
+#product02 .dis .dis_con a:hover i {border-radius:0 0;} 
+
+
+
+
+
+
+#product03 {padding:150px 0;text-align: center;background:#f7f7f7;}
+#product03 h2 {font-size:24px;font-weight:500;margin-bottom:10px;}
+#product03 p {font-weight:300;margin-bottom:50px;}
+#product03 .container {width: 1200px;margin:0 auto;}
+
+#product03 img {max-width:100%;}
+#product03 figure {padding:30px 15px;margin-bottom:10px;}
+#product03 .case {margin-bottom:40px;background:#f7f7f7;}
+
+
+#product03 figure img {transition: 0.5s;}
+#product03 figure.on img {transform: scale(1.3);border:5px solid #f7f7f7;}
+
+
+#product03 figure strong {display:block;}
+#product03 figure.on strong {display: block;position: absolute;top:50%;color:#fff}
+
+#product03 .slide_bar {position:relative;width:600px;height:5px;background:#ddd;border-radius:3px;margin:30px auto;}
+#product03 .slide_bar>span {display:block;width:100px;height:5px;border-radius:3px;background:#333;position: absolute;top: 0;left:0;
+transition:0.5s}
+
+
+
+
+
+
+#product04 {padding:150px 0;background:#f7f7f7;}
+#product04 h2 {font-size:24px;font-weight:500;margin-bottom:10px;}
+#product04 p {font-weight:300;margin-bottom:50px;}
+
+#product04 .container {display:flex;width: 1200px;margin:0 auto;}
+
+#product04 .container .dis {flex:1;padding:0 15px;} /*flex:1;flex:2;자리 차지하는 비율 3:1*/
+#product04 .container .con {flex:2;overflow: hidden;position: relative;}
+#product04 .container .con figure {padding:0 15px;}
+#product04 .container .con img {max-width:100%;}
+
+
+#product04 .container .con i {position: absolute;top:45%;background:#fff;padding:10px;border:solid 1px #444;}
+
+#product04 .container .con i.xi-arrow-left {left:0}
+#product04 .container .con i.xi-arrow-right {right:0}
+
+
+#product04 .dis {margin:auto;padding:0 30px}
+#product04 .dis h2 {font-size:24px;font-weight:500;}
+#product04 .dis h2:after {content:"";display:block;width:50px;height:1px;background:#333;
+margin:20px 0;}
+#product04 .dis p  {font-size:14px;font-weight:100;margin-bottom:10px;line-height:1.5;}
+#product04 .dis i  {font-size:16px;padding:5px;background:#333;border-radius:50% 0;vertical-align:middle;
+margin-left:10px;color:#fff;transition:0.4s;}
+
+
+
+
+#tab {padding:100px 0;background:#f7f7f7;}
+#tab .container {width:1200px;margin:0 auto;padding: 0 15px;}
+#tab .tab_menu {display: flex;border-bottom:1px solid #ddd;margin-bottom:10px;}
+#tab .tab_menu li a {display:block;line-height:40px;padding:0 50px;
+background:#369;color:#fff;text-align: center;}
+#tab .tab_menu li~li {border-left:1px solid #f7f7f7;}
+
+
+#tab .tab_con {position:relative;height:300px;}
+#tab .tab_con .tab_slider {position:absolute;top:0;left:0;width:100%;visibility:hidden;}
+#tab .tab_con .tab_slider.on {visibility: visible;}
+#tab .tab_con figure {padding:0 15px;}
+#tab .tab_con figure img {width:100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+#footer {background:#333;color:#f4f4f4;font-weight:300;}
+#footer .container {display:flex;justify-content:space-between;width:1200px;margin:0 auto;line-height:100px;padding:0 15px;}
+#footer .customer_link {display: flex;}
+#footer .customer_link li {position: relative;}
+#footer .customer_link a {display: block;padding:0 20px;}
+#footer .customer_link li:first-child a {padding:0 20px 0 0;}
+#footer .customer_link li~li:before {content:"I";position: absolute;top:0px;left:0;}
+#footer hr {border:none;border-top:1px solid #666;}
+/*<hr>구분선을 연하게 */
+#footer .sns {font-size:25px;}
+
+
+
+#footer select {background:#333;padding:4px 20px;outline:none;}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+/* *{outline: 1px solid #f00;} */
+
+/* header */
+#header {line-height:100px;}
+#header .container {display:Flex;width:1200px;margin:0 auto;}
+#header h1 {padding:0 15px;}
+#header h1 img{width:200px;}
+#header nav {margin-left:auto;}
+#header nav>ul {display:Flex;font-size:20px;}
+#header nav>ul>li {position:relative;}
+#header nav>ul>li a {display:block;padding:0 15px;}
+#header nav>ul>li~li:before {content:"";position:absolute;top:42%;left:0;display:block;background: #ddd;width:1px;height:16px;}
+#header i {display:none;}
+
+/*변경되는 사항들을 적어줘야 적용됨*/
+@media (max-width:768px){
+    #header {line-height:100px;}
+    #header .container {display:Flex;width:auto;margin:0 auto;}
+    #header h1 {padding:0 15px;}
+    #header h1 img{width:200px;}
+    #header nav {display:none;position:fixed;top:0;left:0;background:#fff;width:calc(100% - 80px);height:100vh;padding:100px 15px 0 15px;z-index: 999;border-right:1px solid #ddd;}
+    #header nav>ul {display:flex;flex-direction:column;font-size:16px;}
+    #header nav>ul>li {position:relative;line-height:40px;}
+    #header nav>ul>li a {display:block;padding:0 15px;}
+    #header nav>ul>li~li:before {content:"";position:absolute;top:42%;left:0;display:none;background: #ddd;width:1px;height:16px;}
+    #header nav>ul>li~li {border-top:1px solid #ddd;}
+    #header i {display:block;position:fixed;top:30px;right:15px;font-size:33px;background:#f7f7f7;padding:5px;z-index: 999;}
+}
+
+
+/* visual */
+#visual {position:relative;color:#fff;}
+#visual .main_slider {position:relatve;background: url(../lib/bsse/main_visual03.jpg);height:600px;}
+#visual .slogan {position:absolute;top:50%;left:50%;width:1200px;transform:translate(-50%, -50%);padding:0 15px;}
+#visual .slogan h2 {font-size:80px;font-weight:700;margin-bottom:20px;}
+#visual .slogan p {font-size:20px;}
+
+@media (max-width:768px){
+    #visual {position:relative;color:#fff;}
+    #visual .main_slider {position:relatve;background: url(../lib/bsse/main_visual03.jpg);height:600px;}
+    #visual .slogan {position:absolute;top:50%;left:50%;width:100%;transform:translate(-50%, -50%);padding:0 15px;}
+    #visual .slogan h2 {font-size:40px;font-weight:700;margin-bottom:20px;}
+    #visual .slogan p {font-size:14px;line-height:15px;}
+}
+
+
+/* customer */
+#customer {padding:150px 0;text-align: center;}
+#customer .container {display:flex;width:1200px;margin:0 auto;}
+#customer .container figure {flex:1;padding:0 15px;}
+#customer .container figure img{width:100%;}
+#customer .container figure figcaption {line-height:1.6em;}
+
+@media (max-width:768px){
+    #customer {padding:150px 0;text-align: center;}
+    #customer .container {display:flex;flex-direction:column;width:auto;margin:0 auto;}
+    #customer .container figure {flex:1;padding:0 15px;}
+    #customer .container figure img{width:100%;}
+    #customer .container figure figcaption {line-height:1.6em;}
+}
+
+
+/* footer */
+#footer {border-top:1px solid #ddd;padding:80px 0;text-align: center;}
+
+

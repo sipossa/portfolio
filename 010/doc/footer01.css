@@ -1,0 +1,104 @@
+.gonggal {background: #f2f2f2;height:50vh;text-align: center;line-height: 50vh;}
+
+.footer01 {background: #333;color:#f4f4f4;padding:50px 0;}
+.footer01 .line {border-bottom: 1px solid #666;}
+.footer01 .container {display:flex;width:1200px;margin:0 auto;padding-bottom:30px;}
+.footer01 dl {flex:1;padding:0 15px;}
+.footer01 dt {font-size: 18px;margin-bottom:10px;}
+.footer01 dd {font-size:14px;font-weight: 100;line-height: 22px;}
+.copy {text-align: center;padding-top:30px;}
+
+@media (max-width:768px) {
+
+    .footer01 .container {display:flex;flex-wrap:wrap;width:auto;margin:0 auto;}
+    .footer01 .container dl {flex:50%;padding:0 15px;text-align: center;padding-bottom:30px;}
+
+}
+
+.footer02 {background: #333;color:#f4f4f4;padding:80px 0;text-align: center;}
+.footer02 dl {display: flex;justify-content: center;margin-bottom:15px;}
+/*박스가 width:100%로 길게 있어서 text-align:center가 적용되지 않음, justify-content: center; 로 글자배열해줘야함*/
+.footer02 dl>*  {font-size: 14px;font-weight: 100;}
+.footer02 dl>dd::before {content:"";display:inline-block;width:1px;height:10px;background: #f4f4f4;margin:0 20px;}
+.footer02 dt {font-weight: 400;color:#ff0;padding-right:10px;}
+
+.footer02 ul {display: flex;justify-content: center;margin-bottom:15px;}
+.footer02 ul>li {position:relative;}
+.footer02 ul>li::after {content:"/";display:inline-block;font-size:12px;padding:0 20px;}
+.footer02 ul>li:last-child::after {display:none;}
+.footer02 span {display:block;margin-bottom:15px;font-size: 14px;}
+
+
+@media (max-width:768px) {
+
+    
+    .footer02 dl {display:block;justify-content: center;margin-bottom:15px;border-bottom:1px solid #666;padding:30px 0;}
+    .footer02 dl>*  {display:inline-block;}
+    .footer02 dl>dd::before {display:none;}
+    .footer02 dl>dd {padding:10px 20px;}
+
+    .footer02 dt {font-weight: 400;color:#ff0;}
+
+    .footer02 ul {display:block;justify-content: center;margin-bottom:30px;font-size: 14px;}
+    .footer02 ul>li {padding:10px;display:inline-block;}
+    .footer02 ul>li::after {display:none;}
+    .footer02 span {display:block;margin-bottom:15px;font-size: 14px;}
+
+}
+
+/**/
+.footer03 {padding:50px 0;}
+.footer03 .container {display:flex;width:1200px;margin:0 auto;}
+
+.footer03 .left {flex:1;padding:0 15px;font-size: 14px;}
+.footer03 .left img {width:130px;margin-bottom: 15px;}
+.footer03 .left strong {display:inline-block;width:340px;text-overflow: ellipsis;white-space: nowrap;overflow:hidden;}
+
+/*
+.footer03 .left ul {font-size: 0;padding:10px 0;line-height: 1.4;}
+.footer03 .left ul li {display:inline-block;width:50%;font-size: 12px;}
+flex-direction + flex-wrap  => flex-flow:row-wrap */
+
+.footer03 .left ul {display:flex;flex-wrap:wrap;font-size: 12px;line-height: 1.5;padding:15px 0;}
+.footer03 .left ul li {width:50%;}
+
+.footer03 .right {flex:2;padding:0 15px;}
+.footer03 .lnb {display:flex;}
+.footer03 .lnb dl {flex:1;border-top: 2px solid #ddd;font-size: 14px;line-height: 1.5em;padding-top:20px;}
+.footer03 .lnb dl:last-child {text-align: right;line-height: 1.8em;}
+.footer03 .lnb dl>dd .footer02 .lnb dl>dt {padding:10px 0;}
+.footer03 .lnb dl>dt {font-weight:500;margin-bottom:15px;color:#f00;}
+.footer03 .lnb dl:last-child dt {margin-bottom: 0;}
+
+.footer03 .sns {padding:10px 0;border-bottom: 1px solid #ddd;text-align: right;}
+.footer03 .sns i {padding:5px;border:2px solid #ddd;border-radius: 50%;font-size: 20px;}
+
+.footer03 .link {padding:20px 0;}
+.footer03 .link dl {display:flex;justify-content: space-between;font-size: 14px;}
+.footer03 .link dl dt {color:#f00;font-weight: 500;}
+
+
+@media (max-width:768px) {
+
+    .footer03 {padding:50px 0;}
+    .footer03 .container {display:flex;flex-direction:column;width:auto;margin:0 auto;text-align: center;}
+
+    .footer03 .left ul {display:flex;flex-wrap:nowrap;
+    flex-direction:column;font-size: 14px;line-height: 1.5;padding:30px 0;text-align: center;}
+    .footer03 .left ul li {width:100%;}
+
+    .footer03 address {margin-bottom: 20px;}
+
+    .footer03 .lnb dl:last-child {text-align: center;}
+
+    .footer03 .sns {text-align: center;padding:50px 0 20px 0;}
+    .footer03 .link dl {display:flex;flex-direction:column;line-height: 1.8em;}
+
+
+}
+
+
+
+.movie {width:100%;padding-bottom:56.25%;position:relative;} /*padding:으로 16:9비율 박스 만들어주기, width가 100%일때 height가 56.25%*/
+.movie iframe {position:absolute;top:0;left:0;}
+/*position을 줘야 박스크기에 맞게 동영상이 꽉 참*/

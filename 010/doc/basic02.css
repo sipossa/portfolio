@@ -1,0 +1,36 @@
+#wrap {}
+
+#header {position:sticky;top:0;left:0;background:#fff;z-index: 1;}
+#header .container {display:flex;width:1200px; margin:0 auto;padding:0 15px;}
+#header .container h1 {height:100px;}
+#header .container nav {margin-left:auto;}
+#header .container nav>ul {display:flex;}
+#header .container nav>ul>li {position:relative;}
+#header .container nav>ul>li>a {display:block;padding:0 20px;line-height: 100px;}
+
+/*#header .container nav>ul>li>ul:before {content:"";display:block;width:20px;height:20px;background: #fff;border:1px solid #ddd;position:absolute;top:-10px;left:50%;transform: translateX(-50%)rotate(45deg);}위에 뾰족하게 만드는거*/
+
+#header .container nav>ul>li>ul {display:none;position:absolute;top:100px;left:50%;transform:translateX(-50%);width:120px;text-align: center;background: #fff;z-index:999;border:1px solid #ddd;} /*width:120px; 값으로 가로폭 조절함, width:100%가 기본*/
+#header .container nav>ul>li>ul>li {border-bottom: 1px solid #ddd;font-size: 14px;}
+#header .container nav>ul>li>ul>li:last-child {border-bottom:0}
+#header .container nav>ul>li>ul>li>a {display:block;line-height: 30px;/*background: #fff;position:relative;z-index: 1; 위에 뾰족하게 만드는거*/}
+#header .container nav>ul>li>ul>li>a:hover {background: #333;color:#fff}
+
+#header .container nav>ul>li:hover>ul {display:block;}
+
+#header .container i {line-height: 100px;margin-left:50px;}
+
+
+#visual {position:relative;height:500px;background: url(../lib/bsse/main_visual03.jpg) no-repeat center center/cover; padding : 200px 0 0 0;}
+#visual .container {width:1200px; margin:0 auto;color:#fff;padding:0 15px;}
+
+
+#customer {padding:150px 0;}
+#customer .container {display:flex;width:1200px;margin:0 auto;}
+#customer .container figure {flex:1px;padding:0 15px;} /*flex:1 , 안에 요소들이 한자리씩 차지함*/
+#customer .container figure img {max-width: 100%;}
+
+
+#footer {background: #333;color:#fff;padding:80px 0;}
+#footer .container {display:flex;width:1200px; margin:0 auto;padding:0 15px;}
+#footer .container .sns {margin-left:auto;}

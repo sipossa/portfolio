@@ -1,0 +1,60 @@
+
+
+/* header */
+#header {line-height: 10rem; background: #fff; z-index: 999;}
+#header h1 {}
+#header h1 img {}
+
+/* #header .con {width: 100%;height: 40rem; background: #f00;} */
+#header .container a {display: block;}
+#header .container {display: flex; justify-content: space-between; width: 120rem; margin: 0 auto;}
+
+
+/* inner */
+#header .gnb .inner {display: none; position: absolute; top: 15.5rem; left: 50%; transform: translateX(-50%); width: 120rem; height: 40rem;
+background:#fff;}
+
+#header .gnb .depth01>li:hover .inner {display: flex; border-top: 1px solid #eee; border-bottom: 2px solid var(--mc);}
+
+
+/* title txt & bg img */
+#header .container .title {background: url(../img/gnb_bg.png) no-repeat center center/cover; width: 40rem; padding: 2rem 3rem; text-align: left;}
+
+#header .container .title strong {display: block; font-size: 2.5rem; font-weight: 500;}
+#header .container .title p {font-size: 1.6rem; font-weight: 300; color: var(--mc);}
+
+
+/* depth01 */
+#header .container .depth01 {display: flex;}
+#header .gnb .depth01>li>a {display: block; padding: 0 3rem; line-height: 10rem; font-size: 1.8rem; font-weight: 500; width: 100%;}
+
+
+/* depth02 */
+#header .depth02 {width: 28rem; padding: 2rem 0 3rem 3.5rem; background: #fff; border-right: 1px solid #ddd;}
+#header .depth02 li a {font-size: 1.7rem; line-height: 2.5; padding: 0 2rem;}
+
+
+#header .depth02 li a i {margin-left: 0.1rem; transition: 0.3s;}
+#header .depth02 li a:hover i {margin-left: 1rem; background: var(--mc); color: var(--wc); border-radius: 50%;}
+
+
+
+/* depth03 */
+#header .depth03 {display: none; position: absolute; top: 0; left: 70rem; padding: 2rem 0 3rem 1rem; transition: 0.5s;}
+#header .container .depth02>li:hover .depth03 {display: block;}
+#header .depth03 li a {line-height: 2.2; padding: 0 1rem; font-size: 1.6rem;}
+#header .depth03 li a:hover {color: var(--mc);}
+
+
+
+/* ul.list_wrap */
+#header .depth03 .list_wrap {display: flex; justify-content: space-between;}
+#header .depth03 .list_wrap li {flex: 1; padding: 0 1rem;}
+#header .depth03 .list_wrap li a {font-size: 1.6rem; width: 17rem;}
+
+#header .depth03 .list_wrap02 {display: flex; justify-content: space-between;}
+#header .depth03 .list_wrap02 li {flex: 1; padding: 0 1rem;}
+#header .depth03 .list_wrap02 li a {font-size: 1.6rem; width: 17rem;}
+
+
+

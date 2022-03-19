@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다단메뉴 반응형</title>
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <script src="../lib/js/jquery-1.12.4.min.js"></script>
+    <style>
+        .header {height:100px;text-align:center;line-height:100px;}
+        .footer {position:relative;height:200vh;background:#ddd;}
+
+        nav .depth01 {position:relative;display:flex;justify-content:center;line-height:40px;}
+        nav .depth01 a {display:block;padding:0 30px;}
+        nav .depth01>li .depth02 {display:none;position:absolute;top:40px;left:0;width:100%;background:#ff0;z-index:999;}
+        nav .depth01 .depth02>ul {display:flex;justify-content:center;}
+        nav .depth01>li:hover .depth02 {display:block;}
+
+
+        @media (max-width:1000px) {
+
+            .header i {position:fixed;top:30px;right:30px;font-size:20px;padding:10px;background:rgba(0,0,0,0.1);z-index:1000;}
+            .header i.on {color:#f00;}
+            
+            nav {position:fixed;top:0;left:-100%;width:calc(100% - 90px);height:100vh;overflow:hidden;transition:0.5s;background:#fff;z-index:999;}
+            nav.on {left:0;}
+            nav .depth01 {position:relative;display:flex;flex-flow:column wrap;justify-content:center;line-height:40px;}
+            nav .depth01 a {display:block;padding:0 30px;}
+            nav .depth01>li .depth02 {display:none;position:absolute;top:0;left:150px;width:100%;height:100vh;background:#ff0;z-index:999;}
+            nav .depth01 .depth02>ul {display:flex;flex-flow:column wrap;justify-content:center;}
+            nav .depth01>li:hover .depth02 {display:none;}
+            nav .depth01>li.on .depth02 {display:block;}
+            nav .depth01>li .depth03 {display:none;background:#ddd;}
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="mopen">
+          header  <i class="xi-bars"></i>
+        </div>
+    </header>
+
+    <!--remenu001.html {-->
+        <nav>
+            <ul class="depth01">
+                <li>
+                    <a href="#!">menu01</a>
+                    <div class="depth02">
+                        <ul>
+                            <li><a href="#!">1smenu01</a>
+                            <ul class="depth03">
+                                <li><a href="#!">ssmenu01</a></li>
+                                <li><a href="#!">ssmenu02</a></li>
+                                <li><a href="#!">ssmenu03</a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#!">1smenu02</a>
+                                <ul class="depth03">
+                                    <li><a href="#!">ssmenu01</a></li>
+                                    <li><a href="#!">ssmenu02</a></li>
+                                    <li><a href="#!">ssmenu03</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#!">1smenu03</a>
+                                <ul class="depth03">
+                                    <li><a href="#!">ssmenu01</a></li>
+                                    <li><a href="#!">ssmenu02</a></li>
+                                    <li><a href="#!">ssmenu03</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#!">1smenu04</a>
+                                <ul class="depth03">
+                                    <li><a href="#!">ssmenu01</a></li>
+                                    <li><a href="#!">ssmenu02</a></li>
+                                    <li><a href="#!">ssmenu03</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#!">menu02</a>
+                    <div class="depth02">
+                        <ul>
+                            <li><a href="#!">2smenu01</a>
+                                <ul class="depth03">
+                                    <li><a href="#!">ssmenu01</a></li>
+                                    <li><a href="#!">ssmenu02</a></li>
+                                    <li><a href="#!">ssmenu03</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#!">2smenu02</a>
+                                <ul class="depth03">
+                                    <li><a href="#!">ssmenu01</a></li>
+                                    <li><a href="#!">ssmenu02</a></li>
+                                    <li><a href="#!">ssmenu03</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#!">2smenu03</a>
+                                <ul class="depth03">
+                                <li><a href="#!">ssmenu01</a></li>
+                                <li><a href="#!">ssmenu02</a></li>
+                                <li><a href="#!">ssmenu03</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#!">2smenu04</a>
+                                <ul class="depth03">
+                                    <li><a href="#!">ssmenu01</a></li>
+                                    <li><a href="#!">ssmenu02</a></li>
+                                    <li><a href="#!">ssmenu03</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#!">menu03</a>
+                    <div class="depth02">
+                        <ul>
+                            <li><a href="#!">3smenu01</a>
+                                <ul class="depth03">
+                                    <li><a href="#!">ssmenu01</a></li>
+                                    <li><a href="#!">ssmenu02</a></li>
+                                    <li><a href="#!">ssmenu03</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#!">3smenu02</a>
+                                <ul class="depth03">
+                                    <li><a href="#!">ssmenu01</a></li>
+                                    <li><a href="#!">ssmenu02</a></li>
+                                    <li><a href="#!">ssmenu03</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#!">3smenu03</a>
+                                <ul class="depth03">
+                                    <li><a href="#!">ssmenu01</a></li>
+                                    <li><a href="#!">ssmenu02</a></li>
+                                    <li><a href="#!">ssmenu03</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#!">3smenu04</a>
+                                <ul class="depth03">
+                                    <li><a href="#!">ssmenu01</a></li>
+                                    <li><a href="#!">ssmenu02</a></li>
+                                    <li><a href="#!">ssmenu03</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        
+
+    <!--remenu001.html }-->
+
+
+    <footer class="footer">
+        footer
+    </footer>
+
+<script>
+    $(function(){
+
+        $('.header i').on('click', function(){
+            $(this).toggleClass('on');
+            $('nav').toggleClass('on');
+        });
+
+        $('nav .depth01>li').on('click', function(){
+            if($('nav').hasClass('on')) {
+            $(this).addClass('on').siblings().removeClass('on');
+            $(this).siblings().find('.depth03').slideUp();
+            }
+        });
+
+        $('.depth02>ul>li').on('click', function(){
+            if($('nav').hasClass('on')) {
+            $(this).parent().find('.depth03').slideUp();
+            $(this).find('.depth03').stop().slideToggle();
+            }
+        });
+
+        $(window).on('resize', function(){
+            $('nav').removeClass('on');
+            $('.depth02').removeAttr('style');
+            $('.depth03').removeAttr('style');
+        });
+    })
+</script>
+</body>
+</html>

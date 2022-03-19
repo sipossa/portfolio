@@ -1,0 +1,62 @@
+section {padding:100px 0;text-align: center;}
+section .container {display:flex;width:1200px;margin:0 auto;}
+section .container>* {flex: 1;padding:0 15px;}
+section h2 {font-size:30px;margin-bottom:15px;}
+section p {font-size:15px;margin-bottom:30px;}
+section:nth-child(even) {background:#f2f2f2;}
+section img {max-width:100%;}
+
+
+
+#sec01 h2:before {content:"before";font-size:14px;vertical-align:middle;}
+#sec01 h2:after {content:"after";font-size:14px;vertical-align:middle;}
+
+
+#sec02 h2:after {content:"";display:block;background: #f00;width:40px;height:2px;margin:10px auto;}
+
+
+#sec03 h2:after {content:"";display:block;background: #f00;width:2px;height:40px;margin:10px auto;}
+
+
+#sec04 h2:before {content:"";display:inline-block;background: #f00;width:40px;height:2px;vertical-align: middle;margin:0 20px;}
+#sec04 h2:after {content:"";display:inline-block;background: #f00;width:40px;height:2px;vertical-align: middle;margin:0 20px;}
+
+
+#sec05 h2:after {content:"";display:block;width:40px;height:40px;background: url(../lib/bsse/icon.png) center center/cover;margin:20px auto;}
+
+
+#sec06 h2:before {content:"";display:inline-block;width:40px;height:40px;background: url(../lib/bsse/icon.png) center center/cover;margin:0 20px;vertical-align: middle;}
+#sec06 h2:after {content:"";display:inline-block;width:40px;height:40px;background: url(../lib/bsse/icon.png) center center/cover;margin:0 20px;vertical-align: middle;}
+
+
+#sec07 li {line-height: 30px;}
+#sec07 li:before {content:"\e93f";font-family: xeicon!important;color:#f00;margin-right:5px;}
+
+
+#sec08 li {line-height: 30px;}
+#sec08 li:before {content:"\e93f";font-family: xeicon!important;color:#f00;margin-right:5px;}
+#sec08 li:hover:before {content:"\e922";color:#369;}
+#sec08 li:hover:after {content:"more";font-size:10px;color:#333;}
+
+#sec09 h2 {display:inline-block;width:200px;line-height:60px;color:#f00;position:relative;border:1px solid #ddd;}
+#sec09 h2:before {content:"";position:absolute;top:0;right:0;display:block;width:0;height:100%;background:#ddd;z-index: -1;transition:0.4s;} /*left:0, right:0 으로 방향 바꿔줄 수 있음*/
+#sec09 h2:hover:before {width:100%;}
+
+#sec09 figure {position:relative;}
+#sec09 figure:after {content:attr(data-num);position:absolute;top:-25px;left:50%;transform:translateX(-50%);display:block;width:50px;height:50px;line-height:45px;text-align: center;background: #333;color:#fff;border:2px solid #fff;border-radius: 50%;font-size: 20px;font-weight: 700;opacity:0;transition:0.4s;} /*html에서 붙인 attr이 표시되도록*/
+#sec09 figure:hover:after {color:#f00;background: #ddd;opacity:1;}
+
+
+#sec10 figure {position:relative;}
+
+#sec10 figure:after {content:attr(data-num);position:absolute;top:-25px;left:50%;transform:translateX(-50%);display:block;width:50px;height:50px;line-height:45px;text-align: center;background: #333;color:#fff;border:2px solid #fff;border-radius: 50%;font-size: 20px;font-weight: 700;opacity:0;transition:0.4s;} 
+#sec10 figure.on:after {opacity:1;}
+
+
+#sec11 .container {display:block;width:500px;height:500px;overflow:hidden;position:relative;}
+#sec11 .container .move {position:absolute;top:0;left:0;display:flex;width:1500px;transition: 0.4s;}
+#sec11 .container .move figure {width:500px;}
+
+
+#ani01 h2 {animation:rubberBand 1s infinite;display:inline-block;} /*infinite : 계속 반복해라*/
+/*https://animate.style/#usage 에서 애니메이션 이름 복사해오기*/

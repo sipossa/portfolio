@@ -1,0 +1,97 @@
+:root {
+    --bc:#333;
+    --mc:#f00;
+    --wc:#f3f3f3;
+}
+
+html {font-size:10px;}
+body {font-size:1.6rem;}
+.container {display:flex;width:120rem;margin:0 auto;}
+.container>* {padding:0 1.5rem;}
+
+.wrap {min-width:120rem}
+.header{line-height: 10rem;position:relative;}
+.header h1 img {width:20rem;}
+.header .container {display:flex;justify-content: space-between;} /*display:flex;를 써줘야 justify-content 가 적용됨*/
+
+.gnb .depth01 {display:flex;}
+.gnb .depth01>li {position: relative;}
+.gnb .depth01>li>a {display:block;padding:0 3rem;}
+.gnb:before {content:"";position:absolute;top:10rem;left:0;display:block;width:100%;height:0;background: #fff;transition: 0.5s;z-index: 999;}
+
+/*높이값을 다르게 줘서 부드럽게 내려오도록 하는 방법1
+.gnb .depth02 {background: #ff0;height:0;transition: 0.4s;} /*높이를 0으로 줬다가 마우스오버시 높이를 줘서 보이도록
+.gnb:hover .depth02 {height:17rem;} /*height:auto 로주면 transition이 안먹힘, 수치를 줘야 애니메이션 적용 가능*/
+
+
+/*방법2. 서브메뉴높이와 before배경 높이를 0에서 17rem으로 달리 줘서 부드럽게 내려오도록 하는 방법*/
+.gnb .depth02 {overflow:hidden;position:absolute;top:10rem;left:0;width:100%;z-index: 999;height:0;transition:0.5s;}
+.gnb .depth02 a {display:block;line-height:3rem;text-align: center;}
+.gnb:hover:before {height:17rem;}
+.gnb:hover .depth02 {height:17rem;}
+
+.main_visual {position:relative;height:calc(100vh - 20rem);background: var(--bc);color:#fff;line-height:calc(100vh - 20rem);text-align: center;}
+
+.footer {background: #292929;color:#fff;text-align: center;line-height: 10rem;}
+
+.mopen {display:none;}
+
+
+@media (max-width:768px) {
+
+    html {font-size:10px;}
+    body {font-size:1.6rem;}
+    .container {display:flex;width:auto;margin:0 auto;}
+    .container>* {padding:0 1.5rem;}
+
+    .wrap {min-width:auto}
+    .header{line-height: 10rem;position:relative;}
+    .header h1 {position:relative;z-index: 1000;}
+    .header h1 img {width:20rem;}
+    .header .container {display:flex;justify-content: space-between;} /*display:flex;를 써줘야 justify-content 가 적용됨*/
+    .header .header_top {display:none;}
+
+    .gnb {position:fixed;top:0;left:-100%;background: #fff;width:calc(100% - 90px);height:100vh;z-index: 999;padding:13rem 0 0 0;border-right:1px solid #ddd;transition:0.5s;}
+    .gnb.on {left:0;}
+
+    .gnb .depth01 {display:flex;flex-direction: column;}
+    .gnb .depth01>li {position: relative;}
+    .gnb .depth01>li>a {display:block;padding:0 3rem;line-height: 4rem;border-bottom: 1px solid #ddd;}
+    .gnb:before {content:"";position:absolute;top:10rem;left:0;display:none;width:100%;height:0;background: #fff;transition: 0.5s;z-index: 999;}
+
+    /*높이값을 다르게 줘서 부드럽게 내려오도록 하는 방법1
+    .gnb .depth02 {background: #ff0;height:0;transition: 0.4s;} /*높이를 0으로 줬다가 마우스오버시 높이를 줘서 보이도록
+    .gnb:hover .depth02 {height:17rem;} /*height:auto 로주면 transition이 안먹힘, 수치를 줘야 애니메이션 적용 가능*/
+
+
+    /*방법2. 서브메뉴높이와 before배경 높이를 0에서 17rem으로 달리 줘서 부드럽게 내려오도록 하는 방법*/
+    .gnb .depth02 {display:none;overflow:hidden;position:static;top:10rem;left:0;width:100%;z-index: 999;height:auto;transition:none;padding:2rem 3rem ;background: #f7f7f7;}
+    /*.depth02 : display를 none해야함*/
+    .gnb .depth02 a {display:block;line-height:3rem;text-align: left;}
+    .gnb:hover:before {height:17rem;}
+    .gnb:hover .depth02 {display:none;height:auto;}
+
+    .mopen {display:block;position:fixed;top:3rem;right:3rem;width:3rem;height:3rem;line-height: 1;font-size: 0;}
+
+    /*mopen에 on을 줬을 때 X모양으로 변하도록
+    .mopen.on>span:before {transform:translateY(-0.4rem) rotate(45deg);}
+    .mopen.on>span:after {transform:translateY(-0.7rem) rotate(-45deg);}
+    .mopen.on>span {width:0;}*/
+
+    /*mopen에 on을 줬을 때 화살표 모양으로 변하도록*/
+    .mopen.on>span:before {transform:translateX(1.5rem) rotate(45deg) translateY(-0.7rem);width:1.6rem;}
+    .mopen.on>span:after {transform:translateX(1.6rem) rotate(-45deg)translateY(0.4rem);width:1.6rem;;}
+
+    .mopen span {display:block;width:100%;width:3rem;height:3px;background: #333;font-size: 0;transform:translateY(1.5rem);}
+    .mopen span:before {content:"";display:block;width:100%;width:3rem;height:3px;background: #333;transform:translateY(-1rem);transition: 0.5s;}
+    .mopen span:after {content:"";display:block;width:100%;width:3rem;height:3px;background: #333;transform:translateY(0.7rem);transition: 0.5s;}
+
+
+
+    .main_visual {position:relative;height:calc(100vh - 20rem);background: var(--bc);color:#fff;line-height:calc(100vh - 20rem);text-align: center;}
+
+    .footer {background: #292929;color:#fff;text-align: center;line-height: 10rem;}
+
+
+
+}

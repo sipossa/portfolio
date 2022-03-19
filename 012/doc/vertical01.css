@@ -1,0 +1,38 @@
+#header {position:fixed;top:0;left:0;width:350px;background:#ffd700;height:100vh;}
+#visual {margin:0 350px 0 350px;background:#8d192b;height:100vh;}
+#footer {position:fixed;top:0;right:0;width:350px;background:#0080ff;height:100vh;}
+
+@media (max-width:768px) {
+    #header {position:static;width:auto;}
+    #visual {margin:0;}
+    #footer {position:static;width:auto;}
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

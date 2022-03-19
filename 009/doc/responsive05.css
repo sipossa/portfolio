@@ -1,0 +1,93 @@
+:root {
+    --bc:#ddd;
+    --mc:#f00;
+    --wc:#f3f3f3;
+}
+
+html {font-size: 10px;}
+body {font-size: 1.6rem;}
+.container {display: flex; width: 120rem; margin: 0 auto;}
+.container>* {padding: 0 1.5rem;}
+
+
+
+.wrap {min-width: 120rem;}
+.header {position: relative; line-height: 10rem;}
+.header img {width: 20rem;}
+.header .container {justify-content: space-between;}
+
+
+.gnb>ul {display: flex;}
+.gnb>ul>li {position: relative;}
+.gnb>ul>li>a {display: block; padding: 0 3rem;}
+.gnb>ul>li .depth02 {display: none; background: #fff; position: absolute; top: 10rem; left: 0; width: 100%; text-align: center; line-height: 3rem; z-index: 999;}
+.gnb>ul:hover>li .depth02 {display: block;}  /*hover 위치에 따라 서브메뉴 나오는게 달라짐 ul,li:hover*/
+
+.gnb::after {content: ""; display: none; width: 100%; height: 17rem; background: #fff; position: absolute; top: 10rem; left: 0; z-index: 888;} /*서브메뉴가 꽉 채워지게 after를 써서 만듦, height는 제일 긴메뉴 크기에 맞춰서*/
+.gnb:hover:after {display: block;}
+
+.mopen {display: none;}
+
+
+
+
+.main_visual {position: relative; height: calc(100vh - 20rem); background: var(--bc); color: #fff; line-height: calc(100vh - 20rem); text-align: center;}
+
+.footer {background: #666; color: #fff; text-align: center; line-height: 10rem;}
+
+/* 
+
+
+
+
+@media (max-width:768px)
+
+
+
+
+
+
+
+*/
+
+@media (max-width:768px) {
+    html {font-size: 10px;}
+    body {font-size: 1.6rem;}
+    .container {display: flex; width: auto; margin: 0 auto;}
+    .container>* {padding: 0 1.5rem;}
+    
+    
+    
+    .wrap {min-width: auto;}
+    .header {position: relative; line-height: 10rem;}
+    .header img {width: 20rem;}
+    .header .container {justify-content: space-between;}
+    
+    .gnb {position: fixed; top: 0; left: -100%; width: calc(100% - 9rem); height: 100vh; background: #fff; border-right: 1px solid #ddd; z-index: 999;}
+    .gnb.on {left: 0;}
+    .gnb>ul {display: flex; flex-direction: column; line-height: 4rem; padding: 10rem 1.5rem 0 1.5rem;}
+    .gnb>ul>li {position: relative;}
+    .gnb>ul>li~li {border-top: 1px solid #ddd;}
+    .gnb>ul>li>a {display: block; padding: 0 3rem;}
+    .gnb>ul>li .depth02 {display: none; background: #fff; position: static; top: 10rem; left: 0; width: 100%; 
+        text-align: left; line-height: 3rem; background: #f4f4f4; padding: 1rem 0; z-index: 999;}
+    /* position static으로 바꿔줌 */
+    .gnb>ul:hover>li .depth02 {display: none;}  /*hover 위치에 따라 서브메뉴 나오는게 달라짐 ul,li:hover*/
+    .gnb ul ul a {display: block; padding: 0 3rem;}
+
+    .gnb::after {content: ""; display: none; width: 100%; height: 17rem; background: #fff; position: absolute; top: 10rem; left: 0; z-index: 888;} /*서브메뉴가 꽉 채워지게 after를 써서 만듦, height는 제일 긴메뉴 크기에 맞춰서*/
+    .gnb:hover:after {display: none;}
+    
+
+    .mopen {display: block; position: fixed; top: 3rem; right: 3rem; font-size: 3rem; line-height: 1; transition: 0.4s;}
+    .mopen.on {transform: rotate(90deg);}
+    .top {display: none;}
+    
+    
+    
+    
+    .main_visual {position: relative; height: calc(100vh - 20rem); background: var(--bc); color: #fff; line-height: calc(100vh - 20rem); text-align: center;}
+    
+    .footer {background: #666; color: #fff; text-align: center; line-height: 10rem;}
+    
+}

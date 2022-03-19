@@ -1,0 +1,86 @@
+html {font-size: 20px;}
+body {font-size:0.8rem;}
+
+/** {outline:1px solid #f00;}*/
+
+.wrap {min-width:60rem;}
+
+.header {line-height:5rem;}
+.header img {width:10rem;}
+.header .container {display:flex;width:60rem;margin:0 auto;}
+.header .container>* {padding:0 0.75rem;}
+
+.header .gnb {margin-left:auto;}
+.header .gnb>ul {display:flex;}
+.header .gnb>ul>li {position:relative;}
+.header .gnb>ul>li:hover .sub {display:block;}
+
+.header .gnb>ul>li>a {display:block;padding:0 2rem;position:relative;}
+.header .gnb>ul>li~li>a:after {content:"";display:block;background: #666;width:1px;height:0.65rem;position:absolute;top:50%;left:0;transform: translateY(-50%);}
+.header .gnb>ul>li .sub {display:none;position:absolute;border:1px solid #ddd;padding:0.5rem 0.2rem 1rem 0.2rem;top:4.5rem;left:0;line-height:1.5rem;z-index: 999;width:100%;background: #fff;}
+.header .gnb>ul .sub a {display:block;text-align: center;}
+.header .gnb>ul .sub li~li a {border-top:1px solid #ddd;}
+
+.main_visual {position:relative;}
+.main_visual .main_slider {}
+.main_visual .main_slider figure {height:calc(100vh - 10rem);}
+.main_visual .item01 {background: url(../lib/bsse/main_visual01.jpg) no-repeat center center/cover;}
+.main_visual .item02 {background: url(../lib/bsse/main_visual02.jpg) no-repeat center center/cover;}
+.main_visual .item03 {background: url(../lib/bsse/main_visual03.jpg) no-repeat center center/cover;}
+
+.main_visual .slogan {position:absolute;top:50%;left:50%;transform: translate(-50%, -50%);color:#fff;text-align: center;width:60rem;padding:0 0.75rem;}
+
+.main_visual .slogan h2 {font-size:3rem;font-weight:700;margin-bottom:0.75rem;}
+.main_visual .slogan p {font-size:0.8rem;font-weight:100;}
+
+.footer {background: #333;color:#f2f2f2;text-align: center;line-height:5rem;}
+
+.mopen {display:none;position:fixed;top:1rem;right:1rem;font-size: 1.5rem;}
+.mopen i {padding:0.25rem;background: #f5f5f5;z-index: 999;}
+
+
+@media (max-width:768px) {
+
+    html {font-size: 20px;}
+    body {font-size:0.8rem;}
+
+    /** {outline:1px solid #f00;}*/
+
+    .wrap {min-width:auto;}
+
+    .header {line-height:5rem;}
+    .header img {width:10rem;}
+    .header .container {display:flex;width:auto;margin:0 auto;}
+    .header .container>* {padding:0 0.75rem;}
+    .header .sns {display:none;position:fixed;top:1rem;left:1rem;font-size:1.5rem;z-index: 1000;}
+
+    .header .gnb {margin-left:auto;position:fixed;top:0;left:-100%;z-index: 999;background: #fff;width:calc(100% - 4rem);height:100vh;border-right:1px solid #ddd;transition:0.5s;}
+    .header .gnb.on {left:0;}
+    .header .gnb>ul {display:flex;flex-direction: column;padding:5rem 0.5rem 0 0.5rem;}
+    .header .gnb>ul>li {position:relative;line-height:2rem;}
+    .header .gnb>ul>li:hover .sub {display:none;}
+
+    .header .gnb>ul>li>a {display:block;padding:0 2rem;position:relative;border-bottom:1px solid #ddd;}
+    .header .gnb>ul>li~li>a:after {content:"";display:none;background: #666;width:1px;height:0.65rem;position:absolute;top:50%;left:0;transform: translateY(-50%);}
+    .header .gnb>ul>li .sub {display:none;position:static;border:none;background:#f3f3f3;padding:0.2rem 0.2rem 0.2rem 0.2rem;top:4.5rem;left:0;line-height:1.5rem;z-index: 999;width:100%;}
+    .header .gnb>ul .sub a {display:block;text-align: left;padding:0 2rem;}
+    .header .gnb>ul .sub a:before {content:"-"}
+    .header .gnb>ul .sub li~li a {border-top:1px solid #ddd;}
+
+    .main_visual {position:relative;}
+    .main_visual .main_slider {}
+    .main_visual .main_slider figure {height:calc(100vh - 10rem);}
+    .main_visual .item01 {background: url(../lib/bsse/main_visual01.jpg) no-repeat center center/cover;}
+    .main_visual .item02 {background: url(../lib/bsse/main_visual02.jpg) no-repeat center center/cover;}
+    .main_visual .item03 {background: url(../lib/bsse/main_visual03.jpg) no-repeat center center/cover;}
+
+    .main_visual .slogan {position:absolute;top:50%;left:50%;transform: translate(-50%, -50%);color:#fff;text-align: center;width:100%;padding:0 0.75rem;}
+
+    .main_visual .slogan h2 {font-size:1.5rem;font-weight:700;margin-bottom:0.75rem;}
+    .main_visual .slogan p {font-size:0.8rem;font-weight:100;}
+
+    .footer {background: #333;color:#f2f2f2;text-align: center;line-height:5rem;}
+
+    .mopen {display:block;}
+
+}

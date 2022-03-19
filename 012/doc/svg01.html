@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg path animation</title>
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <link rel="stylesheet" href="./svg01.css">
+</head>
+<body>
+
+    <!-- color -->
+    <div class="section">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 274.6 284.2" style="overflow:visible;enable-background:new 0 0 274.6 284.2;"
+        xml:space="preserve">
+        <path class="st0" d="M272.7,139.8c16,73.6-73.6,173.6-136.4,136.4C71.6,237.8,0,215.1,0,139.8S70.2-18,136.4,3.5 C208,26.7,247.9,25.8,272.7,139.8z"/>
+        </svg>
+    </div>
+
+    <!-- path (save as 에 code 에서 복사해와야 animation 가능) -->
+    <div class="section">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 292.4 267" style="overflow:visible;enable-background:new 0 0 292.4 267;" xml:space="preserve">
+        <path class="st1" d="M445.5,247.8c-20.6,51.3-63.5,94.3-127.2,122.6c-63.6,28.3-172.7-69.1-153.7-134.1 c19.8-67.8,95-121.5,158.1-127.3C392.4,102.6,484.6,150.2,445.5,247.8z"/>
+        </svg>
+    </div>
+
+    <!-- gooey -->
+    <div class="section">
+        <div class="gooey">
+            <span>0</span>
+            <span>1</span>
+        </div>
+    </div>
+
+    <!-- mask -->
+    <div class="section">
+        <div class="box_mask">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400"
+                style="enable-background:new 0 0 400 400;" xml:space="preserve">
+                <style type="text/css">
+                    .st7 {
+                        fill: #ffffff;
+                    }
+                </style>
+                <defs>
+                    <mask id="photo-mask">
+                        <path class="st7" d="M310.3,385.2H84.8c-36,0-65.4-29.4-65.4-65.4V94.3c0-36,29.4-65.4,65.4-65.4h225.6c36,0,65.4,29.4,65.4,65.4 v225.6C375.7,355.8,346.3,385.2,310.3,385.2z" />
+                    </mask>
+                </defs>
+                <image mask="url(#photo-mask)" xlink:href="../lib/base/pro03.jpg" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- gooey filter -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="bbq">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -5"
+                    result="bbq" />
+                <feBlend in="SourceGraphic" in="bbq" />
+            </filter>
+        </defs>
+    </svg>
+
+</body>
+</html>

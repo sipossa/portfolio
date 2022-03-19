@@ -1,0 +1,24 @@
+#wrap {}
+
+#header {}
+#header .container {display:flex;width:1200px; margin:0 auto;padding:0 15px;}
+#header .container h1 {height:100px;}
+#header .container nav {margin-left:auto;}
+#header .container nav>ul {display:flex;}
+#header .container nav>ul>li>a {display:block;padding:0 20px;line-height: 100px;}
+#header .container i {line-height: 100px;margin-left:50px;}
+
+#visual {position:relative;height:500px;background: url(../lib/bsse/main_visual03.jpg) no-repeat center center/cover; padding : 200px 0 0 0;}
+#visual .container {width:1200px; margin:0 auto;color:#fff;padding:0 15px;}
+#visual .container p {margin-bottom:20px;}
+#visual i {font-size:20px;background: #333;color:#fff;padding:7px;border-radius: 5px;margin-right: 5px;;}
+
+#customer {padding:150px 0;}
+#customer .container {display:flex;width:1200px;margin:0 auto;}
+#customer .container figure {flex:1px;padding:0 15px;} /*flex:1 , 안에 요소들이 한자리씩 차지함*/
+#customer .container figure img {max-width: 100%;}
+
+
+#footer {background: #333;color:#fff;padding:80px 0;}
+#footer .container {display:flex;width:1200px; margin:0 auto;padding:0 15px;}
+#footer .container .sns {margin-left:auto;}

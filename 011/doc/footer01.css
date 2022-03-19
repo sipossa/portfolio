@@ -1,0 +1,91 @@
+.gonggal {background:#f2f2f2;height:50vh;text-align: center;line-height: 50vh;}
+
+
+.footer01 {background:#333;color:#f4f4f4;padding:50px 0;}
+.footer01 .container {display:flex;width:1200px;margin:0 auto;}
+.footer01 .line {border-bottom:1px solid #666;} /*라인박스를 따로만들어서*/
+.footer01 dl {flex:1;padding:0 15px;}
+.footer01 dt {font-size:20px;margin-bottom:10px;}
+
+
+@media (max-width:768px) {
+    .footer01 .container {display:flex;flex-wrap:wrap;width:auto;margin:0 auto;}
+    .footer01 dl {flex:50%;padding:0 15px;text-align: center;}
+}
+
+
+
+
+.footer02 {background:#333;color:#f4f4f4;padding:80px 0;text-align: center;}
+
+.footer02 dl {display: flex;justify-content: center;margin-bottom:15px;}
+.footer02 dl>dd {position: relative;}
+.footer02 dl>dd:before {content:"";display:inline-block;margin:0 20px;width:1px;height:14px;background:#ddd;}
+.footer02 dl>dt {color:#f00;}
+.footer02 ul {display: flex;justify-content: center;margin-bottom:15px;}
+
+.footer02 ul>li~li:before {content:" / ";margin:0 20px;font-size:12px;} /*패딩도 먹는다*/
+
+.footer02 span {display:block;margin-bottom:15px;}
+
+
+@media (max-width:768px) {
+    .footer02 dl {display:block;justify-content: center;margin-bottom:15px;border-bottom:1px solid #666;padding:30px 0;}
+    .footer02 dl>* {display:inline-block;}
+    .footer02 dl>dd {padding:10px 20px;}
+    .footer02 dl>dd:before {display:none;}
+
+
+    .footer02 ul {display:block;justify-content: center;margin-bottom:15px;}
+
+    .footer02 ul>li~li:before {display:none;content:" / ";margin:0 20px;font-size:12px;} /*패딩도 먹는다*/
+    .footer02 ul>li {display: inline-block;padding:10px;}
+}
+
+
+
+.footer03 {padding:50px 0;}
+
+.footer03 .container {display:flex;width:1200px;margin:0 auto;}
+
+.footer03 .left {flex:1;padding:0 15px;}
+/* .footer03 .left ul {font-size:0;padding:20px 0;} /*font-size:0 가로세로가 줄어든상태*/
+/* .footer03 .left ul li {display:inline-block;width:50%;font-size:11px;line-height:1.4;} 
+flex-direction + flex-wrap = flex-flow: row wrap*/
+
+.footer03 .left ul {display: flex;flex-wrap:wrap;font-size:11px;line-height:1.8;}
+.footer03 .left ul li {width:50%;}
+
+
+.footer03 .right {flex:3;padding:0 15px;}
+.footer03 .lnb {display: flex;}
+.footer03 .lnb dl {flex:1;border-top:2px solid #ddd;padding-top:10px;}
+.footer03 .lnb dl:last-child {text-align:right;}
+.footer03 .lnb dl>dd, .footer03 .lnb dl>dt {padding:10px 0;}
+.footer03 .lnb dl dt {color:#f00;font-weight:700;margin-bottom:15px;}
+.footer03 .lnb dl:last-child dt {margin-bottom:0;}
+
+
+.footer03 .sns {padding:10px 0; border-bottom:1px solid #ddd;text-align: right;}
+.footer03 .sns i {padding:5px;border:2px solid #ddd;border-radius:50%;font-size:25px;}
+.footer03 .link {padding:20px 0;}
+.footer03 .link dl {display: flex;justify-content: space-between;}
+.footer03 .link dl dt {color:#f00;}
+
+.footer03 strong {display:block;width:300px;text-overflow:ellipsis;white-space:nowrap;overflow: hidden;}
+/*넘치는글자 ...만들기*/
+
+
+
+.utc {width:100%;padding-bottom:56.25%;;background:#f00;position:relative;} 
+/*동영상이들어가는박스를비율에 맞게만들고, 그위에 동영상을 position: absolute 한다
+동영상의 와이드와 높이는 100%해서 박스안에 꽉차게*/
+.utc iframe {position: absolute;top:0;left:0;}
+
+
+
+
+
+
+
+

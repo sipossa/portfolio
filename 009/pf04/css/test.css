@@ -1,0 +1,636 @@
+/* * {outline: 1px solid #f00;} */
+
+html {font-size: 10px;}
+body {font-size: 1.6rem;}
+.container {width: 120rem; margin: 0 auto;}
+
+/* header */
+#header {position: fixed; line-height: 10rem; top: 0; left: 0; width: 100%; color: #fff; z-index: 1;}
+#header.on {background: #fff; line-height: 10rem; color: #333; border-bottom: 1px solid #ddd;}
+#header h1 a {display: block; width: 20rem; height: 10rem; background: url(../img/logo.png); text-shadow: 0 0 2px #333;}
+#header.on h1 a {background: url(../img/logo_color.png);}
+#header .container {display: flex; width: 120rem; margin: 0 auto; padding: 0 1.5rem;}
+#header i {padding: 0 0.5rem; font-size: 2rem;}
+
+.gnb {text-align: center; margin: 0 auto;}
+.gnb .depth01 {display: flex;}
+.gnb .depth01>li {position: relative;}
+.gnb .depth01>li>a {display: block; padding: 0 2rem; line-height: 10rem; font-size: 1.7rem; text-shadow: 0 0 2px #333;
+width: 200px;}
+#header.on .gnb .depth01>li>a {text-shadow: none;}
+
+.gnb .depth02 {height: 0; overflow: hidden; position: absolute; top: 11rem; left: 0;
+width: 100%; transition: 0.5s; z-index: 999;}
+.gnb:hover .depth02 {height: 27rem;}
+.gnb::before {content: ""; display: block; width: 100%; height: 0; background: rgba(0,0,0,0.5); position: absolute;
+top: 10rem; left: 0; transition: 0.5s;}
+.gnb:hover:before {height: 27rem; border-top: 1px solid rgba(255, 255, 255, 0.5);}
+.gnb .depth02>li>a {display: block; line-height: 3.5rem; text-align: center; color: #f2f2f2; z-index: 999;
+font-size: 1.6rem; text-shadow: 0 0 2px #333; position: relative;}
+.gnb .depth02>li>a::after {content: ""; display: block; width: 0; height: 2px; background: #004b8d; position: absolute; bottom: 0; left: 50%;
+transform: translateX(-50%); transition: 0.3s;}
+.gnb .depth02>li>a:hover::after {width: 50%;}
+#header.on .gnb .depth02>li>a:hover {text-shadow: none; transform: scale(1.1); transition: 0.3s;}
+.mopen {display: none; width: 3rem; height: 1rem;}
+
+
+
+@media (max-width:768px) {
+    html {font-size: 10px;}
+    body {font-size: 1.6rem;}
+    .container {width: auto; margin: 0 auto;}
+}
+
+
+/* 반응형 header */
+@media (max-width:768px) {
+
+    
+    #header {position: relative; line-height: 10rem;}
+    #header h1 {z-index: 1000;}
+    #header h1 a {display: block; width: 20rem; height: 10rem; background: url(../img/logo_color.png);}
+  
+    #header .container {display: flex; width: auto; margin: 0 auto; padding: 0 1.5rem;}
+    #header i {padding: 0 0.5rem; font-size: 1.8rem;}
+    
+    .gnb {position: fixed; text-align: center; margin: 0 auto; top: 0; left: -100%; width: calc(100% - 90px); height: 100vh; background: #fff; padding: 10rem 0 0 0; border-right: 1px solid #ddd; transition: 0.5s; z-index: 999;}
+    .gnb.on {left: 0;}
+    .gnb .depth01 {display: flex; flex-direction: column; line-height: 5rem;}
+    .gnb .depth01>li~li {position: relative; border-top: 1px solid #ddd;}
+    .gnb .depth01>li>a {display: block; width: 13rem; width: 100%; text-align: center; margin: 0 auto; line-height: 5rem; text-shadow: none;
+    color: #333; font-size: 16px;}
+    .right {display: none;}
+    .gnb .depth02 {display: none; height: auto; overflow: hidden; position: static; top: 11rem; left: 0;
+    width: 100%; transition: none; background: #f2f2f2; z-index: 999;}
+    .gnb:hover .depth02 {display: none; height: auto;}
+    .gnb::before {content: ""; display: none; width: 100%; height: 0; background: rgba(0,0,0,0.5); position: absolute;
+    top: 10rem; left: 0; transition: 0.5s; z-index: 999;}
+    .gnb:hover:before {height: 24rem;}
+    .gnb .depth02>li>a {display: block; line-height: 3.5rem; text-align: center; color: #333; z-index: 999;
+    font-size: 15px; text-shadow: none;}
+    .gnb .depth02>li~li>a {border-top: 1px solid #ddd;}
+    .gnb .depth02>li>a:hover {color: #004b8d; transform: scale(1.1); transition: 0.3s;}
+    .gnb .depth02>li>a::after {display: none;}
+    
+    .mopen {display: block; position: fixed; top: 3rem; right: 3rem; cursor: pointer; z-index: 999;}
+    .mopen::after {position: relative; content: ""; display: block; width: 100%; height: 2.5rem; background: #ddd; border-radius: 10%; transform: scale(1.8);}
+    .mopen span {display: block; width: 100%; height: 0.2rem; background: #333; position: absolute; left: 0; transition: 0.3s; z-index: 1;}
+    .mopen span:nth-child(1) {top: 0;}
+    .mopen span:nth-child(2) {top: 1rem;}
+    .mopen span:nth-child(3) {top: 1rem;}
+    .mopen span:nth-child(4) {top: 2rem;}
+
+    .mopen.on span:nth-child(1) {opacity: 0; transform: translateY(-30px);}
+    .mopen.on span:nth-child(2) {transform: rotate(45deg);}
+    .mopen.on span:nth-child(3) {transform: rotate(-45deg);}
+    .mopen.on span:nth-child(4) {opacity: 0; transform: translateY(30px);}
+
+}
+
+/* visual */
+#visual {height: 100vh;}
+
+/* 반응형 visual */
+@media (max-width:768px) {
+    #visual {height: 100vh; width: auto !important;}
+}
+
+/* #cont01 */        
+#cont01 {padding: 15rem 0; text-align: center; position: relative;}
+#cont01 h2::before {content: ""; display: block; width: 1px; height: 8.5rem; background: #004b8d; position: absolute; top: 0; left: 50%;}
+#cont01 h2 {font-size: 3rem; padding-bottom: 2rem;}
+#cont01 p {font-size: 1.8rem; line-height: 2.5rem; letter-spacing: -0.025em; font-weight: 300; margin-bottom: 7rem;}
+#cont01 .case {display: flex; padding: 0 1.5rem;}
+.intro01,.intro02,.intro03,.intro04 {padding: 0 1.1rem;}
+.txt {background: #00325d; width: 27rem; height: 13rem; text-align: center; letter-spacing: -0.025em; color: #fff;}
+.txt h3 {font-size: 1.8rem; padding: 2.8rem 0 1.5rem 0;}
+.txt span {font-size: 1.4rem; font-weight: 300; line-height: 1.8rem;}
+
+.intro01 figure,.intro02 figure,.intro03 figure,.intro04 figure {overflow: hidden;}
+.intro01 figure img,.intro02 figure img,.intro03 figure img,.intro04 figure img {transition: 0.5s;}
+.intro01 figure:hover img,.intro02 figure:hover img,.intro03 figure:hover img,.intro04 figure:hover img {transform: scale(1.1);}
+
+
+/* 반응형 #cont01 */
+@media (max-width:768px) {
+    #cont01 {padding: 10rem 0;}
+    #cont01 h2 {font-size: 5.5vw; padding-bottom: 1rem;}
+    #cont01 p {font-size: 4.3vw; line-height: 2.5rem; letter-spacing: -0.025em; font-weight: 300; margin-bottom: 5rem;}
+
+    #cont01 .case {display: flex; flex-direction: column;}
+    .intro01,.intro02,.intro03,.intro04 {flex: 1; padding: 1rem 0; margin: 0 auto;}
+    .txt {background: #00325d; width: 27rem; height: 13rem; text-align: center; letter-spacing: -0.025em; color: #fff;}
+    .txt h3 {font-size: 1.8rem; padding: 3rem 0 1.5rem 0;}
+    .txt span {font-size: 1.4rem; font-weight: 300; line-height: 1.8rem;}
+}
+
+
+/* #cont02 */
+#cont02 {padding: 15rem 0; background: #f4f4f4; text-align: center;}
+
+#cont02 h2 {font-size: 3rem; padding-bottom: 2rem;}
+#cont02 p {font-size: 1.8rem; line-height: 2.5rem; letter-spacing: -0.025em; font-weight: 300;}
+#cont02 ul {display: flex; justify-content: center; text-align: center; margin: 10rem 0 2rem 0;}
+#cont02 ul li a {font-size: 1.8rem; position: relative; margin: 0 2rem; font-weight: 300;}
+#cont02 ul li.on a {color: #004b8d; font-weight: 500;}
+
+#cont02 ul li~li a::before {content: ""; display: block; width: 1px; height: 1.3rem; background: #333;
+position: absolute; top: 0.9rem; left: -3.5rem; margin: 0 1.5rem;}
+#cont02 img {max-width: 100%; border-radius: 50%;}
+#cont02 figure {padding: 3rem 1.5rem;}
+#cont02 .case {margin: 7rem 0; position: relative;}
+#cont02 figure img {transition: 0.5s; padding: 3.3rem;}
+#cont02 figure.on img {transform: scale(1.4); filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));}
+
+
+
+#cont02 figure .case .des {position: absolute; top: 50%; left: 50%; transform:translate(-50%,-50%); width:calc(100% - 6.6rem); height: calc(100% - 6.6rem); background: rgba(0,0,0,0.5);
+border-radius: 50%; transition: 0.5s; color: #fff;}
+#cont02 figure.on .case .des {transform:translate(-50%,-50%) scale(1.4);}
+#cont02 .case .des strong {display: block; padding: 8rem 0 0 0; font-size: 2.3rem; font-weight: 500; letter-spacing: -0.025em;
+line-height: 3.5rem; text-shadow: 0 0 2px #222;}
+#cont02 .case .des span {display: block; font-size: 1.3rem; font-weight: 300; margin-bottom: 4.5rem; text-shadow: 0 0 2px #222;}
+#cont02 .case .des p {line-height: 1.8rem; font-size: 1.3rem; font-weight: 100; letter-spacing: -0.025em; text-shadow: 0 0 2px #222;}
+
+
+
+
+/* 반응형 #cont02 */
+@media (max-width:768px) {
+    #cont02 {padding: 10rem 0; background: #f4f4f4; text-align: center;}
+    #cont02 h2 {font-size: 5.5vw; padding-bottom: 1rem;}
+    #cont02 p {font-size: 4.3vw; line-height: 2.5rem; letter-spacing: -0.025em; font-weight: 300; padding: 0 1rem;}
+    #cont02 ul {display: flex; justify-content: center; text-align: center; margin: 10rem 0 2rem 0;}
+    #cont02 ul li a {font-size: 4.3vw; position: relative; margin: 0 1.5rem; font-weight: 300;}
+    
+    #cont02 ul li~li a::before {content: ""; display: block; width: 0.1rem; height: 1.3rem; background: #333;
+    position: absolute; top: 0.9rem; left: -2.5rem; margin: 0 1rem;}
+    
+    #cont02 img {max-width: 100%; border-radius: 50%;}
+    #cont02 figure {padding: 0 1rem;}  
+    #cont02 .case {margin-bottom: 3rem; position: relative;}
+    
+    #cont02 figure img {transition: 0.5s; padding: 3.3rem; filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));}
+    #cont02 figure.on img {}
+    
+    
+    #cont02 figure .case .des {position: absolute; top: 50%; left: 50%; transform:translate(-50%,-50%); width:calc(100% - 6.6rem); height: calc(100% - 6.6rem); background: rgba(0,0,0,0.5);
+    border-radius: 50%; transition: 0.5s; color: #fff;}
+    #cont02 figure.on .case .des {transform:translate(-50%,-50%) scale(1.4);}
+    #cont02 .case .des strong {display: block; padding-top: 8rem; font-size: 2.3rem; font-weight: 500; letter-spacing: -0.025em;
+    line-height: 4rem; text-shadow: 0 0 2px #222;}
+    #cont02 .case .des span {display: block; font-size: 1.5rem; font-weight: 300; margin-bottom: 4rem; text-shadow: 0 0 2px #222;}
+    #cont02 .case .des p {line-height: 2.2rem; font-size: 4vw; font-weight: 100; letter-spacing: -0.025em; text-shadow: 0 0 2px #222;}
+    
+}
+
+
+
+/* #cont03 */
+#cont03 {padding: 15rem 0; text-align: center;}
+#cont03 h2 {font-size: 3rem; padding-bottom: 2rem;}
+#cont03 p {font-size: 1.8rem; line-height: 2.5rem; letter-spacing: -0.025em; font-weight: 300;
+margin-bottom: 7rem;}
+#cont03 .container {padding: 0 1.5rem;}
+#cont03 .con01,#cont03 .con02 {display: flex;}
+#cont03 .con01 {padding: 1.5rem 0;}
+#cont03 figure {padding: 0 1rem;}
+#cont03 figure img {max-width: 100%;}
+
+#cont03 .case {position: relative; overflow: hidden;}
+#cont03 .case strong {position: absolute; top: 100%; left: 0; width: 100%; height: 100%;
+background: #012546b9; color: #fff; text-align: center; line-height: 2rem; transition: 0.5s; text-align: left;
+padding: 1rem; letter-spacing: -0.025em; font-size: 1.5rem;}
+#cont03 .case:hover strong {top: calc(100% - 6rem);}
+
+#cont03 .case .sns {position: absolute; top: -15%; left: 50%; transform: translateX(-50%); transition: 0.5s;}
+#cont03 .case .sns i {padding: 1rem; background: #004b8d; border-radius: 50%; color: #fff; border: 1px solid #fff;}
+#cont03 .case:hover .sns {text-shadow: 0 0 3px #333; font-size: 2rem; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+#cont03 .case:hover .sns i {}
+
+
+#cont03 .case span {display: block; position: absolute; top: 105%; left: 0; color: #fff; text-align: left;  transition: 0.5s; text-align: left;
+padding: 1rem; font-size: 1.1rem; font-weight: 100;}
+#cont03 .case:hover span {top: calc(100% - 3.5rem);}
+
+
+/* 반응형 #cont03 */
+@media (max-width:768px) {
+    #cont03 {padding: 10rem 0 0 0; text-align: center;}
+    #cont03 h2 {font-size: 5.5vw; padding-bottom: 1rem;}
+    #cont03 p {font-size: 4.3vw; line-height: 2.5rem; letter-spacing: -0.025em; font-weight: 300;
+    margin-bottom: 7rem; padding: 0 1rem;}
+    #cont03 .container {padding: 0 1.5rem;}
+    #cont03 .con01,#cont03 .con02 {display: flex; flex-direction: column;}
+    #cont03 .con01 {padding: 1.5rem 0;}
+    #cont03 figure {padding: 1rem;}
+    #cont03 figure img {max-width: 100%;}
+    
+    #cont03 .case {position: relative; overflow: hidden;}
+    #cont03 .case strong {position: absolute; top: calc(100% - 6rem); left: 0; width: 100%; height: 100%;
+    background: #012546b9; color: #fff; text-align: center; line-height: 2rem; transition: 0.5s; text-align: left;
+    padding: 1rem; letter-spacing: -0.025em; font-size: 1.5rem;}
+    #cont03 .case:hover strong {top: calc(100% - 6rem);}
+
+    #cont03 .case .sns {position: absolute; top: 5%; left: 20%; font-size: 1.5rem;}
+    #cont03 .case .sns i {padding: 1rem; background: #004b8d; border-radius: 50%; color: #fff; border: 1px solid #fff; border-radius: 50%; color: #fff; text-shadow: 0 0 3px #333;
+    font-size: 1.5rem;}
+    #cont03 .case:hover .sns {display: none;}
+    #cont03 .case:hover .sns i {display: none;}
+
+
+
+    #cont03 .case span {display: block; position: absolute; top: calc(100% - 3.5rem); left: 0; color: #fff; text-align: left;  transition: 0.5s; text-align: left;
+    padding: 1rem; font-size: 1.1rem; font-weight: 100;}
+    #cont03 .case:hover span {top: calc(100% - 3.5rem);}
+   
+}
+
+
+
+/* #cont04 */
+#cont04 {padding: 15rem 0 0 0;}
+#cont04 .case {position: relative; background: url(../img/banner02.png) no-repeat center center/cover; width: 100%; height: 50rem;
+background-attachment: fixed;}
+#cont04 .des {position: absolute; top: 30%; left: 50%; transform: translate(-50%,-50%); text-align: center; color: #fff; letter-spacing: -0.025em;
+text-shadow: 0 0 3px rgba(0,0,0,0.7);}
+#cont04 h2 {font-size: 2rem; letter-spacing: 2rem; font-weight: 700; line-height: 2.5; margin-bottom: 4rem;}
+#cont04 h3 {font-size: 3rem; line-height: 3.7rem; font-weight: 300;}
+#cont04 b {font-size: 3.7rem; font-weight: 500;}
+#cont04 .report {display: flex; justify-content: center; color: #fff; letter-spacing: -0.025em; padding: 31rem 0 0 0;}
+#cont04 .report01 {width: 32rem; background: #333; padding: 2rem; height: 10rem; border-left: 0.7rem solid #369;}
+#cont04 .report01:hover {background: #f7f7f7; color: #333;}
+#cont04 .report01 i {font-size: 6rem; margin-right: 1rem;}
+#cont04 .report01:hover i {color: #004b8d}
+#cont04 .report01 span {display: inline-block; font-size: 1.8rem; vertical-align: top; padding: 0.7rem 0;}
+#cont04 .report01 span>a {display: block; font-size: 1.3rem; font-weight: 300; padding: 1rem 0 0 0;}
+#cont04 .report01:hover span>a {animation: flash 1s;}       
+
+
+#cont04 .report02 {width: 32rem; background: #333; padding: 2rem; height: 10rem; border-left: 0.7rem solid #369; margin: 0 3rem;}
+#cont04 .report02:hover {background: #f7f7f7; color: #333;}
+#cont04 .report02 i {font-size: 6rem; margin-right: 1rem;}
+#cont04 .report02:hover i {color: #004b8d}
+#cont04 .report02 span {display: inline-block; font-size: 1.8rem; vertical-align: top; padding: 0.7rem 0;}
+#cont04 .report02 span>a {display: block; font-size: 1.3rem; font-weight: 300; padding: 1rem 0 0 0;}
+#cont04 .report02:hover span>a {animation: flash 1s;}
+
+
+#cont04 .report03 {width: 32rem; background: #333; padding: 2rem; height: 10rem; border-left: 0.7rem solid #369;}
+#cont04 .report03:hover {background: #f7f7f7; color: #333;}
+#cont04 .report03 i {font-size: 6rem; margin-right: 1rem;}
+#cont04 .report03:hover i {color: #004b8d}
+#cont04 .report03 span {display: inline-block; font-size: 1.8rem; vertical-align: top; padding: 0.7rem 0;}
+#cont04 .report03 span>a {display: block; font-size: 1.3rem; font-weight: 300; padding: 1rem 0 0 0;}
+#cont04 .report03:hover span>a {animation: flash 1s;}
+
+
+
+
+/* 반응형 #cont04 */
+
+@media (max-width:768px) {
+    #cont04 {padding: 0;}
+    #cont04 .case {position: relative; background: url(../img/banner02.png) no-repeat center center/cover; width: 100%; height: 100vh;}
+    #cont04 .des {position: absolute; top: 22%; left: 0; transform: translate(0,-50%); text-align: center; color: #fff; letter-spacing: -0.025em; text-shadow: 0 0 2px rgba(0,0,0,0.5);
+    padding: 1rem; margin: 0 auto;}
+    #cont04 h2 {font-size: 4.5vw; letter-spacing: 2rem; font-weight: 700; text-align: center; line-height: 2; margin-bottom: 2rem;}
+    #cont04 h3 {font-size: 5vw; font-weight: 300; line-height: 1.4;}
+    #cont04 b {font-size: 7vw; font-weight: 500;}
+    #cont04 .report {display: flex; flex-direction: column; justify-content: center; color: #fff; letter-spacing: -0.025em; margin: 24rem 0 0 0;}
+    #cont04 .report01 {width: 30rem; background: #333; padding: 2rem; height: 10rem; border-left: 0.7rem solid #369; margin: 0.5rem auto;}
+    #cont04 .report01 i {font-size: 6rem; margin-right: 1rem;}
+    #cont04 .report01 span {display: inline-block; font-size: 1.8rem; vertical-align: top; padding: 1rem 0;}
+    #cont04 .report01 span>a {display: block; font-size: 1.3rem; font-weight: 300; padding: 1rem 0 0 0;}
+    #cont04 .report01:hover span>a {animation: flash 1s;}
+    
+    
+    #cont04 .report02 {width: 30rem; background: #333; padding: 2rem; height: 10rem; border-left: 0.7rem solid #369; margin: 0.5rem auto;}
+    #cont04 .report02 i {font-size: 6rem; margin-right: 1rem;}
+    #cont04 .report02 span {display: inline-block; font-size: 1.8rem; vertical-align: top; padding: 1rem 0;}
+    #cont04 .report02 span>a {display: block; font-size: 1.3rem; font-weight: 300; padding: 1rem 0 0 0;}
+    #cont04 .report02:hover span>a {animation: flash 1s;}
+    
+    
+    #cont04 .report03 {width: 30rem; background: #333; padding: 2rem; height: 10rem; border-left: 0.7rem solid #369; margin: 0.5rem auto;}
+    #cont04 .report03 i {font-size: 6rem; margin-right: 1rem;}
+    #cont04 .report03 span {display: inline-block; font-size: 1.8rem; vertical-align: top; padding: 1rem 0;}
+    #cont04 .report03 span>a {display: block; font-size: 1.3rem; font-weight: 300; padding: 1rem 0 0 0;}
+    #cont04 .report03:hover span>a {animation: flash 1s;}
+    
+    
+}
+
+
+
+
+
+
+
+/* #cont05 */
+#cont05 {padding: 15rem 0; text-align: center; position: relative;}
+#cont05 h2::before {content: ""; display: block; width: 1px; height: 12rem; background: #004b8d; position: absolute; top: 0; left: 50%;}
+#cont05 h2 {font-size: 3rem; padding-bottom: 2rem;}
+#cont05 p {font-size: 1.8rem; line-height: 2.5rem; letter-spacing: -0.025em; font-weight: 300;}
+#cont05 .container {padding: 0 1.5rem;}
+#cont05 .case {padding: 6rem 0; display: flex;}
+
+
+
+#cont05 .recruit01 {flex: 1; display: inline-block; width: 31rem; height: 45rem; background: #333; color: #f2f2f2;}
+#cont05 .recruit01 h3 {font-size: 2rem; letter-spacing: -0.025em; padding: 3rem 0 0 0;}
+#cont05 .recruit01 h3::after {content: ""; display: block; width: 2rem; height: 1px; background: #f2f2f2;
+margin: 1.5rem auto;}
+#cont05 .recruit01 strong {display: block; font-size: 1.5rem; letter-spacing: -0.025em; line-height: 1.9rem; margin-bottom: 2rem;}
+#cont05 .recruit01 a {display: inline-block; margin: 24rem 0 0 0; font-size: 1.3rem; border: 1px solid #f2f2f2; padding: 0.5rem 1rem;
+text-align: center;}
+#cont05 .recruit01 a:hover {background: #f2f2f2; color: #333; transition: 0.3s;}
+
+#cont05 .recruit01 .circle {position: relative; display: block; text-align: center; width: 100%; top: -2rem;}
+#cont05 .recruit01 .circle div {width: 12rem; height: 12rem;}
+#cont05 .recruit01 .circle div:nth-child(1) {position: absolute; top: 2.4rem; left: 50%; transform: translateX(-50%); border-radius: 50%; background: rgba(0,169,79,0.5);}
+#cont05 .recruit01 .circle div:nth-child(2) {position: absolute; top: 11rem; left: 63%; transform: translateX(-50%); border-radius: 50%; background: rgba(253,187,48,0.5);}
+#cont05 .recruit01 .circle div:nth-child(3) {position: absolute; top: 17rem; left: 37%; transform: translate(-50%,-50%); border-radius: 50%; background: rgba(0, 75, 141, 0.5);}
+#cont05 .recruit01 .circle span {display: block; margin: 4.5rem auto; text-align: center; line-height: 1.7rem; font-size: 1.3rem;}
+
+
+#cont05 .recruit02 {display: inline-block; margin: 0 1rem;}
+#cont05 .recruit02 .notice01 {display: block; width: 38rem; height: 22rem; background: #757575; color: #f2f2f2; margin-bottom: 1rem;}
+#cont05 .notice01 h3 {font-size: 2rem; letter-spacing: -0.025em; padding: 3.5rem 0 0 0;}
+#cont05 .notice01 h3::after {content: ""; display: block; width: 2rem; height: 1px; background: #f2f2f2;
+margin: 1.5rem auto;}
+#cont05 .notice01 strong {display: block; font-size: 1.5rem; letter-spacing: -0.025em; line-height: 1.9rem; margin-bottom: 2rem;}
+#cont05 .notice01 a {display: inline-block; margin: 2rem 0 0 0; font-size: 1.3rem; border: 1px solid #f2f2f2; padding: 0.5rem 1rem;
+text-align: center;}
+#cont05 .notice01 a:hover {background: #f2f2f2; color: #333; transition: 0.3s;}
+
+
+#cont05 .recruit02 .notice02 {display: block; width: 38rem; height: 22rem; background: #0066a1; color: #f2f2f2;}
+#cont05 .notice02 h3 {font-size: 2rem; letter-spacing: -0.025em; padding: 3.5rem 0 0 0;}
+#cont05 .notice02 h3::after {content: ""; display: block; width: 2rem; height: 1px; background: #f2f2f2;
+margin: 1.5rem auto;}
+#cont05 .notice02 strong {display: block; font-size: 1.5rem; letter-spacing: -0.025em; line-height: 1.9rem; margin-bottom: 2rem;}
+#cont05 .notice02 a {display: inline-block; margin: 2rem 0 0 0; font-size: 1.3rem; border: 1px solid #f2f2f2; padding: 0.5rem 1rem;
+text-align: center;}
+#cont05 .notice02 a:hover {background: #f2f2f2; color: #333; transition: 0.3s;}
+
+
+
+
+
+#cont05 .recruit03 {flex: 1; display: inline-block; width: 45rem; height: 45rem; background: #f0f0f0;}
+#cont05 .recruit03 h3 {font-size: 2rem; letter-spacing: -0.025em; padding: 3.5rem 0 0 0;}
+#cont05 .recruit03 h3::after {content: ""; display: block; width: 2rem; height: 1px; background: #333;
+margin: 1.5rem auto;}
+#cont05 .recruit03 strong {display: block; font-size: 1.5rem; letter-spacing: -0.025em; line-height: 1.9rem;}
+#cont05 .recruit03 figure img {border-radius: 50%; margin: 2rem 0 1.2rem 0;}
+#cont05 .recruit03 b {display: block; font-size: 1.4rem; letter-spacing: -0.025em; line-height: 2rem; font-weight: 500;}
+#cont05 .recruit03 figure>strong {font-size: 1.4rem; letter-spacing: -0.025em; font-weight: 300; margin-bottom: 2.5rem;}
+#cont05 .recruit03 a {display: inline-block;  font-size: 1.3rem; border: 1px solid #333; padding: 0.5rem 1rem;
+text-align: center;}
+#cont05 .recruit03 a:hover {background: #333; color: #f2f2f2; transition: 0.3s;}
+
+
+
+
+
+/* 반응형 #cont05 */
+
+@media (max-width:768px) {
+    #cont05 {padding: 10rem 0; text-align: center;}
+    #cont05 h2::before {content: ""; display: block; width: 1px; height: 8.5rem; background: #004b8d; position: absolute; top: 0; left: 50%;}
+    #cont05 h2 {font-size: 5.5vw; padding-bottom: 1rem;}
+    #cont05 p {font-size: 4.3vw; line-height: 2.5rem; letter-spacing: -0.025em; font-weight: 300; padding: 0 1rem;}
+    #cont05 .container {padding: 0 1.5rem;}
+    #cont05 .case {padding: 6rem 0; display: flex; flex-direction: column;}
+    
+    
+    
+    #cont05 .recruit01 {flex: 1; display: inline-block; width: 100%; height: 100%; background: #333; color: #f2f2f2; margin: 0 auto;}
+    #cont05 .recruit01 h3 {font-size: 2rem; letter-spacing: -0.025em; padding: 3rem 0 0 0;}
+    #cont05 .recruit01 h3::after {content: ""; display: block; width: 2rem; height: 1px; background: #f2f2f2;
+    margin: 1.5rem auto;}
+    #cont05 .recruit01 strong {display: block; font-size: 1.5rem; letter-spacing: -0.025em; line-height: 1.9rem; margin-bottom: 2rem;}
+    #cont05 .recruit01 a {display: inline-block; margin: 24rem 0 3rem 0; font-size: 1.3rem; border: 1px solid #f2f2f2; padding: 0.5rem 1rem;
+    text-align: center;}
+    #cont05 .recruit01 a:hover {background: #f2f2f2; color: #333; transition: 0.3s;}
+    
+    #cont05 .recruit01 .circle {position: relative; display: block; text-align: center; width: 100%; top: -2rem;}
+    #cont05 .recruit01 .circle div {width: 12rem; height: 12rem;}
+    #cont05 .recruit01 .circle div:nth-child(1) {position: absolute; top: 2.4rem; left: 50%; transform: translateX(-50%); border-radius: 50%; background: rgba(0,169,79,0.5);}
+    #cont05 .recruit01 .circle div:nth-child(2) {position: absolute; top: 11rem; left: 63%; transform: translateX(-50%); border-radius: 50%; background: rgba(253,187,48,0.5);}
+    #cont05 .recruit01 .circle div:nth-child(3) {position: absolute; top: 17rem; left: 36%; transform: translate(-50%,-50%); border-radius: 50%; background: rgba(0, 75, 141, 0.5);}
+    #cont05 .recruit01 .circle span {display: block; margin: 4.5rem auto; text-align: center; line-height: 1.7rem; font-size: 1.3rem;}
+    
+    
+    #cont05 .recruit02 {display: inline-block; margin: 1rem auto; width: 100%;}
+    #cont05 .recruit02 .notice01 {display: block; width: 100%; height: 100%; background: #757575; color: #f2f2f2; margin-bottom: 1rem;}
+    #cont05 .notice01 h3 {font-size: 2rem; letter-spacing: -0.025em; padding: 3.5rem 0 0 0;}
+    #cont05 .notice01 h3::after {content: ""; display: block; width: 2rem; height: 1px; background: #f2f2f2;
+    margin: 1.5rem auto;}
+    #cont05 .notice01 strong {display: block; font-size: 1.5rem; letter-spacing: -0.025em; line-height: 1.9rem; margin-bottom: 2rem;}
+    #cont05 .notice01 a {display: inline-block; margin: 2rem 0; font-size: 1.3rem; border: 1px solid #f2f2f2; padding: 0.5rem 1rem;
+    text-align: center;}
+    #cont05 .notice01 a:hover {background: #f2f2f2; color: #333; transition: 0.3s;}
+    
+    
+    #cont05 .recruit02 .notice02 {display: block; width: 100%; height: 100%; background: #0066a1; color: #f2f2f2;}
+    #cont05 .notice02 h3 {font-size: 2rem; letter-spacing: -0.025em; padding: 3.5rem 0 0 0;}
+    #cont05 .notice02 h3::after {content: ""; display: block; width: 2rem; height: 1px; background: #f2f2f2;
+    margin: 1.5rem auto;}
+    #cont05 .notice02 strong {display: block; font-size: 1.5rem; letter-spacing: -0.025em; line-height: 1.9rem; margin-bottom: 2rem;}
+    #cont05 .notice02 a {display: inline-block; margin: 2rem 0; font-size: 1.3rem; border: 1px solid #f2f2f2; padding: 0.5rem 1rem;
+    text-align: center;}
+    #cont05 .notice02 a:hover {background: #f2f2f2; color: #333; transition: 0.3s;}
+    
+    
+    
+    #cont05 .recruit03 {flex: 1; display: inline-block; width: 100%; height: 100%; background: #f0f0f0; margin: 0 auto;}
+    #cont05 .recruit03 h3 {font-size: 2rem; letter-spacing: -0.025em; padding: 3.5rem 0 0 0;}
+    #cont05 .recruit03 h3::after {content: ""; display: block; width: 2rem; height: 1px; background: #333;
+    margin: 1.5rem auto;}
+    #cont05 .recruit03 strong {display: block; font-size: 1.5rem; letter-spacing: -0.025em; line-height: 1.9rem;}
+    #cont05 .recruit03 figure img {border-radius: 50%; margin: 2rem 0 1.2rem 0;}
+    #cont05 .recruit03 b {display: block; font-size: 1.4rem; letter-spacing: -0.025em; line-height: 2rem; font-weight: 500;}
+    #cont05 .recruit03 figure>strong {font-size: 1.4rem; letter-spacing: -0.025em; font-weight: 300; margin-bottom: 2.5rem;}
+    #cont05 .recruit03 a {display: inline-block;  font-size: 1.3rem; border: 1px solid #333; padding: 0.5rem 1rem;
+    text-align: center; margin: 0 0 3rem 0;}
+    #cont05 .recruit03 a:hover {background: #333; color: #f2f2f2; transition: 0.3s;}
+    
+}
+
+
+
+
+
+
+
+/* #cont06 */
+#cont06 {padding: 15rem 0; text-align: center; background: #f7f7f7;}
+#cont06 h2 {font-size: 3rem; padding-bottom: 2rem;}
+#cont06 p {font-size: 1.8rem; line-height: 2.5rem; letter-spacing: -0.025em; font-weight: 300; margin-bottom: 5.5rem;}
+#cont06 .container {display: flex;}
+#cont06 .tab {flex: 1; display: block; width: 100%; height: 100%; background: #fff; box-shadow: 0 0 2px rgba(0,0,0,0.4);}
+#cont06 .tab_menu {}
+#cont06 .tab_menu ul {display: flex; line-height: 4rem;}
+#cont06 .tab_menu ul li {flex: 1; text-align: center; width: 18rem; cursor: pointer; background: #eee;}
+#cont06 .tab_menu ul li.on {background: #369; color: #fff;}
+#cont06 .tab_menu ul li~li {border-left: 1px solid #ddd;}
+
+#cont06 .tab_cont {background: #fff; width: 100%;}
+#cont06 .tab_cont h3 {text-align: right; padding: 1rem 1.5rem 0 0; color: #555;}
+#cont06 .tab_cont h3 a {font-size: 1.3rem; font-weight: 300;}
+#cont06 .tab_cont>div {display: none;}
+#cont06 .tab_cont>div.on {display: block;}
+#cont06 .tab_cont ul {line-height: 2.5rem; padding: 1rem 0 0.8rem 1.5rem;}
+#cont06 .tab_cont ul>li {padding: 0.5rem 1rem; text-align: left;}
+#cont06 .tab_cont ul>li a {display: block; letter-spacing: -0.025em; font-size: 1.5rem;}
+#cont06 .tab_cont ul>li span {float: right; margin-right: 1rem;}
+
+
+#cont06 .faq {background: #fff; width: 57rem;}
+#cont06 .faq_case ul {line-height: 2.5rem; padding: 1rem 0 0.9rem 1.5rem;}
+#cont06 .faq_case ul>li {padding: 0.5rem 1rem; text-align: left;}
+#cont06 .faq_case ul>li a {display: block; letter-spacing: -0.025em; font-size: 1.5rem;}
+#cont06 .faq_case ul>li span {float: right;}
+
+#cont06 figure {flex: 1; padding: 0 0 0 1.5rem;}
+#cont06 iframe {width: 100%; height: 100%;}
+
+
+
+
+/* 반응형 #cont06 */
+
+@media (max-width:768px) {
+    #cont06 {padding: 10rem 0; text-align: center; background: #f7f7f7;}
+    #cont06 h2 {font-size: 5.5vw; margin-bottom: 1rem;}
+    #cont06 p {font-size: 4.3vw; line-height: 2.5rem; letter-spacing: -0.025em; font-weight: 300;}
+    #cont06 .container {display: flex; flex-direction: column; padding: 0 1.5rem;}
+    #cont06 .tab {flex: 1; display: block; width: 100%; background: #fff; box-shadow: 0 0 2px rgba(0,0,0,0.4); margin: 0 auto;}
+    #cont06 .tab_menu {}
+    #cont06 .tab_menu ul {display: flex; line-height: 4rem;}
+    #cont06 .tab_menu ul li {flex: 1; text-align: center; width: auto; cursor: pointer; background: #eee;}
+    #cont06 .tab_menu ul li.on {background: #369; color: #fff;}
+    #cont06 .tab_menu ul li~li {border-left: 1px solid #ddd;}
+    
+    #cont06 .tab_cont {background: #fff; width: auto; margin: 0 auto;}
+    #cont06 .tab_cont h3 {text-align: right; padding: 1rem 1.5rem 0 0; color: #555;}
+    #cont06 .tab_cont h3 a {font-size: 1.3rem; font-weight: 300;}
+    #cont06 .tab_cont>div {display: none;}
+    #cont06 .tab_cont>div.on {display: block;}
+    #cont06 .tab_cont ul {line-height: 2.5rem; padding: 1.5rem;}
+    #cont06 .tab_cont ul>li {padding: 0.5rem 1rem; text-align: left;}
+    #cont06 .tab_cont ul>li a {display: block; letter-spacing: -0.025em; font-size: 1.5rem; width: auto; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+    #cont06 .tab_cont ul>li a span {display: none;}
+
+    
+    #cont06 .faq {background: #fff; width: auto;}
+    #cont06 .faq_case ul {line-height: 2.5rem; padding: 1.5rem;}
+    #cont06 .faq_case ul>li {padding: 0.5rem 1rem; text-align: left;}
+    #cont06 .faq_case ul>li a {display: block; letter-spacing: -0.025em; font-size: 1.5rem;}
+    #cont06 .faq_case ul>li span {float: right;}
+    
+    #cont06 figure {flex: 1; padding: 1rem 0 0 0;}
+    #cont06 iframe {width: 100%; height: 100%;}
+ 
+
+}
+
+
+/* #footer */
+
+#footer {position: relative; background: #333; color: #ccc;}
+#footer .container {padding: 0 1.5rem;}
+#footer .fam {display: none; background: #004b8d;}
+#footer .fam dl {display: flex; text-align: center; margin: 0 auto; justify-content: center;}
+#footer .fam dl dd {}
+#footer .fam dl dd a::before {content: "·"; display: inline-block; padding-right: 1rem;}
+#footer .fam dl dd a {font-weight: 100; font-size: 1.5rem; color: #fff; letter-spacing: -0.025em; line-height: 3; padding: 2rem;}
+
+
+#footer .f_top {display: flex; padding: 5rem 0 0 0;}
+#footer .f_top li {padding: 1rem 3.5rem 1rem 0;}
+#footer .f_top li a {font-weight: 100; font-size: 1.5rem; position: relative; letter-spacing: -0.025em;}
+#footer .f_top li a strong {font-weight: 500; color: #fff;}
+#footer .f_top li span {font-weight: 500; color: rgb(76, 141, 206); font-size: 1.5rem;}
+#footer .f_top li~li a::after {content: ""; display: block; position: absolute; top: 7px; left: -1.5rem; width: 1px; height: 1rem; margin-right: 3rem; background: #bbb;}
+
+#footer address {display: inline-block; text-align: left; padding: 2rem 0;}
+#footer address b {display: block; font-size: 1.5rem; font-weight: 100; padding: 0.5rem 0;}
+#footer address em {color: rgb(76, 141, 206); font-size: 1.5rem; font-weight: 100;}
+#footer address figure {display: block; text-align: left; padding: 2rem 0;}
+#footer address figure img {}
+
+#footer .f_right {float: right; text-align: center; margin: 13rem 0 0 0;}
+#footer .f_right figure {display: block; text-align: left; padding-bottom: 1rem; margin-bottom: 1rem;}
+#footer .f_right .sns {display: flex;}
+#footer .f_right .sns li {padding: 0 0.5rem;}
+#footer .f_right .sns li a {display: block; border-radius: 50%; background: #fff; padding: 1rem; font-size: 2.5rem;}
+#footer .f_right .sns li i {color: #333;}
+
+#footer .award {background: #f1f1f1; margin: 5rem 0 0 0; padding: 3rem; text-align: left;}
+#footer .award img {max-width: 100%;}
+
+#footer .award_box {display: none; position: absolute; top: 46%; left: 36%; transform: translate(-50%,-50%); background: #fff; box-shadow: 3px 3px 15px 3px rgba(0,0,0,0.3);}
+#footer .award_box>ul {display: flex; padding: 2rem;}
+#footer .award_box ul li {display: inline-block; margin: 0 auto; padding: 0 1.5rem;}
+#footer .award_box ul li dl {letter-spacing: -0.025em;}
+#footer .award_box ul li dl dt {font-size: 1.4rem; color: #333; font-weight: 500; margin-bottom: 0.5rem;}
+#footer .award_box ul li dl dd {font-size: 1.3rem; color: #333; font-weight: 300; line-height: 1.2;}
+#footer .award_box>a>i {font-size: 2.2rem; color: #333; float: right; padding: 1rem 1rem 0 0;}
+
+
+
+
+
+
+
+/* 반응형 #footer */
+
+@media (max-width:768px) {
+    #footer {position: relative; background: #333; color: #ccc;}
+    #footer .container {padding: 0 1.5rem;}
+    
+    #footer .fam {display: none; background: #004b8d; padding: 1rem 0;}
+    #footer .fam dl {display: flex; flex-wrap: wrap; text-align: center; margin: 0 auto;}
+    #footer .fam dl dd {display: inline-block; padding: 0.5rem;}
+    #footer .fam dl dd a::before {content: "·"; display: inline-block; padding-right: 0.5rem;}
+    #footer .fam dl dd a {font-weight: 100; font-size: 1.2rem; color: #f2f2f2; letter-spacing: -0.025em; line-height: 1.5; padding: 0;}
+    
+    
+    #footer .f_top {display: flex; flex-direction: column; padding: 3rem 0 0 0;}
+    #footer .f_top li {padding: 0.5rem 0;}
+    #footer .f_top li a {font-weight: 100; font-size: 1.3rem; position: relative; letter-spacing: -0.025em;}
+    #footer .f_top li a strong {font-weight: 500; color: #fff;}
+    #footer .f_top li span {font-weight: 500; color: rgb(76, 141, 206); font-size: 1.5rem;}
+    #footer .f_top li~li a::after {display: none;}
+    
+    #footer address {display: inline-block; text-align: left; padding: 2rem 0 0 0;}
+    #footer address b {display: block; font-size: 1.3rem; font-weight: 100; padding: 0.5rem 0;}
+    #footer address em {color: rgb(76, 141, 206); font-size: 1.3rem; font-weight: 100;}
+    #footer address figure {display: block; text-align: left; padding: 2rem 0;}
+    #footer address figure img {max-width: 100%;}
+    
+    #footer .f_right {float: left; text-align: center; margin: 0 0 0 0;}
+    #footer .f_right figure {display: block; text-align: left; padding-bottom: 1rem; margin-bottom: 1rem;}
+    #footer .f_right .sns {display: flex;}
+    #footer .f_right .sns li {padding: 0 0.5rem;}
+    #footer .f_right .sns li a {display: block; border-radius: 50%; background: #fff; padding: 1rem; font-size: 2rem;}
+    #footer .f_right .sns li i {color: #333;}
+    
+    #footer .award {background: #f1f1f1; margin: 7rem 0 0 0; padding: 2.5rem 0; text-align: left;}
+    #footer .award img {max-width: 100%;}
+    
+    #footer .award_box {display: none;position: absolute; top: 43%; left: 50%; transform: translate(-50%,-50%); width: auto; background: #fff; box-shadow: 3px 3px 15px 3px rgba(0,0,0,0.3);}
+    #footer .award_box ul li dl {letter-spacing: -0.025em;}
+    #footer .award_box ul li dl dt {font-size: 1.3rem; color: #333; font-weight: 500; margin-bottom: 0.5rem;}
+    #footer .award_box ul li dl dd {font-size: 1.2rem; color: #333; font-weight: 300; line-height: 1.2;}
+    #footer .award_box>a>i {font-size: 2rem; color: #333; float: right; padding: 1rem 1rem 0 0;}
+    
+   
+    #footer .award_box>.box01 {display: inline-block; padding: 1rem;} 
+    #footer .award_box>.box01 li {padding: 0}
+    #footer .award_box>.box02 {display: inline-block; padding: 1rem 1rem 1.5rem 1rem;}
+    #footer .award_box>.box02 li {padding: 0}
+}

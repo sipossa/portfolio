@@ -1,0 +1,140 @@
+html {font-size:20px;}
+body {font-size:0.8rem;}
+.right-arrow {transform:translateY(-2px);margin-left:0.5rem;fill:none;stroke:#999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+
+#wrap {min-width:95rem;}
+
+
+.header {position:static;top:0;left:0;display:flex;align-items:center;justify-content:space-between;padding:0 8rem 0 10rem;min-width:95rem;width:100%;height:4rem;transition:0.5s;background:#fff;z-index:999;}
+.header.on {background:#fff;}
+.header.on .sns {color:#101010;}
+.header h1 img {width:100%;}
+.header .sns {position:relative;font-size:0.7rem;color:#101010;line-height:3rem;width:6rem;text-align:center;border-radius:0.5rem;transition:0.4s;cursor:pointer;z-index:999;}
+.header.active .sns {background:#fff;color:#101010;box-shadow:0 0 10px -4px #000;}
+.header .sns ul {position:absolute;top:3rem;left:50%;transform:translateX(-50%);width:6rem;padding:0 0.4rem;font-size:0.6rem;border-radius:0.5rem;box-shadow:0 5px 12px -6px #000;opacity:0;visibility:hidden;transition:0.5s;}
+.header.active ul {background:#fff;color:#101010;opacity:1;visibility:visible;}
+.header .sns ul li {border-top:1px solid #ddd;line-height:2rem;}
+.header .sns ul li a {display:block;}
+
+.section {text-align:center;min-width:95rem;width:100%;}
+/* ----------------------서브 페이지 시작----------------------- */
+
+#subpage {border-top:1px solid #ddd;color:#333;}
+#subpage .title {padding:5rem 10rem 0 10rem;}
+#subpage .title .menu {margin-bottom:1rem;}
+#subpage .title .menu li {display:inline-block;font-size:0.6rem;color:#888;}
+#subpage .title .menu li:last-child a {text-decoration:underline #888;text-underline-position:under;}
+#subpage .title .menu li~li:before {content:"\e940";font-family: xeicon!important;margin:0 0.3rem;}
+#subpage .title h2 {font-size:2rem;font-weight:700;margin-bottom:1rem;}
+#subpage .title .category {display:flex;margin-bottom:3rem;}
+#subpage .title .category li a {display:block;padding:0.7rem 1rem;margin-right:1rem;border:1px solid #ddd;border-radius:2rem;}
+#subpage .title .category li a:hover {background:#f7f7f7;}
+#subpage .title .category li.on a {background:#1ECB6C;border:1px solid #1ECB6C;color:#fff;}
+
+
+#subpage .sc01 {background:url(../img/sub_main_cup.jpg) no-repeat center bottom/cover;padding:7.5rem 0 45rem 0;}
+#subpage .sc01 .sub_main {text-align:center;}
+#subpage .sc01 .sub_main strong {display:block;color:#1ECB6C;margin-bottom:0.5rem;}
+#subpage .sc01 .sub_main h3 {font-size:3rem;font-weight:500;margin-bottom:1rem;}
+#subpage .sc01 .sub_main p {display:inline-block;font-size:0.8rem;padding:0.7rem 3rem;border:1px solid #bbb;border-radius:3rem;color:#777}
+
+#subpage .sc02 {padding:7.5rem 0 4rem 0;text-align:left;}
+#subpage .sc02 span {display:block;font-size:0.9rem;color:#1ECB6C;margin-bottom:2rem;padding:0 10rem;}
+#subpage .sc02 h3 {font-size:2rem;font-weight:500;margin-bottom:1rem;padding:0 10rem;}
+#subpage .sc02 p {font-size:0.9rem;line-height:1.4;color:#777;margin-bottom:1rem;padding:0 10rem;}
+#subpage .sc02 strong {display:block;font-size:0.9rem;font-weight:400;color:#666;text-align:right;padding:0 10rem;}
+#subpage .sc02 .pr_slider figure {margin:0 auto;border-radius:2rem;box-shadow:0 10px 10px rgba(0,0,0,0.2);transform:scale(0.84);}
+#subpage .sc02 .pr_slider figure img {width:100%;border-radius:2rem;}
+#subpage .sc02 .pr_slider .slick-dots {display:flex;justify-content:center;}
+#subpage .sc02 .pr_slider .slick-dots button {display:none;}
+
+/* ----------------------서브 페이지 끝----------------------- */
+.footer {background:#f2f2f2;}
+
+.footer .banner_con {display:none;font-weight:500;color:#fff;}
+.footer .banner_con span {color:#fff;}
+.footer .right-arrow {stroke:#fff;stroke-width:2px;}
+.footer .banner_left {flex:1;background:url(../img/banner01.jpg) no-repeat center center/cover;padding:2rem 0;}
+.footer .banner_right {flex:1;background:url(../img/banner02.jpg) no-repeat center center/cover;padding:2rem 0;}
+
+.footer .container {display:flex;justify-content:space-between;padding:3.5rem 10rem;margin:0 auto;font-size:0.7rem;color:#bbb;}
+.footer .footer_right ul {display:inline-block;margin-bottom:1rem;}
+.footer .footer_right ul li {display:inline-block;}
+.footer .footer_right ul li a {color:#bbb;}  /* 서버에 올릴 때 직접적으로 색을 넣어야 색이 들어감 */
+.footer .footer_right ul~ul li:before {content:"";display:inline-block;width:1px;height:0.6rem;background:#ddd;margin:0 0.75rem;}
+.footer .footer_right address {text-align:right;}
+
+
+
+
+@media (max-width:768px) {
+    html {font-size:20px;}
+    body {font-size:0.8rem;}
+    .right-arrow {transform:translateY(-0.5px);margin-left:0.5rem;fill:none;stroke:#999;width:1.4rem;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+    
+    #wrap {min-width:auto;}
+
+
+    .header {position:static;top:0;left:0;display:flex;align-items:center;justify-content:space-between;padding:0 0.1rem 0 1.5rem;min-width:auto;width:100%;height:4rem;transition:0.5s;z-index:999;}
+    .header.on {background:#fff;}
+    .header.on .sns {color:#101010;}
+    .header h1 img {width:70%;}
+    .header .sns {position:relative;font-size:0.7rem;color:#101010;line-height:3rem;width:6rem;text-align:center;border-radius:0.5rem;transition:0.4s;cursor:pointer;}
+    .header.active .sns {background:#fff;color:#101010;box-shadow:0 0 10px -4px #000;}
+    .header .sns ul {position:absolute;top:3rem;left:50%;transform:translateX(-50%);width:6rem;padding:0 0.4rem;font-size:0.6rem;border-radius:0.5rem;box-shadow:0 5px 12px -6px #000;opacity:0;visibility:hidden;transition:0.5s;}
+    .header.active ul {background:#fff;color:#101010;opacity:1;visibility:visible;}
+    .header .sns ul li {border-top:1px solid #ddd;line-height:2rem;}
+    .header .sns ul li a {display:block;}
+
+
+    .section {text-align:center;min-width:auto;}
+    /* ----------------------서브 페이지 시작----------------------- */
+    #subpage {border-top:1px solid #ddd;color:#333;}
+    #subpage .title {padding:5rem 1.5rem 0 1.5rem;}
+    #subpage .title .menu {margin-bottom:1rem;}
+    #subpage .title .menu li {display:inline-block;font-size:0.6rem;color:#888;}
+    #subpage .title .menu li:last-child a {text-decoration:underline #888;text-underline-position:under;}
+    #subpage .title .menu li~li:before {content:"\e940";font-family: xeicon!important;margin:0 0.3rem;}
+    #subpage .title h2 {font-size:2rem;font-weight:700;margin-bottom:1rem;}
+    #subpage .title .category {display:flex;flex-wrap:wrap;margin-bottom:3rem;}
+    #subpage .title .category li {flex:1 50%;margin-bottom:0.5rem;}
+    #subpage .title .category li a {display:block;padding:0.7rem 1rem;margin-right:1rem;border:1px solid #ddd;border-radius:2rem;font-size:0.65rem;}
+    #subpage .title .category li a:hover {background:#f7f7f7;}
+    #subpage .title .category li.on a {background:#1ECB6C;border:1px solid #1ECB6C;color:#fff;}
+
+
+    #subpage .sc01 {background:url(../img/sub_main_cup.jpg) no-repeat center bottom/cover;padding:3rem 1.5rem 20rem 1.5rem;}
+    #subpage .sc01 .sub_main {text-align:center;}
+    #subpage .sc01 .sub_main strong {display:block;color:#1ECB6C;margin-bottom:0.5rem;}
+    #subpage .sc01 .sub_main h3 {font-size:2rem;font-weight:500;margin-bottom:1rem;}
+    #subpage .sc01 .sub_main p {display:block;font-size:0.65rem;padding:0.7rem 0;border:1px solid #bbb;border-radius:3rem;color:#777}
+
+    #subpage .sc02 {padding:3rem 0rem;text-align:left;}
+    #subpage .sc02 span {display:block;font-size:0.9rem;color:#1ECB6C;margin-bottom:2rem;padding:0 1.5rem;}
+    #subpage .sc02 h3 {font-size:2rem;font-weight:500;margin-bottom:1rem;padding:0 1.5rem;}
+    #subpage .sc02 p {font-size:0.8rem;line-height:1.4;color:#777;margin-bottom:1rem;padding:0 1.5rem;}
+    #subpage .sc02 strong {display:block;font-size:0.7rem;font-weight:400;color:#666;text-align:right;margin-bottom:1rem;padding:0 1.5rem;}
+    #subpage .sc02 .pr_slider figure {margin:0 auto;border-radius:1rem;margin-right:0.2rem;box-shadow:0 7px 10px rgba(0,0,0,0.2);transform:scale(0.9);opacity:0.4;transition:0.5s;}
+    #subpage .sc02 .pr_slider figure.slick-active {opacity:1;}
+    #subpage .sc02 .pr_slider figure img {width:100%;border-radius:1rem;}
+    #subpage .sc02 .pr_slider .slick-dots {display:flex;justify-content:center;}
+    #subpage .sc02 .pr_slider .slick-dots button {display:none;}
+    #subpage .sc02 .pr_slider .draggable {padding-right:3rem;}
+
+    /* ----------------------서브 페이지 끝----------------------- */
+    .footer {width:100%;}
+    
+    .footer .banner_con {display:none;font-weight:500;color:#fff;}
+    .footer .banner_con span {color:#fff;}
+    .footer .right-arrow {stroke:#fff;stroke-width:1px;}
+    .footer .banner_left {flex:1;background:url(../img/banner01.jpg) no-repeat center center/cover;padding:2rem 0;}
+    .footer .banner_right {flex:1;background:url(../img/banner02.jpg) no-repeat center center/cover;padding:2rem 0;}
+    
+    .footer .container {display:flex;flex-flow:column wrap;justify-content:space-between;padding:3.5rem 1.5rem;margin:0 auto;font-size:0.7rem;color:#bbb;}
+    .footer .footer_left {margin-bottom:1rem;}
+    .footer .footer_right ul {display:block;margin-bottom:0;}
+    .footer .footer_right ul li {display:inline-block;padding:0.2rem;}
+    .footer .footer_right ul li a {color:#bbb;}  /* 서버에 올릴 때 직접적으로 색을 넣어야 색이 들어감 */
+    .footer .footer_right ul~ul li:before {content:"";display:none;width:1px;height:0.6rem;background:#ddd;margin:0 0.75rem;}
+    .footer .footer_right address {text-align:center;margin-top:1rem;}
+}

@@ -1,0 +1,35 @@
+body {background:#333;color:#fff;}
+
+.header {position:fixed;top:0;left:50px;background:#fff;color:#333;text-align:center;padding:60px 20px 40px 20px;border-radius:0 0 30px 30px;z-index:9999;}
+.header img {width:160px;}
+.header nav {display:none;}
+.header ul {padding:30px 0;}
+.header li {line-height:40px;}
+.header li a{display:block;border-bottom:1px solid #ddd;}
+.header .top_banner {padding:25px;font-size:20px;}
+
+.sticky {position:sticky;top:0;left:0;height:100vh;}
+.txt {position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);text-align:center;}
+
+.con01 {background:url(../lib/bsse/main_visual06.jpg) no-repeat center center/cover;}
+.txt h2 {font-size:30px;font-weight:500;letter-spacing:0.5em;margin-bottom:20px;line-height:1.2;}
+.txt p {font-weight:300;line-height:20px;}
+
+.con02 {background:url(../lib/bsse/main_visual05.jpg) no-repeat center center/cover;}
+
+
+.left {position:relative;float:left;height:100vh;width:50%;}
+.right {position:relative;float:left;height:100vh;width:50%;}
+
+.con04 .left {background:url(../lib/bsse/cos_01.jpg) no-repeat center center/cover;}
+.con05 .right {background:url(../lib/bsse/cos_04.jpg) no-repeat center center/cover;}
+.con06 .left {background:url(../lib/bsse/cos_02.jpg) no-repeat center center/cover;}
+
+.con03 .right {background:rgb(214, 197, 182);}
+.con07 .left {background:rgb(141, 135, 106);}
+.con07 .right {background:rgb(104, 100, 80);}
+
+
+.footer {position:fixed;bottom:0;right:50px;background:#fff;color:#333;padding:30px 15px;text-align:center;border-radius:30px 30px 0 0;}
+.footer i {font-size:30px;padding:10px;background:#ddd;border-radius:50%;margin-bottom:15px;}
+.footer span {display:block;}

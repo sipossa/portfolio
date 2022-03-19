@@ -1,0 +1,149 @@
+body {color:#333}
+#wrap {}
+
+/* top banner 20211103 */
+#top_banner {background: #f7f7f7;}
+#top_banner .container {position:relative;width:1200px;margin:0 auto;padding:20px 15px;}
+#top_banner h2 {font-size:24px; font-weight: 100;margin-bottom:5px;letter-spacing:-0.004em;}
+#top_banner p {font-size:14px; font-weight: 300;letter-spacing: -0.025em;}
+#top_banner i {font-size:24px;position:absolute;top:25px ;right:15px;}
+
+
+/* header 20211103 */
+#header {}
+#header .container {display:flex;justify-content:space-between;width:1200px;margin:0 auto;padding:0 15px;line-height:100px;}
+
+#header h1 {}
+#header h1 img{max-width:200px;}
+
+#header nav>ul {display:flex;justify-content: center;}
+#header nav>ul>li>a {position:relative;display: block;padding:0 20px;} /*a태그에 block과 패딩을 줘서 손가락 모양이 안없어지도록*/
+#header nav>ul>li~li>a:before {content:"";display:block;background: #333;width:1px;height:12px;position:absolute;top:50%;left:0;transform:translateY(-50%);}
+
+#header .header_search input {border:none;outline:none;border-bottom: 1px solid #333;padding:5px 0;}
+#header .header_search button {border:none;outline:none;background: none;padding:5px 0;}
+#header .header_search button>i {padding:7px;font-size:18px;background: #333;color:#fff;border-radius: 50%;}
+
+
+/* main_visual 20211103 */
+#main_visual {position:relative;}
+#main_visual .main_slider figure {height:600px;}
+#main_visual .main_slider .slide01 {background: url(../lib/bsse/main_visual02.jpg) no-repeat center center/cover;}
+#main_visual .main_slider .slide02 {background: url(../lib/bsse/main_visual03.jpg) no-repeat center center/cover;}
+#main_visual .main_slider .slide03 {background: url(../lib/bsse/main_visual01.jpg) no-repeat center center/cover;}
+
+#main_visual .slogan {position:absolute;top:50%;left:50%;width:1200px;padding:0 15px;transform:translate(-50%, -50%);color:#fff;text-align:center}
+#main_visual .slogan h2{font-size:60px;font-weight:700;margin-bottom:15px;text-shadow: 0 0 3px #333;}
+#main_visual .slogan p{font-weight: 300;}
+#main_visual .slogan p>a {display:block;background: #292929;width:100px;height:35px;line-height:30px;text-align:center;margin:20px auto;}
+
+
+/* product01 20211103 */
+#product01 {padding:150px 0;text-align: center;}
+#product01 h2 {font-size:30px;font-weight:500;margin-bottom:10px;}
+#product01 p {font-weight:200;margin-bottom:40px;letter-spacing: -0.025em;}
+
+#product01 .container {display:flex;width:1200px;margin:0 auto;}
+#product01 .container figure {flex:1;padding:0 15px}
+#product01 .container figure:hover img {transform:scale(1.2);}
+#product01 .container figure .case {overflow:hidden;}
+#product01 .container figure img{max-width:100%;transition:0.5s}
+
+#product01 .container figure strong {display:block;font-weight:500;margin:10px 0 7px 0;}
+#product01 .container figure .price {display:block;font-size:14px;font-weight:400;margin-bottom:15px;}
+#product01 .container figure .des {display:block;font-size:12px;}
+
+
+/* main_banner 20211104 */
+#main_banner {padding:120px 0;background: url(../lib/bsse/main_visual04.jpg) no-repeat center center/cover;background-attachment:fixed;color:#fff;text-align: center;}
+/*background-attachment:fixed 하면 배경이미지사이즈가 커짐, 보완하려면 parallax 사용해야함*/
+#main_banner h2 {font-size:30px;margin-bottom:10px;font-weight: 200;}
+#main_banner p {font-weight:100;margin-bottom:20px;}
+#main_banner a i.xi-arrow-right {padding:5px;background:#f7f7f7;border-radius:0 50%;margin-left:10px;vertical-align:auto;color:#333;}
+/*아이콘 넣었을때 높이가 안맞을 경우 vertical-align 사용해서 맞출 수 있음, 그때그때 값을 사용해보고 적용하기(auto,middle  등)*/
+
+
+/* product02 20211104 */
+#product02 {padding:150px 0;}
+#product02 .container {display:flex;flex-wrap:wrap;width:1200px; margin:0 auto;padding:0 15px;text-align: center;}
+#product02 .container .pic {width:50%;} /*flex-wrap:wrap;을 적용하고 가로너비를 50%로 주면 아래로 내려감*/
+#product02 .container .pic img{max-width:100%;}
+#product02 .container .des {display:flex;width:50%;;padding:15px;}
+/*display:flex;를 하면 사이즈가 펼쳐지는 효과가 있음 (높이가 없었는데 높이가 생김) -> 아래 des_con에 margin:auto; 적용됨*/
+#product02 .container .des .des_con {margin:auto;} /*텍스트가 수직으로 가운데 올 수 있도록*/
+#product02 .container .des h3 {font-size:20px;font-weight: 400;margin-bottom: 15px;}
+#product02 .container .des h3:after {content:"";display:block;width:1px;height:20px;background:#333;margin:10px auto 30px auto;}
+#product02 .container .des p {font-size:12px;margin-bottom:30px;line-height: 1.2em;}
+#product02 .container .des a {font-size:12px;padding:3px 10px 5px 10px;background:#e4e4e4;transition:0.5s;}
+#product02 .container .des a:hover {background:#333;color:#fff;border-radius:10px;}
+#product02 .container .des i.xi-arrow-right {margin-left:5px;vertical-align:auto;}
+
+
+
+/* product03 20211104 */
+#product03 {padding:150px 0;text-align: center;background:#f7f7f7;}
+#product03 h2 {font-size:30px;font-weight:500;margin-bottom:10px;}
+#product03 p {font-weight:200;margin-bottom:100px;letter-spacing: -0.025em;}
+#product03 .container {width:1200px;margin:0 auto; padding:0 15px;}
+
+#product03 figure {padding:10px 35px;}
+#product03 figure.on img{transform:scale(1.5);}
+#product03 figure.on .price {background:#ddd;color:#292929}
+
+#product03 .case {margin-bottom:30px;}
+#product03 .case img{max-width:100%;transition: 0.5s;filter: drop-shadow(1px 1px 2px #a4a4a4);}
+#product03 strong {display:block;font-weight:400;margin:10px 0;}
+#product03 .price {display:block;font-size:14px;margin-bottom:10px;border:1px solid #ddd;padding:7px;color:rgb(114, 114, 114);}
+
+#product03 .slide_bar {position:relative;width:600px;height:5px;background:#ddd;border-radius: 3px;margin:40px auto 0 auto;}
+#product03 .slide_bar>span {position:absolute;top:0;left:0;display:block;width:100px;height:5px;background:#333;transition: 0.4s;}
+
+
+/* product04 20211104 */
+#product04 {padding:150px 0;}
+#product04 .container {display:flex;flex-wrap:wrap;width:1200px;margin:0 auto;} /*flex-wrap:wrap;을 줘야 배열이 정리됨*/
+
+#product04 h2 {text-align: center;font-size:30px;font-weight:500;margin-bottom:10px;}
+#product04>p {text-align: center;font-weight:200;margin-bottom:100px;letter-spacing: -0.025em;}
+
+#product04 .container .des {flex:1;padding:0 15px;margin:auto 0;}
+#product04 .container .des h3 {font-size:20px;font-weight: 400;margin-bottom: 15px;}
+#product04 .container .des p {font-size:12px;margin-bottom:30px;line-height: 1.2em;}
+
+#product04 .container .con {position:relative;flex:2;padding:0 15px;overflow:hidden;} /*overflow:hidden을 안주면 사이즈가 오버됨*/
+#product04 .container .con img {max-width: 100%;}
+#product04 .container .con i {position:absolute;top:50%;background:#fff;;padding:10px;border:1px solid #ddd;}
+#product04 .container .con i.xi-arrow-left {left:0;}
+#product04 .container .con i.xi-arrow-right {right:0;}
+
+
+#tab_slider {padding:100px;background:#f7f7f7;}
+#tab_slider h2 {text-align: center;font-size:30px;font-weight:500;margin-bottom:10px;}
+#tab_slider p {text-align: center;font-weight:200;margin-bottom:100px;letter-spacing: -0.025em;}
+
+#tab_slider .container {width:1200px;margin:0 auto; padding:0 15px;}
+#tab_slider .tab_menu {display:flex;border-bottom:1px solid #ddd;margin-bottom:20px;}
+#tab_slider .tab_menu>li {}
+#tab_slider .tab_menu>li a {display:block;line-height:40px;padding:0 50px;background:#333;color:#fff;text-align:center;}
+#tab_slider .tab_menu>li~li {border-left:1px solid #f7f7f7;}
+
+#tab_slider .tab_content {position:relative;height:250px;}
+/*height를 임의로 줘야 내용이 구간안에 들어옴*/
+#tab_slider .tab_content .tab_slider {position:absolute;top:0;left:0;width:100%;visibility: hidden;}
+/*position을 줘서 위에 컨텐츠들이 겹치도록, width:100%를 줘야 구간 안에 들어옴*/
+#tab_slider .tab_content .tab_slider.on {visibility: visible;}
+#tab_slider .tab_content figure {padding:0 15px;}
+#tab_slider .tab_content figure img {width:100%;}
+
+
+#footer {background:#333;color:#d3d3d3;padding:30px 0 60px 0;font-weight: 200;font-size:14px;}
+#footer .container {display:flex;width:1200px;justify-content:space-between;margin:0 auto; padding:0 15px;line-height:70px;}
+#footer .customer_link {display:flex;}
+#footer .customer_link li {position:relative;}
+#footer .customer_link li a {display:block;padding:0 30px;}
+#footer .customer_link li~li:before {content:"";width:1px;height:10px;background:#d3d3d3;position:absolute;top:44%;left:-15px;}
+#footer .customer_link li a:first-child {padding:0 30px 0 0;}
+#footer .container i {font-size:20px;padding-left: 10px;}
+#footer hr {border:none;border-top:1px solid #777;}
+
+#footer select {background:#333;padding:5px 15px;outline:none;}

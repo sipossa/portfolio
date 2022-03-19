@@ -1,0 +1,108 @@
+html {font-size:20px;}
+body {font-size:0.8rem;}
+
+#wrap {}
+
+#header {line-height: 5rem;}
+#header .container {display:flex;width:60rem; margin:0 auto;}
+#header .container>* {padding:0 0.75rem;}
+#header .container h1 img{width:10rem;}
+#header .container nav{margin-left:auto;}
+#header .container nav ul{display:flex;}
+#header .container nav ul>li>a {position:relative;display:block;padding:0 1.5rem;}
+#header .container nav ul>li~li>a:before {content:"";position:absolute;top:50%;left:0;display:block;width:0.05rem;height:0.7rem;background: #ddd;transform:translateY(-50%)}
+#header .container i {font-size: 1rem;}
+#header .container i.xi-bars {display:none;}
+
+
+#main_visual {position:relative;}
+#main_visual .main_slider {}
+#main_visual .main_slider figure {height:30rem;}
+#main_visual .main_slider .item01 {background: url(../lib/bsse/main_visual02.jpg) no-repeat center center/cover;}
+#main_visual .main_slider .item02 {background: url(../lib/bsse/main_visual03.jpg) no-repeat center center/cover;}
+#main_visual .main_slider .item03 {background: url(../lib/bsse/main_visual01.jpg) no-repeat center center/cover;}
+
+#main_visual .slogan {position:absolute;top:12rem;left:0;width:100%;text-align: center;color:#fff;text-shadow: 0 0 2px #292929;}
+#main_visual .slogan h2 {font-size:2rem;font-weight: 600;margin-bottom:1rem;}
+#main_visual .slogan p {font-weight:100;}
+
+
+#content {position:relative;padding:5rem 0;text-align: center;}
+#content h2 {font-size:1.3rem;font-weight:600;margin-bottom:0.5rem;}
+#content p {font-weight:100;margin-bottom:2rem;}
+#content .container {width:60rem;margin:0 auto;}
+#content .container figure {padding:0 0.75rem;}
+
+#content .arrows i{position:absolute;top:50%;left:50%;transform: translate(-50%, -50%);font-size:1.5rem;}
+#content .arrows i.xi-arrow-left {margin-left:-32rem;}
+#content .arrows i.xi-arrow-right {margin-left:32rem;}
+
+#content .pr_slider .slick-dots {display:flex;justify-content: center;}
+#content .pr_slider .slick-dots li {width:0.75rem;height:0.75rem;margin:1rem 0.3rem;background: #ddd;border-radius:50%;transition: 0.4s;}
+#content .pr_slider .slick-dots li.slick-active {background: #333;transform: scale(1.2);}
+#content .pr_slider .slick-dots li button {display:none;}
+
+
+#footer {padding:5rem 0;background: #333;color:#fff;line-height: 1.6;}
+#footer .container {width:60rem;margin:0 auto;padding:0 0.75rem;}
+
+
+
+
+/*------------------------------------*/
+
+@media (max-width:768px) {
+
+    html {font-size:14px;}
+    body {font-size:0.8rem;}
+    #wrap {}
+
+    #header {line-height: 5rem;}
+    #header .container {display:flex;flex-direction:column;width:auto; margin:0 auto;}
+    #header .container>* {padding:0 0.75rem;}
+    #header .container h1 img{width:10rem;}
+
+    #header .container nav{display:none;margin-left:auto;width:100%;line-height:3rem;font-size: 1.2rem;text-align:center;padding:0 0;}
+    #header .container nav ul{display:flex;flex-direction:column;border-top:2px solid #333;}
+    #header .container nav ul>li>a {position:relative;display:block;padding:0 1.5rem;border-bottom:1px solid #ddd;}
+    #header .container nav ul>li~li>a:before {content:"";display:none;position:absolute;top:50%;left:0;display:block;width:0.05rem;height:0.7rem;background: #ddd;transform:translateY(-50%)}
+
+    #header .container i {font-size: 1rem;}
+    #header .container i.xi-bars {display:block;position:absolute;top:1.5rem;right:1.5rem;font-size: 2rem;z-index:999;}/*fixed는 위치고정, 스크롤내려도 보임*/
+    #header .container i.xi-bars:after {content:"";display:block;width:100%;height:2rem;background:#fff;position:absolute;top:0;left:0;z-index: -1;}/*bars background*/
+    #header .container i.xi-search {display:none;}
+    
+    
+    #main_visual {position:relative;}
+    #main_visual .main_slider {}
+    #main_visual .main_slider figure {height:calc(100vh - 5rem);} /*슬라이드 높이 화면에 꽉차게*/
+    #main_visual .main_slider .item01 {background: url(../lib/bsse/main_visual02.jpg) no-repeat center center/cover;}
+    #main_visual .main_slider .item02 {background: url(../lib/bsse/main_visual03.jpg) no-repeat center center/cover;}
+    #main_visual .main_slider .item03 {background: url(../lib/bsse/main_visual01.jpg) no-repeat center center/cover;}
+    
+    #main_visual .slogan {position:absolute;top:12rem;left:0;width:100%;text-align: center;color:#fff;text-shadow: 0 0 2px #292929;}
+    #main_visual .slogan h2 {font-size:2rem;font-weight: 600;margin-bottom:1rem;}
+    #main_visual .slogan p {font-size:3vw;font-weight:100;line-height:1.4;}
+    /*vw단위 사용하면 휴대폰 기종이 달라도 문장 줄 바뀌는 위치가 동일함 (텍스트 배열이 동일하게 보임)*/
+    
+    
+    #content {position:relative;padding:5rem 0;text-align: center;}
+    #content h2 {font-size:1.3rem;font-weight:600;margin-bottom:0.5rem;}
+    #content p {font-weight:100;margin-bottom:2rem;}
+    #content .container {width:auto;margin:0 auto;}
+    #content .container figure {padding:0 0.75rem;}
+    
+    #content .arrows i{position:absolute;top:50%;left:50%;transform: translate(0, 0);font-size:1.5rem; color:rgba(255, 255, 255, 0.5)}
+    #content .arrows i.xi-arrow-left {margin-left:0;left:1rem;font-size:3rem;}
+    #content .arrows i.xi-arrow-right {margin-left:0;left:auto;right:1rem;font-size:3rem;}
+    
+    #content .pr_slider .slick-dots {display:flex;justify-content: center;}
+    #content .pr_slider .slick-dots li {width:0.75rem;height:0.75rem;margin:1rem 0.3rem;background: #ddd;border-radius:50%;transition: 0.4s;}
+    #content .pr_slider .slick-dots li.slick-active {background: #333;transform: scale(1.2);}
+    #content .pr_slider .slick-dots li button {display:none;}
+    
+    
+    #footer {padding:5rem 0;background: #333;color:#fff;line-height: 1.6;}
+    #footer .container {width:auto;margin:0 auto;padding:0 0.75rem;text-align: center;}
+
+}

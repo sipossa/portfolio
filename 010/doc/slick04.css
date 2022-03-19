@@ -1,0 +1,79 @@
+#wrap {}
+
+#header {line-height: 100px;}
+#header .container {display:flex;width: 1200px;margin:0 auto;padding:0 15px;}
+#header h1 img {width:200px;}
+#header nav {margin-left:auto;}
+#header nav>ul {display:flex;}
+#header nav>ul>li>a {display:block;padding:0 20px;position:relative;}
+#header nav>ul>li~li>a:after {content:"";display:block;width:1px; height:12px; background: #333;position:absolute;top:50%;left:0;transform: translateY(-50%);}
+
+#header .right {font-size: 20px; margin-left: 40px;}
+
+#main_visual {position:relative;}
+#main_visual figure{height:600px;padding-top:170px;}
+#main_visual .item01 {background: url(../lib/bsse/main_visual01.jpg) no-repeat center center/cover;}
+#main_visual .item02 {background: url(../lib/bsse/main_visual02.jpg) no-repeat center center/cover;}
+#main_visual .item03 {background: url(../lib/bsse/main_visual03.jpg) no-repeat center center/cover;}
+
+#main_visual .container {position:absolute;top:50%;left:50%;color:#fff;transform: translate(-50%,-50%);width:1200px;padding:0 15px;}
+#main_visual .container h2 {font-size: 60px;font-weight: 300;margin-bottom: 20px;}
+#main_visual .container p {font-size: 20px;font-weight: 100;}
+
+/*number animation*/
+#main_visual figure .year {width:800px;height:200px;margin:0 auto;display:flex;}
+#main_visual figure .year span {display:block;width:200px;height:200px;background: url(../lib/bsse/num.png);transition: 1s;opacity: 0;}
+#main_visual figure .year span:nth-child(1) {transition: 1s;}
+#main_visual figure .year span:nth-child(2) {transition: 1s 0.2s;} /*앞에는 시간 뒤에는 딜레이*/
+#main_visual figure .year span:nth-child(3) {transition: 1s 0.4s;}
+#main_visual figure .year span:nth-child(4) {transition: 1s 0.6s;}
+
+#main_visual .item01.animation_active .year span:nth-child(1) {background-position-y:-2200px;}
+#main_visual .item01.animation_active .year span:nth-child(2) {background-position-y:-3800px;}
+#main_visual .item01.animation_active .year span:nth-child(3) {background-position-y:-3800px;}
+#main_visual .item01.animation_active .year span:nth-child(4) {background-position-y:-3800px;}
+#main_visual .item01.animation_active .year span {opacity: 1;}/*자연스럽게 나타나도록 투명도 조절하기*/
+
+/*더 많이 돌아가게 하려면 기존 -200px에 2000px더 붙여주기*/
+#main_visual .item02.animation_active .year span:nth-child(1) {background-position-y:-2200px;}
+#main_visual .item02.animation_active .year span:nth-child(2) {background-position-y:-3600px;}
+#main_visual .item02.animation_active .year span:nth-child(3) {background-position-y:-3800px;}
+#main_visual .item02.animation_active .year span:nth-child(4) {background-position-y:-3200px;}
+#main_visual .item02.animation_active .year span {opacity: 1;}
+
+#main_visual .item03.animation_active .year span:nth-child(1) {background-position-y:-2200px;}
+#main_visual .item03.animation_active .year span:nth-child(2) {background-position-y:-3800px;}
+#main_visual .item03.animation_active .year span:nth-child(3) {background-position-y:-3400px;}
+#main_visual .item03.animation_active .year span:nth-child(4) {background-position-y:-3200px;}
+#main_visual .item03.animation_active .year span {opacity: 1;}
+
+
+#main_visual .btn {display:flex;position:absolute;bottom:-30px;left:50%;width:1170px;line-height: 60px;background:#333;color:#fff;transform: translateX(-50%);text-align: center;}
+#main_visual .btn li {flex:1;position:relative;}
+#main_visual .btn li span {display:block;cursor: pointer;}
+#main_visual .btn li~li {border-left: 1px solid #fff;}
+#main_visual .btn li:before {content:"";display:block;width:0%;height:100%;background:#ff0;position:absolute;top:0;left:0;z-index: -1;}
+
+#main_visual .btn li.animation_active {color:#292929;}
+#main_visual .btn li.animation_active:before {width:100%;transition: 1s;}
+
+#main_visual .snum {position:absolute;top:50px;right:50px;color:#fff;font-size: 20px;}
+#main_visual .sbar {position:absolute;top:0;left:0;width:100%;height:10px;background:#333;}
+#main_visual .sbar span {display:block;width:0;height:100%;background:#ff0;}
+#main_visual .sbar.animation_active span  {width:100%;transition:2s;}
+
+#main_visual .sbar2 {position:absolute;top:100px;left:100px;width:5px;height:300px;background:#333;}
+#main_visual .sbar2 span {display:block;width:100%;height:0;background:#ff0;transition:1s;}
+
+
+#content01 {padding:150px 0;text-align: center;}
+#content01 h2 {font-size:24px; font-weight: 300; letter-spacing: 0.5em;margin-bottom: 15px;}
+#content01 p {font-size:12px; margin-bottom: 40px;line-height: 1.6;}
+#content01 .container {display: flex;width:1200px;margin:0 auto;}
+#content01 .container figure {flex:1; padding: 0 15px;}
+#content01 .container img {max-width:100%;}
+
+#footer {padding:80px 0 100px 0; background: #f4f4f4;}
+#footer .container {display:flex;justify-content:space-between;width:1200px;margin:0 auto;padding:0 15px;}
+#footer i {font-size: 20px;padding:10px;background: #333;border-radius: 50%;color:#fff}
+

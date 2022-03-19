@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+:root {
+    --mc:#BE87DB;
+    --sc:#B8D5F2;
+    --lc:#f7f7f7;
+    --dc:#444444;
+    --gc:#dddddd;
+}
+
+html {font-size: 20px;}
+body {font-size: 0.8rem; color: var(--dc);}
+
+#wrap {min-width: 95rem;}
+
+.st0 {
+    fill: #662D91;
+    animation: colorChange 2s infinite;
+}
+
+.txt1 {fill:#F8F4F5;font-family: 'Montserrat', sans-serif;font-size:2.5rem;}
+.txt2 {fill:#333333;font-family: 'Montserrat', sans-serif;font-size:2.5rem;}
+
+
+
+@keyframes colorChange {
+    0% {fill:#662D91; d:path("M85.78,46.51c-5.36,20.32-16.93,35.64-38.12,41.76C25.06,94.8,7.72,72.77,5.1,45.31C2.84,21.7,24.06,9.56,47.65,2.36C70.15-4.51,91.83,23.57,85.78,46.51z");}
+    25% {fill:#cbf653; d:path("M45.35,4.7C74.73-7.27,86.01,22.9,86.01,45.35s-18.2,40.65-40.65,40.65S4.7,67.81,4.7,45.35S24.57,13.18,45.35,4.7z");}
+    50% {fill:#f8f3a7; d:path("M85.78,46.51c-5.36,20.32-16.93,35.64-38.12,41.76C25.06,94.8,7.72,72.77,5.1,45.31C2.84,21.7,24.76-6.82,47.65,2.36C61.03,7.73,91.83,23.57,85.78,46.51z");}
+    10% {fill:#b7c2da; d:path("M85.78,46.51c-5.36,20.32-16.93,35.64-38.12,41.76C25.06,94.8,7.72,72.77,5.1,45.31C2.84,21.7,24.06,9.56,47.65,2.36C70.15-4.51,91.83,23.57,85.78,46.51z");}
+}
+
+
+#header h1 {position: fixed; top: 3rem; left: 3rem; z-index: 999;}
+#header h1 a {display: block; width: 15rem;}
+
+#header nav {position: fixed; top: 50%; right: 3rem; transform: translateY(-50%); z-index: 999;}
+
+#header .cover_btn {position: fixed; top: 3rem; right: 3rem; z-index: 999}
+#header .cover_btn i {font-size: 1.5rem; padding: 0.5rem; background: var(--lc);}
+
+
+#header nav li a {position: relative; display: block; width: 3rem; height: 1rem; text-indent: -99999px;}
+#header nav li a:after {content: ""; display: block; position: absolute; top: 0.35rem; right: 0; width: 40%; height: 0.3rem; background: var(--mc);
+border-radius: 0.15rem; transition: 0.3s;}
+#header nav li.on a:after {width: 80%; background: var(--sc);}
+
+
+.gooey {filter:url('#bbq'); position: relative;}
+.gooey span {position: absolute; top: 0; left: 0; display: block; width: 2.5rem; height: 2.5rem; background: var(--mc); border-radius: 0.5rem; text-align: center; line-height: 2.5rem; color: var(--lc);}
+.gooey span:nth-child(2) {animation: txtAni 4s infinite;}
+
+@keyframes txtAni {
+    0% {left: 0;}
+    50% {left: 7rem;}
+    100% {left: 0;}
+}
+
+.box_mask {width: 20rem;}
+.st7 {animation: maskAni 2s infinite;}
+
+
+@keyframes maskAni {
+    0% {d:path("M59.8,79.67H29.67c-10.28,0-18.61-8.33-18.61-18.61V30.93c0-10.28,12.24,4.9,18.61-18.61H59.8c10.28,0,18.61,8.33,18.61,18.61v30.12C78.41,71.34,70.08,79.67,59.8,79.67z")}
+    50% {d:path("M59.8,79.03H29.67c-10.28,0-18.61-8.33-18.61-18.61V30.29c0-10.28,8.33-18.61,18.61-18.61H59.8c3.67,14.2,3.67,14.2,18.61,18.61v30.12C78.41,70.7,70.08,79.03,59.8,79.03z")}
+    0% {d:path("M59.8,79.67H29.67c-10.28,0-18.61-8.33-18.61-18.61V30.93c0-10.28,12.24,4.9,18.61-18.61H59.8c10.28,0,18.61,8.33,18.61,18.61v30.12C78.41,71.34,70.08,79.67,59.8,79.67z")}
+    
+}
+
+
+
+
+
+.section {background: url(../img/bg_pattern.png);}
+.section img {max-width: 100%;}
+.section .mockup {background: url(../img/mockup.png) no-repeat center top/100%; padding: 7.5% 10% 8% 10%;}
+.section .mockup figure {position: relative; padding-bottom: 56.25%; overflow: hidden;}
+.section .mockup figure img {position: absolute; top: 0; left: 0; width: 100%; transition: 1s;}
+.section .mockup figure:hover img {transform: translateY(-100%); top: 100%; cursor: pointer;}
+
+.section .description h3 {font-family: 'Montserrat', sans-serif; font-size: 2.5rem; font-weight: 200; margin-bottom: 1rem;}
+.section .description p {font-size: 0.75rem; font-weight: 300; margin-bottom: 2rem;}
+.section .description dl {display: inline-flex; line-height: 1.5rem; border-bottom: 1px solid var(--gc);}
+.section .description dl dt {width: 7rem;}
+.section .description dl dt::before {content: "＊"; margin-right: 0.5rem;}
+.section .description dl:last-of-type {margin-bottom: 2rem;}
+.section .description dd span {display: inline-block; width: 0.6rem; height: 0.6rem; border-radius: 50%; vertical-align: middle}
+.section .description dd strong {vertical-align: middle; margin-right: 1rem;}
+.section .description dd span:nth-of-type(1) {background: #333;}
+.section .description dd span:nth-of-type(2) {background: #666;}
+.section .description dd span:nth-of-type(3) {background: #999;}
+
+.section .description ul {display: flex; gap: 0.5rem;}
+.section .description ul a {display: block; background: var(--mc); color: var(--lc); line-height: 3rem;
+padding: 0 2rem; font-size: 1rem; font-weight: 100; border-radius: 0.3rem;}
+
+
+.container {position: relative; display: grid; grid-template-columns: repeat(2,1fr); gap: 2rem; align-items: center; width: 70rem; margin: 0 auto;}
+
+
+
+.intro figure {border-radius: 30% 70% 54% 46% / 29% 45% 55% 71%; overflow: hidden; animation: int_movie 5s infinite linear;}
+.intro .container::after {content: ""; position: absolute; top: 3rem; right: 3rem; display: block; width: 5rem; height: 5rem;
+background: var(--sc); border-radius: 50%; opacity: 0.7;}
+
+.intro figure:hover {border-radius: 16% 84% 42% 58% / 71% 36% 64% 29%;}
+.intro figure img {width: 100%;}
+
+@keyframes int_movie {
+    0% {border-radius: 30% 70% 54% 46% / 29% 45% 55% 71%;}
+    30% {border-radius: 30% 70% 32% 68% / 25% 40% 60% 75% }
+    50% {border-radius: 16% 84% 42% 58% / 71% 36% 64% 29%;}
+    70% {border-radius: 25% 60% 47% 53% / 32% 40% 60% 68%;}
+    100% {border-radius: 30% 70% 32% 68% / 25% 40% 60% 75%;}
+
+}
+
+
+
+.intro .slogan h2 {font-size: 4rem; font-weight: 700; margin-bottom: 2rem;}
+.intro .slogan p {font-size: 0.75rem; font-weight: 300; margin-bottom: 1rem;}
+.intro .slogan strong {display: block; font-size: 1rem; font-weight: 500;}
+
+.intro .wheel {position: absolute; bottom: 3rem; left: 50%; transform: translateX(-50%); width: 1.5rem;
+height: 2.5rem; border: 2px solid #444; font-size: 0; border-radius: 0.7rem; opacity: 0.5;}
+.intro .wheel span {position: absolute; top: 0.3rem; left: 50%; transform: translateX(-50%); width: 0.2rem;
+height: 0.5rem; background: #444; border-radius: 0.1rem; animation: wheel 0.7s infinite;}
+
+@keyframes wheel {
+    to {top:0.6rem}
+}
+
+
+.portfolio_01 {}
+
+
+
+
+
+
+
+
+
+
+
+#footer .toTop {position: fixed; bottom: 3rem; right: 3rem; z-index: 999;}
+#footer .toTop i {font-size: 1.5rem; padding: 0.5rem; background: var(--lc);}
+#footer address {position: fixed; bottom: 3rem; left: 3rem; z-index: 999;}

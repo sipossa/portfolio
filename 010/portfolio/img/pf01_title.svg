@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="420" viewBox="0 0 780 420">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="모양_1" data-name="모양 1" class="cls-1" d="M414-23s-97.84,55.25-60,160-97,113-97,113-33.676-4.711,1-43,9,57,9,57-21.9,58.152,29,86,115.438,68.5,98,105"/>
+</svg>

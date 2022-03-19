@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;500;600;700;800&display=swap');
+
+
+#wrap {min-width: 1900px;}
+
+#header {line-height: 100px;}
+/* text-align:center 박스안의 인라인 요소를 가운데로 오게 한다. */
+
+
+#header {line-height: 130px;}
+#header .container {display: flex; justify-content: space-between; width: 1200px; margin: 0 auto;}
+#header h1 {padding: 0 15px;} 
+#header nav {padding: 0 15px;}
+#header nav>ul {display: flex;} 
+#header nav>ul>li>a {display: block; padding: 0 30px; font-size: 16px; font-weight: 300;
+color: #292929;}
+#header nav>ul>li {position: relative;} 
+/* #header nav>ul>li:last-child>a {padding: 0 0 0 30px;} */
+/* #header nav>ul>li~li::after {content: ""; display: block; width: 1px; height: 12px; background: #333; position: absolute; top: 46px; left: 0;} */
+
+/* display: flex; 는 자식 block을 가로로 배열한다.
+justify-content: center; 는 display: flex;로 가로 배열 된 박스들을 가운데로 오게 한다. */
+
+#header .search input {width: 120px; padding: 5px; outline: none; border: none; border-bottom: 1px solid #292929;}
+#header .search i {font-size: 20px; padding: 5px; color: #292929;}
+
+
+
+#main_visual {position: relative;}
+#main_visual figure {height: 600px;}
+#main_visual .itm01 {background: url(../lib/img/main_visual01.jpg) no-repeat center center/cover;}
+#main_visual .itm02 {background: url(../lib/img/main_visual02.jpg) no-repeat center center/cover;}
+#main_visual .itm03 {background: url(../lib/img/main_visual03.jpg) no-repeat center center/cover;}
+#main_visual .itm04 {background: url(../lib/img/main_visual04.jpg) no-repeat center center/cover;}
+#main_visual .itm05 {background: url(../lib/img/main_visual05.jpg) no-repeat center center/cover;}
+
+
+/*외워두기*/
+#main_visual .container {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+width: 1200px; padding: 0 15px; color: #fff;} /*transform: translate(x축,y축);*/
+#main_visual h2 {font-family: 'Andada Pro', serif; font-size: 50px; font-weight: 400; text-shadow: 0 0 2px #333;}
+#main_visual p {font-weight: 100; font-size: 25px; margin-bottom: 40px; line-height: 1.6; text-shadow: 0 0 2px #333;}
+
+
+#con01 {padding: 150px 0; text-align: left; color: #333;}
+#con01 .title {width: 1200px; margin: 0 auto;}
+#con01 .title h2 {padding: 0 15px; font-family: 'Andada Pro', serif; font-size: 30px; font-weight: 400; margin-bottom: 10px;}
+#con01 .title h2::after {content: ""; display: block; width: 44px; height: 1px;
+    background: #333; margin: 20px 0;}
+#con01 .title p {padding: 0 15px; font-size: 16px; font-weight: 300; letter-spacing: -0.025em; line-height: 26px; margin-bottom: 67px;}
+#con01 .container {display: flex; width: 1200px; margin: 0 auto;}
+#con01 .container figure {flex: 1; padding: 0 10px;}
+#con01 .container figure strong {display: block; margin-bottom:10px;}
+#con01 .container .case {position: relative;  overflow: hidden; border-radius: 70px 0;}
+#con01 .container .case img {width: 100%;}
+#con01 .container .case strong {position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.3); color: #fff; text-align: center; padding-top: 200px; transition: 1s;}
+/* #con01 .container figure:nth-child(2) .case {border-radius: 50%;} */
+#con01 .container .case:hover strong {top:100%; transition: 1s;} 
+/* #con01 .container .case img {width: 100%; transition: 0.5s;} */
+/* #con01 .container .case:hover img {transform: scale(1.5)} rotateY(360deg); */
+
+
+
+
+
+
+
+
+
+
+#con02 {padding:100px 0;text-align: left; color: #333;background:#f7f7f7;}
+#con02 .title {width: 1200px; margin: 0 auto;}
+#con02 .title h2 {padding: 0 15px; font-family: 'Andada Pro', serif; font-size: 30px; font-weight: 400; margin-bottom: 63px;}
+#con02 .container {padding: 0 15px; display: flex; flex-wrap:wrap; width: 1200px; margin: 0 auto;}
+#con02 .container figure {flex:50%; padding: 0 0;}
+#con02 .container figure img {width: 100%;}
+#con02 .container .intro {flex:50%; padding: 50px 0; text-align: center;}
+#con02 .container .intro h3 {font-size: 24px; font-weight: 400; padding: 30px 0 0 0;}
+#con02 .container .intro h3::after {content: ""; display: block; width: 50px; height: 1px;
+    background: #333; margin: 70px auto; transform: rotate(90deg);}
+#con02 .container .intro p {padding: 0 15px; font-size: 18px; font-weight: 300; letter-spacing: -0.025em; line-height: 30px;
+margin-bottom: 40px;}
+#con02 .container .intro a {display: block; font-size: 14px; font-weight: 400; width: 102px; border: 1px solid #333; margin: 0 auto; line-height: 25px;}
+
+
+
+
+
+
+
+
+
+
+#con03 {padding: 150px 0; text-align: left; color: #333; position: relative;}
+#con03 .title {width: 1200px; margin: 0 auto;}
+#con03 .title h2 {padding: 0 15px; font-family: 'Andada Pro', serif; font-size: 30px; font-weight: 400; margin-bottom: 10px;}
+#con03 .title h2::after {content: ""; display: block; width: 44px; height: 1px;
+    background: #333; margin: 20px 0;}
+#con03 .title p {padding: 0 15px; font-size: 16px; font-weight: 300; letter-spacing: -0.025em; line-height: 26px; margin-bottom: 67px;}
+
+#con03 .container {width: 1200px; margin: 0 auto;}
+#con03 .container figure {flex:3; margin-left: 130px;}
+#con03 .container figure img {margin: 0;}
+
+#con03 .btn i {position: absolute; top: 60%; left: 50%; transform: translate(-50%,-50%); padding: 20px; color: #333; font-size: 48px;}
+#con03 .btn i.xi-angle-left-thin {margin-left: -600px;}
+#con03 .btn i.xi-angle-right-thin {margin-left: 600px;}
+
+#con03 .container .item01 {display:flex;}
+#con03 .container .intro {}
+#con03 .container .intro {flex:7; padding: 50px 0; text-align: center;}
+#con03 .container .intro h3 {font-size: 25px; font-weight: 500; padding: 45px 0 0 0;}
+#con03 .container .intro span {font-size: 16px; font-weight: 300; line-height: 40px;}
+#con03 .container .intro p {font-size: 20px; font-weight: 300; letter-spacing: -0.025em; padding: 30px 0;}
+#con03 .container .intro a {display: block; font-size: 14px; font-weight: 400; width: 102px; border: 1px solid #333; margin: 0 auto; line-height: 30px;
+margin-top: 34px;}
+
+
+
+
+#con03 .container .item02 {display:flex;}
+#con03 .container .intro {}
+#con03 .container .intro {flex:50%; padding: 50px 0; text-align: center;}
+#con03 .container .intro h3 {font-size: 25px; font-weight: 500; padding: 45px 0 0 0;}
+#con03 .container .intro span {font-size: 16px; font-weight: 300; line-height: 40px;}
+#con03 .container .intro p {font-size: 20px; font-weight: 300; letter-spacing: -0.025em; padding: 30px 0;}
+#con03 .container .intro a {display: block; font-size: 14px; font-weight: 400; width: 102px; border: 1px solid #333; margin: 0 auto; line-height: 30px;
+margin-top: 34px;}
+
+
+
+
+#con04 {padding:100px 0;text-align: left; color: #333;background:#f7f7f7;}
+#con04 .title {width: 1200px; margin: 0 auto;}
+#con04 .title h2 {padding: 0 15px; font-family: 'Andada Pro', serif; font-size: 30px; font-weight: 400; margin-bottom: 63px;}
+#con04 .container {padding: 0 15px; width: 1200px; margin: 0 auto;}
+#con04 .tab {display: block; color: #333;  width: 50%; background: #fff; box-shadow: 0 0 3px rgb(92, 92, 92);}
+#con04 .tab_menu {}
+#con04 ul {display: flex; line-height: 40px;} 
+#con04 ul li {flex: 1; text-align: center; width: 180px; cursor: pointer; background: #eee;}
+#con04 ul li.on {background: #fff;}
+#con04 ul li~li {border-left: 1px solid #ddd;}
+#con04 .tab_cont {background: #fff; color: #333;}
+#con04 .tab_cont h2 {text-align: right; padding: 15px 15px 0 0;}
+#con04 .tab_cont h2 a {font-size: 13px; font-family: 'Noto Sans KR', sans-serif; font-weight: 300;}
+#con04 .tab_cont>div {display: none;}
+#con04 .tab_cont>div.on {display: block;}
+#con04 .tab_cont>div.on table {width: 100%; padding: 10px;}
+#con04 .tab_cont>div.on table td {line-height: 30px; font-size: 14px;}
+#con04 .tab_cont>div.on table td:hover {color: #777;}
+#con04 .tab_cont>div.on table .date {text-align: right;}
+
+
+#footer {padding: 80px 0 100px 0; background: #f4f4f4; text-align: center; border-top: 1px solid #ddd;}

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+#header h1 {position:fixed;top:50px;left:50px;font-family: 'Raleway', sans-serif;font-weight:500;z-index:999;}
+
+
+
+.section {background:#fff url(../img/bg01.png)}
+.section:nth-child(even) {background:#f4f4f4 url(../img/bg02.png)}
+.container {text-align:center;}
+
+
+
+.sc01 h2 {font-family: 'Raleway', sans-serif;;font-size:150px;font-weight:200;margin-bottom:50px;transform:translateY(100px);opacity:0;}
+
+.sc01.on h2 {transform:translateY(0);opacity:1;transition:0.8s;}
+
+.sc01 p {font-family: 'Raleway', sans-serif;font-size:14px;font-weight:500;margin-bottom:50px;transform:translateY(100px);opacity:0;}
+
+.sc01.on p {transform:translateY(0);opacity:1;transition:0.8s 0.5s;}
+
+
+
+
+.sc01 figure {width:250px;margin:0 auto;background:#f4f4f4;margin-bottom:30px;border-radius:50%;overflow:hidden;transform:scale(0.3);opacity:0;position:relative;}
+
+.sc01 figure:before {content:"\e91c";font-family: xeicon!important;display:block;width:100%;height:100%;position:absolute;top:0;left:0;background:url(../img/bg03.png);opacity:0.25;color:#fff;font-size:80px;}
+
+.sc01.on figure {transform:scale(1) rotate(360deg);transition:3s 1s;opacity:1;}
+
+.sc01 figure img {width:100%;border-radius:50%;}
+
+.sc01.on figure img {animation:zz 6s linear infinite}
+@keyframes zz {
+    to {transform:rotate(360deg)}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

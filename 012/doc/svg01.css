@@ -1,0 +1,37 @@
+.section {height:100vh;display:flex;justify-content:center;align-items:center;width:400px;margin:0 auto;}
+
+.st0 {fill:#FF4848;animation:svg01 2s infinite;}
+.st1 {fill:#FF4848;animation:svg02 2s infinite;}
+
+@keyframes svg01 {
+    0% {fill:#FF4848}
+    50% {fill:#ff0;}
+    100% {fill:#FF4848}
+}
+
+@keyframes svg02 {
+    0% {d:path("M445.5,247.8c-20.6,51.3-63.5,94.3-127.2,122.6c-63.6,28.3-172.7-69.1-153.7-134.1 c19.8-67.8,95-121.5,158.1-127.3C392.4,102.6,484.6,150.2,445.5,247.8z")}
+    50% {d:path("M445.5,247.8c0.8,55.3-63.5,94.3-127.2,122.6c-63.6,28.3-139.8-69.4-153.7-134.1 c-14.8-69,99.9-152.2,158.1-127.3C396,140.4,444,143.7,445.5,247.8z")}
+    100% {d:path("M445.5,247.8c-20.6,51.3-63.5,94.3-127.2,122.6c-63.6,28.3-172.7-69.1-153.7-134.1 c19.8-67.8,95-121.5,158.1-127.3C392.4,102.6,484.6,150.2,445.5,247.8z")}
+}
+
+.gooey {position:relative;filter:url('#bbq');}
+.gooey span {position:absolute;top:0;left:0;display:block;width:100px;height:100px;background:#FF4848;border-radius:50%;text-align:center;line-height:100px;color:#f2f2f2;}
+.gooey span:nth-child(2) {animation:txtAni 2s infinite;}
+
+@keyframes txtAni {
+    0% {left:0;}
+    50% {left:150px;}
+    100% {left:0;}
+}
+
+
+/* fill의 흰색 검은색으로 opacity 조절 */
+.box_mask {width:400px;}
+.st7 {fill:#fff;animation:maskAni 2s infinite;}
+
+@keyframes maskAni {
+    0% {d:path("M348.1,400H51.9C23.4,400,0,376.6,0,348.1V51.9C0,23.4,23.4,0,51.9,0h296.1C376.6,0,400,23.4,400,51.9v296.1 C400,376.6,376.6,400,348.1,400z")}
+    50% {d:path("M238.3,400h-76.6C72.8,400,0,327.2,0,238.3v-76.6C0,72.8,72.8,0,161.7,0h0C292.8,0,400,107.2,400,238.3v0 C400,327.2,327.2,400,238.3,400z")}
+    100% {d:path("M348.1,400H51.9C23.4,400,0,376.6,0,348.1V51.9C0,23.4,23.4,0,51.9,0h296.1C376.6,0,400,23.4,400,51.9v296.1 C400,376.6,376.6,400,348.1,400z")}
+}

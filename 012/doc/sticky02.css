@@ -1,0 +1,56 @@
+body {background:#444;color:#fff;}
+.sticky {position:sticky;top:0;height:100vh;}
+
+.header {position:fixed;top:0;left:50px;background:#fff;color:#444;text-align:center;padding:60px 20px 100px 20px;border-radius:0 0 30px 30px;z-index:999;}
+.header nav {display:none;}
+.header img {width:160px;}
+.header i {padding:20px;font-size:21px;}
+.header ul {padding:30px 0;}
+.header ul li {line-height:40px;}
+.header ul li a {display:block;border-bottom:1px solid #ddd;}
+
+.con01 {background:url(../lib/base/main_visual01.jpg) no-repeat center center/cover;}
+.con02 {background:url(../lib/base/main_visual02.jpg) no-repeat center center/cover;}
+
+.txt {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;}
+.txt h2 {font-size:40px;font-weight:100;letter-spacing:0.5em;margin-bottom:30px;}
+.txt p {font-size:15px;font-weight:100;}
+
+.left {position:relative;float:left;height:100vh;width:50%;}
+.right {position:relative;float:left;height:100vh;width:50%;}
+.right .txt {text-align:left;width:80%;}
+.left .txt {text-align:left;width:80%;}
+
+
+.con04 .left {background:url(../lib/base/pro01.jpg) no-repeat center center/cover;}
+
+.con05 .right {background:url(../lib/base/pro02.jpg) no-repeat center center/cover;}
+
+.con06 .left {background:#444;color:#fff;}
+
+.con07 .right {background:#fff;color:#444;}
+
+.footer {position:fixed;bottom:0;right:50px;background:#fff;padding:30px 10px;text-align:center;color:#444;border-radius:20px 20px 0 0;}
+.footer span {display:block;}
+.footer i {font-size:20px;padding:10px;background:#ddd;border-radius:50%;margin-bottom:10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

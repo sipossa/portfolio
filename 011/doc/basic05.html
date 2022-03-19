@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본레이아웃 완성형 01</title>
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/slick.css">
+    <link rel="stylesheet" href="../lib/css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="./basic05.css">
+    <script src="../lib/js/jquery-1.12.4.min.js"></script>
+    <script src="../lib/js/slick.min.js"></script>
+    <script src="../lib/js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="./basic05.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <!--{top_banner 이혜민 20211103 최종수정}-->
+    <div id="top_banner">
+        <div class="container">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni.<a href="#!">more</a></p>
+            <i class="xi-close"></i>
+        </div>
+    </div>
+    <!--top_banner-->
+
+
+    <!--{header 이혜민 20211103 최종수정}-->
+    <header id="header">
+        <div class="container">
+            <h1>
+                <a href="#"><img src="../lib/base/logo_w.png" alt="logo"></a> <!--클릭해야하는 것들은 a태그안에 넣어준다-->
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#">menu01</a></li>
+                    <li><a href="#">menu02</a></li>
+                    <li><a href="#">menu03</a></li>
+                    <li><a href="#">menu04</a></li>
+                    <li><a href="#">menu05</a></li>
+                </ul>
+            </nav>
+            <div class="header_search">
+                <form id="header_search" action=""> <!--텍스트를 입력했을때 액션을 취해라-->
+                    <input type="text" name="" value="">
+                    <button>
+                        <i class="xi-search"></i>
+                    </button>
+                </form>
+                
+            </div>
+        </div>
+    </header>
+    <!--{header 이혜민 20211103 최종수정}-->
+
+
+
+    <main>
+    <section id="main_visual">
+        <div class="main_slider">
+            <figure class="item01"></figure>
+            <figure class="item02"></figure>
+            <figure class="item03"></figure>
+        </div>
+        <div class="slogan">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<a href="#!">more</a></p>
+        </div>
+    </section>
+
+
+    
+    <section id="product01">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="container">
+            <figure>
+                <a href="#!"><!--제품전체를 클릭하면 이동할수 있게 a 태그안에 싸준다-->
+                    <div class="case">
+                        <img src="../lib/base/main_item01.jpg" alt="제품01">
+                    </div>                    
+                    <strong>porsche01</strong>
+                    <span class="price">100.000.000원</span>
+                    <span>porsche01 korea</span>
+                </a>                
+            </figure>
+            <figure>
+                <a href="#!">
+                    <div class="case">
+                        <img src="../lib/base/main_item02.jpg" alt="제품02">
+                    </div>                    
+                    <strong>porsche02</strong>
+                    <span class="price">000.000.000원</span>
+                    <span>porsche02 korea</span>
+                </a>                
+            </figure>
+            <figure>
+                <a href="#!">
+                    <div class="case">
+                        <img src="../lib/base/main_item03.jpg" alt="제품03">
+                    </div>                    
+                    <strong>porsche03</strong>
+                    <span class="price">000.000.000원</span>
+                    <span>porsche03 korea</span>
+                </a>                
+            </figure>
+        </div>
+    </section>
+    <section id="main_banner">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <a href="#!">more<i class="xi-arrow-right"></i></a>
+    </section>
+
+    
+    <section id="product02">
+        <div class="container">
+            <div class="pic">
+                <figure><img src="../lib/base/main_item01.jpg" alt="#!"></figure>
+                <figure><img src="../lib/base/main_item02.jpg" alt="#!"></figure>
+                <figure><img src="../lib/base/main_item03.jpg" alt="#!"></figure>
+            </div>
+            
+            <div class="dis">
+                <div class="dis_con">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</elit> </p>
+                    <a href="#!">more<i class="xi-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="dis">
+                <div class="dis_con">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <a href="#!">more<i class="xi-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="pic">
+                <figure><img src="../lib/base/main_item01.jpg" alt="#!"></figure>
+                <figure><img src="../lib/base/main_item02.jpg" alt="#!"></figure>
+                <figure><img src="../lib/base/main_item03.jpg" alt="#!"></figure>
+            </div>
+        </div>
+    </section>
+
+
+    <!--제품슬라이드-->
+    <section id="product03">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur </p>
+        <div class="container">
+            <div class="pr_slider">
+                <figure>
+                    <div class="case">
+                        <img src="../lib/base/main_item01.jpg" alt="">
+                    </div>
+                    <strong>porshe01</strong>
+                    <span class="price">000.000.000</span>
+                </figure>
+                <figure>
+                    <div class="case">
+                        <img src="../lib/base/main_item02.jpg" alt="">
+                    </div>
+                    <strong>porshe02</strong>
+                    <span class="price">000.000.000</span>
+                </figure>
+                <figure>
+                    <div class="case">
+                        <img src="../lib/base/main_item03.jpg" alt="">
+                    </div>
+                    <strong>porshe03</strong>
+                    <span class="price">000.000.000</span>
+                </figure>
+                <figure>
+                    <div class="case">
+                        <img src="../lib/base/main_item01.jpg" alt="">
+                    </div>
+                    <strong>porshe04</strong>
+                    <span class="price">000.000.000</span>
+                </figure>
+                <figure>
+                    <div class="case">
+                        <img src="../lib/base/main_item02.jpg" alt="">
+                    </div>
+                    <strong>porshe05</strong>
+                    <span class="price">000.000.000</span>
+                </figure>
+                <figure>
+                    <div class="case">
+                        <img src="../lib/base/main_item03.jpg" alt="">
+                    </div>
+                    <strong>porshe06</strong>
+                    <span class="price">000.000.000</span>
+                </figure>                
+            </div>
+            <div class="slide_bar">
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="product04">
+        <div class="container">
+            <div class="dis">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, doloribus!</p>
+                <a href="#!">more<i class="xi-arrow-right"></i></a>
+            </div>
+            <div class="con">
+                <div class="pr_slider02">
+                    <figure>
+                        <div class="case">
+                            <img src="../lib/base/main_item01.jpg" alt="">
+                        </div>
+                        <strong>porshe01</strong>
+                        <span class="price">000.000.000</span>
+                    </figure>
+                    <figure>
+                        <div class="case">
+                            <img src="../lib/base/main_item02.jpg" alt="">
+                        </div>
+                        <strong>porshe02</strong>
+                        <span class="price">000.000.000</span>
+                    </figure>
+                    <figure>
+                        <div class="case">
+                            <img src="../lib/base/main_item03.jpg" alt="">
+                        </div>
+                        <strong>porshe03</strong>
+                        <span class="price">000.000.000</span>
+                    </figure>
+                    <figure>
+                        <div class="case">
+                            <img src="../lib/base/main_item01.jpg" alt="">
+                        </div>
+                        <strong>porshe04</strong>
+                        <span class="price">000.000.000</span>
+                    </figure>
+                    <figure>
+                        <div class="case">
+                            <img src="../lib/base/main_item02.jpg" alt="">
+                        </div>
+                        <strong>porshe05</strong>
+                        <span class="price">000.000.000</span>
+                    </figure>
+                    <figure>
+                        <div class="case">
+                            <img src="../lib/base/main_item03.jpg" alt="">
+                        </div>
+                        <strong>porshe06</strong>
+                        <span class="price">000.000.000</span>
+                    </figure> 
+                </div>
+                <div class="arrows">
+                    <i class="xi-arrow-left"></i>
+                    <i class="xi-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="tab">
+        <div class="container">
+            <ul class="tab_menu">
+                <li><a href="#!">Notice</a></li>
+                <li><a href="#!">Q &amp; A</a></li>
+                <li><a href="#!">Gallery</a></li>
+            </ul>
+            <div class="tab_con">
+                               
+                <div class="tab_itm01 tab_slider on">
+                    <figure>
+                        <img src="../lib/base/main_item01.jpg">                
+                    </figure>
+                    <figure>
+                        <img src="../lib/base/main_item01.jpg">                
+                    </figure>
+                    <figure>
+                        <img src="../lib/base/main_item01.jpg">                
+                    </figure>
+                    <figure>
+                        <img src="../lib/base/main_item01.jpg">                
+                    </figure>
+                    <figure>
+                        <img src="../lib/base/main_item01.jpg">                
+                    </figure>
+                    <figure>
+                        <img src="../lib/base/main_item01.jpg">                
+                    </figure>
+                </div>
+                <div class="tab_itm02 tab_slider">
+                    <figure>
+                        <img src="../lib/base/main_item02.jpg">                
+                    </figure>
+                    <figure>
+                        <img src="../lib/base/main_item02.jpg">                
+                    </figure>
+                    <figure>
+                        <img src="../lib/base/main_item02.jpg">                
+                    </figure>
+                    <figure>
+                        <img src="../lib/base/main_item02.jpg">                
+                    </figure>
+                    <figure>
+                        <img src="../lib/base/main_item02.jpg">                
+                    </figure>
+                    <figure>
+                        <img src="../lib/base/main_item02.jpg">                
+                    </figure>
+                </div>
+                <div class="tab_itm03 tab_slider">
+                    <figure>
+                        <img src="../lib/base/main_item03.jpg">                
+                    </figure>
+                    <figure>
+                        <img src="../lib/base/main_item03.jpg">                
+                    </figure>
+                    <figure>
+                        <img src="../lib/base/main_item03.jpg">                
+                    </figure>
+                    <figure>
+                        <img src="../lib/base/main_item03.jpg">                
+                    </figure>
+                    <figure>
+                        <img src="../lib/base/main_item03.jpg">                
+                    </figure>
+                    <figure>
+                        <img src="../lib/base/main_item03.jpg">                
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main> 
+    
+    
+
+
+
+
+
+    <footer id="footer">
+        <div class="container">
+            <ul class="customer_link">
+                <li><a href="#!">footer01</a></li>
+                <li><a href="#!">footer02</a></li>
+                <li><a href="#!">footer03</a></li>
+                <li><a href="#!">footer04</a></li>
+                <li><a href="#!">footer05</a></li>
+            </ul>
+            <div class="sns">
+                <a href=""><i class="xi-instagram"></i></a>
+                <a href=""><i class="xi-naver"></i></a>
+                <a href=""><i class="xi-facebook"></i></a>
+            </div>
+            
+        </div>
+        <hr>
+        <div class="container">
+            <address>전화번호 : 000-0000-0000 Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</address>
+            <from id="link">
+                <select>
+                    <option value="">LINK SITE</option>
+                    <option value="http://naver.com">naver</option>
+                    <option value="http://daum.net">daum</option>
+                </select>
+            </from>
+        </div>
+    </footer>
+</div>
+
+    
+</body>
+</html>

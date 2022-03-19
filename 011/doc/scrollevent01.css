@@ -1,0 +1,32 @@
+
+.section {padding:200px 0;background:#f2f2f2;text-align: center;}
+.section:nth-child(even) {background:#333;color:#fff;}
+
+
+/* .con02 h2 {opacity:0;transform:translateY(100px);transition: 0.5s;}
+.con02.on h2 {opacity:1;transform:translateY(0);} */
+
+.con02 {text-align: center;}
+.con02 .circle {display: inline-block;width:300px;height:300px;background:url(../lib/base/main_item03.jpg);border-radius:50%;
+margin:0 30px;,line-height: 300px;text-align: center;opacity: 0;transition: 0.5s;;transform:rotateY(180deg)}
+.con02.on .circle {opacity: 1;transform:rotateY(0);}
+
+
+.con04 .left {opacity:0;transform:translateX(-1000px);transition: 0.5s;}
+.con04 .right {opacity:0;transform:translateX(-1000px);transition: 0.5s 0.5s;}
+
+.con04.on .left {opacity:1;transform:translateX(0);}
+.con04.on .right {opacity:1;transform:translateX(0);}
+
+
+
+
+
+
+
+
+
+
+
+
+
