@@ -1,0 +1,92 @@
+/*header line height 50px / #header nav>ul>li~li:after {top : 40%}으로 설정함*/
+
+#wrap {min-width: 1900px;}
+
+
+
+
+
+
+#header {display: flex;justify-content:space-between;
+padding: 10px 100px; line-height: 50px;}
+/*text-align : center 박스안에 인라인 요소(그림 글자 링크)를 가운데로 오게함*/
+#header h1 {text-align: center;}
+
+/*nav ul 도 가능하지만 나중에 li 밑에 또 ul 이 생길 수 있기때문에 이렇게 해버릇하장
+nav 바로 밑에 있는 자식 ul 이라는 의미*/
+
+/*display flex는 자식block을 가로로 배열, 
+justify-content:center는 display flex로 가로 배열된 박스들을 가운데로 배열
+justify-content:center는 박스자체가 가운데
+text align:center 는 박스안에서 글자가 가운데(위에 설명)*/
+#header nav>ul {display: flex;  }
+#header nav>ul>li {position: relative;}
+#header nav>ul>li~li:after {content: ""; display: block; width: 1px;
+height: 12px; background: #333; position: absolute; top: 40%; left: 0;}
+/* #header nav>ul>li:first-child:after {display: none;} 
+위에꺼 하기 싫으면 li~li하면 맨처음 바 가 빠짐*/
+/*line-height로 늘린박스*/
+
+/*a 태그가 마우스 위로 했을때 손가락으로 바뀌니깐
+a 태그자체를 display block으로 블럭을 만들고 패딩을 준다!
+패딩은 line height 적용한다음 더 늘리고 싶을때 단, a태그 블럭에 패딩 줘야 손가락 나옴 */
+#header nav>ul>li>a {display: block; padding: 0 30px;}
+
+
+
+
+/*밑에 main_visual cover까지 이건 걍 공식처럼 적용하기
+background 자체는 공간을 차지 안함 , 그리서 height를 줘야함
+margin은 겹치기때문에 안씀*/
+#main_visual {height: 500px; background: url(../lib/base/main_visual01.jpg) 
+    no-repeat center center/cover; text-align: center; color: #fff;
+    padding:200px 0 0 0;}
+/*밑에 마진 주는건 약간 약속 같은거 패딩줘도 상관없음*/
+#main_visual h2 {font-size: 30px; font-weight: 500; margin-bottom: 30px;}
+#main_visual p {font-size: 16px; font-weight: 100;}
+
+
+
+
+
+#content01 {padding: 150px 0; text-align: center;}
+#content01 h2 {font-size: 30px; font-weight: 500; margin-bottom: 10px;}
+#content01 p {font-size: 15px; font-weight: 300; margin-bottom: 30px;}
+
+/*margin:0 auto; margin-left:auto, margin-right:auto 사이즈가 있는 
+block을 가운데로 오게함*/
+#content01 .container {display: flex; width: 1200px; margin: 0 auto;}
+/*flex 1은 모두 한개씩 똑같이 나누자, */
+#content01 .container figure {flex: 1; padding: 0 15px;}
+/* #content01 .container figure:first-child {flex: 2; order: 2;} */
+#content01 .container figure img {width: 100%;}
+
+
+
+
+#footer {padding: 80px 0 100px 0; background-color: #f4f4f4; text-align: center;
+    border-top : 1px solid#ddd; }
+
+
+
+#popup01 {position: absolute; top:50%;left: 50%; transform :translate(-50%,-50%);}
+#popup02 {position: absolute; top:40%;left: 40%; transform :translate(-50%,-50%);}
+#popup03 {position: absolute; top:30%;left: 30%; transform :translate(-50%,-50%);}
+#popup01 span,#popup02 span,#popup03 span {position:absolute; bottom:15px; right:15px; color: #fff; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

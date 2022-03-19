@@ -1,0 +1,97 @@
+/* body {background:#333; color:#fff; font-weight:300; text-align:center;}
+
+
+#bal {margin:200px 0; padding:100px 0; position:relative;}
+#bal .container {width:370px; height:270px; margin:0 auto; overflow:hidden; position:relative;}
+#bal .container .case {position:absolute; top:0; left:0; transition:1s;}
+
+#bal .btn {display:flex; justify-content:center; }
+#bal .btn li {width:30px; height:30px; background:#fff; border-radius:50%; margin:10px 5px; cursor: pointer;
+text-indent:-9999px;} */
+
+
+
+body {background:#333; color:#fff; font-weight:300; text-align:center;}
+
+
+
+
+#bal {margin:200px 0; padding:100px 0; position:relative;}
+#bal h2 {font-size:18px; letter-spacing:1em; margin-bottom:20px;}
+#bal p {font-size:14px; line-height:1.6; margin-bottom:20px; }
+
+#bal .container {width:370px; height:270px; margin:0 auto; overflow:hidden; position:relative;}
+#bal .container .case {position:absolute; top:0; left:0; }
+
+#bal .btn {display:flex; justify-content:center; }
+#bal .btn li {width:30px; height:30px; background:#fff; border-radius:50%; margin:10px 5px; cursor: pointer;
+text-indent:-9999px;}
+
+.sun {position:absolute; top:150px; left:150px; animation:sunmove 2s infinite linear}
+.btf {position:absolute; bottom:250px; left:150px; animation:btf 5s both}
+.btf figure {animation:btfw 1s infinite}
+
+
+@keyframes sunmove {
+    to {transform:rotate(360deg)}
+}
+
+
+
+@keyframes btfw {
+    0% {transform:scaleX(0)}
+    50% {transform:scaleX(1)}
+    100% {transform:scaleX(0)}
+}
+
+
+@keyframes btf {
+    0% {transform:translate(0,0) rotate(45deg)}
+    10% {transform:translate(100,-20) rotate(45deg)}
+    20% {transform:translate(200,-25) rotate(45deg)}
+    30% {transform:translate(300,0) rotate(45deg)}
+    40% {transform:translate(400,0) rotate(45deg)}
+    50% {transform:translate(500,0) rotate(45deg)}
+    60% {transform:translate(600,0) rotate(45deg)}
+    70% {transform:translate(700,0) rotate(45deg)}
+    80% {transform:translate(800,0) rotate(45deg)}
+    90% {transform:translate(900,0) rotate(45deg)}
+    100% {transform:translate(1000px,-300px) rotate(-45deg)}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

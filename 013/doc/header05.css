@@ -1,0 +1,96 @@
+/*padding : 0 15px 은 witdh를 1200px로 지정했지만 가이드 라인이 1170px로 좌우로 15px로 띄워야 하기때문에*/
+
+#wrap {}
+/*중요중요 z-index는 겹친것들의 우선순위를 정해서 순서를 바꿔줌! p:absolute와 약간 세트인가..?
+header에 p:absolute 해도 된다*/
+/*header와 header hover에서 color가 바에 안먹힌 이유는 뒤에 따로 :after 여기서 color를 줬기때문
+다른 nav는 뒤에 따로 색을 주지 않았기 때문에 header에서 color적용이 됨.
+만약 뒤에 header nav>ul에서 color를 설정하면 var 들 처럼 hover,on(스크롤이 내려갈때 헤드변경된 사항들) 
+도 만들어서 색을 줘야함!*/
+/*hover, on, 그냥 3개를 다 설정해줘야함*/
+/*header의 h1(로고)와 nav는 다른 블럭이라고 생각..? 왜 header.on 이 h1한테는 안먹는지,,의문,,
+h1은 밑에 크기를 다로 줘서 그런가..?*/
+#header {position:fixed;top:0;left:0;line-height:100px;width:100%;color: #fff; 
+transition: 1s; z-index:999;}
+#header:hover {background: #fff; color: #333;border-bottom: 1px solid#ddd; }
+#header.on {background: #fff;line-height: 100px; color: #333;border-bottom: 1px solid#ddd;}
+
+
+#header h1 img {width:200px;}
+#header h1 a {display: block; width:300px; height:100px; background:url(../lib/base/서브웨이\ 로고_w.png)
+    no-repeat left center/200px;}
+#header.on h1 a {height:100px; background:url(../lib/base/서브웨이\ 로고.png) no-repeat left center/200px;}
+#header:hover h1 a {height:100px;background:url(../lib/base/서브웨이\ 로고.png) no-repeat left center/200px;}
+#header .container {display: flex; width: 1200px; margin: 0 auto; padding:0 15px;}
+#header nav {margin-left:auto;}
+#header nav>ul {display: flex;}
+#header nav>ul>li>a {display: block; position:relative; padding:0 30px;}
+
+
+#header nav>ul>li~li>a:after {content: "";display: block; width:1px; height: 12px;
+background:#fff; position:absolute; top: 50%; left:0; transform: translateY(-50%);}
+#header .right {font-size:20px; margin-left:40px;}
+
+#header.on nav>ul>li~li>a:after {background: #333;} 
+#header:hover nav>ul>li~li>a:after {background: #333;}
+
+#main_visual {position: relative;}
+#main_visual figure {height: 600px;}
+#main_visual .item01 {background: url(../lib/base/main_visual01.jpg) 
+    no-repeat center center/cover;}
+#main_visual .item02 {background: url(../lib/base/main_visual02.jpg) 
+    no-repeat center center/cover;}
+#main_visual .item03 {background: url(../lib/base/main_visual03.jpg) 
+    no-repeat center center/cover;} 
+
+/*밑에 수치는 공식처럼 외우기(.container / translate까지), position absolute의 기준은 container의 부모인
+#main_visua에 position relative시킨다. */
+#main_visual .container {position: absolute; top: 50%; left: 50%;
+transform: translate(-50%,-50%);width: 1200px; padding:0 15px; color: #fff;
+text-align:center;}
+#main_visual h2 {font-size: 18px; font-weight: 100; letter-spacing: 1em; margin-bottom:15px;}
+#main_visual p {font-size: 12px;  margin-bottom:40px; line-height: 1.6;}
+
+
+
+
+
+
+
+
+
+
+/*#content01 .container figure img {max-width:100%;} 이게 사진을 규격에 맞춰주는것같은데,,,*/
+#content01 {position:relative; padding:150px 0; text-align: center;}
+#content01 h2 {font-size: 18px; font-weight: 100; letter-spacing: 1em; margin-bottom:15px;}
+#content01 p {font-size: 12px;  margin-bottom:40px; line-height: 1.6;}
+#content01 .container {width:1200px; margin:0 auto;}
+#content01 .container figure {padding:0 15px;}
+#content01 .container figure img {max-width:100%;}
+
+/*slick dots는 자바스크립트에서 설정해서 가져온 것 */
+#content01 .slick-dots {display: flex; justify-content: center;}
+#content01 .slick-dots li {width: 60px; height: 6px; border-radius: 3px; background: #666; margin: 30px 4px;}
+#content01 .slick-dots li.slick-active {background: rgb(50, 99, 179);}
+#content01 .slick-dots li button {display: none;}
+
+#content01 .btn i {position: absolute; top:53%;left:50%;transform: translate(-50%,-50%);
+font-size: 20px; padding:10px; background: #ddd; border-radius: 50%; }
+#content01 .btn i.xi-arrow-left {margin-left: -585px;}
+#content01 .btn i.xi-arrow-right {margin-left: 585px;}
+
+
+
+
+
+#footer {padding:80px 0 1000px 0; background: #333; color: #fff;}
+#footer .container {display: flex; justify-content: space-between; width: 1200px; 
+margin:0 auto; padding: 0 15px;}
+#footer i {font-size: 30px; padding:10px; background: #444;border-radius: 50%; }
+
+
+
+
+
+
+

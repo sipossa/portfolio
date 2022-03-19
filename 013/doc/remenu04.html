@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remenu04</title>
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <script src="../lib/js/jquery-1.12.4.min.js"></script>
+    <style>
+        .header {height: 100px; text-align:center; line-height:100px; background:#ffffbd;}
+        .footer {position:relative; height: 200vh; background:#ddd;}
+
+        nav .depth01 {position:relative; display:flex; justify-content:center; line-height:40px; }
+        nav .depth01 a {display:block; padding:0 30px;}
+        nav .depth01>li .depth02 {display:none; position:absolute; top:40px; left:0; width:100%; background:#f00; z-index:1;}
+        nav .depth01 .depth02>ul {display:flex; justify-content:center;}
+        nav .depth01>li:hover .depth02 {display:block;}
+
+        @media (max-width:1000px) {
+            .header i {position:fixed; top:30px; right:30px}
+            .header i.on {color:#f00;}
+
+            nav {position:fixed; top:0; left:0; width:calc(100% - 90px); height:100vh; background:#fff; border-right:1px solid #333; z-index:1;}
+            nav .depth01 {position:relative; display:flex; flex-flow:column wrap; justify-content:center; line-height:40px; }
+            nav .depth01 a {display:block; padding:0 30px;}
+            nav .depth01>li .depth02 {display:block; position:absolute; top:0; left:150px; width:100%; height:100vh; background:#f00; z-index:1;}
+            nav .depth01 .depth02>ul {display:flex; flex-flow:column wrap; justify-content:center;}
+            nav .depth01>li:hover .depth02 {display:none;}
+
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="mopen">
+            header<i class="xi-bars"></i>
+        </div>
+    </header>
+
+    <!---remenu01.html{-->
+    <nav>
+        <ul class="depth01">
+            <li>
+                <a href="#">menu01</a>
+                <div class="depth02">
+                    <ul>
+                        <li>
+                            <a href="#">smenu01</a>
+                            <ul class="depth03">
+                                <li><a href="#">fdgfdmenu01</a></li>
+                                <li><a href="#">dmenu02</a></li>
+                                <li><a href="#">dmenu03</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">smenu02</a>
+                            <ul class="depth03">
+                                <li><a href="#">dmenu01</a></li>
+                                <li><a href="#">dmenu02</a></li>
+                                <li><a href="#">dmenu03</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">smenu03</a>
+                            <ul class="depth03">
+                                <li><a href="#">dmenu01</a></li>
+                                <li><a href="#">dmenu02</a></li>
+                                <li><a href="#">dmenu03</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">smenu04</a>
+                            <ul class="depth03">
+                                <li><a href="#">dmenu01</a></li>
+                                <li><a href="#">dmenu02</a></li>
+                                <li><a href="#">dmenu03</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">menu02</a>
+                <div class="depth02">
+                    <ul>
+                        <li>
+                            <a href="#">smenu01</a>
+                            <ul class="depth03">
+                                <li><a href="#">dmedsfdsfdnu01</a></li>
+                                <li><a href="#">dmenu02</a></li>
+                                <li><a href="#">dmenu03</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">smenu02</a>
+                            <ul class="depth03">
+                                <li><a href="#">dmenu01</a></li>
+                                <li><a href="#">dmenu02</a></li>
+                                <li><a href="#">dmenu03</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">smenu03</a>
+                            <ul class="depth03">
+                                <li><a href="#">dmenu01</a></li>
+                                <li><a href="#">dmenu02</a></li>
+                                <li><a href="#">dmenu03</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">smenu04</a>
+                            <ul class="depth03">
+                                <li><a href="#">ffffffffdmenu01</a></li>
+                                <li><a href="#">dmenu02</a></li>
+                                <li><a href="#">dmenu03</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">menu03</a>
+                <div class="depth02">
+                    <ul>
+                        <li>
+                            <a href="#">smenu01</a>
+                            <ul class="depth03">
+                                <li><a href="#"> dsgdsdmenu01</a></li>
+                                <li><a href="#">dmenu02</a></li>
+                                <li><a href="#">dmenu03</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">smenu02</a>
+                            <ul class="depth03">
+                                <li><a href="#">dmenu01</a></li>
+                                <li><a href="#">dmenu02</a></li>
+                                <li><a href="#">dmenu03</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">smenu03</a>
+                            <ul class="depth03">
+                                <li><a href="#">dmenu01</a></li>
+                                <li><a href="#">dmenu02</a></li>
+                                <li><a href="#">dmenu03</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">smenu04</a>
+                            <ul class="depth03">
+                                <li><a href="#">dmenu01</a></li>
+                                <li><a href="#">dmenu02</a></li>
+                                <li><a href="#">dmenu03</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+
+
+
+    <!---}remenu01.html-->
+
+    <footer class="footer">
+        footer
+    </footer>
+
+<script>
+$(function(){
+    $('nav .depth01>li').on('click', function(){
+        if($('nav').hasClass('on')){
+            $('.depth02').slideUp();
+            $(this).find('.depth02').stop().slideToggle();
+        }
+    });
+//---------반응형 다단메뉴 클릭하고 pc버전에 그대로 남는거 오류 해결-------------------
+    $(window).on('resize', function(){
+        $('.depth02').removeAttr('style')
+        $('nav').removeClass('on');
+    });
+//--------메뉴 left랑 헤더 아이클래스-----------
+    $('.header i').on('click', function(){
+        $(this).toggleClass('on');
+        $('nav').toggleClass('on');
+    })
+})
+</script>
+
+</body>
+</html>
