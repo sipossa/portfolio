@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다단메뉴 반응형 새롭게 04</title>
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <script src="../lib/js/jquery-1.12.4.min.js"></script>
+
+    <style>  
+        .header {height:100px; text-align:center; line-height:100px;}
+        .footer {position:relative; height:200vh; background:#ddd;}
+
+        nav .depth01 {position:relative; display:flex; justify-content:center; line-height:40px;}
+        nav .depth01 a {display:block; padding:0 30px;}
+        
+        nav .depth01>li .sub_menu {display:none; position:absolute; top:40px; left:0; width:100%; background:#ff0; z-index:999;}   /*섭메뉴로 만들기 위해 띄움. 기준은 nav .depth01*/
+        nav .depth01 .sub_menu>ul {display:flex; justify-content:center;}
+        nav .depth01>li:hover .sub_menu {display:block;}
+
+
+
+
+
+
+        @media (max-width:1000px) {
+            .header i {position:fixed; top:30px; right:30px; z-index:9999;}
+            .header i.on {color:#f00;}
+
+            nav {position:fixed; top:0; left:-100%; width:100%; height:100vh; background:#fff; border-right:1px solid#333; overflow:hidden; transition:0.5s; z-index:999;}
+            nav.on {left:0;}
+            nav .depth01 {position:relative; display:flex; flex-flow:column wrap; justify-content:center; line-height:40px;}   /*flex-flow:column wrap하면 메뉴가 세로가 됨*/
+            nav .depth01 a {display:block; padding:0 30px;}
+            
+            nav .depth01>li .sub_menu {display:none; position:absolute; top:0px; left:150px; width:100%; height:100vh; background:#ff0; z-index:999;}   /*섭메뉴로 만들기 위해 띄움. 기준은 nav .depth01*/
+            nav .depth01 .sub_menu>ul {display:flex; flex-flow:column wrap; justify-content:center;}   /*flex-flow:column wrap하면 메뉴가 세로가 됨*/
+            nav .depth01>li:hover .sub_menu {display:none;}
+            nav .depth01>li.on .sub_menu {display:block;}
+            nav .depth01>li .third_menu {display:none; background:#369;}
+
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="mopen">
+            header <i class="xi-bars"></i>
+        </div>
+    </header>
+
+
+    <!--메뉴01 시작-->
+    <nav>
+        <ul class="depth01">
+            <li class="on">   <!--on을 여기 에다가 붙으면 mopen눌렀을때 메뉴만 나와서 서드메뉴보려면 눌러야함-->
+                <a href="#!">menu01</a>
+                <div class="sub_menu">
+                    <ul>
+                        <li>   <!--여기--> 
+                            <a href="#!">ssss_menu01</a>
+                            <ul class="third_menu">
+                                <li><a href="#!">t_menu01</a></li>
+                                <li><a href="#!">t_menu02</a></li>
+                                <li><a href="#!">t_menu03</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">s_menu02</a>
+                            <ul class="third_menu">
+                                <li><a href="#!">t_menu01</a></li>
+                                <li><a href="#!">t_menu02</a></li>
+                                <li><a href="#!">t_menu03</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">s_menu03</a>
+                            <ul class="third_menu">
+                                <li><a href="#!">t_menu01</a></li>
+                                <li><a href="#!">t_menu02</a></li>
+                                <li><a href="#!">t_menu03</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">s_menu04</a>
+                            <ul class="third_menu">
+                                <li><a href="#!">t_menu01</a></li>
+                                <li><a href="#!">t_menu02</a></li>
+                                <li><a href="#!">t_menu03</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#!">menu02</a>
+                <div class="sub_menu">
+                    <ul>
+                        <li>
+                            <a href="#!">s_menu01</a>
+                            <ul class="third_menu">
+                                <li><a href="#!">t_menu01</a></li>
+                                <li><a href="#!">t_menu02</a></li>
+                                <li><a href="#!">t_menu03</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">s_menu02</a>
+                            <ul class="third_menu">
+                                <li><a href="#!">t_menu01</a></li>
+                                <li><a href="#!">t_menu02</a></li>
+                                <li><a href="#!">t_menu03</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">s_menu03</a>
+                            <ul class="third_menu">
+                                <li><a href="#!">t_menu01</a></li>
+                                <li><a href="#!">t_menu02</a></li>
+                                <li><a href="#!">t_menu03</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">s_menu04</a>
+                            <ul class="third_menu">
+                                <li><a href="#!">t_menu01</a></li>
+                                <li><a href="#!">t_menu02</a></li>
+                                <li><a href="#!">t_menu03</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#!">menu03</a>
+                <div class="sub_menu">
+                    <ul>
+                        <li>
+                            <a href="#!">xxxs_menu01</a>
+                            <ul class="third_menu">
+                                <li><a href="#!">t_menu01</a></li>
+                                <li><a href="#!">t_menu02</a></li>
+                                <li><a href="#!">t_menu03</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">s_menu02</a>
+                            <ul class="third_menu">
+                                <li><a href="#!">t_menu01</a></li>
+                                <li><a href="#!">t_menu02</a></li>
+                                <li><a href="#!">t_menu03</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">s_menu03</a>
+                            <ul class="third_menu">
+                                <li><a href="#!">t_menu01</a></li>
+                                <li><a href="#!">t_menu02</a></li>
+                                <li><a href="#!">t_menu03</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">s_menu04</a>
+                            <ul class="third_menu">
+                                <li><a href="#!">t_menu01</a></li>
+                                <li><a href="#!">t_menu02</a></li>
+                                <li><a href="#!">t_menu03</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!--메뉴01 끝-->
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        footer
+    </footer>
+
+<script>
+    $(function(){
+        $('nav .depth01>li').on('click', function(){   /*nav .depth01>li 를 클릭 했을때*/
+            if($('nav').hasClass('on')) {   /*만약 nav에 on이 붙었으면*/
+                $(this).addClass('on').siblings().removeClass('on');
+                $(this).siblings().find('.third_menu').stop().slideUp();
+                /*$(this).find('.sub_menu').stop().slideToggle();   /*내(this,즉 nav .depth01>li임) 아래에 있는 섭메뉴는 나오게함*/
+            };
+        });
+    });
+
+    $('.sub_menu>ul>li').on('click', function(){
+        if($('nav').hasClass('on')) {
+            $('.third_menu').stop().slideUp();
+            $(this).find('.third_menu').stop().slideToggle();
+        }
+    });
+
+    $(window).on('resize',function(){   /*윈도우가 리사이즈 될떄 섭메뉴의 스타일이 빠지고 네비의 on이 빠진다*/
+        $('.sub_menu').removeAttr('style');
+        $('.third_menu').removeAttr('style');
+        $('nav').removeClass('on'); 
+    });
+
+
+    $('.header i').on('click', function(){
+        $(this).toggleClass('on');
+        $('nav').toggleClass('on');
+    });
+</script>
+
+</body>
+</html>

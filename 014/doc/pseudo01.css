@@ -1,0 +1,58 @@
+section {padding:100px 0; text-align:center;}
+section .container {display:flex; width:1200px; margin:0 auto;}
+section .container>* {flex:1; padding:0 15px;}
+section h2 {font-size:30px; margin-bottom:15px;}
+section p {font-size:15px; margin-bottom:30px;}
+section:nth-child(even) {background:#f2f2f2;}    /*<-even짝수/odd홀수*/
+section img {max-width:100%;}
+
+
+#sec01 h2::before {content:"before"; font-size:14px; vertical-align:middle;}                   /*<-h2 앞에 before글자생김*/
+#sec01 h2::after {content:"after"; font-size:14px;}                    /*<-h2 뒤에 before글자생김*/
+
+#sec02 h2:after {content:""; display:block; width:40px; height:2px; background:#f00; margin:10px auto;}
+
+#sec03 h2:after {content:""; display:block; width:2px; height:40px; background:#f00; margin:10px auto;}
+
+#sec04 h2:after {content:""; display:inline-block; width:40px; height:2px; background:#f00; vertical-align:middle; margin:0 20px; }
+#sec04 h2:before {content:""; display:inline-block; width:40px; height:2px; background:#f00; vertical-align:middle; margin:0 20px;}
+
+#sec05 h2::after {content:""; display:block; width:40px; height:40px; background:url(../lib/sunoopy.png) center center/cover; margin:20px auto;}
+
+#sec06 h2:after {content:""; display:inline-block; width:40px; height:40px; background:url(../lib/sunoopy.png) center center/cover; vertical-align:middle; margin:0 20px; }
+#sec06 h2:before {content:""; display:inline-block; width:40px; height:40px; background:url(../lib/sunoopy.png) center center/cover; vertical-align:middle; margin:0 20px;}
+
+
+#sec07 li {line-height:30px;}
+#sec07 li:before {content:"\eb48";font-family: xeicon!important; color:#369; margin-right:10px;}
+
+#sec08 li {line-height:30px;}
+#sec08 li:before {content:"\eb48";font-family: xeicon!important; color:#369; margin-right:10px;}
+#sec08 li:hover:before {content:"\eb54"; color:#f00;}
+#sec08 li:after {content:"more"; font-size:10px; color:#999;}
+
+#sec09 h2 {display:inline-block; width:200px; line-height:60px; color:#f00; border:1px solid#ebcece; position:relative;}
+#sec09 h2::before {content:""; display:block; width:0; height:100%; background:#ebcece; position:absolute; top:0; right:0; transition:0.5s; z-index:-1;}
+#sec09 h2:hover:before {width:100%;}
+
+#sec09 figure {position:relative;}
+#sec09 figure:after {content:attr(data-num); display:block; width:50px; height:50px; line-height:45px; text-align:center; background:#333; color:#fff; font-size:23px; font-weight:700; position: absolute; top:-25px; left:50%; transform:translateX(-50%); border:3px solid#fff; border-radius:50%; opacity:0; transition:0.3s;}
+#sec09 figure:hover:after {color:#ff7300b0; background:#fff;  opacity:1;}
+
+
+#sec10 figure {position:relative;}
+#sec10 figure:after {content:attr(data-num); display:block; width:50px; height:50px; line-height:45px; text-align:center; background:#f2f2f2; color:#ff7300b0; font-size:23px; font-weight:700; position: absolute; top:-25px; left:50%; transform:translateX(-50%); border:3px solid#f2f2f2; border-radius:50%; opacity:0; transition:0.3s;}
+#sec10 figure.on:after {opacity:1;}
+
+
+#sec11 .container {display:block; width:500px; height:500px; overflow:hidden; position:relative;}
+#sec11 .container .move {display:flex; width:1500px; position:absolute; top:0; left:0; transition:0.5s;}
+#sec11 .container .move figure {width:500px;}
+
+
+#ani01 h2 {display:inline-block; animation:hinge 1.5s infinite;}             /*->bounce라는 애니매이션을 1초동안 계속함*/
+
+
+
+
+

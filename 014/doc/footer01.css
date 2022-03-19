@@ -1,0 +1,94 @@
+.gonggal {background:#f2f2f2; height:50vh; text-align:center; line-height:50vh;}
+/*--푸터01번*/
+.footer01 {background:#333; color:#f4f4f4; padding:50px 0;}
+.footer01 .line {border-bottom:1px solid#666;}
+.footer01 .container {display:flex; width:1200px; margin:0 auto;}
+.footer01 dl {flex:1; padding:0 15px;}
+.footer01 dt {font-size:20px; margin-bottom:10px;}
+
+
+
+@media (max-width:768px) {
+    .footer01 .container {display:flex; flex-wrap:wrap; width:auto; margin:0 auto;}
+    .footer01 .container dl {flex:50%; padding:0 15px; text-align:center;}                    /*<-flex50%는 반만 차지*/
+}
+
+
+
+/*--푸터02번*/
+.footer02 {background:#333; color:#f4f4f4; padding:80px 0; text-align:center;}
+.footer02 dl {display:flex; justify-content:center; margin-bottom:15px;}
+
+.footer02 dl>dd {position:relative;}                     /*<-같이 쓸땐 경로 다써줘야함*/
+.footer02 dl>dd::before {content:""; display:inline-block; margin:0 20px; width:1px; height:13px; background:#ddd;}
+.footer02 dl>dt {color:#ff0;}
+.footer02 ul {display:flex; justify-content:center; margin-bottom:15px;}
+.footer02 ul>li~li:before {content:"/";margin:0 20px; font-size:12px;}
+.footer02 span {display:block; margin-bottom:15px;}
+
+
+@media (max-width:768px) {
+    .footer02 dl {display:block; justify-content:center; margin-bottom:15px; border-bottom:1px solid#666; padding:30px 0;}
+    .footer02 dl>* {display:inline-block;}
+    .footer02 dl>dd {padding:10px 20px;}
+    .footer02 dl>dd::before {display:none;}
+
+    .footer02 ul {display:block; justify-content:center; margin-bottom:15px;}
+    .footer02 ul>li~li:before {display:none; content:"/";margin:0 20px; font-size:12px;}
+    .footer02 ul>li {display:inline-block; padding:10px;}
+}
+
+
+
+
+/*--푸터03번*/
+.footer03 {padding:50px 0;}
+.footer03 .container {display:flex; width:1200px; margin:0 auto;}
+
+.footer03 .left {flex:1; padding:0 15px;}              /*<-left는 3분의1만 가져가고 fight는 3분의2만 가져간다는뜻*/
+
+/*.footer03 .left ul{font-size:0; padding:20px 0;}
+.footer03 .left ul li {display:inline-block; width:50%; font-size:13px; line-height:1.8;}        <-이렇게쓸수도있다!
+flex-direction + flex-wrap --> flex-flow:row wrap = flex-wrap:wrap;
+*/     
+
+.footer03 .left ul {display:flex; flex-wrap:wrap; font-size:13px; line-height:1.8; padding:20px 0;}
+.footer03 .left ul li {width:50%;}
+
+.footer03 .right {flex:2; padding:0 15px;}
+.footer03 .lnb {display:flex;}
+.footer03 .lnb dl {flex:1; border-top:2px solid#ddd; padding-top:20px;}
+.footer03 .lnb dl:last-child {text-align:right;}
+.footer03 .lnb dl>dd , .footer03 .lnb dl>dt {padding:10px 0;}
+.footer03 .lnb dl>dt {color:#249b00; font-weight:700; margin-bottom:15px;}
+.footer03 .lnb dl:last-child dt {margin-bottom:0;}
+
+.footer03 .sns {padding:10px 0; border-bottom:1px solid#ddd; text-align:right;}
+.footer03 .sns i {padding:5px; border:2px solid#ddd; border-radius:50%; font-size:25px;}
+.footer03 .link {padding:20px 0;}
+.footer03 .link dl {display:flex; justify-content:space-between;}
+.footer03 .link dl dt {color:#249b00;}
+
+
+.footer03 strong {display:block; width:300px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;} /*<-글자길면...생기는거. width로 사이즈를 줘야함*/
+
+
+/*--동영상반응형 - 비율 유지하는 박스만들기*/
+.utc {width:100%; padding-bottom:56.25%; background:#ff0; position:relative;}
+.utc iframe {position:absolute; top:0; left:0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

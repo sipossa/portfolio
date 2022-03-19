@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스와이프 슬라이드 01</title>
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <link rel="stylesheet" href="../lib/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./swiper01.css">
+    <script src="../lib/js/swiper-bundle.min.js"></script>
+    <style>
+        .main_slider {height:600px; background:#ddd;}
+        .main_slider .swiper-slide {height:600px; padding:180px 0; text-align:center; box-sizing:border-box; color:#fff;}
+        /*.main_slider .swiper-slide.swiper-slide-active {color:#fff; transition: 0.5s 0.5s;}*/
+
+        .main_slider .swiper-slide h2 {font-size:40px; font-weight:900; margin-bottom:20px; transform:translateY(100px); opacity:0;}
+        .main_slider .swiper-slide p {font-size:15px; font-weight:300; transform:translateY(100px); opacity:0;}
+
+        .main_slider .swiper-slide.swiper-slide-active h2 {transform:translateY(0); opacity:1; transition:0.5s;}
+        .main_slider .swiper-slide.swiper-slide-active p {transform:translateY(0); opacity:1; transition:0.5s 0.5s;}
+
+        .main_slider .itm01 {background:url(../lib/base/main_03.jpg) no-repeat center center/cover;}
+        .main_slider .itm02 {background:url(../lib/base/main_06.jpg) no-repeat center center/cover;}
+        .main_slider .itm03 {background:url(../lib/base/main_07.jpg) no-repeat center center/cover;}
+        .sl01 {width:1200px; height:500px; margin:200px auto; background:#dd0;}
+        .sl02 {width:1200px; height:500px; margin:200px auto; background:#f78;}
+    </style>
+</head>
+<body>
+
+    <section id="visual">
+        <section class="main_slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide itm01">
+                    <div class="txt">
+                        <h2>01 Lorem ipsum dolor sit.</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur<br>adipisicing elit. Unde porro sequi sint accusamus minima!</p>
+                    </div>
+                </div>
+                <div class="swiper-slide itm02">
+                    <div class="txt">
+                        <h2>02 Lorem ipsum dolor sit.</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur<br>adipisicing elit. Unde porro sequi sint accusamus minima!</p>
+                    </div>
+                </div>
+                <div class="swiper-slide itm03">
+                    <div class="txt">
+                        <h2>03 Lorem ipsum dolor sit.</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur<br>adipisicing elit. Unde porro sequi sint accusamus minima!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <div class="swiper sl01">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+      </div>
+
+    <div class="swiper sl02">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+      </div>
+
+
+    
+<script>
+//$('.swiper').slick();
+const  swiper = new Swiper('.sl01', {
+    loop:true,
+    autoplay:{
+        delay:1000,
+    }
+});
+const swiper2 = new Swiper('.sl02', {
+    loop:true,
+    slidesPerView: 3,
+    spaceBetween: 30,
+});
+const mainSlider = new Swiper('.main_slider', {
+    loop:true,
+    autoplay:{
+        delay:3000,
+    }
+});
+</script>
+
+
+</div>
+</body>
+</html>

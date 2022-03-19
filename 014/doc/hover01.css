@@ -1,0 +1,91 @@
+.hover {position:relative; width:400px; height:400px; background:url(../lib/base/item_02.jpg); color:#ff0; margin:100px auto; padding:50px; overflow:hidden; transition:0.5s;}
+.hover h2 {font-size:25px; font-weight:500; margin-bottom:15px;}
+
+
+/*01 사진이 위로 올라감*/
+.hover01:hover {background-position-y:-100px;}
+
+
+/*02 사진이 옆으로 움직임*/
+.hover02:hover {background-position-x:-100px;}
+
+
+/*03 텍스트,가상요소가 사라졌다 나타남*/
+.hover03 {display:flex; font-size:14px; text-align:center;}
+.hover03 p {margin:auto; line-height:2; opacity:0; transition:0.5s;}
+.hover03 p::before {content:""; display:block; width:150px; height:1px; background:#fff; transform:translateX(-500px); transition:0.5s;}
+.hover03 p::after {content:""; display:block; width:150px; height:1px; background:#fff; transform:translateX(500px); transition:0.5s;}
+.hover03:hover p::before {transform:translateX(0);}
+.hover03:hover p::after {transform:translateX(0);}
+.hover03:hover p {opacity:1;}
+
+
+/*04 가상효소가 위,왼쪽에서 나타나서 +모양 만듦*/
+.hover04 {display:flex; font-size:14px; text-align:center;}
+.hover04 p {margin:auto; line-height:2; opacity:0; transition:0.5s;}
+.hover04 p::before {content:""; display:block; width:1px; height:40px; background:#fff; transform:translate(40px,-400px); transition:0.5s;}
+.hover04 p::after {content:""; display:block; width:40px; height:1px; background:#fff; transform:translate(-400px,30px); transition:0.5s cubic-bezier(0, 0.95, 1, 0.01)}     /*<-cubic요거는 트렌디션 맨뒤에 ease쓰고 +모양에서 검사->요소에서 after(적용되져있는곳)누르고 -> 스타일에서 ease누르면 뭐 나옴. 트렌디션 보면 cubic나오는거 그거 복붙하면됨. 곡률은 도트 누르면 움직일수있음*/
+.hover04:hover p::before {transform:translate(40px,76px);}
+.hover04:hover p::after {transform:translate(20px,30px);}
+.hover04:hover p {opacity:1;}
+
+
+/*05 하단에서 이모티콘이 돌아감*/
+.hover05 .case {position:absolute; bottom:0; right:0; background:#fff; }
+.hover05 i {color:#000; padding:10px; font-size:30px; transition:1s;}
+.hover05:hover i {transform:rotate(360deg);}
+
+
+/*06 사진 안에 틀이 생기고 백그라운드 깔림*/
+.hover06::before {content:""; display:block; width:0px; height:0px; border-top:1px solid#fff; border-left:1px solid#fff; position:absolute; top:10px; left:10px; background:rgba(0,0,0,0.2); transition:1s;}
+.hover06::after {content:""; display:block; width:0px; height:0px; border-bottom:1px solid#fff; border-right:1px solid#fff; position:absolute; bottom:10px; right:10px; background:rgba(0,0,0,0.2); transition:0.5s;}
+.hover06:hover::before {width:380px; height:380px;}
+.hover06:hover::after {width:380px; height:380px;}
+
+
+/*07 이미지틀에서 순서대로 색깔채워짐*/
+.hover07 {background:#333;}
+.hover07 p {position:absolute; top:10px; left:10px; width:380px; height:380px; background:url(../lib/base/item_02.jpg--); z-index:999;}
+.hover07 span {position:absolute;}
+.hover07 span:nth-of-type(1) {top:0; left:0; width:0px; height:10px; background:linear-gradient(to left, #f00, #369); transition: 0.5s 1.5s;}
+.hover07 span:nth-of-type(2) {top:0; right:0; width:10px; height:0px; background:linear-gradient(to top, #369, #f00); transition: 0.5s 1s;}
+.hover07 span:nth-of-type(3) {bottom:0; right:0; width:0px; height:10px;background:linear-gradient(to left, #f00, #369); transition: 0.5s 0.5s;}
+.hover07 span:nth-of-type(4) {bottom:0; left:0; width:10px; height:0px; background:linear-gradient(to top, #369, #f00); transition: 0.5s;}
+
+.hover07:hover span:nth-of-type(1) {top:0; left:0; width:400px; height:10px; transition: 0.5s;}
+.hover07:hover span:nth-of-type(2) {top:0; right:0; width:10px; height:400px;  transition: 0.5s 0.5s;}
+.hover07:hover span:nth-of-type(3) {bottom:0; right:0; width:400px; height:10px;  transition: 0.5s 1s;}
+.hover07:hover span:nth-of-type(4) {bottom:0; left:0; width:10px; height:400px;  transition: 0.5s 1.5s;}
+
+
+/*08 음...선이..가운데에서 나오는..?ㅎ */
+.hover08 h2:after {content:""; display:block; width:0; height:5px; background:#f00; margin:10px auto; transition:0.5s;}
+.hover08 h2:hover:after {width:150px;}
+
+.hover08 p {position:relative;}
+.hover08 p:after {content:""; display:block; width:0; height:5px; background:#f00; position:absolute; top:10px; left:50%; transform:translateX(-50%); transition:0.5s;}
+.hover08 p:hover:after {width:150px;}
+
+.hover08 strong {display:block; position:relative;}
+.hover08 strong:after {content:""; display:block; width:150px; height:5px; background:#f00; transform:scaleX(0); transition:0.5s;}
+.hover08 strong:hover:after {transform:scaleX(1);}
+
+
+/*09 마우스 올리면 글자 나옴01, 버튼 바뀜02*/
+.hover09 .btn01 {display:block; margin:30px 0;}
+.hover09 .btn01 span {display:inline-block; width:0px; white-space:nowrap; overflow:hidden;  transition: 0.5s;}
+.hover09:hover span {width:100px;}
+
+.hover09 .btn02 {display:block; width:150px; border:3px solid#f00; text-align:center; line-height:44px; border-radius:10px; transition: 0.5s;} 
+.hover09 .btn02:hover {border-radius:30px; background:#369;}
+
+
+
+
+
+
+
+
+
+
+

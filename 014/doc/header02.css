@@ -1,0 +1,42 @@
+#wrap {min-width:1900px;}
+
+#header {display:flex; justify-content:space-between; padding:10px 70px 10px 100px; line-height:100px;}
+/* text - align:center 박스안의 인라인 요소(그림,글자,링크)를 가운데로 오게함 (이것은 주석) */
+#header h1 {text-align:center;}
+
+
+/* display:flex 는 자식박스(block)를 가로로 배열함. 
+justify-content:center 는 display:flex로 가로배열된 박스를 가운데로 오게함*/
+#header nav>ul {display:flex;}
+#header nav>ul>li {position:relative;}
+#header nav>ul>li~li:after {content:""; display:block; width:1px; height:12px; background:#333; position:absolute; top:46px; left:0;}
+#header nav>ul>li:first-child::after {display:none;}
+#header nav>ul>li>a {display:block; padding:0 30px;}
+
+
+#main_visual {height :500px; background:url(../lib/base/main_visual01.jpg) no-repeat center center / cover; text-align:center; color: #fff; padding:200px 0 0 0;}
+#main_visual h2 {font-size:30px; font-weight: 00; margin-bottom:30px;}
+
+
+#content01 {padding: 150px 0; text-align:center;}
+#content01 h2 {font-size:30px; font-weight:500; margin-bottom:10px;}
+#content01 p {font-size:15px; font-weight:300; margin-bottom:30px;}
+
+
+/* margin:0 auto; margin-left:auto, margin-right:auto 사이즈가 있는 block을 가운데로 오게함 */
+
+#content01 .container {display: flex; width:1200px; margin:0 auto;}
+#content01 .container figure {flex:1; padding:0 15px;}
+/* #content01 .container figure:first-child {flex:2; order:2;} */
+#content01 .container figure img {width:100%;}
+
+#footer {padding:80px 0 100px 0; background: #f4f4f4; text-align:center; border-top:1px solid#ddd;}
+
+
+
+
+
+
+
+
+

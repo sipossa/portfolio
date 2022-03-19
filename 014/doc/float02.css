@@ -1,0 +1,75 @@
+* {outline:1px solid#f00--;}
+#wrap {min-width:1200px;}
+
+.cf::after {content:""; display:block; clear:both;}
+
+.container {width:1200px; margin:0 auto;}
+.container:after {content:""; display:block; clear:both;}
+
+/*헤더*/
+.header {background:#fff; line-height:100px;}
+.header h1 {float:left; padding:0 15px;}
+.header h1 img {width:200px;}
+.header nav {float:right;}
+
+/*다단메뉴*/
+.gnb>ul {float:left;}
+.gnb .search {float:left; padding:0 15px;}
+.gnb>ul>li {position:relative; float:left; padding:0 30px;}
+.gnb>ul>li>a {display:block; padding:0 15px; }
+
+.gnb>ul>li .submenu {opacity:0; position:absolute; top:90px; left:0; width:170px; line-height:35px; text-align:center; background:#ae6ef7f5; color:#fff; font-weight:300; visibility:hidden; z-index:10;}
+.gnb>ul>li:hover .submenu {opacity:1; top:80px; visibility:visible; transition:0.5s;}
+
+.gnb>ul>li .submenu li~li {border-top:1px solid#ddd;}
+
+.gnb>ul>li .submenu:before {content:""; display:block; width:15px; height:15px; background:#ae6ef7f5;  position:absolute; top:-5px; left:75px; transform:rotate(45deg);} /*<-섭메뉴에 삼각형만들기*/
+.gnb>ul>li .submenu>li {position:relative; background:#ae6ef7f5;}/*<-섭메뉴에 삼각형만들기위한기준*/
+
+
+.gnb>ul>li:nth-child(2) .submenu {border-radius:20px; box-shadow:0 2px 5px rgba(0, 0, 0, 0.3); }       /*<-2번째 섭메뉴를 둥글게*/
+.gnb>ul>li:nth-child(2) .submenu:before {content:""; display:block; width:15px; height:15px; background:#ae6ef7f5; border:3px solid#ff0; position:absolute; top:-7px; left:30px; transform:rotate(45deg); border-radius:50%;}                                        /*<-2번째섭 메뉴에 원만들기*/
+.gnb>ul>li:nth-child(2) .submenu>li {position:static; background:transparent;}                           /*<-2번째섭 메뉴에 삼각형만들기위한기준*/
+.gnb>ul>li:nth-child(2) .submenu>li:hover {background:#ffffff5b; color:#ff0;}                        /*<-2번째섭 메뉴를 호버하면 색 변경됨*/
+.gnb>ul>li:nth-child(2) .submenu>li:first-child {border-radius:20px 20px 0 0;}                           /*<-2번째섭 메뉴를 빠져나오는 호버색 잡기*/
+.gnb>ul>li:nth-child(2) .submenu>li:last-child {border-radius:0 0 20px 20px;}                            /*<-2번째섭 메뉴를 빠져나오는 호버색 잡기*/
+
+
+
+
+
+/*메인슬라이드*/
+.main_slider figure {height:600px;}
+.main_slider .itm01 {background:url(../lib/base/main_04.jpg) no-repeat center center/cover;}
+.main_slider .itm02 {background:url(../lib/base/main_05.jpg) no-repeat center center/cover;}
+.main_slider .itm03 {background:url(../lib/base/main_07.jpg) no-repeat center center/cover;}
+
+
+
+
+section h2 {font-size:30px; font-weight:700; margin-bottom:15px;}
+section p {font-size:15px; font-weight:300; margin-bottom:40px;}
+/*콘텐츠*/
+.content {padding:100px 0; text-align:center;}
+.content .container>div {float:left; width:33.33333333%; padding:0 15px;}
+
+.content h2 {width:1200px; margin:0 auto; padding:0 15px; text-align:left;}
+.content h2:after {content:""; display:block; clear:both;}
+.content small {float:right; font-size:13px; font-weight:300;}
+
+/*이벤트*/
+.event {padding:100px 0; text-align:center; background:linear-gradient(#fff 20%,#e9e51d27 80%);}
+.event .container>div {float:left; width:50%; padding:0 15px;}
+
+
+/*푸터*/
+.footer {padding:50px 0;  background:#333; color:#fff;}
+.footer .container>div {float:left; width:50%; padding:0 15px; text-align:right; font-size:0;}
+.footer .container>div:nth-child(1) {text-align:left;}
+.footer address {display:inline-block; font-size:16px;}
+
+
+
+
+
+

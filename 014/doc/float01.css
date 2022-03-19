@@ -1,0 +1,41 @@
+.row:after {content:""; display:block; clear:both;} /*row=clearfix*/
+
+/*---float---*/
+#float {width:1200px; margin:0 auto; background:#ff0; }
+#float>div {float:left; width:50%; padding:100px; text-align:center; background:#f00;}
+#float>div:nth-child(1) {height:50px;}
+
+/*clearfix*/
+#float:after {content:""; display:block; clear:both;}
+
+#float2 {width:1200px; margin:0 auto; background:#ff0; }
+#float2>div {float:left; width:50%; padding:100px; text-align:center; background:#f00;}
+#float2>div:nth-child(1) {height:50px;}
+
+#float3 {width:1200px; margin:0 auto; background:#ff0; }
+#float3>div {float:left; width:50%; padding:100px; text-align:center; background:#f00;}
+#float3>div:nth-child(1) {height:50px;}
+
+
+
+/*---flex---*/
+#flex {display:flex; flex-wrap:wrap; width:1200px; margin:0 auto; background:#ff0; }
+#flex>div {flex:none; width:50%; padding:100px; text-align:center; background:#f00;}
+#flex>div:nth-child(1) {height:50px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

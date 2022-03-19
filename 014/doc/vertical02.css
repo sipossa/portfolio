@@ -1,0 +1,151 @@
+#header {position:fixed; top:0; left:0; width:350px; height:100vh; padding:30px 15px 0 15px; z-index:19;}
+#header h1 {margin-bottom:100px;}
+#header h1 img {width:auto;}
+#header nav {}
+#header nav>ul>li {position:relative; border-bottom:1px solid#ddd;}
+#header nav>ul>li a {display:block; line-height:40px;}
+
+#header nav>ul>li .submenu {display:none; position:absolute; top:0; left:320px; width:100%; background:#146100c2; color:#fff; }
+#header nav>ul>li .submenu li~li {border-top:1px solid#fff;}
+#header nav>ul>li .submenu a {padding-left:20px;}
+#header nav>ul>li:hover .submenu {display:block;}
+
+
+
+
+
+
+
+
+
+
+#visual {margin:0 350px 0 350px; background:#f00; height:100vh;}
+.main_visual figure {height:100vh; position:relative;}
+.main_visual .itm01 {background:url(../lib/base/main_04.jpg) no-repeat center center/cover;}
+.main_visual .itm02 {background:url(../lib/base/main_05.jpg) no-repeat center center/cover;}
+.main_visual .itm03 {background:url(../lib/base/main_07.jpg) no-repeat center center/cover;}
+
+.main_visual .container {position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); color:#fff; text-shadow:0 0 5px #000; width:1200px; text-align:center;}
+.main_visual figure .container h3 {opacity:0; transform:translateY(100px); font-size:60px; font-weight:700; margin-bottom:40px;}
+.main_visual figure .container p {opacity:0; transform:translateY(100px); font-size:15px; font-weight:300; line-height:20px;}
+.main_visual figure.on .container h3 {opacity:1; transform:translateY(0px); transition:0.5s;}
+.main_visual figure.on .container p {opacity:1; transform:translateY(0px); transition:0.5s 0.5s}
+
+.main_visual .slick-dots {position:absolute; bottom:50px; left:0; width:100%; text-align:center;}
+.main_visual .slick-dots li {display:inline-block;font-size:30px; color:#369;}
+.main_visual .slick-dots li:after {content:"\eb66"; font-family:xeicon!important;} /*<-슬라이드 도트를 xi아이콘으로 바꾸는거*/
+.main_visual .slick-dots li.slick-active {color:#fff;}
+.main_visual .slick-dots li.slick-active:after {content:"\eb51"; font-family:xeicon!important;}   /*<-액티브된 슬라이드 도트를 xi아이콘으로 바꾸는거*/
+.main_visual .slick-dots button {display:none;}
+
+.main_visual .slick-arrow {position:absolute; top:48%; z-index:9;}
+.main_visual .slick-arrow.prev {left:30px;}
+.main_visual .slick-arrow.next {right:30px;}
+.main_visual .slick-arrow i {font-size:40px; padding:10px; background:#a0a0a06b; color:#fff; border-radius:10%;}
+
+
+
+
+
+
+#footer {position:fixed; top:0; right:0; width:350px; background:#369; height:100vh;}
+
+
+.mopen {display:none;}
+
+
+
+
+
+@media (max-width:768px) {
+    #header {position:fixed; top:0; left:-100%; width:calc(100% - 110px); height:100vh; background:#ffffffce; padding:30px 15px 0 15px; z-index:19; transition:0.5s;}
+    #header.on {left:0;}
+    #header h1 {margin-bottom:100px;}
+    #header h1 img {width:100%;}
+    #header nav {}
+    #header nav>ul>li {position:relative; border-bottom:1px solid#ddd;}
+    #header nav>ul>li a {display:block; line-height:40px;}
+    
+    #header nav>ul>li .submenu {display:none; position:static; top:0; left:320px; width:100%; background:#146100c2; color:#fff; }
+    #header nav>ul>li .submenu li~li {border-top:1px solid#fff;}
+    #header nav>ul>li .submenu a {padding-left:20px;}
+    #header nav>ul>li:hover .submenu {display:none;}   /*호버했을때 서브메뉴가 보이면 안되니까 none*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #visual {margin:0 0px 0 0px; background:#f00; height:100vh;}
+    .main_visual figure {height:100vh; position:relative;}
+    .main_visual .itm01 {background:url(../lib/base/main_04.jpg) no-repeat center center/cover;}
+    .main_visual .itm02 {background:url(../lib/base/main_05.jpg) no-repeat center center/cover;}
+    .main_visual .itm03 {background:url(../lib/base/main_07.jpg) no-repeat center center/cover;}
+    
+    .main_visual .container {position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); color:#fff; text-shadow:0 0 5px #000; width:auto; text-align:center; padding:0 30px;}
+    .main_visual figure .container h3 {opacity:0; transform:translateY(100px); font-size:60px; font-weight:700; margin-bottom:40px;}
+    .main_visual figure .container p {opacity:0; transform:translateY(100px); font-size:15px; font-weight:300; line-height:20px;}
+    .main_visual figure.on .container h3 {opacity:1; transform:translateY(0px); transition:0.5s;}
+    .main_visual figure.on .container p {opacity:1; transform:translateY(0px); transition:0.5s 0.5s}
+    
+    .main_visual .slick-dots {position:absolute; bottom:50px; left:0; width:100%; text-align:center;}
+    .main_visual .slick-dots li {display:inline-block;font-size:30px; color:#369;}
+    .main_visual .slick-dots li:after {content:"\eb66"; font-family:xeicon!important;} /*<-슬라이드 도트를 xi아이콘으로 바꾸는거*/
+    .main_visual .slick-dots li.slick-active {color:#fff;}
+    .main_visual .slick-dots li.slick-active:after {content:"\eb51"; font-family:xeicon!important;}   /*<-액티브된 슬라이드 도트를 xi아이콘으로 바꾸는거*/
+    .main_visual .slick-dots button {display:none;}
+    
+    .main_visual .slick-arrow {position:absolute; top:48%; z-index:9;}
+    .main_visual .slick-arrow.prev {left:30px;}
+    .main_visual .slick-arrow.next {right:30px;}
+    .main_visual .slick-arrow i {font-size:40px; padding:10px; background:#a0a0a06b; color:#fff; border-radius:10%;}
+    
+    
+    
+    
+    
+    
+    #footer {position:static; top:0; right:0; width:auto; background:#369; height:auto;}    
+
+    .mopen {display:block; position:fixed; top:30px; right:30px; font-size:30px; padding:10px; background:#a0a0a06b; color:#fff}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

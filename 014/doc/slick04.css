@@ -1,0 +1,96 @@
+#wrap{}
+
+#header {line-height:100px;}
+#header h1 img {width:200px;}
+#header .container{display:flex; width:1200px; margin:0 auto; padding:0 15px;}
+#header nav {margin-left:auto;}
+#header nav>ul {display:flex;}
+#header nav>ul>li>a {display:block; position:relative; padding:0 30px;}
+#header nav>ul>li~li>a:after {content:""; display:block; width:1px; height:12px; background:#333; position:absolute; top:50%; left:0; transform:translateY(-50%);} 
+
+#header .right {font-size:20px; margin-left:40px;}
+
+
+#main_visual {position:relative;}
+#main_visual figure {height:600px; padding-top:120px;}
+#main_visual .itm01 {background:url(../lib/base/visual_04.jpg) no-repeat center center/cover;}
+#main_visual .itm02 {background:url(../lib/base/visual_05.jpg) no-repeat center center/cover;}
+#main_visual .itm03 {background:url(../lib/base/visual_06.jpg) no-repeat center center/cover;}
+
+
+/*부터는 슬라이드안에 숫자돌아가고 밑에 바*/
+#main_visual figure .year {display:flex; width:800px; height:200px; margin:0 auto;}
+#main_visual figure .year span {display:block; width:200px; height:200px; background:url(../lib/base/num_02.png);opacity:0;}
+#main_visual figure .year span:nth-child(1) {transition:1s;}
+#main_visual figure .year span:nth-child(2) {transition:1s 0.5s;}
+#main_visual figure .year span:nth-child(3) {transition:1s 1s;}
+#main_visual figure .year span:nth-child(4) {transition:1s 1.5s;}
+#main_visual figure.animation_active .year span {opacity:1;}
+
+#main_visual .itm01.animation_active .year span:nth-child(1) {background-position-y:-2200px;}         /*<-animation_active붙일땐 딱 붙여써야함* 1996*/
+#main_visual .itm01.animation_active .year span:nth-child(2) {background-position-y:-1800px;}
+#main_visual .itm01.animation_active .year span:nth-child(3) {background-position-y:-1800px;}
+#main_visual .itm01.animation_active .year span:nth-child(4) {background-position-y:-1200px;}
+
+#main_visual .itm02.animation_active .year span:nth-child(1) {background-position-y:-2400px;}         /*<-animation_active붙일땐 딱 붙여써야함* 2015*/
+#main_visual .itm02.animation_active .year span:nth-child(2) {background-position-y:-2000px;}
+#main_visual .itm02.animation_active .year span:nth-child(3) {background-position-y:-2200px;}
+#main_visual .itm02.animation_active .year span:nth-child(4) {background-position-y:-3000px;}
+
+#main_visual .itm03.animation_active .year span:nth-child(1) {background-position-y:-2400px;}         /*<-animation_active붙일땐 딱 붙여써야함* 2022*/
+#main_visual .itm03.animation_active .year span:nth-child(2) {background-position-y:-2000px;}
+#main_visual .itm03.animation_active .year span:nth-child(3) {background-position-y:-2400px;}
+#main_visual .itm03.animation_active .year span:nth-child(4) {background-position-y:-2400px;}
+
+#main_visual .btn {display:flex; position:absolute; bottom:-20px; left:50%; width:1170px; line-height:40px; background:#4d4d4d; color:#fff; font-weight:100; transform:translateX(-50%); text-align:center;}
+#main_visual .btn li {flex:1; position:relative;}
+#main_visual .btn li span {display:block; cursor:pointer;}
+#main_visual .btn li~li {border-left:1px solid#ddd;}
+
+#main_visual .btn li:before {content:""; display:block; width:0; height:100%; background:#9c56f7; position:absolute; top:0; left:0; z-index:-1;}
+
+#main_visual .btn li.animation_active {color:#ff0; font-weight:500;}
+#main_visual .btn li.animation_active:before {width:100%; transition:3s;}
+
+#main_visual .snum {position:absolute; top:100px; right:100px; font-size:50px; color:#fff;}
+#main_visual .sbar {position:absolute; top:0; left:0; width:100%; height:10px; background:#ff0;}
+#main_visual .sbar span {display:block; width:0; height:100%; background:#9c56f7;}
+#main_visual .sbar.animation_active span {width:100%; transition:3s;}
+
+#main_visual .sbar2 {position:absolute; top:100px; left:100px; width:5px; height:300px; background:#ff0;}
+#main_visual .sbar2 span {display:block; width:100%; height:0; background:#9c56f7; transition:1s;}
+/*까지는 슬라이드안에 숫자돌아가고 밑에 바*/
+
+
+
+#main_visual .container {position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:1200px; padding:0 15px; color:#fff; text-align:center;}
+#main_visual h2 {font-size:18px; font-weight:100; letter-spacing:1em; margin-bottom:15px;}
+#main_visual p {font-size:12px; margin-bottom:40px; line-height:1.6;}
+
+
+
+ 
+
+
+
+
+#content01 {padding:150px 0; text-align:center;}
+#content01 h2 {font-size:18px; font-weight:100; letter-spacing:1em; margin-bottom:15px;}
+#content01 p {font-size:12px; margin-bottom:40px; line-height:1.6;}
+#content01 .container {display:flex; width:1200px; margin:0 auto;}
+#content01 .container figure {flex:1; padding:0 15px;}
+#content01 .container img {max-width:100%;}
+
+#footer {padding:80px 0 100px 0; background:#333; color: #fff; font-size:15px;}
+#footer .container {display:flex; justify-content:space-between; width:1200px; margin:0 auto; padding:0 15px;}
+#footer i {font-size:30px; padding:10px; background:#444; border-radius:50%;}
+
+
+
+
+
+
+
+
+
+

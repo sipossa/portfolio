@@ -1,0 +1,52 @@
+#header {position:fixed; top:0; left:0; width:350px; background:#ff0; height:100vh;}
+#visual {margin:0 350px 0 350px; background:#f00; height:100vh;}
+#footer {position:fixed; top:0; right:0; width:350px; background:#369; height:100vh;}
+
+@media (max-width:768px) {
+    #header  {position:static; width:auto;}
+    #visual {margin:0 0 0 0;}
+    #footer  {position:static; width:auto;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

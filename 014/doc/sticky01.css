@@ -1,0 +1,62 @@
+* {outline:1px solid#f00--;}
+#wrap {}
+
+.container {width:1200px; margin:0 auto;}
+.container:after {content:""; display:block; clear:both;}  /*<-높이가 다시 살아나게끔*/
+.container>* {padding:0 15px;}                
+
+.header {position:sticky; top:0; left:0; line-height:100px; background:#fff; z-index:10;}
+.header h1 {float:left; width:25%;}
+.header h1 img {width:180px;}
+.header nav {float:left; width:calc(75% - 60px);}
+.header .top_banner {float:right;}
+
+.header ul {text-align:center;}
+.header ul>li {display:inline-block;}
+.header ul>li>a {display:block; padding:0 30px;}
+
+
+.main {}
+.main_slider {}
+.main_slider figure {height:calc(100vh - 100px);}
+.main_slider .itm01 {background:url(../lib/base/main_04.jpg) no-repeat center center/cover;}
+.main_slider .itm02 {background:url(../lib/base/main_05.jpg) no-repeat center center/cover;}
+.main_slider .itm03 {background:url(../lib/base/main_07.jpg) no-repeat center center/cover;}
+
+
+.content {padding:100px 0;}
+.content figure {float:left; width:33.333333333%;}
+
+
+.footer {padding:50px 0 100vh 0; background:#333; color:#fff; text-align:center;}
+
+.content i {font-size:50px; padding:10px; background:#000; color:#fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

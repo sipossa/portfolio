@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 레이아웃 03</title>
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/slick.css">
+    <link rel="stylesheet" href="./responsive03.css?ver=1.0">
+    <script src="../lib/js/jquery-1.12.4.min.js"></script>
+    <script src="../lib/js/slick.min.js"></script>
+    <script src="./responsive03.js?ver=1.0"></script>
+</head>
+<body>
+<div id="wrap">
+    <header id="header">
+        <div class="container">
+            <h1>
+                <a href=""><img src="../lib/base/logo.png" alt=""></a>
+            </h1>
+            
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">meun01</a></li>
+                    <li><a href="#">meun02</a></li>
+                    <li><a href="#">meun03</a></li>
+                    <li><a href="#">meun04</a></li>
+                    <li><a href="#">meun05</a></li>
+                </ul>
+            </nav>
+            <div class="right">
+                 <i class="xi-search"></i>
+                 <i class="xi-bars"></i>
+            </div>
+           
+        </div>
+    </header>
+
+
+<!--메인슬라이드-->
+    <main>
+        <section id="visual">
+            <div class="main_slider">
+                <figure class="itm01"></figure>
+                <figure class="itm02"></figure>
+                <figure class="itm03"></figure>
+            </div>
+
+            <div class="slogan">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Accusantium repellat dolorem tempore sit quasi!</p>
+            </div>
+        </section>
+
+
+
+
+<!--섹션01-->
+        <section id="content">
+            <h2>Lorem ipsum dolor sit amet</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Accusantium repellat dolorem tempore sit quasi!</p>
+
+            <div class="container pr_slider">          <!--이름두개가능-->
+                <figure><img src="../lib/base/item_01.jpg" alt=""></figure>
+                <figure><img src="../lib/base/item_02.jpg" alt=""></figure>
+                <figure><img src="../lib/base/item_03.jpg" alt=""></figure>
+                <figure><img src="../lib/base/item_04.jpg" alt=""></figure>
+                <figure><img src="../lib/base/item_05.jpg" alt=""></figure>
+                <figure><img src="../lib/base/item_06.jpg" alt=""></figure>
+            </div>
+            
+            <div class="arrows">
+                <i class="xi-arrow-left"></i>       <!--싸놓기만 하고 기준은 맨 위에 content에다 줄거임-->
+                <i class="xi-arrow-right"></i>
+            </div>
+        </section>
+    </main>
+
+<!--푸터-->
+    <footer id="footer">
+        <div class="container">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit<br>
+            Magni iure quae sed unde molestias ea neque eaque illo &copy; noh.
+        </div>
+    </footer>
+</div>
+</body>
+</html>

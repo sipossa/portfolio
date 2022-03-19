@@ -1,0 +1,71 @@
+* {outline:1px solid#f00--;}
+
+/*헤더-------------------------------------------------------------------------------*/
+#header {line-height:100px;}
+#header h1 {padding:0 15px;}
+#header h1 img {width:200px;}
+#header .container {display:flex; width:1200px; margin:0 auto;}
+#header .container nav {margin-left:auto;}
+#header .container nav>ul {display:flex; font-size:20px;}
+#header .container nav>ul>li {position:relative;}
+#header .container nav>ul>li>a {display:block; padding:0 15px;}
+#header .container nav>ul>li~li>a:before {content:""; display:block; width:1px; height:16px; background:#ddd;position:absolute; top:42px; left:0;}
+#header i {display:none;}
+
+@media (max-width:768px) {
+    #header {line-height:100px;}
+    #header h1 {padding:0 15px;}
+    #header h1 img {width:200px;}
+    #header .container {display:flex; width:auto; margin:0 auto;}
+    #header .container nav {display:none; position:fixed; top:0; left:0; background:#fff; width:calc(100% - 80px); height:100vh; padding:100px 15px 0 15px; border-right:1px soli#ddd; z-index:999;}
+    #header .container nav>ul {display:flex; flex-direction:column; font-size:16px;}
+    #header .container nav>ul>li {position:relative; line-height:40px;}
+    #header .container nav>ul>li>a {display:block; padding:0 15px;}
+    #header .container nav>ul>li~li>a:before {content:""; display:none; width:1px; height:16px; background:#ddd;position:absolute; top:42px; left:0;}
+    #header .container nav>ul>li~li {border-top:1px solid#ddd;}
+    #header i {display:block; position:fixed; top:35px; right:15px; font-size:30px; background:#ddd; padding:5px; z-index:999;}
+}
+
+
+/*메인슬라이드(가정)-------------------------------------------------------------------------------*/
+#visual {position:relative; color:#fff;}
+#visual .main_silder {position:relative; background:url(../lib/base/visual_01.jpg); height:600px;}
+#visual .slogan {position:absolute; top:50%; left:50%; width:1200px; transform:translate(-50%,-50%); padding:0 15px;}
+#visual .slogan h2 {font-size:80px; font-weight:700; margin-bottom:20px;}
+#visual .slogan p {font-size:20px; line-height:28px;}
+
+
+@media (max-width:768px) {
+    #visual {position:relative; color:#fff;}
+    #visual .main_silder {position:relative; background:url(../lib/base/visual_01.jpg); height:600px;}
+    #visual .slogan {position:absolute; top:50%; left:50%; width:100%; transform:translate(-50%,-50%); padding:0 15px;}
+    #visual .slogan h2 {font-size:40px; font-weight:700; margin-bottom:20px;}
+    #visual .slogan p {font-size:14px; line-height:20px;}   
+}
+
+
+/*제품.커스텀-------------------------------------------------------------------------------*/
+#customer {padding:100px 0; text-align:center;}
+#customer .container {display:flex; width:1200px; margin:0 auto;}
+#customer .container figure {flex:1; padding:0 15px;}
+#customer .container figure img {width:100%;}
+#customer .container figcaption {line-height:3;}
+
+@media (max-width:768px) {
+    #customer {padding:100px 0; text-align:center;}
+    #customer .container {display:flex; flex-direction:column; width:auto; margin:0 auto;}
+    #customer .container figure {flex:1; padding:15px 15px;}
+    #customer .container figure img {width:100%;}
+    #customer .container figcaption {line-height:3;}
+}
+
+
+
+
+/*푸터-------------------------------------------------------------------------------*/
+#footer {border-top:1px solid#ddd; padding:80px 0; text-align:center;}
+
+
+
+
+

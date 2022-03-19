@@ -1,0 +1,50 @@
+.section {padding:200px 0; background:#f2f2f2; text-align:center;}
+.section:nth-child(even) {background:#f2f2; color:#000;}
+
+.con02 h2 {opacity:0; transform:translateY(200px); transition:0.5s;}
+.con02.on h2 {opacity:1; transform:translateY(0); }
+
+.con02 .circle {display:inline-block; margin:0 30px; width:300px; height:300px; background:url(../lib/base/etc_07.jpg); border-radius:50%; line-height:300px; text-align:center; transform:rotateY(180deg); transition:0.5s; opacity:0;}
+.con02.on .circle {opacity:1; transform:rotate(0deg);}
+
+.con04 .left {opacity:0; transform:translateX(-1000px); transition:0.5s;}
+.con04 .right {opacity:0; transform:translateX(1000px); transition:0.5s 0.5s;}
+.con04.on .left {opacity:1; transform:translateX(0);}
+.con04.on .right {opacity:1; transform:translateX(0);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

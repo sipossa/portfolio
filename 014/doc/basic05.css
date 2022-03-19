@@ -1,0 +1,179 @@
+bady{color:#333};}
+#wrap{}
+
+
+
+/*----------------탑배너-------------------*/
+
+#top_banner {background:#f7f7f7;}
+#top_banner .container {position:relative; width:1200px; margin:0 auto; padding:25px 15px;}
+#top_banner h2 {font-size:24px; font-weight:100; letter-spacing:0.04em; margin-bottom:10px;}
+#top_banner p {font-size:16px; font-weight:300; letter-spacing:-0.025em;}
+#top_banner i {position:absolute; top:25px; right:15px; font-size:24px; }
+
+
+/*----------------헤더-------------------*/
+
+#header {}
+#header .container {display:flex; justify-content:space-between; width:1200px; margin:0 auto; padding:0 15px; line-height:100px;} /*라인하이트는 위아래 띄움*/
+#header h1 img {max-width:200px;} /*width:200px도 괜춘*/
+#header nav>ul {display:flex; justify-content:center; }
+#header nav>ul>li>a {display:block; padding:0 15px; position:relative;}
+#header nav>ul>li~li>a:before {content:""; display:block; width:1px; height:12px; background:#666; position:absolute; top:50%; left:0; transform:translateY(-50%);}
+
+#header .header_search input {border:none; outline:none; border-bottom:1px solid#555; padding:5px 0;} /*마지막 패딩은 라인하고 커서 사이에 들어감*/
+#header .header_search button {background:none; border:none; outline:none; padding:5px 0;}
+#header .header_search i {font-size:20px; background:#000; color:#fff; border-radius:50%; padding:5px;}
+
+
+
+/*----------------메인슬라이드-------------------*/
+
+#main_visual {position:relative;}
+#main_visual .main_slider figure {height:600px; background:#333;}
+#main_visual .main_slider .itm01 {background:url(../lib/base/main_visual01.jpg) no-repeat center center/cover;}
+#main_visual .main_slider .itm02 {background:url(../lib/base/main_visual02.jpg) no-repeat center center/cover;}
+#main_visual .main_slider .itm03 {background:url(../lib/base/main_visual03.jpg) no-repeat center center/cover;}
+
+#main_visual .slogan {position:absolute; top:50%; left:50%; width:1200px; padding:0 15px; transform:translate(-50%,-50%); color:#fff; text-align:center;}
+#main_visual .slogan h2 {font-size:60px; font-weight:900; margin-bottom:10px; text-shadow:0 0 4px #666;}
+#main_visual .slogan p {font-size:16px; font-weight:300;}
+#main_visual .slogan a {display:block; width:150px; height:35px; line-height:30px; background:rgba(110, 109, 109, 0.363); text-align:center; margin:20px auto;}
+
+
+
+/*----------------제품 01-------------------*/
+
+#product01 {padding:100px 0; text-align:center;}
+#product01 h2 {font-size:24px; font-weight:500; margin-bottom:10px;}
+#product01 p {font-size:16px; font-weight:300; letter-spacing:-0.025em; margin-bottom:30px;}
+
+#product01 .container {display:flex; width:1200px; margin:0 auto;}
+#product01 img {max-width:100%;}
+#product01 figure {flex:1; padding:0 15px;}
+
+#product01 figure strong {display:block; margin:10px 0;}
+#product01 figure span {display:block; margin:10px 0;}
+#product01 figure span.price {color:#ff6262; font-size:14px}
+
+#product01 .case {overflow:hidden;}
+#product01 figure img {transition:0.5s;}
+#product01 figure:hover img {transform:scale(1.4);}
+
+
+/*----------------메인 베너-------------------*/
+
+#main_banner {padding:150px 0; background:url(../lib/base/visual_01.jpg) no-repeat center center/cover; background-attachment:fixed; color:#fff; text-align: center;}
+#main_banner h2 {font-size:24px; font-weight:500; margin-bottom:10px;}
+#main_banner p {font-size:16px; font-weight:300; letter-spacing:-0.025em; margin-bottom:20px;} 
+
+#main_banner i {font-size:18px; padding:6px; background:rgba(214, 203, 142, 0.438); border-radius:50%; vertical-align:middle; margin-left:10px;}
+#main_banner i {transition:0.4s;}
+#main_banner a:hover i {border-radius:0%;}
+
+
+
+/*----------------제품 02 - 제품 지그재그 + 슬라이드-------------------*/
+
+#product02 {padding:100px 0;}
+#product02 .container {display:flex; flex-wrap:wrap; width:1200px; margin:0 auto; padding:0 15px;}
+#product02 img {max-width:100%;}
+#product02 .pic {width:50%;}
+#product02 .dis {display:flex; width:50%; text-align:center; background:#f4f4f4;}
+#product02 .dis .dis_con {margin:auto; padding:0 30px;}
+
+#product02 .dis .dis_con h3 {font-size:24px; font-weight:500; margin-bottom:10px;}
+#product02 .dis .dis_con h3:after {content:""; display:block; width:1px; height:30px; background:#e05f5f; margin:20px auto;}
+#product02 .dis .dis_con p {font-size:16px; font-weight:300; letter-spacing:-0.025em; margin-bottom:20px; line-height:24px;}
+#product02 .dis .dis_con i {font-size:15px; padding:5px; background:rgba(51, 51, 51, 0.438); color:#fff; border-radius:50%; vertical-align:middle; margin-left:10px; transition: 0.4s;}
+#product02 .dis .dis_con a:hover i {border-radius:0%;}
+
+
+
+/*----------------제품 03 - 가운데꺼 커지는 슬라이드-------------------*/
+
+#product03 {padding:100px 0; text-align:center; background:#f7f7f7;}
+#product03 h2 {font-size:24px; font-weight:500; margin-bottom:10px;}
+#product03 p {font-size:16px; font-weight:300; letter-spacing:-0.025em; margin-bottom:30px;}
+#product03 figure span {display:block; margin:10px 0;}
+#product03 figure span.price {color:#ff6262; font-size:14px}
+
+#product03 .container {width:1200px; margin:0 auto;}
+#product03 img {max-width:100%; }
+#product03 figure {padding:30px 15px;}
+#product03 .case {margin-bottom:30px;}
+#product03 figure img {transition:0.6s;}
+#product03 figure.on img {transform:scale(1.3);}
+#product03 figure.on  {transform:scale(1.15);} /*---->글자커지게*/
+
+#product03 .slide_bar {position:relative; width:600px; height:5px; background:#ddd; border-radius:3px; margin:30px auto;} /*----->슬라이드 바 만드는법-js도있음!*/
+#product03 .slide_bar>span {display:block; width:100px; height:5px; border-radius:3px; background:#be7c02; position:absolute; top:0; left:0;}
+
+
+
+/*----------------제품 04 - 화살표 슬라이드-------------------*/
+
+#product04 {padding:100px 0; background:#f7f7f7;}
+#product04 h2 {font-size:24px; font-weight:500; margin-bottom:10px;}
+#product04 p {font-size:16px; font-weight:300; letter-spacing:-0.025em; margin-bottom:30px;}
+#product04 figure {text-align:center;}
+#product04 figure strong {display:block; margin:10px 0;}
+#product04 figure span.price {color:#ff6262; font-size:14px;}
+
+#product04 .container {display:flex; flex-wrap:wrap; width:1200px; margin:0 auto;}
+
+#product04 .container .dis {flex:1; padding:0 15px;}
+#product04 .container .con {flex:3; padding:0 15px; overflow:hidden; position:relative;}
+#product04 .container .con figure {padding:0 15px;}
+#product04 .container .con img {max-width:100%;}
+
+#product04 .container .con i {position:absolute; top:35%; background:#dddddd; padding:7px;}
+#product04 .container .con i.xi-arrow-left {left:0;}
+#product04 .container .con i.xi-arrow-right {right:0;}
+
+
+#product04 .dis h3 {font-size:24px; font-weight:500; margin-bottom:10px;} /*----------얘네는글자들*/
+#product04 .dis h3:after {content:""; display:block; width:40px; height:1px; background:#e05f5f; margin:20px 0;}   /*--->제목밑에 밑줄긋는거*/
+#product04 .dis p {font-size:16px; font-weight:300; letter-spacing:-0.025em; margin-bottom:20px; line-height:24px;}
+#product04 .dis i {font-size:15px; padding:5px; background:rgba(51, 51, 51, 0.438); color:#fff; border-radius:50%; vertical-align:middle; margin-left:10px; transition: 0.4s;}
+#product04 .dis a:hover i {border-radius:0%;}
+
+#product04 figure {text-align:center;}
+
+
+/*----------------탭슬라이드-------------------*/
+
+#tab {padding:100px 0; background:#f4f4f4;}
+#tab .container {width:1200px; margin:0 auto; padding:0 15px;}
+#tab .tab_maeu {display:flex; border-bottom:1px solid#ddd; margin-bottom:10px;}
+#tab .tab_maeu li a {display:block; line-height:40px; padding:0 50px; background:#369; color:#fff; text-align:center;}
+#tab .tab_maeu li~li {border-left:1px solid#f4f4f4;}
+
+#tab .tab_con {position:relative; height:200px;}
+#tab .tab_con .tab_slider {position:absolute; top:0; left:0; width:100%; visibility:hidden;}             /*--->숨겨라*/
+#tab .tab_con .tab_slider.on {visibility:visible;}                                              /*--->보여라*/
+#tab .tab_con figure {padding:0 15px;}
+#tab .tab_con figure img {width:100%;}
+
+
+
+
+/*----------------푸터-------------------*/
+
+#footer {background:#333; color:#f4f4f4; font-weight:300; font-size:14px;}
+#footer .container {display:flex; justify-content:space-between; width:1200px; margin:0 auto; line-height:100px; padding:0 15px;}
+#footer .customer_link {display:flex;}
+#footer .customer_link li {position:relative;}
+#footer .customer_link li a {display:block; padding:0 20px;}
+#footer .customer_link li~li:before {content:"|"; position:absolute; top:0px; left:0;}
+#footer .customer_link li:first-child a {padding:0 20px 0 0;}
+#footer hr {border:none; border-top:1px solid#666;}
+#footer .sns {font-size:22px;}
+#footer select {background:#333; padding:5px 10px; outline:none; font-size:13px;}
+
+
+
+
+
+
+
