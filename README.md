@@ -15,7 +15,6 @@
   <li> https://sipossa.github.io/010 </li>
   <li> https://sipossa.github.io/011 </li>
   <li> https://sipossa.github.io/012 </li>
+  <li> https://sipossa.github.io/013 </li>
 </ul>
 
-1002 실습링크. <br>
-https://sipossa.github.io/trn/index.html
